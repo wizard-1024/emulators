@@ -1,0 +1,95 @@
+; Комплексный тест (тест печати №16)
+; [1963, ЛВИКА]
+; (2015 Стефанков)
+;
+! del test_16_debug.txt
+! del test_16.lst
+! del test_16.cdp
+! del test_16.drum1
+! del test_16.drum2
+! del test_16.mt0
+! del test_16.mt1
+! del test_16.mt2
+! del test_16.mt3
+;
+set console debug=test_16_debug.txt
+;set console debug=console
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;de ENABLE_OPCODE_040_HACK 1
+;de DRUM_READ_DATA_DUMP 1
+;de DRUM_WRITE_DATA_DUMP 1
+;
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt test_16.lst
+;
+set cdr extfmt
+attach cdp test_16.cdp
+;
+de DRUM_0_ACCESS_MODE 1
+;
+att drum0 test_16.drum0
+att drum1 test_16.drum1
+att drum2 test_16.drum2
+;
+;
+de TAPE_3_ACCESS_MODE 1
+;
+att mt0 test_16.mt0
+att mt1 test_16.mt1
+att mt2 test_16.mt2
+att mt3 test_16.mt3
+;
+att -r cdr test_16.cdr
+;
+;de RPU1 0100000100010377
+de RPU4  0016000000000000
+ex RPU1
+ex RPU2
+ex RPU3
+ex RPU4
+;
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+load test_16.m20
+;
+break -e 1[10]
+show break all
+;
+;
+echo Run
+run
+;
+show queue
+show time
+;show throttle
+;
+ex 1-471
+ex -m 1-471
+;
+;ex 1000-1147
+;ex -m 1000-1147
+ex 7630-7766
+ex -m 7630-7766
+;
+quit

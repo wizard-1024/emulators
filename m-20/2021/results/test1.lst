@@ -1,0 +1,117 @@
+Program: test1.a20			Title: Test1 Program for M-20 			Author: Stefankov Dmitry 
+Page: 0001								Date/Time: Mon May 10 01:03:18 2021
+
+00001:   *
+00002:   * Sample file for M-20 autocode 
+00003:   * encoding: english,ASCII-7
+00004:   *
+00005:   * Copyright (c) 2015 Stefankov
+00006:   *
+00007:   
+00008:   	.NAME    test1.a20
+00009:   	.TITLE	 Test1 Program for M-20
+00010:   	.AUTHOR  Stefankov Dmitry
+00011:   *
+00012:   *
+00013:   *
+00014:   
+00015:   TWO1  	.ABS	=2
+00016:   TWO2	.ABS	1 02 4000 0000 0000
+00017:   TWO3    .ABS    102400000000000
+00018:   
+00019:   	.START  20
+00020:   *
+00021:   num1:	TWO1
+00021:   :0020
+00021:   :0020  1 02 4000 0000 0000
+00022:   num2:	TWO2
+00022:   :0021  1 02 4000 0000 0000
+00023:   num3:   TWO3
+00023:   :0022  1 02 4000 0000 0000
+
+
+Program: test1.a20			Title: Test1 Program for M-20 			Author: Stefankov Dmitry 
+Page: 0002								Date/Time: Mon May 10 01:03:18 2021
+
+00024:   *
+00025:   	.START  40
+00026:   sum1:   .MEM 1
+00027:   sum2:   .MEM 1
+00028:   sum3:   .MEM 1
+00029:   *
+00030:   *
+00031:   	.ADDRESS  100
+00032:   START:
+00033:   	add_rn	num1,num2,sum1		; 2+2=4?
+00033:   :0100
+00033:   :0100  0 01 0020 0021 0040
+00034:   	add_rn	num1,num3,sum2		; 2+2=4?
+00034:   :0101  0 01 0020 0022 0041
+00035:   	add_rn	num2,num3,sum3		; 2+2=4?
+00035:   :0102  0 01 0021 0022 0042
+00036:   	stop_77
+00036:   :0103  0 77 0000 0000 0000
+00037:   	stop_17
+00037:   :0104  0 17 0000 0000 0000
+00038:   
+00039:   CHECK_PARSE:
+00040:   4 55 0000 @LABEL1 7616
+00040:   :0105  4 55 0000 0111 7616
+00041:   4 55 0000 1023   7616
+00041:   :0106  4 55 0000 1023 7616
+
+
+Program: test1.a20			Title: Test1 Program for M-20 			Author: Stefankov Dmitry 
+Page: 0003								Date/Time: Mon May 10 01:03:18 2021
+
+00042:   4 55 @LABEL1 @LABEL2 @LABEL3
+00042:   :0107  4 55 0111 0112 0113
+00043:   4 55 num1 num2 num3
+00043:   :0110  4 55 0020 0021 0022
+00044:   @LABEL1:
+00045:   	stop_77
+00045:   :0111  0 77 0000 0000 0000
+00046:   @LABEL2:
+00047:   	stop_17
+00047:   :0112  0 17 0000 0000 0000
+00048:   @LABEL3:
+00049:   	stop_77
+00049:   :0113  0 77 0000 0000 0000
+00050:   
+00051:   	.FINISH 100
+
+
+
+
+
+
+
+Program: test1.a20			Title: Test1 Program for M-20 			Author: Stefankov Dmitry 
+Page: 0004								Date/Time: Mon May 10 01:03:18 2021
+
+Symbolic names table - numerical order - (11 entries)
+0000: num1                            	0020
+0001: num2                            	0021
+0002: num3                            	0022
+0003: sum1                            	0040
+0004: sum2                            	0041
+0005: sum3                            	0042
+0006: START                           	0100
+0007: CHECK_PARSE                     	0105
+0008: @LABEL1                         	0111
+0009: @LABEL2                         	0112
+0010: @LABEL3                         	0113
+
+
+
+
+
+
+
+Program: test1.a20			Title: Test1 Program for M-20 			Author: Stefankov Dmitry 
+Page: 0005								Date/Time: Mon May 10 01:03:18 2021
+
+Absolute values table - natural order - (3 entries)
+0000: TWO1                            	102400000000000
+0001: TWO2                            	102400000000000
+0002: TWO3                            	102400000000000

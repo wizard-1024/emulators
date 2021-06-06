@@ -1,0 +1,52 @@
+; Форматирование магнитной ленты (МЛ) с проверкой
+; (2015 Стефанков)
+;
+! del mt_format_debug.txt
+! del mt_format.lst
+! del mt_format.mt0
+! del mt_format.mt1
+! del mt_format.mt2
+! del mt_format.mt3
+;
+set console debug=mt_format_debug.txt
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;de USE_NEW_MATH 0
+;de ENABLE_LEAD_ZEROES_ROUND_MATH 0
+de DPTYPE 2
+set lpt OCTHELPFMT
+att lpt mt_format.lst
+att mt0 mt_format.mt0
+att mt1 mt_format.mt1
+att mt2 mt_format.mt2
+att mt3 mt_format.mt3
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+load mt_format.m20
+;
+ex 200-300
+echo
+ex 1000-1027
+echo
+ex -m 1000-1027
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 200-300
+echo
+ex 30-31
+quit

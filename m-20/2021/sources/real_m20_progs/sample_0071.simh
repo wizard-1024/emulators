@@ -1,0 +1,51 @@
+; [1961 Шура-Бура, стр. 191-197]
+; Программа разметки ленты
+; (2015 Стефанков)
+; 
+;
+! del sample_0071_debug.txt
+! del sample_0071.mt0
+! del sample_0071.mt1
+! del sample_0071.mt2
+! del sample_0071.mt3
+;
+set console debug=sample_0071_debug.txt
+;de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;de ENABLE_OPCODE_040_HACK 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+att mt0 sample_0071.mt0
+att mt1 sample_0071.mt1
+att mt2 sample_0071.mt2
+att mt3 sample_0071.mt3
+;
+;
+set cdr extfmt
+attach cdp sample_0071.cdp
+att -r cdr sample_0071.cdr
+;
+load sample_0071.m20
+;
+ex 1-260
+echo
+ex -m 1-1261
+echo
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 261-377
+echo
+quit

@@ -1,0 +1,45 @@
+; Разметка магнитной ленты [1977 Лавров, стр.286,353]
+; (2015 Стефанков)
+;
+! del sample_0038_debug.txt
+! del sample_0038.mt0
+! del sample_0038.mt1
+;
+set console debug=sample_0038_debug.txt
+de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+;
+att mt0 sample_0038.mt0
+att mt1 sample_0038.mt1
+;
+load sample_0038.m20
+;
+ex 6200-6203
+echo
+ex 6000-6077
+echo
+ex -m 6000-6077
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+echo
+ex 6200-6203
+echo
+ex 6000-6077
+echo
+ex -m 6000-6077
+echo
+quit

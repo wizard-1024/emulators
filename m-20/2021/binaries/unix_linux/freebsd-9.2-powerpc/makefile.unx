@@ -1,0 +1,222 @@
+# Copyright (c) 2014 Dmitry Stefankov 
+
+# $Id$
+
+
+# Modules (M-20)
+
+M20_CPU=m20_cpu
+M20_SYS=m20_sys
+M20_DRM=m20_drm
+M20_CD=m20_cd
+M20_MT=m20_mt
+M20_LP=m20_lp
+
+M20ru_CPU=m20ru_cpu
+M20ru_SYS=m20ru_sys
+M20ru_DRM=m20ru_drm
+M20ru_CD=m20ru_cd
+M20ru_MT=m20ru_mt
+M20ru_LP=m20ru_lp
+
+M20_ENG=m20_eng
+M20_RUS=m20_rus
+
+
+# Modules (SIMH)
+
+SCP=scp
+SIM_BUILDROMS=sim_BuildROMs
+SIM_CONSOLE=sim_console
+SIM_TAPE=sim_tape
+SIM_DISK=sim_disk
+SIM_ETHER=sim_ether
+SIM_FIO=sim_fio
+SIM_IMD=sim_imd
+SIM_SERIAL=sim_serial
+SIM_SOCK=sim_sock
+SIM_TIMER=sim_timer
+SIM_TMXR=sim_tmxr
+SIM_VIDEO=sim_video
+
+
+# Support files
+
+M20_DEFS_H=m20_defs.h
+
+
+# Emulator
+
+M20=m20
+M20ru=m20ru
+
+
+
+
+# Main Target
+
+all: $(M20) $(M20ru)
+
+
+# Tools
+
+CC=cc
+LINK=cc
+RC=rc
+
+APP_CC=cc
+APP_LINK=cc
+DYNLINK=dllwrap
+AR=ld
+
+RM=rm
+
+
+# Flags to build
+
+SIM_FLAGS=
+###-DSIM_NEED_GIT_COMMIT_ID
+###NO_INLINE;_CRT_NONSTDC_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;_WINSOCK_DEPRECATED_NO_WARNINGS;USE_DISPLAY;SIM_NEED_GIT_COMMIT_ID
+
+user_flags=$(SIM_FLAGS)
+rus_encoding=-DRUS_UNIX_KOI8R
+#rus_encoding=-DRUS_WIN_CP1251
+#rus_encoding=-DRUS_DOS_CP866
+rus_lang=-DRUSSIAN_LANGUAGE $(rus_encoding)
+
+cc_flags=-O2 -DUSE_INT64 $(user_flags)
+#cflags_2=-D_WINSOCK2_
+#link_flags=/RELEASE /NODEFAULTLIB /INCREMENTAL:NO /PDB:NONE /MACHINE:x86
+link_flags=
+#/RELEASE /INCREMENTAL:NO /PDB:NONE
+##console_flags=-subsystem:console,4.0
+#gui_flags=-subsystem:windows,4.0
+#rc_flags=/r $(user_flags)
+
+
+## dependencies
+
+INCLUDES=$(M20_DEFS_H)
+
+M20_OBJS=$(M20_CPU).o $(M20_SYS).o $(M20_ENG).o $(M20_DRM).o $(M20_CD).o $(M20_MT).o \
+        $(M20_LP).o
+
+M20ru_OBJS=$(M20ru_CPU).o $(M20ru_SYS).o $(M20_RUS).o $(M20ru_DRM).o $(M20ru_CD).o \
+           $(M20ru_MT).o $(M20ru_LP).o
+
+SIMH_OBJS=$(SCP).o $(SIM_CONSOLE).o $(SIM_TAPE).o $(SIM_TIMER).o $(SIM_TMXR).o \
+          $(SIM_SOCK).o $(SIM_SERIAL).o $(SIM_DISK).o $(SIM_FIO).o $(SIM_ETHER).o \
+          $(SIM_IMD).o $(SIM_VIDEO).o 
+#$(SIM_BUILDROMS).obj
+
+#std_libs=-lwsock32 -lwinmm
+#advapi32.lib wsock32.lib Winmm.lib ws2_32.lib
+std_libs=-lm
+
+
+# Targets (files)
+
+
+# M-20
+$(M20_CPU).o: $(M20_CPU).c $(INCLUDES)
+	$(CC) -c $(cc_flags) -o $(M20_CPU).o $(M20_CPU).c
+
+$(M20_SYS).o: $(M20_SYS).c $(INCLUDES)
+	$(CC) -c $(cc_flags) -o $(M20_SYS).o $(M20_SYS).c
+
+$(M20_DRM).o: $(M20_DRM).c $(INCLUDES)
+	$(CC) -c $(cc_flags) -o $(M20_DRM).o $(M20_DRM).c
+
+$(M20_CD).o: $(M20_CD).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) -o $(M20_CD).o $(M20_CD).c
+
+$(M20_MT).o: $(M20_MT).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) -o $(M20_MT).o $(M20_MT).c
+
+$(M20_LP).o: $(M20_LP).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) -o $(M20_LP).o $(M20_LP).c
+
+$(M20_ENG).o: $(M20_ENG).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) -o $(M20_ENG).o $(M20_ENG).c
+
+
+# SIMH
+$(SCP).o: $(SCP).c 
+	$(CC) -c $(cc_flags) -o $(SCP).o $(SCP).c
+
+$(SIM_CONSOLE).o: $(SIM_CONSOLE).c 
+	$(CC) -c $(cc_flags) -o $(SIM_CONSOLE).o $(SIM_CONSOLE).c
+
+$(SIM_TAPE).o: $(SIM_TAPE).c 
+	$(CC) -c $(cc_flags) -o $(SIM_TAPE).o $(SIM_TAPE).c
+
+$(SIM_TIMER).o: $(SIM_TIMER).c 
+	$(CC) -c $(cc_flags) -o $(SIM_TIMER).o $(SIM_TIMER).c
+
+$(SIM_TMXR).o: $(SIM_TMXR).c 
+	$(CC) -c $(cc_flags) -o $(SIM_TMXR).o $(SIM_TMXR).c
+
+$(SIM_SOCK).o: $(SIM_SOCK).c 
+	$(CC) -c $(cc_flags) -o $(SIM_SOCK).o $(SIM_SOCK).c
+
+$(SIM_SERIAL).o: $(SIM_SERIAL).c 
+	$(CC) -c $(cc_flags) -o $(SIM_SERIAL).o $(SIM_SERIAL).c
+
+$(SIM_DISK).o: $(SIM_DISK).c 
+	$(CC) -c $(cc_flags) -o $(SIM_DISK).o $(SIM_DISK).c
+
+$(SIM_FIO).o: $(SIM_FIO).c 
+	$(CC) -c $(cc_flags) -o $(SIM_FIO).o $(SIM_FIO).c
+
+$(SIM_ETHER).o: $(SIM_ETHER).c 
+	$(CC) -c $(cc_flags) -o $(SIM_ETHER).o $(SIM_ETHER).c
+
+$(SIM_IMD).o: $(SIM_IMD).c 
+	$(CC) -c $(cc_flags) -o $(SIM_IMD).o $(SIM_IMD).c
+
+$(SIM_VIDEO).o: $(SIM_VIDEO).c 
+	$(CC) -c $(cc_flags) -o $(SIM_VIDEO).o $(SIM_VIDEO).c
+
+#$(SIM_BUILDROMS).o: $(SIM_BUILDROMS).c 
+#    $(CC) -c $(cc_flags) -Fo$(SIM_BUILDROMS).o $(SIM_BUILDROMS).c
+
+# Emulator (m-20 english message)
+$(M20): $(M20_OBJS) $(SIMH_OBJS)
+	$(LINK) $(link_flags) $(console_flags) -o $(M20) $(M20_OBJS) $(SIMH_OBJS) $(std_libs)
+
+
+# M-20
+$(M20ru_CPU).o: $(M20_CPU).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) $(rus_lang) -o $(M20ru_CPU).o $(M20_CPU).c
+
+$(M20ru_SYS).o: $(M20_SYS).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) $(rus_lang) -o $(M20ru_SYS).o $(M20_SYS).c
+
+$(M20ru_CD).o: $(M20_CD).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) $(rus_lang) -o $(M20ru_CD).o $(M20_CD).c
+
+$(M20ru_DRM).o: $(M20_DRM).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) $(rus_lang) -o $(M20ru_DRM).o $(M20_DRM).c
+
+$(M20ru_MT).o: $(M20_MT).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) $(rus_lang) -o $(M20ru_MT).o $(M20_MT).c
+
+$(M20ru_LP).o: $(M20_LP).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) $(rus_lang) -o $(M20ru_LP).o $(M20_LP).c
+
+$(M20_RUS).o: $(M20_RUS).c  $(INCLUDES)
+	$(CC) -c $(cc_flags) $(rus_lang) -o $(M20_RUS).o $(M20_RUS).c
+
+# Emulator (m-20 russian message)
+$(M20ru): $(M20ru_OBJS) $(SIMH_OBJS)
+	$(LINK) $(link_flags) $(console_flags) -o $(M20ru) $(M20ru_OBJS) $(SIMH_OBJS) $(std_libs)
+
+
+# Targets (commands)
+
+clean:
+	$(RM) $(M20_OBJS)
+	$(RM) $(M20ru_OBJS)
+	$(RM) $(SIMH_OBJS)
+	$(RM) $(M20)
+	$(RM) $(M20ru)

@@ -1,0 +1,23 @@
+
+Symbolic assembly coding system for M-20, version 1.0.0
+Copyright (C) 2015 Dmitry Stefankov. All rights reserved.
+Usage: autocode_m20 [-hvapc] [-e enctype] [-i s20-file] [-o m20-file][-l l20-file]
+       -h   this help
+       -v   verbose output
+       -a   output address codes
+       -p   debugging messages for parsing phases
+       -c   disable setlocale() (Win32)
+       -e   encoding type (default=0 (autodetection)
+       -i   input file (M-20 symbolic coding file, assembly file)
+       -o   output file (M-20 text object file, M-20 emulator format)
+       -l   listing file (M-20 object code listing file, w/sym_tables)
+Default parameters:
+   encoding_types: 0=auto,1=ascii-7,2=cp866,3=cp1251,4=koi8r,5=utf8
+   table file for encoding type 1: autocode_m20_eng.tab
+   table file for encoding type 2: autocode_m20_dos_cp866.tab
+   table file for encoding type 3: autocode_m20_win_cp1251.tab
+   table file for encoding type 4: autocode_m20_unix_koi8r.tab
+   table file for encoding type 5: autocode_m20_rus_utf8.tab
+Sample command line:
+   ./autocode_m20 -v -i test.s20 -o test.m20
+

@@ -1,0 +1,41 @@
+; Пример сложения 2+2. Стефанков Д.В.
+;
+! del primes1.txt
+! del primes1.lst
+;
+set console debug=primes1.txt
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+;set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+;set mt   debug
+de DPTYPE 2
+set lpt OCTHELPFMT
+att lpt  primes1.lst
+;
+load primes1.m20
+;
+ex 100-137
+echo
+ex -m 100-137
+echo
+ex 20-25
+echo
+ex 30-31
+echo
+;
+echo Start
+run
+;
+show queue
+show time
+;show throttle
+ex 1000-1143
+echo
+;
+quit

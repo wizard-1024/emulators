@@ -1,0 +1,58 @@
+; Программа вычисления функции z=f(x,y)=y*e**x+x**y с использованием ИС-2 и СПП
+; [1963 Ляшенко] стр. 196-198
+; (использует готовые образы МБ из is2_build)
+; (2015 Стефанков)
+;
+! del sample_0045_debug.txt
+! del sample_0045.lst
+! del sample_0045.cdp
+;
+set console debug=sample_0045_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DISABLE_IS2_TRACE 1
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt   sample_0045.lst
+;
+set cdr extfmt
+attach cdp sample_0045.cdp
+;
+att drum0 sample_0045.drum0
+att drum1 sample_0045.drum1
+att drum2 sample_0045.drum2
+;
+att -r cdr sample_0045.cdr
+;
+;;;load sample_0045.m20
+;
+echo Boot
+boot cdr
+;
+;echo Run
+;run
+show queue
+show time
+;show throttle
+ex 4001-4006
+echo
+ex 1001-1006
+echo
+ex 20-45
+echo
+ex -m 20-45
+echo
+quit

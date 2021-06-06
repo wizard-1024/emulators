@@ -1,0 +1,93 @@
+; А.В.Головина,Г.И.Баклушин и др.
+; "Типовая программа на ЭВМ М-20 для статистического анализа экономической информации"
+; 1968, Свердловск, НИИ экономики и организации производства
+; (использует готовые образы МЛ,МБ из is2_build_mt)
+; (2015 Стефанков)
+;
+! del sample_0107_debug.txt
+! del sample_0107.lst
+! del sample_0107.cdp
+! del sample_0107.drum0
+! del sample_0107.drum1
+! del sample_0107.mt0
+! del sample_0107.mt1
+! del sample_0107.mt2
+;
+set console debug=sample_0107_debug.txt
+;set console debug=console
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;de ENABLE_OPCODE_040_HACK 1
+;
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt sample_0107.lst
+;
+set cdr extfmt
+attach cdp sample_0107.cdp
+;
+de DRUM_0_ACCESS_MODE 3
+;
+att drum0 sample_0107.drum0
+att drum1 sample_0107.drum1
+att drum2 sample_0107.drum2
+;
+;
+de TAPE_3_ACCESS_MODE 1
+;
+att mt0 sample_0107.mt0
+att mt1 sample_0107.mt1
+att mt2 sample_0107.mt2
+att mt3 sample_0107.mt3
+;
+att -r cdr sample_0107.cdr
+;
+de RPU1 0100000100010377
+ex RPU1
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+;echo Boot
+;boot cdr
+;
+load sample_0107.m20
+;
+ex 1-1077
+echo
+ex -m 1-744
+echo
+ex -m 1023-1077
+;
+;quit
+;
+echo Run
+run
+;
+show queue
+show time
+;show throttle
+ex 1-1077
+echo
+ex -m 1-744
+echo
+ex -m 1023-1077
+;g
+quit

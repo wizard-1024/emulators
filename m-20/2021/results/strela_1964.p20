@@ -1,0 +1,2946 @@
+encoding type: 3
+Processing filename: autocode_m20_eng.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.NAME'
+PS_OPS: idx='02', name='.TITLE'
+PS_OPS: idx='03', name='.START'
+PS_OPS: idx='04', name='.FINISH'
+PS_OPS: idx='05', name='.ADDRESS'
+PS_OPS: idx='06', name='.ABS'
+PS_OPS: idx='07', name='.MEM'
+PS_OPS: idx='08', name='.AUTHOR'
+PS_OPS: idx='09', name='.LIST'
+PS_OPS: idx='10', name='.NOLIST'
+File parsed and accepted.
+Processing filename: autocode_m20_dos_cp866.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.ИМЯ'
+PS_OPS: idx='02', name='.НАЗВАНИЕ'
+PS_OPS: idx='03', name='.СТАРТ'
+PS_OPS: idx='04', name='.ФИНИШ'
+PS_OPS: idx='05', name='.АДРЕС'
+PS_OPS: idx='06', name='.АБС'
+PS_OPS: idx='07', name='.ПАМ'
+PS_OPS: idx='08', name='.АВТОР'
+PS_OPS: idx='09', name='.ПЕЧАТЬ'
+PS_OPS: idx='10', name='.НЕПЕЧАТЬ'
+File parsed and accepted.
+Processing filename: autocode_m20_win_cp1251.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.»ћя'
+PS_OPS: idx='02', name='.Ќј«¬јЌ»≈'
+PS_OPS: idx='03', name='.—“ј–“'
+PS_OPS: idx='04', name='.‘»Ќ»Ў'
+PS_OPS: idx='05', name='.јƒ–≈—'
+PS_OPS: idx='06', name='.јЅ—'
+PS_OPS: idx='07', name='.ѕјћ'
+PS_OPS: idx='08', name='.ј¬“ќ–'
+PS_OPS: idx='09', name='.ѕ≈„ј“№'
+PS_OPS: idx='10', name='.Ќ≈ѕ≈„ј“№'
+File parsed and accepted.
+Processing filename: autocode_m20_unix_koi8r.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.йнс'
+PS_OPS: idx='02', name='.объчбойе'
+PS_OPS: idx='03', name='.уфбтф'
+PS_OPS: idx='04', name='.жйойы'
+PS_OPS: idx='05', name='.бдтеу'
+PS_OPS: idx='06', name='.бву'
+PS_OPS: idx='07', name='.рбн'
+PS_OPS: idx='08', name='.бчфпт'
+PS_OPS: idx='09', name='.реюбфш'
+PS_OPS: idx='10', name='.оереюбфш'
+File parsed and accepted.
+Processing filename: autocode_m20_rus_utf8.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.–Ш–Ь–ѓ'
+PS_OPS: idx='02', name='.–Э–Р–Ч–Т–Р–Э–Ш–Х'
+PS_OPS: idx='03', name='.–°–Ґ–Р–†–Ґ'
+PS_OPS: idx='04', name='.–§–Ш–Э–Ш–®'
+PS_OPS: idx='05', name='.–Р–Ф–†–Х–°'
+PS_OPS: idx='06', name='.–Р–С–°'
+PS_OPS: idx='07', name='.–Я–Р–Ь'
+PS_OPS: idx='08', name='.–Р–Т–Ґ–Ю–†'
+PS_OPS: idx='09', name='.–Я–Х–І–Р–Ґ–ђ'
+PS_OPS: idx='10', name='.–Э–Х–Я–Х–І–Р–Ґ–ђ'
+File parsed and accepted.
+Parsing filename: strela_1964.a20
+Read lines: 414
+orig_text: *
+orig_text: *
+orig_text: * «агрузка »—-2 и расчет фунции Ћапласа
+orig_text: * (использует готовые образы ћЅ из is2_build)
+orig_text: * »сточник: сборник научных трудов N50, 1964, ћќ ———–
+orig_text: * Language: M-20 autocode 
+orig_text: * encoding: russian, cp-1251
+orig_text: *
+orig_text: * Copyright (c) 2015 Stefankov
+orig_text: *
+orig_text: 
+orig_text: 	.»ћя  strela_1964.a20
+orig_text: 	.Ќј«¬јЌ»≈  –асчет фунции Ћапласа дл€ Ё÷¬ћ M-20
+orig_text: 	.ј¬“ќ–  —тефанков ƒмитрий
+orig_text: *
+orig_text: *
+orig_text: »—2_Ќј„јЋќ 		.јЅ—	7500
+orig_text: »—2_ ќЌ≈÷	  	.јЅ—	7767
+orig_text: »—2_—ќ’–                .јЅ—    7610
+orig_text: »—2_ћЅ3_јƒ–_«√– 	.јЅ—	7000
+orig_text: ћЅ3_„“≈Ќ»≈      	.јЅ—	0013
+orig_text: ƒ≈—я“_ѕ≈„ј“№            .јЅ—    2100
+orig_text: —„≈“„»                  .јЅ—    017
+orig_text: —„≈“„» 1                .јЅ—    01
+orig_text: *
+orig_text: *
+orig_text: 	.—“ј–“  100
+orig_text: ; ƒанные
+orig_text: ј–√:
+orig_text: 0 72 5075 3412 1727
+orig_text: 0 74 6314 6314 6315
+orig_text: 0 75 6314 6314 6315
+orig_text: 0 77 4631 4631 4632
+orig_text: 1 00 7146 3146 3146
+orig_text: 1 01 4314 6314 6315
+orig_text: 1 01 6000 0000 0000
+orig_text: 1 02 4000 0000 0000
+orig_text: 1 02 6000 0000 0000
+orig_text: 1 02 7000 0000 0000
+orig_text: 1 03 4000 0000 0000
+orig_text: 1 03 4400 0000 0000
+orig_text: 1 03 5000 0000 0000
+orig_text: 1 03 6000 0000 0000
+orig_text: 1 03 7000 0000 0000
+orig_text: ;      =1E-2 ;0.01
+orig_text: ;      =5E-2 ;0.05
+orig_text: ;      =1E-1 ;0.10
+orig_text: ;      =3E-1 ;0.30
+orig_text: ;      =9E-1 ;0.90
+orig_text: ;      =1.10
+orig_text: ;      =1.50
+orig_text: ;      =2.00
+orig_text: ;      =3.00
+orig_text: ;      =3.50
+orig_text: ;      =4.00
+orig_text: ;      =4.50
+orig_text: ;      =5.00
+orig_text: ;      =6.00
+orig_text: ;      =7.00
+orig_text: *
+orig_text: *
+orig_text: 	.јƒ–≈—  200
+orig_text: “јЅЋ:
+orig_text: 0 71 5404 5266 0153     
+orig_text: 0 73 6705 6543 4206
+orig_text: 0 74 6703 6756 3602
+orig_text: 0 76 5103 1312 2572
+orig_text: 0 77 7231 0154 6243
+orig_text: 1 00 4253 4245 6346
+orig_text: 1 00 5403 3145 0556
+orig_text: 1 00 6451 4730 4074
+orig_text: 1 00 7517 6244 1257
+orig_text: 1 00 7665 2237 4510
+orig_text: 1 00 7743 3217 0204
+orig_text: 1 00 7766 1266 5350
+orig_text: 1 00 7774 7454 7626
+orig_text: 1 00 7777 6227 4533
+orig_text: 1 00 7777 7715 5262
+orig_text: ;      =5.38E-3    ;0,0053800
+orig_text: ;      =2.69E-2    ;0.0269000
+orig_text: ;      =5.377E-2   ;0.0537700
+orig_text: ;      =1.6035E-1  ;0.1603500
+orig_text: ;      =4.5618E-1  ;0.4561800
+orig_text: ;      =5.4188E-1  ;0.5418800
+orig_text: ;      =6.8833E-1  ;0.6883300
+orig_text: ;      =8.2266E-1  ;0.8226600
+orig_text: ;      =9.5698E-1  ;0.9569800
+orig_text: ;      =9.8176E-1  ;0.9817600
+orig_text: ;      =9.9302E-1  ;0.9930200
+orig_text: ;      =9.976E-1   ;0.9976000
+orig_text: ;      =9.99255E-1 ;0.9992550
+orig_text: ;      =9.99948E-1 ;0.9999480
+orig_text: ;      =9.99997E-1 ;0.9999970
+orig_text: *
+orig_text: *
+orig_text:        .јƒ–≈—  300
+orig_text: F1_ARG_X: 1 00 4234 2332 4400   ;=0.53816
+orig_text: F1_C1:   =1E+0
+orig_text: F1_D:    2 00 0000 0000 0000
+orig_text: F1_T1:   =0
+orig_text: F1_T2:   =0
+orig_text: F1_T3:   =0
+orig_text: F1_T4:   =0
+orig_text: F1_T5:   =0
+orig_text: F1_T6:   =0
+orig_text: F1_T7:   =0
+orig_text: F1_T8:   =0
+orig_text: F1_RES:  =0
+orig_text: *
+orig_text: *
+orig_text:        .јƒ–≈—  400
+orig_text: F3_D:    2 00 0000 0000 0000
+orig_text: F3_A1:   3 06 4353 4532 2102   ; =-35.6810084
+orig_text: F3_A2:   1 04 5357 6476 1502   ; =10.9368269
+orig_text: F3_A3:   3 01 7035 6440 6576   ; =-1.7645608
+orig_text: F3_A4:   0 73 6371 6137 3221   ; =0.025343119
+orig_text: F3_A5:   0 72 7106 1034 2303   ; =0.013939407
+orig_text: F3_B0:   3 07 4111 5116 2535   ; =-66.3013789
+orig_text: F3_B1:   1 05 5051 3315 7446   ; =20.323635
+orig_text: F3_B2:   3 04 4117 4140 3225   ; =-8.31063882
+orig_text: F3_B3:   1 01 6310 1067 3724   ; =1.5977239
+orig_text: F3_B4:   2 77 4273 7345 4724   ; =-0.272940803
+orig_text: F3_B5:   0 73 6242 4224 7300   ; =0.024677554
+orig_text: F3_MOD_X: =0
+orig_text: F3_RES:  =0
+orig_text: F3_C1:   =1E+0
+orig_text: F3_X1:   =0
+orig_text: F3_X2:   =0
+orig_text: F3_X3:   =0
+orig_text: F3_X4:   =0
+orig_text: F3_X5:   =0
+orig_text: F3_A1X1: =0
+orig_text: F3_A2X2: =0
+orig_text: F3_A3X3: =0
+orig_text: F3_A4X4: =0
+orig_text: F3_A5X5: =0
+orig_text: F3_B1X1: =0
+orig_text: F3_B2X2: =0
+orig_text: F3_B3X3: =0
+orig_text: F3_B4X4: =0
+orig_text: F3_B5X5: =0
+orig_text: F3_SUM_A: =0
+orig_text: F3_SUM_B: =0
+orig_text: F3_T1:   =0
+orig_text: F3_T2:   =0
+orig_text: F3_T3:   =0
+orig_text: *
+orig_text: *
+orig_text:        .јƒ–≈—  500
+orig_text: F2_MOD: 2 00 0000 0000 0000
+orig_text: F2_C1:   =1E+0
+orig_text: F2_A:  1 00 4137 3375 1040  ; =0.5233
+orig_text: F2_B:  2 75 5605 0753 4122  ; =-0.09
+orig_text: F2_C:  1 00 4671 4307 7050  ; =0.6078
+orig_text: F2_D:  2 73 4536 4741 5411  ; =-0.0183
+orig_text: F2_E:  2 75 5634 0353 7340  ; =-0.0907
+orig_text: F2_F:  1 00 4544 2641 6254  ; =0.587
+orig_text: F2_Q:  0 72 5503 4530 0406  ; =0.011
+orig_text: F2_H:  0 74 5442 6416 2540  ; =0.0435
+orig_text: F2_S:  1 00 6470 7363 2327  ; =0.8264
+orig_text: F2_T:  0 73 4605 7406 7551  ; =0.0186
+orig_text: F2_W:  1 00 7262 4536 4742  ; =0.9186
+orig_text: F2_MOD_X: =0
+orig_text: F2_RES:   =0
+orig_text: F2_T1:   =0
+orig_text: F2_T2:   =0
+orig_text: F2_T3:   =0
+orig_text: F2_X2:   =0
+orig_text: F2_SUM:  =0
+orig_text: *
+orig_text: *
+orig_text:        .јƒ–≈—  600
+orig_text: –јЅ_я„:
+orig_text: *
+orig_text: *
+orig_text: *
+orig_text: 	.јƒ–≈—  1000
+orig_text: @Ќј„јЋќ:
+orig_text: ; «агружаем »—-2
+orig_text: 	ввод_пред_050    ћЅ3_„“≈Ќ»≈, »—2_ћЅ3_јƒ–_«√–, »—2_ ќЌ≈÷
+orig_text: 	ввод_исп_070     »—2_Ќј„јЋќ
+orig_text: 
+orig_text: ;
+orig_text: ; печать аргумента х
+orig_text: ;
+orig_text: 	изм_ра_по_адр    ,,    		; очистка –ј
+orig_text: @÷» Ћ_1:
+orig_text:         пересылка	 (ј–√), 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_1, (1)
+orig_text: 
+orig_text: 
+orig_text: ; раздел€юща€ печать
+orig_text:         пересылка	 0, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: 
+orig_text: 
+orig_text: ;
+orig_text: ; печать результата из таблицы
+orig_text: ;
+orig_text: 	изм_ра_по_адр    ,,    		; очистка –ј
+orig_text: @÷» Ћ_2:
+orig_text:         пересылка	 (“јЅЋ), 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_2, (1)
+orig_text: 
+orig_text: 
+orig_text: ; раздел€юща€ печать
+orig_text:         пересылка	 0, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: 
+orig_text: 
+orig_text: ;
+orig_text: ; расчет по формуле (1) => F1
+orig_text: ;
+orig_text: 	изм_ра_по_адр    ,,    		; очистка –ј
+orig_text: @÷» Ћ_3:
+orig_text:         умнож_он         F1_ARG_X, (ј–√), F1_T1   ; y = pow((0.53816*x),2);
+orig_text:         умнож_он         F1_T1, F1_T1, F1_T2
+orig_text:         вычит_мод        0, F1_T2, F1_T3          ; -y
+orig_text: 	безусл_пер_упр_с_возв    *+1, »—2_Ќј„јЋќ+1, »—2_—ќ’–    ; z=exp(-y) вызов —ѕ 3, y=exp(x)
+orig_text: 	лог_слож F1_T3 3, F1_T4	                  ; адрес x, номер —ѕ, адрес y
+orig_text:         вычит_он          F1_C1, F1_T4, F1_T5     ; 1-z
+orig_text:         извл_кв_корн€_о   F1_T5, 0, F1_T6         ; w=sqrt(1-z)
+orig_text:         лог_умнож         F1_D, (ј–√), F1_T7      
+orig_text:         вычит_мод         F1_T6, 0, F1_T8
+orig_text:         сравн             F1_T7, F1_T8, F1_RES    ; res = sign(x)*w
+orig_text: ;;;     умнож_он          F1_T7, F1_T8, F1_RES    ; res = sign(x)*w
+orig_text: ; печать результата по формуле (1) = F1
+orig_text:         пересылка	 F1_RES, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_3, (1)
+orig_text:         ;;;пер_если_ра_мнш_a1  —„≈“„» 1-1, @÷» Ћ_3, (1)
+orig_text: 
+orig_text: 
+orig_text: ; раздел€юща€ печать
+orig_text:         пересылка	 0, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: 
+orig_text: ;
+orig_text: ; расчет по формуле (3) => F3
+orig_text: ;
+orig_text: 	изм_ра_по_адр    ,,    		; очистка –ј
+orig_text: @÷» Ћ_4:
+orig_text:         ;;пересылка	 (ј–√), 0, F3_MOD_X
+orig_text:         ;;;пересылка	 F3_MOD_X, 0, F3_RES
+orig_text:         вычит_мод        (ј–√), 0, F3_MOD_X        ; =|X|
+orig_text:         пересылка	 F3_MOD_X, 0, F3_X1        ; =|X|**1
+orig_text:         умнож_он	 F3_X1, F3_X1, F3_X2       ; =|X|**2
+orig_text:         умнож_он	 F3_X1, F3_X2, F3_X3       ; =|X|**3
+orig_text:         умнож_он	 F3_X2, F3_X2, F3_X4       ; =|X|**4
+orig_text:         умнож_он	 F3_X1, F3_X4, F3_X5       ; =|X|**5
+orig_text:         умнож_он	 F3_X1, F3_A1, F3_A1X1     ; =a1*|x|**1
+orig_text:         умнож_он	 F3_X2, F3_A2, F3_A2X2     ; =a2*|x|**2
+orig_text:         умнож_он	 F3_X3, F3_A3, F3_A3X3     ; =a3*|x|**3
+orig_text:         умнож_он	 F3_X4, F3_A4, F3_A4X4     ; =a4*|x|**4
+orig_text:         умнож_он	 F3_X5, F3_A5, F3_A5X5     ; =a5*|x|**5
+orig_text:         умнож_он	 F3_X1, F3_B1, F3_B1X1     ; =b1*|x|**1
+orig_text:         умнож_он	 F3_X2, F3_B2, F3_B2X2     ; =b2*|x|**2
+orig_text:         умнож_он	 F3_X3, F3_B3, F3_B3X3     ; =b3*|x|**3
+orig_text:         умнож_он	 F3_X4, F3_B4, F3_B4X4     ; =b4*|x|**4
+orig_text:         умнож_он	 F3_X5, F3_B5, F3_B5X5     ; =b5*|x|**5
+orig_text:         пересылка	 0, 0, F3_SUM_A
+orig_text:         слож_он          F3_A1X1, F3_SUM_A, F3_SUM_A
+orig_text:         слож_он          F3_A2X2, F3_SUM_A, F3_SUM_A
+orig_text:         слож_он          F3_A3X3, F3_SUM_A, F3_SUM_A
+orig_text:         слож_он          F3_A4X4, F3_SUM_A, F3_SUM_A
+orig_text:         слож_он          F3_A5X5, F3_SUM_A, F3_SUM_A
+orig_text:         пересылка	 0, 0, F3_SUM_B
+orig_text:         слож_он          F3_B0,   F3_SUM_B, F3_SUM_B
+orig_text:         слож_он          F3_B1X1, F3_SUM_B, F3_SUM_B
+orig_text:         слож_он          F3_B2X2, F3_SUM_B, F3_SUM_B
+orig_text:         слож_он          F3_B3X3, F3_SUM_B, F3_SUM_B
+orig_text:         слож_он          F3_B4X4, F3_SUM_B, F3_SUM_B
+orig_text:         слож_он          F3_B5X5, F3_SUM_B, F3_SUM_B
+orig_text:         делен_о          F3_SUM_A, F3_SUM_B, F3_T1
+orig_text:         лог_умнож        F3_D, (ј–√), F3_T2      
+orig_text:         вычит_мод        F3_T1, 0, F3_T3
+orig_text:         сравн            F3_T2, F3_T3, F3_RES    ; res = sign(x)*w
+orig_text: ; печать результата по формуле (3) = F3
+orig_text:         пересылка	 F3_RES, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  —„≈“„» -2, @÷» Ћ_4, (1)
+orig_text: ; если X >6.08
+orig_text:         пересылка        F3_C1, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: 
+orig_text: ; раздел€юща€ печать
+orig_text:         пересылка	 0, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: 
+orig_text: 
+orig_text: ;
+orig_text: ; расчет по формуле (2) => F2
+orig_text: ;
+orig_text: 	изм_ра_по_адр    ,,    		; очистка –ј
+orig_text: 
+orig_text: ; 0=<X<0.6
+orig_text: @÷» Ћ_5:
+orig_text:         вычит_мод        (ј–√), 0, F2_MOD_X    ; =|X|
+orig_text:         умнож_он         F2_A, F2_MOD_X, F2_T1 ; w=a*|x|    
+orig_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+orig_text:         вычит_мод        F2_T1, 0, F2_T3
+orig_text:         сравн            F2_T2, F2_T3, F2_RES    ; res = sign(x)*w
+orig_text:         пересылка	 F2_RES, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  4-1, @÷» Ћ_5, (1)
+orig_text: 
+orig_text: ; 0.6=<X<1.2
+orig_text: @÷» Ћ_6:
+orig_text:         вычит_мод        (ј–√), 0, F2_MOD_X    ; =|X|
+orig_text:         умнож_он         F2_MOD_X, F2_MOD_X, F2_X2  ; =x**2
+orig_text:         пересылка	 F2_D, 0, F2_SUM
+orig_text:         умнож_он         F2_B, F2_X2, F2_T1       ; =b*x**2
+orig_text:         умнож_он         F2_C, F2_MOD_X, F2_T2    ; =c*x
+orig_text:         слож_он          F2_T1, F2_SUM, F2_SUM
+orig_text:         слож_он          F2_T2, F2_SUM, F2_SUM
+orig_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+orig_text:         вычит_мод        F2_SUM, 0, F2_T3
+orig_text:         сравн            F2_T2, F2_T3, F2_RES    ; res = sign(x)*w
+orig_text:         пересылка	 F2_RES, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  6-1, @÷» Ћ_6, (1)
+orig_text: 
+orig_text: ; 1.2=<X<3
+orig_text: @÷» Ћ_7:
+orig_text:         вычит_мод        (ј–√), 0, F2_MOD_X    ; =|X|
+orig_text:         умнож_он         F2_MOD_X, F2_MOD_X, F2_X2  ; =x**2
+orig_text:         пересылка	 F2_Q, 0, F2_SUM
+orig_text:         умнож_он         F2_E, F2_X2, F2_T1       ; =b*x**2
+orig_text:         умнож_он         F2_F, F2_MOD_X, F2_T2    ; =c*x
+orig_text:         слож_он          F2_T1, F2_SUM, F2_SUM
+orig_text:         слож_он          F2_T2, F2_SUM, F2_SUM
+orig_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+orig_text:         вычит_мод        F2_SUM, 0, F2_T3
+orig_text:         сравн            F2_T2, F2_T3, F2_RES    ; res = sign(x)*w
+orig_text:         пересылка	 F2_RES, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  10-1, @÷» Ћ_7, (1)
+orig_text: 
+orig_text: 
+orig_text: ; 3=<X<3.7
+orig_text: @÷» Ћ_8:
+orig_text:         вычит_мод        (ј–√), 0, F2_MOD_X    ; =|X|
+orig_text:         умнож_он         F2_H, F2_MOD_X, F2_T1 ; w=h*|x|    
+orig_text:         слож_он          F2_T1, F2_S, F2_SUM   ; w=h*|x|+s
+orig_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+orig_text:         вычит_мод        F2_SUM, 0, F2_T3
+orig_text:         сравн            F2_T2, F2_T3, F2_RES    ; res = sign(x)*w
+orig_text:         пересылка	 F2_RES, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  12-1, @÷» Ћ_8, (1)
+orig_text: 
+orig_text: ; 3.7=<X<5
+orig_text: @÷» Ћ_9:
+orig_text:         вычит_мод        (ј–√), 0, F2_MOD_X    ; =|X|
+orig_text:         умнож_он         F2_T, F2_MOD_X, F2_T1 ; w=t*|x|    
+orig_text:         слож_он          F2_T1, F2_W, F2_SUM   ; z=t*|x|+w
+orig_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+orig_text:         вычит_мод        F2_SUM, 0, F2_T3
+orig_text:         сравн            F2_T2, F2_T3, F2_RES    ; res = sign(x)*z
+orig_text:         пересылка	 F2_RES, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: ; продолжить цикл?
+orig_text: 	пер_если_ра_мнш_a1  14-1, @÷» Ћ_9, (1)
+orig_text: 
+orig_text: ; если X >=5
+orig_text:         пересылка        F2_C1, 0, –јЅ_я„
+orig_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text:         ввод_исп_070     –јЅ_я„
+orig_text: 
+orig_text: ;
+orig_text: ; завершение
+orig_text: ;
+orig_text: 	останов_077                              ;  ќ—“јЌќ¬ Ё÷¬ћ
+orig_text:         останов_077  (7777),(7777),(7777)        ; останов после выдачи
+orig_text: *
+orig_text: *
+orig_text: 	.‘»Ќ»Ў 1000
+orig_text: 
+orig_text: * конец программы
+orig_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.»ћя  strela_1964.a20
+clean_text: 	.Ќј«¬јЌ»≈  –асчет фунции Ћапласа дл€ Ё÷¬ћ M-20
+clean_text: 	.ј¬“ќ–  —тефанков ƒмитрий
+clean_text: 
+clean_text: 
+clean_text: »—2_Ќј„јЋќ 		.јЅ—	7500
+clean_text: »—2_ ќЌ≈÷	  	.јЅ—	7767
+clean_text: »—2_—ќ’–                .јЅ—    7610
+clean_text: »—2_ћЅ3_јƒ–_«√– 	.јЅ—	7000
+clean_text: ћЅ3_„“≈Ќ»≈      	.јЅ—	0013
+clean_text: ƒ≈—я“_ѕ≈„ј“№            .јЅ—    2100
+clean_text: —„≈“„»                  .јЅ—    017
+clean_text: —„≈“„» 1                .јЅ—    01
+clean_text: 
+clean_text: 
+clean_text: 	.—“ј–“  100
+clean_text: 
+clean_text: ј–√:
+clean_text: 0 72 5075 3412 1727
+clean_text: 0 74 6314 6314 6315
+clean_text: 0 75 6314 6314 6315
+clean_text: 0 77 4631 4631 4632
+clean_text: 1 00 7146 3146 3146
+clean_text: 1 01 4314 6314 6315
+clean_text: 1 01 6000 0000 0000
+clean_text: 1 02 4000 0000 0000
+clean_text: 1 02 6000 0000 0000
+clean_text: 1 02 7000 0000 0000
+clean_text: 1 03 4000 0000 0000
+clean_text: 1 03 4400 0000 0000
+clean_text: 1 03 5000 0000 0000
+clean_text: 1 03 6000 0000 0000
+clean_text: 1 03 7000 0000 0000
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.јƒ–≈—  200
+clean_text: “јЅЋ:
+clean_text: 0 71 5404 5266 0153     
+clean_text: 0 73 6705 6543 4206
+clean_text: 0 74 6703 6756 3602
+clean_text: 0 76 5103 1312 2572
+clean_text: 0 77 7231 0154 6243
+clean_text: 1 00 4253 4245 6346
+clean_text: 1 00 5403 3145 0556
+clean_text: 1 00 6451 4730 4074
+clean_text: 1 00 7517 6244 1257
+clean_text: 1 00 7665 2237 4510
+clean_text: 1 00 7743 3217 0204
+clean_text: 1 00 7766 1266 5350
+clean_text: 1 00 7774 7454 7626
+clean_text: 1 00 7777 6227 4533
+clean_text: 1 00 7777 7715 5262
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:        .јƒ–≈—  300
+clean_text: F1_ARG_X: 1 00 4234 2332 4400   
+clean_text: F1_C1:   =1E+0
+clean_text: F1_D:    2 00 0000 0000 0000
+clean_text: F1_T1:   =0
+clean_text: F1_T2:   =0
+clean_text: F1_T3:   =0
+clean_text: F1_T4:   =0
+clean_text: F1_T5:   =0
+clean_text: F1_T6:   =0
+clean_text: F1_T7:   =0
+clean_text: F1_T8:   =0
+clean_text: F1_RES:  =0
+clean_text: 
+clean_text: 
+clean_text:        .јƒ–≈—  400
+clean_text: F3_D:    2 00 0000 0000 0000
+clean_text: F3_A1:   3 06 4353 4532 2102   
+clean_text: F3_A2:   1 04 5357 6476 1502   
+clean_text: F3_A3:   3 01 7035 6440 6576   
+clean_text: F3_A4:   0 73 6371 6137 3221   
+clean_text: F3_A5:   0 72 7106 1034 2303   
+clean_text: F3_B0:   3 07 4111 5116 2535   
+clean_text: F3_B1:   1 05 5051 3315 7446   
+clean_text: F3_B2:   3 04 4117 4140 3225   
+clean_text: F3_B3:   1 01 6310 1067 3724   
+clean_text: F3_B4:   2 77 4273 7345 4724   
+clean_text: F3_B5:   0 73 6242 4224 7300   
+clean_text: F3_MOD_X: =0
+clean_text: F3_RES:  =0
+clean_text: F3_C1:   =1E+0
+clean_text: F3_X1:   =0
+clean_text: F3_X2:   =0
+clean_text: F3_X3:   =0
+clean_text: F3_X4:   =0
+clean_text: F3_X5:   =0
+clean_text: F3_A1X1: =0
+clean_text: F3_A2X2: =0
+clean_text: F3_A3X3: =0
+clean_text: F3_A4X4: =0
+clean_text: F3_A5X5: =0
+clean_text: F3_B1X1: =0
+clean_text: F3_B2X2: =0
+clean_text: F3_B3X3: =0
+clean_text: F3_B4X4: =0
+clean_text: F3_B5X5: =0
+clean_text: F3_SUM_A: =0
+clean_text: F3_SUM_B: =0
+clean_text: F3_T1:   =0
+clean_text: F3_T2:   =0
+clean_text: F3_T3:   =0
+clean_text: 
+clean_text: 
+clean_text:        .јƒ–≈—  500
+clean_text: F2_MOD: 2 00 0000 0000 0000
+clean_text: F2_C1:   =1E+0
+clean_text: F2_A:  1 00 4137 3375 1040  
+clean_text: F2_B:  2 75 5605 0753 4122  
+clean_text: F2_C:  1 00 4671 4307 7050  
+clean_text: F2_D:  2 73 4536 4741 5411  
+clean_text: F2_E:  2 75 5634 0353 7340  
+clean_text: F2_F:  1 00 4544 2641 6254  
+clean_text: F2_Q:  0 72 5503 4530 0406  
+clean_text: F2_H:  0 74 5442 6416 2540  
+clean_text: F2_S:  1 00 6470 7363 2327  
+clean_text: F2_T:  0 73 4605 7406 7551  
+clean_text: F2_W:  1 00 7262 4536 4742  
+clean_text: F2_MOD_X: =0
+clean_text: F2_RES:   =0
+clean_text: F2_T1:   =0
+clean_text: F2_T2:   =0
+clean_text: F2_T3:   =0
+clean_text: F2_X2:   =0
+clean_text: F2_SUM:  =0
+clean_text: 
+clean_text: 
+clean_text:        .јƒ–≈—  600
+clean_text: –јЅ_я„:
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.јƒ–≈—  1000
+clean_text: @Ќј„јЋќ:
+clean_text: 
+clean_text: 	ввод_пред_050    ћЅ3_„“≈Ќ»≈, »—2_ћЅ3_јƒ–_«√–, »—2_ ќЌ≈÷
+clean_text: 	ввод_исп_070     »—2_Ќј„јЋќ
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	изм_ра_по_адр    ,,    		
+clean_text: @÷» Ћ_1:
+clean_text:         пересылка	 (ј–√), 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_1, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         пересылка	 0, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	изм_ра_по_адр    ,,    		
+clean_text: @÷» Ћ_2:
+clean_text:         пересылка	 (“јЅЋ), 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_2, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         пересылка	 0, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	изм_ра_по_адр    ,,    		
+clean_text: @÷» Ћ_3:
+clean_text:         умнож_он         F1_ARG_X, (ј–√), F1_T1   
+clean_text:         умнож_он         F1_T1, F1_T1, F1_T2
+clean_text:         вычит_мод        0, F1_T2, F1_T3          
+clean_text: 	безусл_пер_упр_с_возв    *+1, »—2_Ќј„јЋќ+1, »—2_—ќ’–    
+clean_text: 	лог_слож F1_T3 3, F1_T4	                  
+clean_text:         вычит_он          F1_C1, F1_T4, F1_T5     
+clean_text:         извл_кв_корн€_о   F1_T5, 0, F1_T6         
+clean_text:         лог_умнож         F1_D, (ј–√), F1_T7      
+clean_text:         вычит_мод         F1_T6, 0, F1_T8
+clean_text:         сравн             F1_T7, F1_T8, F1_RES    
+clean_text: 
+clean_text: 
+clean_text:         пересылка	 F1_RES, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_3, (1)
+clean_text:         
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         пересылка	 0, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	изм_ра_по_адр    ,,    		
+clean_text: @÷» Ћ_4:
+clean_text:         
+clean_text:         
+clean_text:         вычит_мод        (ј–√), 0, F3_MOD_X        
+clean_text:         пересылка	 F3_MOD_X, 0, F3_X1        
+clean_text:         умнож_он	 F3_X1, F3_X1, F3_X2       
+clean_text:         умнож_он	 F3_X1, F3_X2, F3_X3       
+clean_text:         умнож_он	 F3_X2, F3_X2, F3_X4       
+clean_text:         умнож_он	 F3_X1, F3_X4, F3_X5       
+clean_text:         умнож_он	 F3_X1, F3_A1, F3_A1X1     
+clean_text:         умнож_он	 F3_X2, F3_A2, F3_A2X2     
+clean_text:         умнож_он	 F3_X3, F3_A3, F3_A3X3     
+clean_text:         умнож_он	 F3_X4, F3_A4, F3_A4X4     
+clean_text:         умнож_он	 F3_X5, F3_A5, F3_A5X5     
+clean_text:         умнож_он	 F3_X1, F3_B1, F3_B1X1     
+clean_text:         умнож_он	 F3_X2, F3_B2, F3_B2X2     
+clean_text:         умнож_он	 F3_X3, F3_B3, F3_B3X3     
+clean_text:         умнож_он	 F3_X4, F3_B4, F3_B4X4     
+clean_text:         умнож_он	 F3_X5, F3_B5, F3_B5X5     
+clean_text:         пересылка	 0, 0, F3_SUM_A
+clean_text:         слож_он          F3_A1X1, F3_SUM_A, F3_SUM_A
+clean_text:         слож_он          F3_A2X2, F3_SUM_A, F3_SUM_A
+clean_text:         слож_он          F3_A3X3, F3_SUM_A, F3_SUM_A
+clean_text:         слож_он          F3_A4X4, F3_SUM_A, F3_SUM_A
+clean_text:         слож_он          F3_A5X5, F3_SUM_A, F3_SUM_A
+clean_text:         пересылка	 0, 0, F3_SUM_B
+clean_text:         слож_он          F3_B0,   F3_SUM_B, F3_SUM_B
+clean_text:         слож_он          F3_B1X1, F3_SUM_B, F3_SUM_B
+clean_text:         слож_он          F3_B2X2, F3_SUM_B, F3_SUM_B
+clean_text:         слож_он          F3_B3X3, F3_SUM_B, F3_SUM_B
+clean_text:         слож_он          F3_B4X4, F3_SUM_B, F3_SUM_B
+clean_text:         слож_он          F3_B5X5, F3_SUM_B, F3_SUM_B
+clean_text:         делен_о          F3_SUM_A, F3_SUM_B, F3_T1
+clean_text:         лог_умнож        F3_D, (ј–√), F3_T2      
+clean_text:         вычит_мод        F3_T1, 0, F3_T3
+clean_text:         сравн            F3_T2, F3_T3, F3_RES    
+clean_text: 
+clean_text:         пересылка	 F3_RES, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  —„≈“„» -2, @÷» Ћ_4, (1)
+clean_text: 
+clean_text:         пересылка        F3_C1, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 
+clean_text:         пересылка	 0, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	изм_ра_по_адр    ,,    		
+clean_text: 
+clean_text: 
+clean_text: @÷» Ћ_5:
+clean_text:         вычит_мод        (ј–√), 0, F2_MOD_X    
+clean_text:         умнож_он         F2_A, F2_MOD_X, F2_T1 
+clean_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+clean_text:         вычит_мод        F2_T1, 0, F2_T3
+clean_text:         сравн            F2_T2, F2_T3, F2_RES    
+clean_text:         пересылка	 F2_RES, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  4-1, @÷» Ћ_5, (1)
+clean_text: 
+clean_text: 
+clean_text: @÷» Ћ_6:
+clean_text:         вычит_мод        (ј–√), 0, F2_MOD_X    
+clean_text:         умнож_он         F2_MOD_X, F2_MOD_X, F2_X2  
+clean_text:         пересылка	 F2_D, 0, F2_SUM
+clean_text:         умнож_он         F2_B, F2_X2, F2_T1       
+clean_text:         умнож_он         F2_C, F2_MOD_X, F2_T2    
+clean_text:         слож_он          F2_T1, F2_SUM, F2_SUM
+clean_text:         слож_он          F2_T2, F2_SUM, F2_SUM
+clean_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+clean_text:         вычит_мод        F2_SUM, 0, F2_T3
+clean_text:         сравн            F2_T2, F2_T3, F2_RES    
+clean_text:         пересылка	 F2_RES, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  6-1, @÷» Ћ_6, (1)
+clean_text: 
+clean_text: 
+clean_text: @÷» Ћ_7:
+clean_text:         вычит_мод        (ј–√), 0, F2_MOD_X    
+clean_text:         умнож_он         F2_MOD_X, F2_MOD_X, F2_X2  
+clean_text:         пересылка	 F2_Q, 0, F2_SUM
+clean_text:         умнож_он         F2_E, F2_X2, F2_T1       
+clean_text:         умнож_он         F2_F, F2_MOD_X, F2_T2    
+clean_text:         слож_он          F2_T1, F2_SUM, F2_SUM
+clean_text:         слож_он          F2_T2, F2_SUM, F2_SUM
+clean_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+clean_text:         вычит_мод        F2_SUM, 0, F2_T3
+clean_text:         сравн            F2_T2, F2_T3, F2_RES    
+clean_text:         пересылка	 F2_RES, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  10-1, @÷» Ћ_7, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: @÷» Ћ_8:
+clean_text:         вычит_мод        (ј–√), 0, F2_MOD_X    
+clean_text:         умнож_он         F2_H, F2_MOD_X, F2_T1 
+clean_text:         слож_он          F2_T1, F2_S, F2_SUM   
+clean_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+clean_text:         вычит_мод        F2_SUM, 0, F2_T3
+clean_text:         сравн            F2_T2, F2_T3, F2_RES    
+clean_text:         пересылка	 F2_RES, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  12-1, @÷» Ћ_8, (1)
+clean_text: 
+clean_text: 
+clean_text: @÷» Ћ_9:
+clean_text:         вычит_мод        (ј–√), 0, F2_MOD_X    
+clean_text:         умнож_он         F2_T, F2_MOD_X, F2_T1 
+clean_text:         слож_он          F2_T1, F2_W, F2_SUM   
+clean_text:         лог_умнож        F2_MOD, (ј–√), F2_T2  
+clean_text:         вычит_мод        F2_SUM, 0, F2_T3
+clean_text:         сравн            F2_T2, F2_T3, F2_RES    
+clean_text:         пересылка	 F2_RES, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 	пер_если_ра_мнш_a1  14-1, @÷» Ћ_9, (1)
+clean_text: 
+clean_text: 
+clean_text:         пересылка        F2_C1, 0, –јЅ_я„
+clean_text:         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text:         ввод_исп_070     –јЅ_я„
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	останов_077                              
+clean_text:         останов_077  (7777),(7777),(7777)        
+clean_text: 
+clean_text: 
+clean_text: 	.‘»Ќ»Ў 1000
+clean_text: 
+clean_text: 
+clean_text: 
+Lexical scanning.
+work_buf (len=22): 	.»ћя  strela_1964.a20
+work_buf (len=47): 	.Ќј«¬јЌ»≈  –асчет фунции Ћапласа дл€ Ё÷¬ћ M-20
+work_buf (len=26): 	.ј¬“ќ–  —тефанков ƒмитрий
+work_buf (len=22): »—2_Ќј„јЋќ 		.јЅ—	7500
+work_buf (len=22): »—2_ ќЌ≈÷	  	.јЅ—	7767
+work_buf (len=36): »—2_—ќ’–                .јЅ—    7610
+work_buf (len=26): »—2_ћЅ3_јƒ–_«√– 	.јЅ—	7000
+work_buf (len=26): ћЅ3_„“≈Ќ»≈      	.јЅ—	0013
+work_buf (len=36): ƒ≈—я“_ѕ≈„ј“№            .јЅ—    2100
+work_buf (len=35): —„≈“„»                  .јЅ—    017
+work_buf (len=34): —„≈“„» 1                .јЅ—    01
+work_buf (len=12): 	.—“ј–“  100
+work_buf (len=4): ј–√:
+work_buf (len=19): 0 72 5075 3412 1727
+work_buf (len=19): 0 74 6314 6314 6315
+work_buf (len=19): 0 75 6314 6314 6315
+work_buf (len=19): 0 77 4631 4631 4632
+work_buf (len=19): 1 00 7146 3146 3146
+work_buf (len=19): 1 01 4314 6314 6315
+work_buf (len=19): 1 01 6000 0000 0000
+work_buf (len=19): 1 02 4000 0000 0000
+work_buf (len=19): 1 02 6000 0000 0000
+work_buf (len=19): 1 02 7000 0000 0000
+work_buf (len=19): 1 03 4000 0000 0000
+work_buf (len=19): 1 03 4400 0000 0000
+work_buf (len=19): 1 03 5000 0000 0000
+work_buf (len=19): 1 03 6000 0000 0000
+work_buf (len=19): 1 03 7000 0000 0000
+work_buf (len=12): 	.јƒ–≈—  200
+work_buf (len=5): “јЅЋ:
+work_buf (len=24): 0 71 5404 5266 0153     
+work_buf (len=19): 0 73 6705 6543 4206
+work_buf (len=19): 0 74 6703 6756 3602
+work_buf (len=19): 0 76 5103 1312 2572
+work_buf (len=19): 0 77 7231 0154 6243
+work_buf (len=19): 1 00 4253 4245 6346
+work_buf (len=19): 1 00 5403 3145 0556
+work_buf (len=19): 1 00 6451 4730 4074
+work_buf (len=19): 1 00 7517 6244 1257
+work_buf (len=19): 1 00 7665 2237 4510
+work_buf (len=19): 1 00 7743 3217 0204
+work_buf (len=19): 1 00 7766 1266 5350
+work_buf (len=19): 1 00 7774 7454 7626
+work_buf (len=19): 1 00 7777 6227 4533
+work_buf (len=19): 1 00 7777 7715 5262
+work_buf (len=18):        .јƒ–≈—  300
+work_buf (len=32): F1_ARG_X: 1 00 4234 2332 4400   
+work_buf (len=14): F1_C1:   =1E+0
+work_buf (len=28): F1_D:    2 00 0000 0000 0000
+work_buf (len=11): F1_T1:   =0
+work_buf (len=11): F1_T2:   =0
+work_buf (len=11): F1_T3:   =0
+work_buf (len=11): F1_T4:   =0
+work_buf (len=11): F1_T5:   =0
+work_buf (len=11): F1_T6:   =0
+work_buf (len=11): F1_T7:   =0
+work_buf (len=11): F1_T8:   =0
+work_buf (len=11): F1_RES:  =0
+work_buf (len=18):        .јƒ–≈—  400
+work_buf (len=28): F3_D:    2 00 0000 0000 0000
+work_buf (len=31): F3_A1:   3 06 4353 4532 2102   
+work_buf (len=31): F3_A2:   1 04 5357 6476 1502   
+work_buf (len=31): F3_A3:   3 01 7035 6440 6576   
+work_buf (len=31): F3_A4:   0 73 6371 6137 3221   
+work_buf (len=31): F3_A5:   0 72 7106 1034 2303   
+work_buf (len=31): F3_B0:   3 07 4111 5116 2535   
+work_buf (len=31): F3_B1:   1 05 5051 3315 7446   
+work_buf (len=31): F3_B2:   3 04 4117 4140 3225   
+work_buf (len=31): F3_B3:   1 01 6310 1067 3724   
+work_buf (len=31): F3_B4:   2 77 4273 7345 4724   
+work_buf (len=31): F3_B5:   0 73 6242 4224 7300   
+work_buf (len=12): F3_MOD_X: =0
+work_buf (len=11): F3_RES:  =0
+work_buf (len=14): F3_C1:   =1E+0
+work_buf (len=11): F3_X1:   =0
+work_buf (len=11): F3_X2:   =0
+work_buf (len=11): F3_X3:   =0
+work_buf (len=11): F3_X4:   =0
+work_buf (len=11): F3_X5:   =0
+work_buf (len=11): F3_A1X1: =0
+work_buf (len=11): F3_A2X2: =0
+work_buf (len=11): F3_A3X3: =0
+work_buf (len=11): F3_A4X4: =0
+work_buf (len=11): F3_A5X5: =0
+work_buf (len=11): F3_B1X1: =0
+work_buf (len=11): F3_B2X2: =0
+work_buf (len=11): F3_B3X3: =0
+work_buf (len=11): F3_B4X4: =0
+work_buf (len=11): F3_B5X5: =0
+work_buf (len=12): F3_SUM_A: =0
+work_buf (len=12): F3_SUM_B: =0
+work_buf (len=11): F3_T1:   =0
+work_buf (len=11): F3_T2:   =0
+work_buf (len=11): F3_T3:   =0
+work_buf (len=18):        .јƒ–≈—  500
+work_buf (len=27): F2_MOD: 2 00 0000 0000 0000
+work_buf (len=14): F2_C1:   =1E+0
+work_buf (len=28): F2_A:  1 00 4137 3375 1040  
+work_buf (len=28): F2_B:  2 75 5605 0753 4122  
+work_buf (len=28): F2_C:  1 00 4671 4307 7050  
+work_buf (len=28): F2_D:  2 73 4536 4741 5411  
+work_buf (len=28): F2_E:  2 75 5634 0353 7340  
+work_buf (len=28): F2_F:  1 00 4544 2641 6254  
+work_buf (len=28): F2_Q:  0 72 5503 4530 0406  
+work_buf (len=28): F2_H:  0 74 5442 6416 2540  
+work_buf (len=28): F2_S:  1 00 6470 7363 2327  
+work_buf (len=28): F2_T:  0 73 4605 7406 7551  
+work_buf (len=28): F2_W:  1 00 7262 4536 4742  
+work_buf (len=12): F2_MOD_X: =0
+work_buf (len=12): F2_RES:   =0
+work_buf (len=11): F2_T1:   =0
+work_buf (len=11): F2_T2:   =0
+work_buf (len=11): F2_T3:   =0
+work_buf (len=11): F2_X2:   =0
+work_buf (len=11): F2_SUM:  =0
+work_buf (len=18):        .јƒ–≈—  600
+work_buf (len=7): –јЅ_я„:
+work_buf (len=13): 	.јƒ–≈—  1000
+work_buf (len=8): @Ќј„јЋќ:
+work_buf (len=56): 	ввод_пред_050    ћЅ3_„“≈Ќ»≈, »—2_ћЅ3_јƒ–_«√–, »—2_ ќЌ≈÷
+work_buf (len=28): 	ввод_исп_070     »—2_Ќј„јЋќ
+work_buf (len=26): 	изм_ра_по_адр    ,,    		
+work_buf (len=8): @÷» Ћ_1:
+work_buf (len=35):         пересылка	 (ј–√), 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=44): 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_1, (1)
+work_buf (len=31):         пересылка	 0, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=26): 	изм_ра_по_адр    ,,    		
+work_buf (len=8): @÷» Ћ_2:
+work_buf (len=36):         пересылка	 (“јЅЋ), 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=44): 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_2, (1)
+work_buf (len=31):         пересылка	 0, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=26): 	изм_ра_по_адр    ,,    		
+work_buf (len=8): @÷» Ћ_3:
+work_buf (len=50):         умнож_он         F1_ARG_X, (ј–√), F1_T1   
+work_buf (len=44):         умнож_он         F1_T1, F1_T1, F1_T2
+work_buf (len=50):         вычит_мод        0, F1_T2, F1_T3          
+work_buf (len=57): 	безусл_пер_упр_с_возв    *+1, »—2_Ќј„јЋќ+1, »—2_—ќ’–    
+work_buf (len=43): 	лог_слож F1_T3 3, F1_T4	                  
+work_buf (len=50):         вычит_он          F1_C1, F1_T4, F1_T5     
+work_buf (len=50):         извл_кв_корн€_о   F1_T5, 0, F1_T6         
+work_buf (len=50):         лог_умнож         F1_D, (ј–√), F1_T7      
+work_buf (len=41):         вычит_мод         F1_T6, 0, F1_T8
+work_buf (len=50):         сравн             F1_T7, F1_T8, F1_RES    
+work_buf (len=36):         пересылка	 F1_RES, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=44): 	пер_если_ра_мнш_a1  —„≈“„» -1, @÷» Ћ_3, (1)
+work_buf (len=8):         
+work_buf (len=31):         пересылка	 0, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=26): 	изм_ра_по_адр    ,,    		
+work_buf (len=8): @÷» Ћ_4:
+work_buf (len=8):         
+work_buf (len=8):         
+work_buf (len=51):         вычит_мод        (ј–√), 0, F3_MOD_X        
+work_buf (len=45):         пересылка	 F3_MOD_X, 0, F3_X1        
+work_buf (len=44):         умнож_он	 F3_X1, F3_X1, F3_X2       
+work_buf (len=44):         умнож_он	 F3_X1, F3_X2, F3_X3       
+work_buf (len=44):         умнож_он	 F3_X2, F3_X2, F3_X4       
+work_buf (len=44):         умнож_он	 F3_X1, F3_X4, F3_X5       
+work_buf (len=44):         умнож_он	 F3_X1, F3_A1, F3_A1X1     
+work_buf (len=44):         умнож_он	 F3_X2, F3_A2, F3_A2X2     
+work_buf (len=44):         умнож_он	 F3_X3, F3_A3, F3_A3X3     
+work_buf (len=44):         умнож_он	 F3_X4, F3_A4, F3_A4X4     
+work_buf (len=44):         умнож_он	 F3_X5, F3_A5, F3_A5X5     
+work_buf (len=44):         умнож_он	 F3_X1, F3_B1, F3_B1X1     
+work_buf (len=44):         умнож_он	 F3_X2, F3_B2, F3_B2X2     
+work_buf (len=44):         умнож_он	 F3_X3, F3_B3, F3_B3X3     
+work_buf (len=44):         умнож_он	 F3_X4, F3_B4, F3_B4X4     
+work_buf (len=44):         умнож_он	 F3_X5, F3_B5, F3_B5X5     
+work_buf (len=33):         пересылка	 0, 0, F3_SUM_A
+work_buf (len=52):         слож_он          F3_A1X1, F3_SUM_A, F3_SUM_A
+work_buf (len=52):         слож_он          F3_A2X2, F3_SUM_A, F3_SUM_A
+work_buf (len=52):         слож_он          F3_A3X3, F3_SUM_A, F3_SUM_A
+work_buf (len=52):         слож_он          F3_A4X4, F3_SUM_A, F3_SUM_A
+work_buf (len=52):         слож_он          F3_A5X5, F3_SUM_A, F3_SUM_A
+work_buf (len=33):         пересылка	 0, 0, F3_SUM_B
+work_buf (len=52):         слож_он          F3_B0,   F3_SUM_B, F3_SUM_B
+work_buf (len=52):         слож_он          F3_B1X1, F3_SUM_B, F3_SUM_B
+work_buf (len=52):         слож_он          F3_B2X2, F3_SUM_B, F3_SUM_B
+work_buf (len=52):         слож_он          F3_B3X3, F3_SUM_B, F3_SUM_B
+work_buf (len=52):         слож_он          F3_B4X4, F3_SUM_B, F3_SUM_B
+work_buf (len=52):         слож_он          F3_B5X5, F3_SUM_B, F3_SUM_B
+work_buf (len=50):         делен_о          F3_SUM_A, F3_SUM_B, F3_T1
+work_buf (len=49):         лог_умнож        F3_D, (ј–√), F3_T2      
+work_buf (len=40):         вычит_мод        F3_T1, 0, F3_T3
+work_buf (len=49):         сравн            F3_T2, F3_T3, F3_RES    
+work_buf (len=36):         пересылка	 F3_RES, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=44): 	пер_если_ра_мнш_a1  —„≈“„» -2, @÷» Ћ_4, (1)
+work_buf (len=41):         пересылка        F3_C1, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         пересылка	 0, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=26): 	изм_ра_по_адр    ,,    		
+work_buf (len=8): @÷» Ћ_5:
+work_buf (len=47):         вычит_мод        (ј–√), 0, F2_MOD_X    
+work_buf (len=47):         умнож_он         F2_A, F2_MOD_X, F2_T1 
+work_buf (len=47):         лог_умнож        F2_MOD, (ј–√), F2_T2  
+work_buf (len=40):         вычит_мод        F2_T1, 0, F2_T3
+work_buf (len=49):         сравн            F2_T2, F2_T3, F2_RES    
+work_buf (len=36):         пересылка	 F2_RES, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=38): 	пер_если_ра_мнш_a1  4-1, @÷» Ћ_5, (1)
+work_buf (len=8): @÷» Ћ_6:
+work_buf (len=47):         вычит_мод        (ј–√), 0, F2_MOD_X    
+work_buf (len=52):         умнож_он         F2_MOD_X, F2_MOD_X, F2_X2  
+work_buf (len=34):         пересылка	 F2_D, 0, F2_SUM
+work_buf (len=50):         умнож_он         F2_B, F2_X2, F2_T1       
+work_buf (len=50):         умнож_он         F2_C, F2_MOD_X, F2_T2    
+work_buf (len=46):         слож_он          F2_T1, F2_SUM, F2_SUM
+work_buf (len=46):         слож_он          F2_T2, F2_SUM, F2_SUM
+work_buf (len=47):         лог_умнож        F2_MOD, (ј–√), F2_T2  
+work_buf (len=41):         вычит_мод        F2_SUM, 0, F2_T3
+work_buf (len=49):         сравн            F2_T2, F2_T3, F2_RES    
+work_buf (len=36):         пересылка	 F2_RES, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=38): 	пер_если_ра_мнш_a1  6-1, @÷» Ћ_6, (1)
+work_buf (len=8): @÷» Ћ_7:
+work_buf (len=47):         вычит_мод        (ј–√), 0, F2_MOD_X    
+work_buf (len=52):         умнож_он         F2_MOD_X, F2_MOD_X, F2_X2  
+work_buf (len=34):         пересылка	 F2_Q, 0, F2_SUM
+work_buf (len=50):         умнож_он         F2_E, F2_X2, F2_T1       
+work_buf (len=50):         умнож_он         F2_F, F2_MOD_X, F2_T2    
+work_buf (len=46):         слож_он          F2_T1, F2_SUM, F2_SUM
+work_buf (len=46):         слож_он          F2_T2, F2_SUM, F2_SUM
+work_buf (len=47):         лог_умнож        F2_MOD, (ј–√), F2_T2  
+work_buf (len=41):         вычит_мод        F2_SUM, 0, F2_T3
+work_buf (len=49):         сравн            F2_T2, F2_T3, F2_RES    
+work_buf (len=36):         пересылка	 F2_RES, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=39): 	пер_если_ра_мнш_a1  10-1, @÷» Ћ_7, (1)
+work_buf (len=8): @÷» Ћ_8:
+work_buf (len=47):         вычит_мод        (ј–√), 0, F2_MOD_X    
+work_buf (len=47):         умнож_он         F2_H, F2_MOD_X, F2_T1 
+work_buf (len=47):         слож_он          F2_T1, F2_S, F2_SUM   
+work_buf (len=47):         лог_умнож        F2_MOD, (ј–√), F2_T2  
+work_buf (len=41):         вычит_мод        F2_SUM, 0, F2_T3
+work_buf (len=49):         сравн            F2_T2, F2_T3, F2_RES    
+work_buf (len=36):         пересылка	 F2_RES, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=39): 	пер_если_ра_мнш_a1  12-1, @÷» Ћ_8, (1)
+work_buf (len=8): @÷» Ћ_9:
+work_buf (len=47):         вычит_мод        (ј–√), 0, F2_MOD_X    
+work_buf (len=47):         умнож_он         F2_T, F2_MOD_X, F2_T1 
+work_buf (len=47):         слож_он          F2_T1, F2_W, F2_SUM   
+work_buf (len=47):         лог_умнож        F2_MOD, (ј–√), F2_T2  
+work_buf (len=41):         вычит_мод        F2_SUM, 0, F2_T3
+work_buf (len=49):         сравн            F2_T2, F2_T3, F2_RES    
+work_buf (len=36):         пересылка	 F2_RES, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=39): 	пер_если_ра_мнш_a1  14-1, @÷» Ћ_9, (1)
+work_buf (len=41):         пересылка        F2_C1, 0, –јЅ_я„
+work_buf (len=48):         ввод_пред_050    ƒ≈—я“_ѕ≈„ј“№, 0, –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=31):         ввод_исп_070     –јЅ_я„
+work_buf (len=42): 	останов_077                              
+work_buf (len=49):         останов_077  (7777),(7777),(7777)        
+work_buf (len=12): 	.‘»Ќ»Ў 1000
+lex_words: 1=.»ћя;2=strela_1964.a20;
+lex_words: 1=.Ќј«¬јЌ»≈;2=–асчет;3=фунции;4=Ћапласа;5=дл€;6=Ё÷¬ћ;7=M-20;
+lex_words: 1=.ј¬“ќ–;2=—тефанков;3=ƒмитрий;
+lex_words: 1=»—2_Ќј„јЋќ;2=.јЅ—;3=7500;
+lex_words: 1=»—2_ ќЌ≈÷;2=.јЅ—;3=7767;
+lex_words: 1=»—2_—ќ’–;2=.јЅ—;3=7610;
+lex_words: 1=»—2_ћЅ3_јƒ–_«√–;2=.јЅ—;3=7000;
+lex_words: 1=ћЅ3_„“≈Ќ»≈;2=.јЅ—;3=0013;
+lex_words: 1=ƒ≈—я“_ѕ≈„ј“№;2=.јЅ—;3=2100;
+lex_words: 1=—„≈“„» ;2=.јЅ—;3=017;
+lex_words: 1=—„≈“„» 1;2=.јЅ—;3=01;
+lex_words: 1=.—“ј–“;2=100;
+lex_words: 1=ј–√:;
+lex_words: 1=0;2=72;3=5075;4=3412;5=1727;
+lex_words: 1=0;2=74;3=6314;4=6314;5=6315;
+lex_words: 1=0;2=75;3=6314;4=6314;5=6315;
+lex_words: 1=0;2=77;3=4631;4=4631;5=4632;
+lex_words: 1=1;2=00;3=7146;4=3146;5=3146;
+lex_words: 1=1;2=01;3=4314;4=6314;5=6315;
+lex_words: 1=1;2=01;3=6000;4=0000;5=0000;
+lex_words: 1=1;2=02;3=4000;4=0000;5=0000;
+lex_words: 1=1;2=02;3=6000;4=0000;5=0000;
+lex_words: 1=1;2=02;3=7000;4=0000;5=0000;
+lex_words: 1=1;2=03;3=4000;4=0000;5=0000;
+lex_words: 1=1;2=03;3=4400;4=0000;5=0000;
+lex_words: 1=1;2=03;3=5000;4=0000;5=0000;
+lex_words: 1=1;2=03;3=6000;4=0000;5=0000;
+lex_words: 1=1;2=03;3=7000;4=0000;5=0000;
+lex_words: 1=.јƒ–≈—;2=200;
+lex_words: 1=“јЅЋ:;
+lex_words: 1=0;2=71;3=5404;4=5266;5=0153;
+lex_words: 1=0;2=73;3=6705;4=6543;5=4206;
+lex_words: 1=0;2=74;3=6703;4=6756;5=3602;
+lex_words: 1=0;2=76;3=5103;4=1312;5=2572;
+lex_words: 1=0;2=77;3=7231;4=0154;5=6243;
+lex_words: 1=1;2=00;3=4253;4=4245;5=6346;
+lex_words: 1=1;2=00;3=5403;4=3145;5=0556;
+lex_words: 1=1;2=00;3=6451;4=4730;5=4074;
+lex_words: 1=1;2=00;3=7517;4=6244;5=1257;
+lex_words: 1=1;2=00;3=7665;4=2237;5=4510;
+lex_words: 1=1;2=00;3=7743;4=3217;5=0204;
+lex_words: 1=1;2=00;3=7766;4=1266;5=5350;
+lex_words: 1=1;2=00;3=7774;4=7454;5=7626;
+lex_words: 1=1;2=00;3=7777;4=6227;5=4533;
+lex_words: 1=1;2=00;3=7777;4=7715;5=5262;
+lex_words: 1=.јƒ–≈—;2=300;
+lex_words: 1=F1_ARG_X:;2=1;3=00;4=4234;5=2332;6=4400;
+lex_words: 1=F1_C1:;2==1E+0;
+lex_words: 1=F1_D:;2=2;3=00;4=0000;5=0000;6=0000;
+lex_words: 1=F1_T1:;2==0;
+lex_words: 1=F1_T2:;2==0;
+lex_words: 1=F1_T3:;2==0;
+lex_words: 1=F1_T4:;2==0;
+lex_words: 1=F1_T5:;2==0;
+lex_words: 1=F1_T6:;2==0;
+lex_words: 1=F1_T7:;2==0;
+lex_words: 1=F1_T8:;2==0;
+lex_words: 1=F1_RES:;2==0;
+lex_words: 1=.јƒ–≈—;2=400;
+lex_words: 1=F3_D:;2=2;3=00;4=0000;5=0000;6=0000;
+lex_words: 1=F3_A1:;2=3;3=06;4=4353;5=4532;6=2102;
+lex_words: 1=F3_A2:;2=1;3=04;4=5357;5=6476;6=1502;
+lex_words: 1=F3_A3:;2=3;3=01;4=7035;5=6440;6=6576;
+lex_words: 1=F3_A4:;2=0;3=73;4=6371;5=6137;6=3221;
+lex_words: 1=F3_A5:;2=0;3=72;4=7106;5=1034;6=2303;
+lex_words: 1=F3_B0:;2=3;3=07;4=4111;5=5116;6=2535;
+lex_words: 1=F3_B1:;2=1;3=05;4=5051;5=3315;6=7446;
+lex_words: 1=F3_B2:;2=3;3=04;4=4117;5=4140;6=3225;
+lex_words: 1=F3_B3:;2=1;3=01;4=6310;5=1067;6=3724;
+lex_words: 1=F3_B4:;2=2;3=77;4=4273;5=7345;6=4724;
+lex_words: 1=F3_B5:;2=0;3=73;4=6242;5=4224;6=7300;
+lex_words: 1=F3_MOD_X:;2==0;
+lex_words: 1=F3_RES:;2==0;
+lex_words: 1=F3_C1:;2==1E+0;
+lex_words: 1=F3_X1:;2==0;
+lex_words: 1=F3_X2:;2==0;
+lex_words: 1=F3_X3:;2==0;
+lex_words: 1=F3_X4:;2==0;
+lex_words: 1=F3_X5:;2==0;
+lex_words: 1=F3_A1X1:;2==0;
+lex_words: 1=F3_A2X2:;2==0;
+lex_words: 1=F3_A3X3:;2==0;
+lex_words: 1=F3_A4X4:;2==0;
+lex_words: 1=F3_A5X5:;2==0;
+lex_words: 1=F3_B1X1:;2==0;
+lex_words: 1=F3_B2X2:;2==0;
+lex_words: 1=F3_B3X3:;2==0;
+lex_words: 1=F3_B4X4:;2==0;
+lex_words: 1=F3_B5X5:;2==0;
+lex_words: 1=F3_SUM_A:;2==0;
+lex_words: 1=F3_SUM_B:;2==0;
+lex_words: 1=F3_T1:;2==0;
+lex_words: 1=F3_T2:;2==0;
+lex_words: 1=F3_T3:;2==0;
+lex_words: 1=.јƒ–≈—;2=500;
+lex_words: 1=F2_MOD:;2=2;3=00;4=0000;5=0000;6=0000;
+lex_words: 1=F2_C1:;2==1E+0;
+lex_words: 1=F2_A:;2=1;3=00;4=4137;5=3375;6=1040;
+lex_words: 1=F2_B:;2=2;3=75;4=5605;5=0753;6=4122;
+lex_words: 1=F2_C:;2=1;3=00;4=4671;5=4307;6=7050;
+lex_words: 1=F2_D:;2=2;3=73;4=4536;5=4741;6=5411;
+lex_words: 1=F2_E:;2=2;3=75;4=5634;5=0353;6=7340;
+lex_words: 1=F2_F:;2=1;3=00;4=4544;5=2641;6=6254;
+lex_words: 1=F2_Q:;2=0;3=72;4=5503;5=4530;6=0406;
+lex_words: 1=F2_H:;2=0;3=74;4=5442;5=6416;6=2540;
+lex_words: 1=F2_S:;2=1;3=00;4=6470;5=7363;6=2327;
+lex_words: 1=F2_T:;2=0;3=73;4=4605;5=7406;6=7551;
+lex_words: 1=F2_W:;2=1;3=00;4=7262;5=4536;6=4742;
+lex_words: 1=F2_MOD_X:;2==0;
+lex_words: 1=F2_RES:;2==0;
+lex_words: 1=F2_T1:;2==0;
+lex_words: 1=F2_T2:;2==0;
+lex_words: 1=F2_T3:;2==0;
+lex_words: 1=F2_X2:;2==0;
+lex_words: 1=F2_SUM:;2==0;
+lex_words: 1=.јƒ–≈—;2=600;
+lex_words: 1=–јЅ_я„:;
+lex_words: 1=.јƒ–≈—;2=1000;
+lex_words: 1=@Ќј„јЋќ:;
+lex_words: 1=ввод_пред_050;2=ћЅ3_„“≈Ќ»≈;3=»—2_ћЅ3_јƒ–_«√–;4=»—2_ ќЌ≈÷;
+lex_words: 1=ввод_исп_070;2=»—2_Ќј„јЋќ;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=@÷» Ћ_1:;
+lex_words: 1=пересылка;2=(ј–√);3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=—„≈“„» -1;3=@÷» Ћ_1;4=(1);
+lex_words: 1=пересылка;2=0;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=@÷» Ћ_2:;
+lex_words: 1=пересылка;2=(“јЅЋ);3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=—„≈“„» -1;3=@÷» Ћ_2;4=(1);
+lex_words: 1=пересылка;2=0;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=@÷» Ћ_3:;
+lex_words: 1=умнож_он;2=F1_ARG_X;3=(ј–√);4=F1_T1;
+lex_words: 1=умнож_он;2=F1_T1;3=F1_T1;4=F1_T2;
+lex_words: 1=вычит_мод;2=0;3=F1_T2;4=F1_T3;
+lex_words: 1=безусл_пер_упр_с_возв;2=*+1;3=»—2_Ќј„јЋќ+1;4=»—2_—ќ’–;
+lex_words: 1=лог_слож;2=F1_T3;3=3;4=F1_T4;
+lex_words: 1=вычит_он;2=F1_C1;3=F1_T4;4=F1_T5;
+lex_words: 1=извл_кв_корн€_о;2=F1_T5;3=0;4=F1_T6;
+lex_words: 1=лог_умнож;2=F1_D;3=(ј–√);4=F1_T7;
+lex_words: 1=вычит_мод;2=F1_T6;3=0;4=F1_T8;
+lex_words: 1=сравн;2=F1_T7;3=F1_T8;4=F1_RES;
+lex_words: 1=пересылка;2=F1_RES;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=—„≈“„» -1;3=@÷» Ћ_3;4=(1);
+lex_words: 
+lex_words: 1=пересылка;2=0;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=@÷» Ћ_4:;
+lex_words: 
+lex_words: 
+lex_words: 1=вычит_мод;2=(ј–√);3=0;4=F3_MOD_X;
+lex_words: 1=пересылка;2=F3_MOD_X;3=0;4=F3_X1;
+lex_words: 1=умнож_он;2=F3_X1;3=F3_X1;4=F3_X2;
+lex_words: 1=умнож_он;2=F3_X1;3=F3_X2;4=F3_X3;
+lex_words: 1=умнож_он;2=F3_X2;3=F3_X2;4=F3_X4;
+lex_words: 1=умнож_он;2=F3_X1;3=F3_X4;4=F3_X5;
+lex_words: 1=умнож_он;2=F3_X1;3=F3_A1;4=F3_A1X1;
+lex_words: 1=умнож_он;2=F3_X2;3=F3_A2;4=F3_A2X2;
+lex_words: 1=умнож_он;2=F3_X3;3=F3_A3;4=F3_A3X3;
+lex_words: 1=умнож_он;2=F3_X4;3=F3_A4;4=F3_A4X4;
+lex_words: 1=умнож_он;2=F3_X5;3=F3_A5;4=F3_A5X5;
+lex_words: 1=умнож_он;2=F3_X1;3=F3_B1;4=F3_B1X1;
+lex_words: 1=умнож_он;2=F3_X2;3=F3_B2;4=F3_B2X2;
+lex_words: 1=умнож_он;2=F3_X3;3=F3_B3;4=F3_B3X3;
+lex_words: 1=умнож_он;2=F3_X4;3=F3_B4;4=F3_B4X4;
+lex_words: 1=умнож_он;2=F3_X5;3=F3_B5;4=F3_B5X5;
+lex_words: 1=пересылка;2=0;3=0;4=F3_SUM_A;
+lex_words: 1=слож_он;2=F3_A1X1;3=F3_SUM_A;4=F3_SUM_A;
+lex_words: 1=слож_он;2=F3_A2X2;3=F3_SUM_A;4=F3_SUM_A;
+lex_words: 1=слож_он;2=F3_A3X3;3=F3_SUM_A;4=F3_SUM_A;
+lex_words: 1=слож_он;2=F3_A4X4;3=F3_SUM_A;4=F3_SUM_A;
+lex_words: 1=слож_он;2=F3_A5X5;3=F3_SUM_A;4=F3_SUM_A;
+lex_words: 1=пересылка;2=0;3=0;4=F3_SUM_B;
+lex_words: 1=слож_он;2=F3_B0;3=F3_SUM_B;4=F3_SUM_B;
+lex_words: 1=слож_он;2=F3_B1X1;3=F3_SUM_B;4=F3_SUM_B;
+lex_words: 1=слож_он;2=F3_B2X2;3=F3_SUM_B;4=F3_SUM_B;
+lex_words: 1=слож_он;2=F3_B3X3;3=F3_SUM_B;4=F3_SUM_B;
+lex_words: 1=слож_он;2=F3_B4X4;3=F3_SUM_B;4=F3_SUM_B;
+lex_words: 1=слож_он;2=F3_B5X5;3=F3_SUM_B;4=F3_SUM_B;
+lex_words: 1=делен_о;2=F3_SUM_A;3=F3_SUM_B;4=F3_T1;
+lex_words: 1=лог_умнож;2=F3_D;3=(ј–√);4=F3_T2;
+lex_words: 1=вычит_мод;2=F3_T1;3=0;4=F3_T3;
+lex_words: 1=сравн;2=F3_T2;3=F3_T3;4=F3_RES;
+lex_words: 1=пересылка;2=F3_RES;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=—„≈“„» -2;3=@÷» Ћ_4;4=(1);
+lex_words: 1=пересылка;2=F3_C1;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пересылка;2=0;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=@÷» Ћ_5:;
+lex_words: 1=вычит_мод;2=(ј–√);3=0;4=F2_MOD_X;
+lex_words: 1=умнож_он;2=F2_A;3=F2_MOD_X;4=F2_T1;
+lex_words: 1=лог_умнож;2=F2_MOD;3=(ј–√);4=F2_T2;
+lex_words: 1=вычит_мод;2=F2_T1;3=0;4=F2_T3;
+lex_words: 1=сравн;2=F2_T2;3=F2_T3;4=F2_RES;
+lex_words: 1=пересылка;2=F2_RES;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=4-1;3=@÷» Ћ_5;4=(1);
+lex_words: 1=@÷» Ћ_6:;
+lex_words: 1=вычит_мод;2=(ј–√);3=0;4=F2_MOD_X;
+lex_words: 1=умнож_он;2=F2_MOD_X;3=F2_MOD_X;4=F2_X2;
+lex_words: 1=пересылка;2=F2_D;3=0;4=F2_SUM;
+lex_words: 1=умнож_он;2=F2_B;3=F2_X2;4=F2_T1;
+lex_words: 1=умнож_он;2=F2_C;3=F2_MOD_X;4=F2_T2;
+lex_words: 1=слож_он;2=F2_T1;3=F2_SUM;4=F2_SUM;
+lex_words: 1=слож_он;2=F2_T2;3=F2_SUM;4=F2_SUM;
+lex_words: 1=лог_умнож;2=F2_MOD;3=(ј–√);4=F2_T2;
+lex_words: 1=вычит_мод;2=F2_SUM;3=0;4=F2_T3;
+lex_words: 1=сравн;2=F2_T2;3=F2_T3;4=F2_RES;
+lex_words: 1=пересылка;2=F2_RES;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=6-1;3=@÷» Ћ_6;4=(1);
+lex_words: 1=@÷» Ћ_7:;
+lex_words: 1=вычит_мод;2=(ј–√);3=0;4=F2_MOD_X;
+lex_words: 1=умнож_он;2=F2_MOD_X;3=F2_MOD_X;4=F2_X2;
+lex_words: 1=пересылка;2=F2_Q;3=0;4=F2_SUM;
+lex_words: 1=умнож_он;2=F2_E;3=F2_X2;4=F2_T1;
+lex_words: 1=умнож_он;2=F2_F;3=F2_MOD_X;4=F2_T2;
+lex_words: 1=слож_он;2=F2_T1;3=F2_SUM;4=F2_SUM;
+lex_words: 1=слож_он;2=F2_T2;3=F2_SUM;4=F2_SUM;
+lex_words: 1=лог_умнож;2=F2_MOD;3=(ј–√);4=F2_T2;
+lex_words: 1=вычит_мод;2=F2_SUM;3=0;4=F2_T3;
+lex_words: 1=сравн;2=F2_T2;3=F2_T3;4=F2_RES;
+lex_words: 1=пересылка;2=F2_RES;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=10-1;3=@÷» Ћ_7;4=(1);
+lex_words: 1=@÷» Ћ_8:;
+lex_words: 1=вычит_мод;2=(ј–√);3=0;4=F2_MOD_X;
+lex_words: 1=умнож_он;2=F2_H;3=F2_MOD_X;4=F2_T1;
+lex_words: 1=слож_он;2=F2_T1;3=F2_S;4=F2_SUM;
+lex_words: 1=лог_умнож;2=F2_MOD;3=(ј–√);4=F2_T2;
+lex_words: 1=вычит_мод;2=F2_SUM;3=0;4=F2_T3;
+lex_words: 1=сравн;2=F2_T2;3=F2_T3;4=F2_RES;
+lex_words: 1=пересылка;2=F2_RES;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=12-1;3=@÷» Ћ_8;4=(1);
+lex_words: 1=@÷» Ћ_9:;
+lex_words: 1=вычит_мод;2=(ј–√);3=0;4=F2_MOD_X;
+lex_words: 1=умнож_он;2=F2_T;3=F2_MOD_X;4=F2_T1;
+lex_words: 1=слож_он;2=F2_T1;3=F2_W;4=F2_SUM;
+lex_words: 1=лог_умнож;2=F2_MOD;3=(ј–√);4=F2_T2;
+lex_words: 1=вычит_мод;2=F2_SUM;3=0;4=F2_T3;
+lex_words: 1=сравн;2=F2_T2;3=F2_T3;4=F2_RES;
+lex_words: 1=пересылка;2=F2_RES;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=пер_если_ра_мнш_a1;2=14-1;3=@÷» Ћ_9;4=(1);
+lex_words: 1=пересылка;2=F2_C1;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_пред_050;2=ƒ≈—я“_ѕ≈„ј“№;3=0;4=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=ввод_исп_070;2=–јЅ_я„;
+lex_words: 1=останов_077;
+lex_words: 1=останов_077;2=(7777);3=(7777);4=(7777);
+lex_words: 1=.‘»Ќ»Ў;2=1000;
+Syntax parsing (pass 1).
+cur_loc_counter=0001
+.»ћя directive: 'strela_1964.a20'
+cur_loc_counter=0001
+.Ќј«¬јЌ»≈ directive: '–асчет фунции Ћапласа дл€ Ё÷¬ћ M-20 '
+cur_loc_counter=0001
+.ј¬“ќ– directive: '—тефанков ƒмитрий '
+cur_loc_counter=0001
+abs_name=»—2_Ќј„јЋќ value=000000000007500
+cur_loc_counter=0001
+abs_name=»—2_ ќЌ≈÷ value=000000000007767
+cur_loc_counter=0001
+abs_name=»—2_—ќ’– value=000000000007610
+cur_loc_counter=0001
+abs_name=»—2_ћЅ3_јƒ–_«√– value=000000000007000
+cur_loc_counter=0001
+abs_name=ћЅ3_„“≈Ќ»≈ value=000000000000013
+cur_loc_counter=0001
+abs_name=ƒ≈—я“_ѕ≈„ј“№ value=000000000002100
+cur_loc_counter=0001
+abs_name=—„≈“„»  value=000000000000017
+cur_loc_counter=0001
+abs_name=—„≈“„» 1 value=000000000000001
+cur_loc_counter=0001
+.—“ј–“ directive:  cur_location_counter=0100, program_start_address=0100
+cur_loc_counter=0100
+LABEL: addr=0100, name=ј–√
+cur_loc_counter=0100
+DATA_LINE: line_num=30: 0
+cur_loc_counter=0101
+DATA_LINE: line_num=31: 0
+cur_loc_counter=0102
+DATA_LINE: line_num=32: 0
+cur_loc_counter=0103
+DATA_LINE: line_num=33: 0
+cur_loc_counter=0104
+DATA_LINE: line_num=34: 1
+cur_loc_counter=0105
+DATA_LINE: line_num=35: 1
+cur_loc_counter=0106
+DATA_LINE: line_num=36: 1
+cur_loc_counter=0107
+DATA_LINE: line_num=37: 1
+cur_loc_counter=0110
+DATA_LINE: line_num=38: 1
+cur_loc_counter=0111
+DATA_LINE: line_num=39: 1
+cur_loc_counter=0112
+DATA_LINE: line_num=40: 1
+cur_loc_counter=0113
+DATA_LINE: line_num=41: 1
+cur_loc_counter=0114
+DATA_LINE: line_num=42: 1
+cur_loc_counter=0115
+DATA_LINE: line_num=43: 1
+cur_loc_counter=0116
+DATA_LINE: line_num=44: 1
+cur_loc_counter=0117
+.јƒ–≈— directive:  cur_location_counter=0200
+cur_loc_counter=0200
+LABEL: addr=0200, name=“јЅЋ
+cur_loc_counter=0200
+DATA_LINE: line_num=64: 0
+cur_loc_counter=0201
+DATA_LINE: line_num=65: 0
+cur_loc_counter=0202
+DATA_LINE: line_num=66: 0
+cur_loc_counter=0203
+DATA_LINE: line_num=67: 0
+cur_loc_counter=0204
+DATA_LINE: line_num=68: 0
+cur_loc_counter=0205
+DATA_LINE: line_num=69: 1
+cur_loc_counter=0206
+DATA_LINE: line_num=70: 1
+cur_loc_counter=0207
+DATA_LINE: line_num=71: 1
+cur_loc_counter=0210
+DATA_LINE: line_num=72: 1
+cur_loc_counter=0211
+DATA_LINE: line_num=73: 1
+cur_loc_counter=0212
+DATA_LINE: line_num=74: 1
+cur_loc_counter=0213
+DATA_LINE: line_num=75: 1
+cur_loc_counter=0214
+DATA_LINE: line_num=76: 1
+cur_loc_counter=0215
+DATA_LINE: line_num=77: 1
+cur_loc_counter=0216
+DATA_LINE: line_num=78: 1
+cur_loc_counter=0217
+.јƒ–≈— directive:  cur_location_counter=0300
+cur_loc_counter=0300
+LABEL: addr=0300, name=F1_ARG_X
+DATA_LINE: line_num=97: 1
+cur_loc_counter=0301
+LABEL: addr=0301, name=F1_C1
+DATA_LINE: line_num=98: =1E+0
+cur_loc_counter=0302
+LABEL: addr=0302, name=F1_D
+DATA_LINE: line_num=99: 2
+cur_loc_counter=0303
+LABEL: addr=0303, name=F1_T1
+DATA_LINE: line_num=100: =0
+cur_loc_counter=0304
+LABEL: addr=0304, name=F1_T2
+DATA_LINE: line_num=101: =0
+cur_loc_counter=0305
+LABEL: addr=0305, name=F1_T3
+DATA_LINE: line_num=102: =0
+cur_loc_counter=0306
+LABEL: addr=0306, name=F1_T4
+DATA_LINE: line_num=103: =0
+cur_loc_counter=0307
+LABEL: addr=0307, name=F1_T5
+DATA_LINE: line_num=104: =0
+cur_loc_counter=0310
+LABEL: addr=0310, name=F1_T6
+DATA_LINE: line_num=105: =0
+cur_loc_counter=0311
+LABEL: addr=0311, name=F1_T7
+DATA_LINE: line_num=106: =0
+cur_loc_counter=0312
+LABEL: addr=0312, name=F1_T8
+DATA_LINE: line_num=107: =0
+cur_loc_counter=0313
+LABEL: addr=0313, name=F1_RES
+DATA_LINE: line_num=108: =0
+cur_loc_counter=0314
+.јƒ–≈— directive:  cur_location_counter=0400
+cur_loc_counter=0400
+LABEL: addr=0400, name=F3_D
+DATA_LINE: line_num=112: 2
+cur_loc_counter=0401
+LABEL: addr=0401, name=F3_A1
+DATA_LINE: line_num=113: 3
+cur_loc_counter=0402
+LABEL: addr=0402, name=F3_A2
+DATA_LINE: line_num=114: 1
+cur_loc_counter=0403
+LABEL: addr=0403, name=F3_A3
+DATA_LINE: line_num=115: 3
+cur_loc_counter=0404
+LABEL: addr=0404, name=F3_A4
+DATA_LINE: line_num=116: 0
+cur_loc_counter=0405
+LABEL: addr=0405, name=F3_A5
+DATA_LINE: line_num=117: 0
+cur_loc_counter=0406
+LABEL: addr=0406, name=F3_B0
+DATA_LINE: line_num=118: 3
+cur_loc_counter=0407
+LABEL: addr=0407, name=F3_B1
+DATA_LINE: line_num=119: 1
+cur_loc_counter=0410
+LABEL: addr=0410, name=F3_B2
+DATA_LINE: line_num=120: 3
+cur_loc_counter=0411
+LABEL: addr=0411, name=F3_B3
+DATA_LINE: line_num=121: 1
+cur_loc_counter=0412
+LABEL: addr=0412, name=F3_B4
+DATA_LINE: line_num=122: 2
+cur_loc_counter=0413
+LABEL: addr=0413, name=F3_B5
+DATA_LINE: line_num=123: 0
+cur_loc_counter=0414
+LABEL: addr=0414, name=F3_MOD_X
+DATA_LINE: line_num=124: =0
+cur_loc_counter=0415
+LABEL: addr=0415, name=F3_RES
+DATA_LINE: line_num=125: =0
+cur_loc_counter=0416
+LABEL: addr=0416, name=F3_C1
+DATA_LINE: line_num=126: =1E+0
+cur_loc_counter=0417
+LABEL: addr=0417, name=F3_X1
+DATA_LINE: line_num=127: =0
+cur_loc_counter=0420
+LABEL: addr=0420, name=F3_X2
+DATA_LINE: line_num=128: =0
+cur_loc_counter=0421
+LABEL: addr=0421, name=F3_X3
+DATA_LINE: line_num=129: =0
+cur_loc_counter=0422
+LABEL: addr=0422, name=F3_X4
+DATA_LINE: line_num=130: =0
+cur_loc_counter=0423
+LABEL: addr=0423, name=F3_X5
+DATA_LINE: line_num=131: =0
+cur_loc_counter=0424
+LABEL: addr=0424, name=F3_A1X1
+DATA_LINE: line_num=132: =0
+cur_loc_counter=0425
+LABEL: addr=0425, name=F3_A2X2
+DATA_LINE: line_num=133: =0
+cur_loc_counter=0426
+LABEL: addr=0426, name=F3_A3X3
+DATA_LINE: line_num=134: =0
+cur_loc_counter=0427
+LABEL: addr=0427, name=F3_A4X4
+DATA_LINE: line_num=135: =0
+cur_loc_counter=0430
+LABEL: addr=0430, name=F3_A5X5
+DATA_LINE: line_num=136: =0
+cur_loc_counter=0431
+LABEL: addr=0431, name=F3_B1X1
+DATA_LINE: line_num=137: =0
+cur_loc_counter=0432
+LABEL: addr=0432, name=F3_B2X2
+DATA_LINE: line_num=138: =0
+cur_loc_counter=0433
+LABEL: addr=0433, name=F3_B3X3
+DATA_LINE: line_num=139: =0
+cur_loc_counter=0434
+LABEL: addr=0434, name=F3_B4X4
+DATA_LINE: line_num=140: =0
+cur_loc_counter=0435
+LABEL: addr=0435, name=F3_B5X5
+DATA_LINE: line_num=141: =0
+cur_loc_counter=0436
+LABEL: addr=0436, name=F3_SUM_A
+DATA_LINE: line_num=142: =0
+cur_loc_counter=0437
+LABEL: addr=0437, name=F3_SUM_B
+DATA_LINE: line_num=143: =0
+cur_loc_counter=0440
+LABEL: addr=0440, name=F3_T1
+DATA_LINE: line_num=144: =0
+cur_loc_counter=0441
+LABEL: addr=0441, name=F3_T2
+DATA_LINE: line_num=145: =0
+cur_loc_counter=0442
+LABEL: addr=0442, name=F3_T3
+DATA_LINE: line_num=146: =0
+cur_loc_counter=0443
+.јƒ–≈— directive:  cur_location_counter=0500
+cur_loc_counter=0500
+LABEL: addr=0500, name=F2_MOD
+DATA_LINE: line_num=150: 2
+cur_loc_counter=0501
+LABEL: addr=0501, name=F2_C1
+DATA_LINE: line_num=151: =1E+0
+cur_loc_counter=0502
+LABEL: addr=0502, name=F2_A
+DATA_LINE: line_num=152: 1
+cur_loc_counter=0503
+LABEL: addr=0503, name=F2_B
+DATA_LINE: line_num=153: 2
+cur_loc_counter=0504
+LABEL: addr=0504, name=F2_C
+DATA_LINE: line_num=154: 1
+cur_loc_counter=0505
+LABEL: addr=0505, name=F2_D
+DATA_LINE: line_num=155: 2
+cur_loc_counter=0506
+LABEL: addr=0506, name=F2_E
+DATA_LINE: line_num=156: 2
+cur_loc_counter=0507
+LABEL: addr=0507, name=F2_F
+DATA_LINE: line_num=157: 1
+cur_loc_counter=0510
+LABEL: addr=0510, name=F2_Q
+DATA_LINE: line_num=158: 0
+cur_loc_counter=0511
+LABEL: addr=0511, name=F2_H
+DATA_LINE: line_num=159: 0
+cur_loc_counter=0512
+LABEL: addr=0512, name=F2_S
+DATA_LINE: line_num=160: 1
+cur_loc_counter=0513
+LABEL: addr=0513, name=F2_T
+DATA_LINE: line_num=161: 0
+cur_loc_counter=0514
+LABEL: addr=0514, name=F2_W
+DATA_LINE: line_num=162: 1
+cur_loc_counter=0515
+LABEL: addr=0515, name=F2_MOD_X
+DATA_LINE: line_num=163: =0
+cur_loc_counter=0516
+LABEL: addr=0516, name=F2_RES
+DATA_LINE: line_num=164: =0
+cur_loc_counter=0517
+LABEL: addr=0517, name=F2_T1
+DATA_LINE: line_num=165: =0
+cur_loc_counter=0520
+LABEL: addr=0520, name=F2_T2
+DATA_LINE: line_num=166: =0
+cur_loc_counter=0521
+LABEL: addr=0521, name=F2_T3
+DATA_LINE: line_num=167: =0
+cur_loc_counter=0522
+LABEL: addr=0522, name=F2_X2
+DATA_LINE: line_num=168: =0
+cur_loc_counter=0523
+LABEL: addr=0523, name=F2_SUM
+DATA_LINE: line_num=169: =0
+cur_loc_counter=0524
+.јƒ–≈— directive:  cur_location_counter=0600
+cur_loc_counter=0600
+LABEL: addr=0600, name=–јЅ_я„
+cur_loc_counter=0600
+.јƒ–≈— directive:  cur_location_counter=1000
+cur_loc_counter=1000
+LABEL: addr=1000, name=@Ќј„јЋќ
+cur_loc_counter=1000
+CODE_LINE: line_num=180 op=50 sym='ввод_пред_050'
+cur_loc_counter=1001
+CODE_LINE: line_num=181 op=70 sym='ввод_исп_070'
+cur_loc_counter=1002
+CODE_LINE: line_num=186 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=1003
+LABEL: addr=1003, name=@÷» Ћ_1
+cur_loc_counter=1003
+CODE_LINE: line_num=188 op=00 sym='пересылка'
+cur_loc_counter=1004
+CODE_LINE: line_num=189 op=50 sym='ввод_пред_050'
+cur_loc_counter=1005
+CODE_LINE: line_num=190 op=70 sym='ввод_исп_070'
+cur_loc_counter=1006
+CODE_LINE: line_num=192 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1007
+CODE_LINE: line_num=196 op=00 sym='пересылка'
+cur_loc_counter=1010
+CODE_LINE: line_num=197 op=50 sym='ввод_пред_050'
+cur_loc_counter=1011
+CODE_LINE: line_num=198 op=70 sym='ввод_исп_070'
+cur_loc_counter=1012
+CODE_LINE: line_num=199 op=70 sym='ввод_исп_070'
+cur_loc_counter=1013
+CODE_LINE: line_num=200 op=70 sym='ввод_исп_070'
+cur_loc_counter=1014
+CODE_LINE: line_num=206 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=1015
+LABEL: addr=1015, name=@÷» Ћ_2
+cur_loc_counter=1015
+CODE_LINE: line_num=208 op=00 sym='пересылка'
+cur_loc_counter=1016
+CODE_LINE: line_num=209 op=50 sym='ввод_пред_050'
+cur_loc_counter=1017
+CODE_LINE: line_num=210 op=70 sym='ввод_исп_070'
+cur_loc_counter=1020
+CODE_LINE: line_num=212 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1021
+CODE_LINE: line_num=216 op=00 sym='пересылка'
+cur_loc_counter=1022
+CODE_LINE: line_num=217 op=50 sym='ввод_пред_050'
+cur_loc_counter=1023
+CODE_LINE: line_num=218 op=70 sym='ввод_исп_070'
+cur_loc_counter=1024
+CODE_LINE: line_num=219 op=70 sym='ввод_исп_070'
+cur_loc_counter=1025
+CODE_LINE: line_num=220 op=70 sym='ввод_исп_070'
+cur_loc_counter=1026
+CODE_LINE: line_num=226 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=1027
+LABEL: addr=1027, name=@÷» Ћ_3
+cur_loc_counter=1027
+CODE_LINE: line_num=228 op=05 sym='умнож_он'
+cur_loc_counter=1030
+CODE_LINE: line_num=229 op=05 sym='умнож_он'
+cur_loc_counter=1031
+CODE_LINE: line_num=230 op=63 sym='вычит_мод'
+cur_loc_counter=1032
+CODE_LINE: line_num=231 op=16 sym='безусл_пер_упр_с_возв'
+cur_loc_counter=1033
+CODE_LINE: line_num=232 op=75 sym='лог_слож'
+cur_loc_counter=1034
+CODE_LINE: line_num=233 op=02 sym='вычит_он'
+cur_loc_counter=1035
+CODE_LINE: line_num=234 op=44 sym='извл_кв_корн€_о'
+cur_loc_counter=1036
+CODE_LINE: line_num=235 op=55 sym='лог_умнож'
+cur_loc_counter=1037
+CODE_LINE: line_num=236 op=63 sym='вычит_мод'
+cur_loc_counter=1040
+CODE_LINE: line_num=237 op=15 sym='сравн'
+cur_loc_counter=1041
+CODE_LINE: line_num=240 op=00 sym='пересылка'
+cur_loc_counter=1042
+CODE_LINE: line_num=241 op=50 sym='ввод_пред_050'
+cur_loc_counter=1043
+CODE_LINE: line_num=242 op=70 sym='ввод_исп_070'
+cur_loc_counter=1044
+CODE_LINE: line_num=244 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1045
+cur_loc_counter=1045
+CODE_LINE: line_num=249 op=00 sym='пересылка'
+cur_loc_counter=1046
+CODE_LINE: line_num=250 op=50 sym='ввод_пред_050'
+cur_loc_counter=1047
+CODE_LINE: line_num=251 op=70 sym='ввод_исп_070'
+cur_loc_counter=1050
+CODE_LINE: line_num=252 op=70 sym='ввод_исп_070'
+cur_loc_counter=1051
+CODE_LINE: line_num=253 op=70 sym='ввод_исп_070'
+cur_loc_counter=1052
+CODE_LINE: line_num=258 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=1053
+LABEL: addr=1053, name=@÷» Ћ_4
+cur_loc_counter=1053
+cur_loc_counter=1053
+cur_loc_counter=1053
+CODE_LINE: line_num=262 op=63 sym='вычит_мод'
+cur_loc_counter=1054
+CODE_LINE: line_num=263 op=00 sym='пересылка'
+cur_loc_counter=1055
+CODE_LINE: line_num=264 op=05 sym='умнож_он'
+cur_loc_counter=1056
+CODE_LINE: line_num=265 op=05 sym='умнож_он'
+cur_loc_counter=1057
+CODE_LINE: line_num=266 op=05 sym='умнож_он'
+cur_loc_counter=1060
+CODE_LINE: line_num=267 op=05 sym='умнож_он'
+cur_loc_counter=1061
+CODE_LINE: line_num=268 op=05 sym='умнож_он'
+cur_loc_counter=1062
+CODE_LINE: line_num=269 op=05 sym='умнож_он'
+cur_loc_counter=1063
+CODE_LINE: line_num=270 op=05 sym='умнож_он'
+cur_loc_counter=1064
+CODE_LINE: line_num=271 op=05 sym='умнож_он'
+cur_loc_counter=1065
+CODE_LINE: line_num=272 op=05 sym='умнож_он'
+cur_loc_counter=1066
+CODE_LINE: line_num=273 op=05 sym='умнож_он'
+cur_loc_counter=1067
+CODE_LINE: line_num=274 op=05 sym='умнож_он'
+cur_loc_counter=1070
+CODE_LINE: line_num=275 op=05 sym='умнож_он'
+cur_loc_counter=1071
+CODE_LINE: line_num=276 op=05 sym='умнож_он'
+cur_loc_counter=1072
+CODE_LINE: line_num=277 op=05 sym='умнож_он'
+cur_loc_counter=1073
+CODE_LINE: line_num=278 op=00 sym='пересылка'
+cur_loc_counter=1074
+CODE_LINE: line_num=279 op=01 sym='слож_он'
+cur_loc_counter=1075
+CODE_LINE: line_num=280 op=01 sym='слож_он'
+cur_loc_counter=1076
+CODE_LINE: line_num=281 op=01 sym='слож_он'
+cur_loc_counter=1077
+CODE_LINE: line_num=282 op=01 sym='слож_он'
+cur_loc_counter=1100
+CODE_LINE: line_num=283 op=01 sym='слож_он'
+cur_loc_counter=1101
+CODE_LINE: line_num=284 op=00 sym='пересылка'
+cur_loc_counter=1102
+CODE_LINE: line_num=285 op=01 sym='слож_он'
+cur_loc_counter=1103
+CODE_LINE: line_num=286 op=01 sym='слож_он'
+cur_loc_counter=1104
+CODE_LINE: line_num=287 op=01 sym='слож_он'
+cur_loc_counter=1105
+CODE_LINE: line_num=288 op=01 sym='слож_он'
+cur_loc_counter=1106
+CODE_LINE: line_num=289 op=01 sym='слож_он'
+cur_loc_counter=1107
+CODE_LINE: line_num=290 op=01 sym='слож_он'
+cur_loc_counter=1110
+CODE_LINE: line_num=291 op=04 sym='делен_о'
+cur_loc_counter=1111
+CODE_LINE: line_num=292 op=55 sym='лог_умнож'
+cur_loc_counter=1112
+CODE_LINE: line_num=293 op=63 sym='вычит_мод'
+cur_loc_counter=1113
+CODE_LINE: line_num=294 op=15 sym='сравн'
+cur_loc_counter=1114
+CODE_LINE: line_num=296 op=00 sym='пересылка'
+cur_loc_counter=1115
+CODE_LINE: line_num=297 op=50 sym='ввод_пред_050'
+cur_loc_counter=1116
+CODE_LINE: line_num=298 op=70 sym='ввод_исп_070'
+cur_loc_counter=1117
+CODE_LINE: line_num=300 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1120
+CODE_LINE: line_num=302 op=00 sym='пересылка'
+cur_loc_counter=1121
+CODE_LINE: line_num=303 op=50 sym='ввод_пред_050'
+cur_loc_counter=1122
+CODE_LINE: line_num=304 op=70 sym='ввод_исп_070'
+cur_loc_counter=1123
+CODE_LINE: line_num=307 op=00 sym='пересылка'
+cur_loc_counter=1124
+CODE_LINE: line_num=308 op=50 sym='ввод_пред_050'
+cur_loc_counter=1125
+CODE_LINE: line_num=309 op=70 sym='ввод_исп_070'
+cur_loc_counter=1126
+CODE_LINE: line_num=310 op=70 sym='ввод_исп_070'
+cur_loc_counter=1127
+CODE_LINE: line_num=311 op=70 sym='ввод_исп_070'
+cur_loc_counter=1130
+CODE_LINE: line_num=317 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=1131
+LABEL: addr=1131, name=@÷» Ћ_5
+cur_loc_counter=1131
+CODE_LINE: line_num=321 op=63 sym='вычит_мод'
+cur_loc_counter=1132
+CODE_LINE: line_num=322 op=05 sym='умнож_он'
+cur_loc_counter=1133
+CODE_LINE: line_num=323 op=55 sym='лог_умнож'
+cur_loc_counter=1134
+CODE_LINE: line_num=324 op=63 sym='вычит_мод'
+cur_loc_counter=1135
+CODE_LINE: line_num=325 op=15 sym='сравн'
+cur_loc_counter=1136
+CODE_LINE: line_num=326 op=00 sym='пересылка'
+cur_loc_counter=1137
+CODE_LINE: line_num=327 op=50 sym='ввод_пред_050'
+cur_loc_counter=1140
+CODE_LINE: line_num=328 op=70 sym='ввод_исп_070'
+cur_loc_counter=1141
+CODE_LINE: line_num=330 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1142
+LABEL: addr=1142, name=@÷» Ћ_6
+cur_loc_counter=1142
+CODE_LINE: line_num=334 op=63 sym='вычит_мод'
+cur_loc_counter=1143
+CODE_LINE: line_num=335 op=05 sym='умнож_он'
+cur_loc_counter=1144
+CODE_LINE: line_num=336 op=00 sym='пересылка'
+cur_loc_counter=1145
+CODE_LINE: line_num=337 op=05 sym='умнож_он'
+cur_loc_counter=1146
+CODE_LINE: line_num=338 op=05 sym='умнож_он'
+cur_loc_counter=1147
+CODE_LINE: line_num=339 op=01 sym='слож_он'
+cur_loc_counter=1150
+CODE_LINE: line_num=340 op=01 sym='слож_он'
+cur_loc_counter=1151
+CODE_LINE: line_num=341 op=55 sym='лог_умнож'
+cur_loc_counter=1152
+CODE_LINE: line_num=342 op=63 sym='вычит_мод'
+cur_loc_counter=1153
+CODE_LINE: line_num=343 op=15 sym='сравн'
+cur_loc_counter=1154
+CODE_LINE: line_num=344 op=00 sym='пересылка'
+cur_loc_counter=1155
+CODE_LINE: line_num=345 op=50 sym='ввод_пред_050'
+cur_loc_counter=1156
+CODE_LINE: line_num=346 op=70 sym='ввод_исп_070'
+cur_loc_counter=1157
+CODE_LINE: line_num=348 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1160
+LABEL: addr=1160, name=@÷» Ћ_7
+cur_loc_counter=1160
+CODE_LINE: line_num=352 op=63 sym='вычит_мод'
+cur_loc_counter=1161
+CODE_LINE: line_num=353 op=05 sym='умнож_он'
+cur_loc_counter=1162
+CODE_LINE: line_num=354 op=00 sym='пересылка'
+cur_loc_counter=1163
+CODE_LINE: line_num=355 op=05 sym='умнож_он'
+cur_loc_counter=1164
+CODE_LINE: line_num=356 op=05 sym='умнож_он'
+cur_loc_counter=1165
+CODE_LINE: line_num=357 op=01 sym='слож_он'
+cur_loc_counter=1166
+CODE_LINE: line_num=358 op=01 sym='слож_он'
+cur_loc_counter=1167
+CODE_LINE: line_num=359 op=55 sym='лог_умнож'
+cur_loc_counter=1170
+CODE_LINE: line_num=360 op=63 sym='вычит_мод'
+cur_loc_counter=1171
+CODE_LINE: line_num=361 op=15 sym='сравн'
+cur_loc_counter=1172
+CODE_LINE: line_num=362 op=00 sym='пересылка'
+cur_loc_counter=1173
+CODE_LINE: line_num=363 op=50 sym='ввод_пред_050'
+cur_loc_counter=1174
+CODE_LINE: line_num=364 op=70 sym='ввод_исп_070'
+cur_loc_counter=1175
+CODE_LINE: line_num=366 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1176
+LABEL: addr=1176, name=@÷» Ћ_8
+cur_loc_counter=1176
+CODE_LINE: line_num=371 op=63 sym='вычит_мод'
+cur_loc_counter=1177
+CODE_LINE: line_num=372 op=05 sym='умнож_он'
+cur_loc_counter=1200
+CODE_LINE: line_num=373 op=01 sym='слож_он'
+cur_loc_counter=1201
+CODE_LINE: line_num=374 op=55 sym='лог_умнож'
+cur_loc_counter=1202
+CODE_LINE: line_num=375 op=63 sym='вычит_мод'
+cur_loc_counter=1203
+CODE_LINE: line_num=376 op=15 sym='сравн'
+cur_loc_counter=1204
+CODE_LINE: line_num=377 op=00 sym='пересылка'
+cur_loc_counter=1205
+CODE_LINE: line_num=378 op=50 sym='ввод_пред_050'
+cur_loc_counter=1206
+CODE_LINE: line_num=379 op=70 sym='ввод_исп_070'
+cur_loc_counter=1207
+CODE_LINE: line_num=381 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1210
+LABEL: addr=1210, name=@÷» Ћ_9
+cur_loc_counter=1210
+CODE_LINE: line_num=385 op=63 sym='вычит_мод'
+cur_loc_counter=1211
+CODE_LINE: line_num=386 op=05 sym='умнож_он'
+cur_loc_counter=1212
+CODE_LINE: line_num=387 op=01 sym='слож_он'
+cur_loc_counter=1213
+CODE_LINE: line_num=388 op=55 sym='лог_умнож'
+cur_loc_counter=1214
+CODE_LINE: line_num=389 op=63 sym='вычит_мод'
+cur_loc_counter=1215
+CODE_LINE: line_num=390 op=15 sym='сравн'
+cur_loc_counter=1216
+CODE_LINE: line_num=391 op=00 sym='пересылка'
+cur_loc_counter=1217
+CODE_LINE: line_num=392 op=50 sym='ввод_пред_050'
+cur_loc_counter=1220
+CODE_LINE: line_num=393 op=70 sym='ввод_исп_070'
+cur_loc_counter=1221
+CODE_LINE: line_num=395 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=1222
+CODE_LINE: line_num=398 op=00 sym='пересылка'
+cur_loc_counter=1223
+CODE_LINE: line_num=399 op=50 sym='ввод_пред_050'
+cur_loc_counter=1224
+CODE_LINE: line_num=400 op=70 sym='ввод_исп_070'
+cur_loc_counter=1225
+CODE_LINE: line_num=401 op=70 sym='ввод_исп_070'
+cur_loc_counter=1226
+CODE_LINE: line_num=402 op=70 sym='ввод_исп_070'
+cur_loc_counter=1227
+CODE_LINE: line_num=407 op=77 sym='останов_077'
+cur_loc_counter=1230
+CODE_LINE: line_num=408 op=77 sym='останов_077'
+cur_loc_counter=1231
+.‘»Ќ»Ў directive:  program_start_address=1000
+Print symbolic names table (80 names).
+0: name=ј–√ value=0100
+1: name=“јЅЋ value=0200
+2: name=F1_ARG_X value=0300
+3: name=F1_C1 value=0301
+4: name=F1_D value=0302
+5: name=F1_T1 value=0303
+6: name=F1_T2 value=0304
+7: name=F1_T3 value=0305
+8: name=F1_T4 value=0306
+9: name=F1_T5 value=0307
+10: name=F1_T6 value=0310
+11: name=F1_T7 value=0311
+12: name=F1_T8 value=0312
+13: name=F1_RES value=0313
+14: name=F3_D value=0400
+15: name=F3_A1 value=0401
+16: name=F3_A2 value=0402
+17: name=F3_A3 value=0403
+18: name=F3_A4 value=0404
+19: name=F3_A5 value=0405
+20: name=F3_B0 value=0406
+21: name=F3_B1 value=0407
+22: name=F3_B2 value=0410
+23: name=F3_B3 value=0411
+24: name=F3_B4 value=0412
+25: name=F3_B5 value=0413
+26: name=F3_MOD_X value=0414
+27: name=F3_RES value=0415
+28: name=F3_C1 value=0416
+29: name=F3_X1 value=0417
+30: name=F3_X2 value=0420
+31: name=F3_X3 value=0421
+32: name=F3_X4 value=0422
+33: name=F3_X5 value=0423
+34: name=F3_A1X1 value=0424
+35: name=F3_A2X2 value=0425
+36: name=F3_A3X3 value=0426
+37: name=F3_A4X4 value=0427
+38: name=F3_A5X5 value=0430
+39: name=F3_B1X1 value=0431
+40: name=F3_B2X2 value=0432
+41: name=F3_B3X3 value=0433
+42: name=F3_B4X4 value=0434
+43: name=F3_B5X5 value=0435
+44: name=F3_SUM_A value=0436
+45: name=F3_SUM_B value=0437
+46: name=F3_T1 value=0440
+47: name=F3_T2 value=0441
+48: name=F3_T3 value=0442
+49: name=F2_MOD value=0500
+50: name=F2_C1 value=0501
+51: name=F2_A value=0502
+52: name=F2_B value=0503
+53: name=F2_C value=0504
+54: name=F2_D value=0505
+55: name=F2_E value=0506
+56: name=F2_F value=0507
+57: name=F2_Q value=0510
+58: name=F2_H value=0511
+59: name=F2_S value=0512
+60: name=F2_T value=0513
+61: name=F2_W value=0514
+62: name=F2_MOD_X value=0515
+63: name=F2_RES value=0516
+64: name=F2_T1 value=0517
+65: name=F2_T2 value=0520
+66: name=F2_T3 value=0521
+67: name=F2_X2 value=0522
+68: name=F2_SUM value=0523
+69: name=–јЅ_я„ value=0600
+70: name=@Ќј„јЋќ value=1000
+71: name=@÷» Ћ_1 value=1003
+72: name=@÷» Ћ_2 value=1015
+73: name=@÷» Ћ_3 value=1027
+74: name=@÷» Ћ_4 value=1053
+75: name=@÷» Ћ_5 value=1131
+76: name=@÷» Ћ_6 value=1142
+77: name=@÷» Ћ_7 value=1160
+78: name=@÷» Ћ_8 value=1176
+79: name=@÷» Ћ_9 value=1210
+Print absolute values table (8 names).
+0: name=»—2_Ќј„јЋќ value=000000000007500
+1: name=»—2_ ќЌ≈÷ value=000000000007767
+2: name=»—2_—ќ’– value=000000000007610
+3: name=»—2_ћЅ3_јƒ–_«√– value=000000000007000
+4: name=ћЅ3_„“≈Ќ»≈ value=000000000000013
+5: name=ƒ≈—я“_ѕ≈„ј“№ value=000000000002100
+6: name=—„≈“„»  value=000000000000017
+7: name=—„≈“„» 1 value=000000000000001
+References resolving (pass 2).
+DATA_LINE: line_num=30: addr=0100: 0='0';1='72';2='5075';3='3412';4='1727';
+FIN_OBJ_MCODE: m_code=072507534121727
+DATA_LINE: line_num=31: addr=0101: 0='0';1='74';2='6314';3='6314';4='6315';
+FIN_OBJ_MCODE: m_code=074631463146315
+DATA_LINE: line_num=32: addr=0102: 0='0';1='75';2='6314';3='6314';4='6315';
+FIN_OBJ_MCODE: m_code=075631463146315
+DATA_LINE: line_num=33: addr=0103: 0='0';1='77';2='4631';3='4631';4='4632';
+FIN_OBJ_MCODE: m_code=077463146314632
+DATA_LINE: line_num=34: addr=0104: 0='1';1='00';2='7146';3='3146';4='3146';
+FIN_OBJ_MCODE: m_code=100714631463146
+DATA_LINE: line_num=35: addr=0105: 0='1';1='01';2='4314';3='6314';4='6315';
+FIN_OBJ_MCODE: m_code=101431463146315
+DATA_LINE: line_num=36: addr=0106: 0='1';1='01';2='6000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=101600000000000
+DATA_LINE: line_num=37: addr=0107: 0='1';1='02';2='4000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=38: addr=0110: 0='1';1='02';2='6000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=102600000000000
+DATA_LINE: line_num=39: addr=0111: 0='1';1='02';2='7000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=102700000000000
+DATA_LINE: line_num=40: addr=0112: 0='1';1='03';2='4000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=103400000000000
+DATA_LINE: line_num=41: addr=0113: 0='1';1='03';2='4400';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=103440000000000
+DATA_LINE: line_num=42: addr=0114: 0='1';1='03';2='5000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=103500000000000
+DATA_LINE: line_num=43: addr=0115: 0='1';1='03';2='6000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=103600000000000
+DATA_LINE: line_num=44: addr=0116: 0='1';1='03';2='7000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=103700000000000
+DATA_LINE: line_num=64: addr=0200: 0='0';1='71';2='5404';3='5266';4='0153';
+FIN_OBJ_MCODE: m_code=071540452660153
+DATA_LINE: line_num=65: addr=0201: 0='0';1='73';2='6705';3='6543';4='4206';
+FIN_OBJ_MCODE: m_code=073670565434206
+DATA_LINE: line_num=66: addr=0202: 0='0';1='74';2='6703';3='6756';4='3602';
+FIN_OBJ_MCODE: m_code=074670367563602
+DATA_LINE: line_num=67: addr=0203: 0='0';1='76';2='5103';3='1312';4='2572';
+FIN_OBJ_MCODE: m_code=076510313122572
+DATA_LINE: line_num=68: addr=0204: 0='0';1='77';2='7231';3='0154';4='6243';
+FIN_OBJ_MCODE: m_code=077723101546243
+DATA_LINE: line_num=69: addr=0205: 0='1';1='00';2='4253';3='4245';4='6346';
+FIN_OBJ_MCODE: m_code=100425342456346
+DATA_LINE: line_num=70: addr=0206: 0='1';1='00';2='5403';3='3145';4='0556';
+FIN_OBJ_MCODE: m_code=100540331450556
+DATA_LINE: line_num=71: addr=0207: 0='1';1='00';2='6451';3='4730';4='4074';
+FIN_OBJ_MCODE: m_code=100645147304074
+DATA_LINE: line_num=72: addr=0210: 0='1';1='00';2='7517';3='6244';4='1257';
+FIN_OBJ_MCODE: m_code=100751762441257
+DATA_LINE: line_num=73: addr=0211: 0='1';1='00';2='7665';3='2237';4='4510';
+FIN_OBJ_MCODE: m_code=100766522374510
+DATA_LINE: line_num=74: addr=0212: 0='1';1='00';2='7743';3='3217';4='0204';
+FIN_OBJ_MCODE: m_code=100774332170204
+DATA_LINE: line_num=75: addr=0213: 0='1';1='00';2='7766';3='1266';4='5350';
+FIN_OBJ_MCODE: m_code=100776612665350
+DATA_LINE: line_num=76: addr=0214: 0='1';1='00';2='7774';3='7454';4='7626';
+FIN_OBJ_MCODE: m_code=100777474547626
+DATA_LINE: line_num=77: addr=0215: 0='1';1='00';2='7777';3='6227';4='4533';
+FIN_OBJ_MCODE: m_code=100777762274533
+DATA_LINE: line_num=78: addr=0216: 0='1';1='00';2='7777';3='7715';4='5262';
+FIN_OBJ_MCODE: m_code=100777777155262
+DATA_LINE: line_num=97: addr=0300: 1='1';2='00';3='4234';4='2332';5='4400';
+FIN_OBJ_MCODE: m_code=100423423324400
+DATA_LINE: line_num=98: addr=0301: 1='=1E+0';
+FIN_OBJ_MCODE: m_code=101400000000000
+DATA_LINE: line_num=99: addr=0302: 1='2';2='00';3='0000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=200000000000000
+DATA_LINE: line_num=100: addr=0303: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=101: addr=0304: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=102: addr=0305: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=103: addr=0306: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=104: addr=0307: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=105: addr=0310: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=106: addr=0311: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=107: addr=0312: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=108: addr=0313: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=112: addr=0400: 1='2';2='00';3='0000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=200000000000000
+DATA_LINE: line_num=113: addr=0401: 1='3';2='06';3='4353';4='4532';5='2102';
+FIN_OBJ_MCODE: m_code=306435345322102
+DATA_LINE: line_num=114: addr=0402: 1='1';2='04';3='5357';4='6476';5='1502';
+FIN_OBJ_MCODE: m_code=104535764761502
+DATA_LINE: line_num=115: addr=0403: 1='3';2='01';3='7035';4='6440';5='6576';
+FIN_OBJ_MCODE: m_code=301703564406576
+DATA_LINE: line_num=116: addr=0404: 1='0';2='73';3='6371';4='6137';5='3221';
+FIN_OBJ_MCODE: m_code=073637161373221
+DATA_LINE: line_num=117: addr=0405: 1='0';2='72';3='7106';4='1034';5='2303';
+FIN_OBJ_MCODE: m_code=072710610342303
+DATA_LINE: line_num=118: addr=0406: 1='3';2='07';3='4111';4='5116';5='2535';
+FIN_OBJ_MCODE: m_code=307411151162535
+DATA_LINE: line_num=119: addr=0407: 1='1';2='05';3='5051';4='3315';5='7446';
+FIN_OBJ_MCODE: m_code=105505133157446
+DATA_LINE: line_num=120: addr=0410: 1='3';2='04';3='4117';4='4140';5='3225';
+FIN_OBJ_MCODE: m_code=304411741403225
+DATA_LINE: line_num=121: addr=0411: 1='1';2='01';3='6310';4='1067';5='3724';
+FIN_OBJ_MCODE: m_code=101631010673724
+DATA_LINE: line_num=122: addr=0412: 1='2';2='77';3='4273';4='7345';5='4724';
+FIN_OBJ_MCODE: m_code=277427373454724
+DATA_LINE: line_num=123: addr=0413: 1='0';2='73';3='6242';4='4224';5='7300';
+FIN_OBJ_MCODE: m_code=073624242247300
+DATA_LINE: line_num=124: addr=0414: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=125: addr=0415: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=126: addr=0416: 1='=1E+0';
+FIN_OBJ_MCODE: m_code=101400000000000
+DATA_LINE: line_num=127: addr=0417: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=128: addr=0420: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=129: addr=0421: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=130: addr=0422: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=131: addr=0423: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=132: addr=0424: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=133: addr=0425: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=134: addr=0426: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=135: addr=0427: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=136: addr=0430: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=137: addr=0431: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=138: addr=0432: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=139: addr=0433: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=140: addr=0434: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=141: addr=0435: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=142: addr=0436: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=143: addr=0437: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=144: addr=0440: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=145: addr=0441: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=146: addr=0442: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=150: addr=0500: 1='2';2='00';3='0000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=200000000000000
+DATA_LINE: line_num=151: addr=0501: 1='=1E+0';
+FIN_OBJ_MCODE: m_code=101400000000000
+DATA_LINE: line_num=152: addr=0502: 1='1';2='00';3='4137';4='3375';5='1040';
+FIN_OBJ_MCODE: m_code=100413733751040
+DATA_LINE: line_num=153: addr=0503: 1='2';2='75';3='5605';4='0753';5='4122';
+FIN_OBJ_MCODE: m_code=275560507534122
+DATA_LINE: line_num=154: addr=0504: 1='1';2='00';3='4671';4='4307';5='7050';
+FIN_OBJ_MCODE: m_code=100467143077050
+DATA_LINE: line_num=155: addr=0505: 1='2';2='73';3='4536';4='4741';5='5411';
+FIN_OBJ_MCODE: m_code=273453647415411
+DATA_LINE: line_num=156: addr=0506: 1='2';2='75';3='5634';4='0353';5='7340';
+FIN_OBJ_MCODE: m_code=275563403537340
+DATA_LINE: line_num=157: addr=0507: 1='1';2='00';3='4544';4='2641';5='6254';
+FIN_OBJ_MCODE: m_code=100454426416254
+DATA_LINE: line_num=158: addr=0510: 1='0';2='72';3='5503';4='4530';5='0406';
+FIN_OBJ_MCODE: m_code=072550345300406
+DATA_LINE: line_num=159: addr=0511: 1='0';2='74';3='5442';4='6416';5='2540';
+FIN_OBJ_MCODE: m_code=074544264162540
+DATA_LINE: line_num=160: addr=0512: 1='1';2='00';3='6470';4='7363';5='2327';
+FIN_OBJ_MCODE: m_code=100647073632327
+DATA_LINE: line_num=161: addr=0513: 1='0';2='73';3='4605';4='7406';5='7551';
+FIN_OBJ_MCODE: m_code=073460574067551
+DATA_LINE: line_num=162: addr=0514: 1='1';2='00';3='7262';4='4536';5='4742';
+FIN_OBJ_MCODE: m_code=100726245364742
+DATA_LINE: line_num=163: addr=0515: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=164: addr=0516: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=165: addr=0517: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=166: addr=0520: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=167: addr=0521: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=168: addr=0522: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=169: addr=0523: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+CODE_LINE: line_num=180: addr=1000: op=50: 0='ввод_пред_050';1='ћЅ3_„“≈Ќ»≈';2='»—2_ћЅ3_јƒ–_«√–';3='»—2_ ќЌ≈÷';
+FIN_OBJ_MCODE: m_code=050001370007767
+CODE_LINE: line_num=181: addr=1001: op=70: 0='ввод_исп_070';1='»—2_Ќј„јЋќ';
+FIN_OBJ_MCODE: m_code=070750000000000
+CODE_LINE: line_num=186: addr=1002: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=188: addr=1003: op=00: 0='пересылка';1='ј–√';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=400010000000600
+CODE_LINE: line_num=189: addr=1004: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=190: addr=1005: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=192: addr=1006: op=12: 0='пер_если_ра_мнш_a1';1='—„≈“„» -1';2='@÷» Ћ_1';3='1';
+FIN_OBJ_MCODE: m_code=112001610030001
+CODE_LINE: line_num=196: addr=1007: op=00: 0='пересылка';1='0';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000000000000600
+CODE_LINE: line_num=197: addr=1010: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=198: addr=1011: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=199: addr=1012: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=200: addr=1013: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=206: addr=1014: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=208: addr=1015: op=00: 0='пересылка';1='“јЅЋ';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=400020000000600
+CODE_LINE: line_num=209: addr=1016: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=210: addr=1017: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=212: addr=1020: op=12: 0='пер_если_ра_мнш_a1';1='—„≈“„» -1';2='@÷» Ћ_2';3='1';
+FIN_OBJ_MCODE: m_code=112001610150001
+CODE_LINE: line_num=216: addr=1021: op=00: 0='пересылка';1='0';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000000000000600
+CODE_LINE: line_num=217: addr=1022: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=218: addr=1023: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=219: addr=1024: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=220: addr=1025: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=226: addr=1026: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=228: addr=1027: op=05: 0='умнож_он';1='F1_ARG_X';2='ј–√';3='F1_T1';
+FIN_OBJ_MCODE: m_code=205030001000303
+CODE_LINE: line_num=229: addr=1030: op=05: 0='умнож_он';1='F1_T1';2='F1_T1';3='F1_T2';
+FIN_OBJ_MCODE: m_code=005030303030304
+CODE_LINE: line_num=230: addr=1031: op=63: 0='вычит_мод';1='0';2='F1_T2';3='F1_T3';
+FIN_OBJ_MCODE: m_code=063000003040305
+CODE_LINE: line_num=231: addr=1032: op=16: 0='безусл_пер_упр_с_возв';1='*+1';2='»—2_Ќј„јЋќ+1';3='»—2_—ќ’–';
+FIN_OBJ_MCODE: m_code=016103375017610
+CODE_LINE: line_num=232: addr=1033: op=75: 0='лог_слож';1='F1_T3';2='3';3='F1_T4';
+FIN_OBJ_MCODE: m_code=075030500030306
+CODE_LINE: line_num=233: addr=1034: op=02: 0='вычит_он';1='F1_C1';2='F1_T4';3='F1_T5';
+FIN_OBJ_MCODE: m_code=002030103060307
+CODE_LINE: line_num=234: addr=1035: op=44: 0='извл_кв_корн€_о';1='F1_T5';2='0';3='F1_T6';
+FIN_OBJ_MCODE: m_code=044030700000310
+CODE_LINE: line_num=235: addr=1036: op=55: 0='лог_умнож';1='F1_D';2='ј–√';3='F1_T7';
+FIN_OBJ_MCODE: m_code=255030201000311
+CODE_LINE: line_num=236: addr=1037: op=63: 0='вычит_мод';1='F1_T6';2='0';3='F1_T8';
+FIN_OBJ_MCODE: m_code=063031000000312
+CODE_LINE: line_num=237: addr=1040: op=15: 0='сравн';1='F1_T7';2='F1_T8';3='F1_RES';
+FIN_OBJ_MCODE: m_code=015031103120313
+CODE_LINE: line_num=240: addr=1041: op=00: 0='пересылка';1='F1_RES';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000031300000600
+CODE_LINE: line_num=241: addr=1042: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=242: addr=1043: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=244: addr=1044: op=12: 0='пер_если_ра_мнш_a1';1='—„≈“„» -1';2='@÷» Ћ_3';3='1';
+FIN_OBJ_MCODE: m_code=112001610270001
+CODE_LINE: line_num=249: addr=1045: op=00: 0='пересылка';1='0';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000000000000600
+CODE_LINE: line_num=250: addr=1046: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=251: addr=1047: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=252: addr=1050: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=253: addr=1051: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=258: addr=1052: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=262: addr=1053: op=63: 0='вычит_мод';1='ј–√';2='0';3='F3_MOD_X';
+FIN_OBJ_MCODE: m_code=463010000000414
+CODE_LINE: line_num=263: addr=1054: op=00: 0='пересылка';1='F3_MOD_X';2='0';3='F3_X1';
+FIN_OBJ_MCODE: m_code=000041400000417
+CODE_LINE: line_num=264: addr=1055: op=05: 0='умнож_он';1='F3_X1';2='F3_X1';3='F3_X2';
+FIN_OBJ_MCODE: m_code=005041704170420
+CODE_LINE: line_num=265: addr=1056: op=05: 0='умнож_он';1='F3_X1';2='F3_X2';3='F3_X3';
+FIN_OBJ_MCODE: m_code=005041704200421
+CODE_LINE: line_num=266: addr=1057: op=05: 0='умнож_он';1='F3_X2';2='F3_X2';3='F3_X4';
+FIN_OBJ_MCODE: m_code=005042004200422
+CODE_LINE: line_num=267: addr=1060: op=05: 0='умнож_он';1='F3_X1';2='F3_X4';3='F3_X5';
+FIN_OBJ_MCODE: m_code=005041704220423
+CODE_LINE: line_num=268: addr=1061: op=05: 0='умнож_он';1='F3_X1';2='F3_A1';3='F3_A1X1';
+FIN_OBJ_MCODE: m_code=005041704010424
+CODE_LINE: line_num=269: addr=1062: op=05: 0='умнож_он';1='F3_X2';2='F3_A2';3='F3_A2X2';
+FIN_OBJ_MCODE: m_code=005042004020425
+CODE_LINE: line_num=270: addr=1063: op=05: 0='умнож_он';1='F3_X3';2='F3_A3';3='F3_A3X3';
+FIN_OBJ_MCODE: m_code=005042104030426
+CODE_LINE: line_num=271: addr=1064: op=05: 0='умнож_он';1='F3_X4';2='F3_A4';3='F3_A4X4';
+FIN_OBJ_MCODE: m_code=005042204040427
+CODE_LINE: line_num=272: addr=1065: op=05: 0='умнож_он';1='F3_X5';2='F3_A5';3='F3_A5X5';
+FIN_OBJ_MCODE: m_code=005042304050430
+CODE_LINE: line_num=273: addr=1066: op=05: 0='умнож_он';1='F3_X1';2='F3_B1';3='F3_B1X1';
+FIN_OBJ_MCODE: m_code=005041704070431
+CODE_LINE: line_num=274: addr=1067: op=05: 0='умнож_он';1='F3_X2';2='F3_B2';3='F3_B2X2';
+FIN_OBJ_MCODE: m_code=005042004100432
+CODE_LINE: line_num=275: addr=1070: op=05: 0='умнож_он';1='F3_X3';2='F3_B3';3='F3_B3X3';
+FIN_OBJ_MCODE: m_code=005042104110433
+CODE_LINE: line_num=276: addr=1071: op=05: 0='умнож_он';1='F3_X4';2='F3_B4';3='F3_B4X4';
+FIN_OBJ_MCODE: m_code=005042204120434
+CODE_LINE: line_num=277: addr=1072: op=05: 0='умнож_он';1='F3_X5';2='F3_B5';3='F3_B5X5';
+FIN_OBJ_MCODE: m_code=005042304130435
+CODE_LINE: line_num=278: addr=1073: op=00: 0='пересылка';1='0';2='0';3='F3_SUM_A';
+FIN_OBJ_MCODE: m_code=000000000000436
+CODE_LINE: line_num=279: addr=1074: op=01: 0='слож_он';1='F3_A1X1';2='F3_SUM_A';3='F3_SUM_A';
+FIN_OBJ_MCODE: m_code=001042404360436
+CODE_LINE: line_num=280: addr=1075: op=01: 0='слож_он';1='F3_A2X2';2='F3_SUM_A';3='F3_SUM_A';
+FIN_OBJ_MCODE: m_code=001042504360436
+CODE_LINE: line_num=281: addr=1076: op=01: 0='слож_он';1='F3_A3X3';2='F3_SUM_A';3='F3_SUM_A';
+FIN_OBJ_MCODE: m_code=001042604360436
+CODE_LINE: line_num=282: addr=1077: op=01: 0='слож_он';1='F3_A4X4';2='F3_SUM_A';3='F3_SUM_A';
+FIN_OBJ_MCODE: m_code=001042704360436
+CODE_LINE: line_num=283: addr=1100: op=01: 0='слож_он';1='F3_A5X5';2='F3_SUM_A';3='F3_SUM_A';
+FIN_OBJ_MCODE: m_code=001043004360436
+CODE_LINE: line_num=284: addr=1101: op=00: 0='пересылка';1='0';2='0';3='F3_SUM_B';
+FIN_OBJ_MCODE: m_code=000000000000437
+CODE_LINE: line_num=285: addr=1102: op=01: 0='слож_он';1='F3_B0';2='F3_SUM_B';3='F3_SUM_B';
+FIN_OBJ_MCODE: m_code=001040604370437
+CODE_LINE: line_num=286: addr=1103: op=01: 0='слож_он';1='F3_B1X1';2='F3_SUM_B';3='F3_SUM_B';
+FIN_OBJ_MCODE: m_code=001043104370437
+CODE_LINE: line_num=287: addr=1104: op=01: 0='слож_он';1='F3_B2X2';2='F3_SUM_B';3='F3_SUM_B';
+FIN_OBJ_MCODE: m_code=001043204370437
+CODE_LINE: line_num=288: addr=1105: op=01: 0='слож_он';1='F3_B3X3';2='F3_SUM_B';3='F3_SUM_B';
+FIN_OBJ_MCODE: m_code=001043304370437
+CODE_LINE: line_num=289: addr=1106: op=01: 0='слож_он';1='F3_B4X4';2='F3_SUM_B';3='F3_SUM_B';
+FIN_OBJ_MCODE: m_code=001043404370437
+CODE_LINE: line_num=290: addr=1107: op=01: 0='слож_он';1='F3_B5X5';2='F3_SUM_B';3='F3_SUM_B';
+FIN_OBJ_MCODE: m_code=001043504370437
+CODE_LINE: line_num=291: addr=1110: op=04: 0='делен_о';1='F3_SUM_A';2='F3_SUM_B';3='F3_T1';
+FIN_OBJ_MCODE: m_code=004043604370440
+CODE_LINE: line_num=292: addr=1111: op=55: 0='лог_умнож';1='F3_D';2='ј–√';3='F3_T2';
+FIN_OBJ_MCODE: m_code=255040001000441
+CODE_LINE: line_num=293: addr=1112: op=63: 0='вычит_мод';1='F3_T1';2='0';3='F3_T3';
+FIN_OBJ_MCODE: m_code=063044000000442
+CODE_LINE: line_num=294: addr=1113: op=15: 0='сравн';1='F3_T2';2='F3_T3';3='F3_RES';
+FIN_OBJ_MCODE: m_code=015044104420415
+CODE_LINE: line_num=296: addr=1114: op=00: 0='пересылка';1='F3_RES';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000041500000600
+CODE_LINE: line_num=297: addr=1115: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=298: addr=1116: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=300: addr=1117: op=12: 0='пер_если_ра_мнш_a1';1='—„≈“„» -2';2='@÷» Ћ_4';3='1';
+FIN_OBJ_MCODE: m_code=112001510530001
+CODE_LINE: line_num=302: addr=1120: op=00: 0='пересылка';1='F3_C1';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000041600000600
+CODE_LINE: line_num=303: addr=1121: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=304: addr=1122: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=307: addr=1123: op=00: 0='пересылка';1='0';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000000000000600
+CODE_LINE: line_num=308: addr=1124: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=309: addr=1125: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=310: addr=1126: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=311: addr=1127: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=317: addr=1130: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=321: addr=1131: op=63: 0='вычит_мод';1='ј–√';2='0';3='F2_MOD_X';
+FIN_OBJ_MCODE: m_code=463010000000515
+CODE_LINE: line_num=322: addr=1132: op=05: 0='умнож_он';1='F2_A';2='F2_MOD_X';3='F2_T1';
+FIN_OBJ_MCODE: m_code=005050205150517
+CODE_LINE: line_num=323: addr=1133: op=55: 0='лог_умнож';1='F2_MOD';2='ј–√';3='F2_T2';
+FIN_OBJ_MCODE: m_code=255050001000520
+CODE_LINE: line_num=324: addr=1134: op=63: 0='вычит_мод';1='F2_T1';2='0';3='F2_T3';
+FIN_OBJ_MCODE: m_code=063051700000521
+CODE_LINE: line_num=325: addr=1135: op=15: 0='сравн';1='F2_T2';2='F2_T3';3='F2_RES';
+FIN_OBJ_MCODE: m_code=015052005210516
+CODE_LINE: line_num=326: addr=1136: op=00: 0='пересылка';1='F2_RES';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000051600000600
+CODE_LINE: line_num=327: addr=1137: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=328: addr=1140: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=330: addr=1141: op=12: 0='пер_если_ра_мнш_a1';1='4-1';2='@÷» Ћ_5';3='1';
+FIN_OBJ_MCODE: m_code=112000311310001
+CODE_LINE: line_num=334: addr=1142: op=63: 0='вычит_мод';1='ј–√';2='0';3='F2_MOD_X';
+FIN_OBJ_MCODE: m_code=463010000000515
+CODE_LINE: line_num=335: addr=1143: op=05: 0='умнож_он';1='F2_MOD_X';2='F2_MOD_X';3='F2_X2';
+FIN_OBJ_MCODE: m_code=005051505150522
+CODE_LINE: line_num=336: addr=1144: op=00: 0='пересылка';1='F2_D';2='0';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=000050500000523
+CODE_LINE: line_num=337: addr=1145: op=05: 0='умнож_он';1='F2_B';2='F2_X2';3='F2_T1';
+FIN_OBJ_MCODE: m_code=005050305220517
+CODE_LINE: line_num=338: addr=1146: op=05: 0='умнож_он';1='F2_C';2='F2_MOD_X';3='F2_T2';
+FIN_OBJ_MCODE: m_code=005050405150520
+CODE_LINE: line_num=339: addr=1147: op=01: 0='слож_он';1='F2_T1';2='F2_SUM';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=001051705230523
+CODE_LINE: line_num=340: addr=1150: op=01: 0='слож_он';1='F2_T2';2='F2_SUM';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=001052005230523
+CODE_LINE: line_num=341: addr=1151: op=55: 0='лог_умнож';1='F2_MOD';2='ј–√';3='F2_T2';
+FIN_OBJ_MCODE: m_code=255050001000520
+CODE_LINE: line_num=342: addr=1152: op=63: 0='вычит_мод';1='F2_SUM';2='0';3='F2_T3';
+FIN_OBJ_MCODE: m_code=063052300000521
+CODE_LINE: line_num=343: addr=1153: op=15: 0='сравн';1='F2_T2';2='F2_T3';3='F2_RES';
+FIN_OBJ_MCODE: m_code=015052005210516
+CODE_LINE: line_num=344: addr=1154: op=00: 0='пересылка';1='F2_RES';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000051600000600
+CODE_LINE: line_num=345: addr=1155: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=346: addr=1156: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=348: addr=1157: op=12: 0='пер_если_ра_мнш_a1';1='6-1';2='@÷» Ћ_6';3='1';
+FIN_OBJ_MCODE: m_code=112000511420001
+CODE_LINE: line_num=352: addr=1160: op=63: 0='вычит_мод';1='ј–√';2='0';3='F2_MOD_X';
+FIN_OBJ_MCODE: m_code=463010000000515
+CODE_LINE: line_num=353: addr=1161: op=05: 0='умнож_он';1='F2_MOD_X';2='F2_MOD_X';3='F2_X2';
+FIN_OBJ_MCODE: m_code=005051505150522
+CODE_LINE: line_num=354: addr=1162: op=00: 0='пересылка';1='F2_Q';2='0';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=000051000000523
+CODE_LINE: line_num=355: addr=1163: op=05: 0='умнож_он';1='F2_E';2='F2_X2';3='F2_T1';
+FIN_OBJ_MCODE: m_code=005050605220517
+CODE_LINE: line_num=356: addr=1164: op=05: 0='умнож_он';1='F2_F';2='F2_MOD_X';3='F2_T2';
+FIN_OBJ_MCODE: m_code=005050705150520
+CODE_LINE: line_num=357: addr=1165: op=01: 0='слож_он';1='F2_T1';2='F2_SUM';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=001051705230523
+CODE_LINE: line_num=358: addr=1166: op=01: 0='слож_он';1='F2_T2';2='F2_SUM';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=001052005230523
+CODE_LINE: line_num=359: addr=1167: op=55: 0='лог_умнож';1='F2_MOD';2='ј–√';3='F2_T2';
+FIN_OBJ_MCODE: m_code=255050001000520
+CODE_LINE: line_num=360: addr=1170: op=63: 0='вычит_мод';1='F2_SUM';2='0';3='F2_T3';
+FIN_OBJ_MCODE: m_code=063052300000521
+CODE_LINE: line_num=361: addr=1171: op=15: 0='сравн';1='F2_T2';2='F2_T3';3='F2_RES';
+FIN_OBJ_MCODE: m_code=015052005210516
+CODE_LINE: line_num=362: addr=1172: op=00: 0='пересылка';1='F2_RES';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000051600000600
+CODE_LINE: line_num=363: addr=1173: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=364: addr=1174: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=366: addr=1175: op=12: 0='пер_если_ра_мнш_a1';1='10-1';2='@÷» Ћ_7';3='1';
+FIN_OBJ_MCODE: m_code=112000711600001
+CODE_LINE: line_num=371: addr=1176: op=63: 0='вычит_мод';1='ј–√';2='0';3='F2_MOD_X';
+FIN_OBJ_MCODE: m_code=463010000000515
+CODE_LINE: line_num=372: addr=1177: op=05: 0='умнож_он';1='F2_H';2='F2_MOD_X';3='F2_T1';
+FIN_OBJ_MCODE: m_code=005051105150517
+CODE_LINE: line_num=373: addr=1200: op=01: 0='слож_он';1='F2_T1';2='F2_S';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=001051705120523
+CODE_LINE: line_num=374: addr=1201: op=55: 0='лог_умнож';1='F2_MOD';2='ј–√';3='F2_T2';
+FIN_OBJ_MCODE: m_code=255050001000520
+CODE_LINE: line_num=375: addr=1202: op=63: 0='вычит_мод';1='F2_SUM';2='0';3='F2_T3';
+FIN_OBJ_MCODE: m_code=063052300000521
+CODE_LINE: line_num=376: addr=1203: op=15: 0='сравн';1='F2_T2';2='F2_T3';3='F2_RES';
+FIN_OBJ_MCODE: m_code=015052005210516
+CODE_LINE: line_num=377: addr=1204: op=00: 0='пересылка';1='F2_RES';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000051600000600
+CODE_LINE: line_num=378: addr=1205: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=379: addr=1206: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=381: addr=1207: op=12: 0='пер_если_ра_мнш_a1';1='12-1';2='@÷» Ћ_8';3='1';
+FIN_OBJ_MCODE: m_code=112001111760001
+CODE_LINE: line_num=385: addr=1210: op=63: 0='вычит_мод';1='ј–√';2='0';3='F2_MOD_X';
+FIN_OBJ_MCODE: m_code=463010000000515
+CODE_LINE: line_num=386: addr=1211: op=05: 0='умнож_он';1='F2_T';2='F2_MOD_X';3='F2_T1';
+FIN_OBJ_MCODE: m_code=005051305150517
+CODE_LINE: line_num=387: addr=1212: op=01: 0='слож_он';1='F2_T1';2='F2_W';3='F2_SUM';
+FIN_OBJ_MCODE: m_code=001051705140523
+CODE_LINE: line_num=388: addr=1213: op=55: 0='лог_умнож';1='F2_MOD';2='ј–√';3='F2_T2';
+FIN_OBJ_MCODE: m_code=255050001000520
+CODE_LINE: line_num=389: addr=1214: op=63: 0='вычит_мод';1='F2_SUM';2='0';3='F2_T3';
+FIN_OBJ_MCODE: m_code=063052300000521
+CODE_LINE: line_num=390: addr=1215: op=15: 0='сравн';1='F2_T2';2='F2_T3';3='F2_RES';
+FIN_OBJ_MCODE: m_code=015052005210516
+CODE_LINE: line_num=391: addr=1216: op=00: 0='пересылка';1='F2_RES';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000051600000600
+CODE_LINE: line_num=392: addr=1217: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=393: addr=1220: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=395: addr=1221: op=12: 0='пер_если_ра_мнш_a1';1='14-1';2='@÷» Ћ_9';3='1';
+FIN_OBJ_MCODE: m_code=112001312100001
+CODE_LINE: line_num=398: addr=1222: op=00: 0='пересылка';1='F2_C1';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=000050100000600
+CODE_LINE: line_num=399: addr=1223: op=50: 0='ввод_пред_050';1='ƒ≈—я“_ѕ≈„ј“№';2='0';3='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=050210000000600
+CODE_LINE: line_num=400: addr=1224: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=401: addr=1225: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=402: addr=1226: op=70: 0='ввод_исп_070';1='–јЅ_я„';
+FIN_OBJ_MCODE: m_code=070060000000000
+CODE_LINE: line_num=407: addr=1227: op=77: 0='останов_077';
+FIN_OBJ_MCODE: m_code=077000000000000
+CODE_LINE: line_num=408: addr=1230: op=77: 0='останов_077';1='7777';2='7777';3='7777';
+FIN_OBJ_MCODE: m_code=777777777777777
+Make output filename: strela_1964.m20
+out_mcode: addr=0100 code=072507534121727
+out_mcode: addr=0101 code=074631463146315
+out_mcode: addr=0102 code=075631463146315
+out_mcode: addr=0103 code=077463146314632
+out_mcode: addr=0104 code=100714631463146
+out_mcode: addr=0105 code=101431463146315
+out_mcode: addr=0106 code=101600000000000
+out_mcode: addr=0107 code=102400000000000
+out_mcode: addr=0110 code=102600000000000
+out_mcode: addr=0111 code=102700000000000
+out_mcode: addr=0112 code=103400000000000
+out_mcode: addr=0113 code=103440000000000
+out_mcode: addr=0114 code=103500000000000
+out_mcode: addr=0115 code=103600000000000
+out_mcode: addr=0116 code=103700000000000
+out_mcode: addr=0200 code=071540452660153
+out_mcode: addr=0201 code=073670565434206
+out_mcode: addr=0202 code=074670367563602
+out_mcode: addr=0203 code=076510313122572
+out_mcode: addr=0204 code=077723101546243
+out_mcode: addr=0205 code=100425342456346
+out_mcode: addr=0206 code=100540331450556
+out_mcode: addr=0207 code=100645147304074
+out_mcode: addr=0210 code=100751762441257
+out_mcode: addr=0211 code=100766522374510
+out_mcode: addr=0212 code=100774332170204
+out_mcode: addr=0213 code=100776612665350
+out_mcode: addr=0214 code=100777474547626
+out_mcode: addr=0215 code=100777762274533
+out_mcode: addr=0216 code=100777777155262
+out_mcode: addr=0300 code=100423423324400
+out_mcode: addr=0301 code=101400000000000
+out_mcode: addr=0302 code=200000000000000
+out_mcode: addr=0303 code=100000000000000
+out_mcode: addr=0304 code=100000000000000
+out_mcode: addr=0305 code=100000000000000
+out_mcode: addr=0306 code=100000000000000
+out_mcode: addr=0307 code=100000000000000
+out_mcode: addr=0310 code=100000000000000
+out_mcode: addr=0311 code=100000000000000
+out_mcode: addr=0312 code=100000000000000
+out_mcode: addr=0313 code=100000000000000
+out_mcode: addr=0400 code=200000000000000
+out_mcode: addr=0401 code=306435345322102
+out_mcode: addr=0402 code=104535764761502
+out_mcode: addr=0403 code=301703564406576
+out_mcode: addr=0404 code=073637161373221
+out_mcode: addr=0405 code=072710610342303
+out_mcode: addr=0406 code=307411151162535
+out_mcode: addr=0407 code=105505133157446
+out_mcode: addr=0410 code=304411741403225
+out_mcode: addr=0411 code=101631010673724
+out_mcode: addr=0412 code=277427373454724
+out_mcode: addr=0413 code=073624242247300
+out_mcode: addr=0414 code=100000000000000
+out_mcode: addr=0415 code=100000000000000
+out_mcode: addr=0416 code=101400000000000
+out_mcode: addr=0417 code=100000000000000
+out_mcode: addr=0420 code=100000000000000
+out_mcode: addr=0421 code=100000000000000
+out_mcode: addr=0422 code=100000000000000
+out_mcode: addr=0423 code=100000000000000
+out_mcode: addr=0424 code=100000000000000
+out_mcode: addr=0425 code=100000000000000
+out_mcode: addr=0426 code=100000000000000
+out_mcode: addr=0427 code=100000000000000
+out_mcode: addr=0430 code=100000000000000
+out_mcode: addr=0431 code=100000000000000
+out_mcode: addr=0432 code=100000000000000
+out_mcode: addr=0433 code=100000000000000
+out_mcode: addr=0434 code=100000000000000
+out_mcode: addr=0435 code=100000000000000
+out_mcode: addr=0436 code=100000000000000
+out_mcode: addr=0437 code=100000000000000
+out_mcode: addr=0440 code=100000000000000
+out_mcode: addr=0441 code=100000000000000
+out_mcode: addr=0442 code=100000000000000
+out_mcode: addr=0500 code=200000000000000
+out_mcode: addr=0501 code=101400000000000
+out_mcode: addr=0502 code=100413733751040
+out_mcode: addr=0503 code=275560507534122
+out_mcode: addr=0504 code=100467143077050
+out_mcode: addr=0505 code=273453647415411
+out_mcode: addr=0506 code=275563403537340
+out_mcode: addr=0507 code=100454426416254
+out_mcode: addr=0510 code=072550345300406
+out_mcode: addr=0511 code=074544264162540
+out_mcode: addr=0512 code=100647073632327
+out_mcode: addr=0513 code=073460574067551
+out_mcode: addr=0514 code=100726245364742
+out_mcode: addr=0515 code=100000000000000
+out_mcode: addr=0516 code=100000000000000
+out_mcode: addr=0517 code=100000000000000
+out_mcode: addr=0520 code=100000000000000
+out_mcode: addr=0521 code=100000000000000
+out_mcode: addr=0522 code=100000000000000
+out_mcode: addr=0523 code=100000000000000
+out_mcode: addr=1000 code=050001370007767
+out_mcode: addr=1001 code=070750000000000
+out_mcode: addr=1002 code=052000000000000
+out_mcode: addr=1003 code=400010000000600
+out_mcode: addr=1004 code=050210000000600
+out_mcode: addr=1005 code=070060000000000
+out_mcode: addr=1006 code=112001610030001
+out_mcode: addr=1007 code=000000000000600
+out_mcode: addr=1010 code=050210000000600
+out_mcode: addr=1011 code=070060000000000
+out_mcode: addr=1012 code=070060000000000
+out_mcode: addr=1013 code=070060000000000
+out_mcode: addr=1014 code=052000000000000
+out_mcode: addr=1015 code=400020000000600
+out_mcode: addr=1016 code=050210000000600
+out_mcode: addr=1017 code=070060000000000
+out_mcode: addr=1020 code=112001610150001
+out_mcode: addr=1021 code=000000000000600
+out_mcode: addr=1022 code=050210000000600
+out_mcode: addr=1023 code=070060000000000
+out_mcode: addr=1024 code=070060000000000
+out_mcode: addr=1025 code=070060000000000
+out_mcode: addr=1026 code=052000000000000
+out_mcode: addr=1027 code=205030001000303
+out_mcode: addr=1030 code=005030303030304
+out_mcode: addr=1031 code=063000003040305
+out_mcode: addr=1032 code=016103375017610
+out_mcode: addr=1033 code=075030500030306
+out_mcode: addr=1034 code=002030103060307
+out_mcode: addr=1035 code=044030700000310
+out_mcode: addr=1036 code=255030201000311
+out_mcode: addr=1037 code=063031000000312
+out_mcode: addr=1040 code=015031103120313
+out_mcode: addr=1041 code=000031300000600
+out_mcode: addr=1042 code=050210000000600
+out_mcode: addr=1043 code=070060000000000
+out_mcode: addr=1044 code=112001610270001
+out_mcode: addr=1045 code=000000000000600
+out_mcode: addr=1046 code=050210000000600
+out_mcode: addr=1047 code=070060000000000
+out_mcode: addr=1050 code=070060000000000
+out_mcode: addr=1051 code=070060000000000
+out_mcode: addr=1052 code=052000000000000
+out_mcode: addr=1053 code=463010000000414
+out_mcode: addr=1054 code=000041400000417
+out_mcode: addr=1055 code=005041704170420
+out_mcode: addr=1056 code=005041704200421
+out_mcode: addr=1057 code=005042004200422
+out_mcode: addr=1060 code=005041704220423
+out_mcode: addr=1061 code=005041704010424
+out_mcode: addr=1062 code=005042004020425
+out_mcode: addr=1063 code=005042104030426
+out_mcode: addr=1064 code=005042204040427
+out_mcode: addr=1065 code=005042304050430
+out_mcode: addr=1066 code=005041704070431
+out_mcode: addr=1067 code=005042004100432
+out_mcode: addr=1070 code=005042104110433
+out_mcode: addr=1071 code=005042204120434
+out_mcode: addr=1072 code=005042304130435
+out_mcode: addr=1073 code=000000000000436
+out_mcode: addr=1074 code=001042404360436
+out_mcode: addr=1075 code=001042504360436
+out_mcode: addr=1076 code=001042604360436
+out_mcode: addr=1077 code=001042704360436
+out_mcode: addr=1100 code=001043004360436
+out_mcode: addr=1101 code=000000000000437
+out_mcode: addr=1102 code=001040604370437
+out_mcode: addr=1103 code=001043104370437
+out_mcode: addr=1104 code=001043204370437
+out_mcode: addr=1105 code=001043304370437
+out_mcode: addr=1106 code=001043404370437
+out_mcode: addr=1107 code=001043504370437
+out_mcode: addr=1110 code=004043604370440
+out_mcode: addr=1111 code=255040001000441
+out_mcode: addr=1112 code=063044000000442
+out_mcode: addr=1113 code=015044104420415
+out_mcode: addr=1114 code=000041500000600
+out_mcode: addr=1115 code=050210000000600
+out_mcode: addr=1116 code=070060000000000
+out_mcode: addr=1117 code=112001510530001
+out_mcode: addr=1120 code=000041600000600
+out_mcode: addr=1121 code=050210000000600
+out_mcode: addr=1122 code=070060000000000
+out_mcode: addr=1123 code=000000000000600
+out_mcode: addr=1124 code=050210000000600
+out_mcode: addr=1125 code=070060000000000
+out_mcode: addr=1126 code=070060000000000
+out_mcode: addr=1127 code=070060000000000
+out_mcode: addr=1130 code=052000000000000
+out_mcode: addr=1131 code=463010000000515
+out_mcode: addr=1132 code=005050205150517
+out_mcode: addr=1133 code=255050001000520
+out_mcode: addr=1134 code=063051700000521
+out_mcode: addr=1135 code=015052005210516
+out_mcode: addr=1136 code=000051600000600
+out_mcode: addr=1137 code=050210000000600
+out_mcode: addr=1140 code=070060000000000
+out_mcode: addr=1141 code=112000311310001
+out_mcode: addr=1142 code=463010000000515
+out_mcode: addr=1143 code=005051505150522
+out_mcode: addr=1144 code=000050500000523
+out_mcode: addr=1145 code=005050305220517
+out_mcode: addr=1146 code=005050405150520
+out_mcode: addr=1147 code=001051705230523
+out_mcode: addr=1150 code=001052005230523
+out_mcode: addr=1151 code=255050001000520
+out_mcode: addr=1152 code=063052300000521
+out_mcode: addr=1153 code=015052005210516
+out_mcode: addr=1154 code=000051600000600
+out_mcode: addr=1155 code=050210000000600
+out_mcode: addr=1156 code=070060000000000
+out_mcode: addr=1157 code=112000511420001
+out_mcode: addr=1160 code=463010000000515
+out_mcode: addr=1161 code=005051505150522
+out_mcode: addr=1162 code=000051000000523
+out_mcode: addr=1163 code=005050605220517
+out_mcode: addr=1164 code=005050705150520
+out_mcode: addr=1165 code=001051705230523
+out_mcode: addr=1166 code=001052005230523
+out_mcode: addr=1167 code=255050001000520
+out_mcode: addr=1170 code=063052300000521
+out_mcode: addr=1171 code=015052005210516
+out_mcode: addr=1172 code=000051600000600
+out_mcode: addr=1173 code=050210000000600
+out_mcode: addr=1174 code=070060000000000
+out_mcode: addr=1175 code=112000711600001
+out_mcode: addr=1176 code=463010000000515
+out_mcode: addr=1177 code=005051105150517
+out_mcode: addr=1200 code=001051705120523
+out_mcode: addr=1201 code=255050001000520
+out_mcode: addr=1202 code=063052300000521
+out_mcode: addr=1203 code=015052005210516
+out_mcode: addr=1204 code=000051600000600
+out_mcode: addr=1205 code=050210000000600
+out_mcode: addr=1206 code=070060000000000
+out_mcode: addr=1207 code=112001111760001
+out_mcode: addr=1210 code=463010000000515
+out_mcode: addr=1211 code=005051305150517
+out_mcode: addr=1212 code=001051705140523
+out_mcode: addr=1213 code=255050001000520
+out_mcode: addr=1214 code=063052300000521
+out_mcode: addr=1215 code=015052005210516
+out_mcode: addr=1216 code=000051600000600
+out_mcode: addr=1217 code=050210000000600
+out_mcode: addr=1220 code=070060000000000
+out_mcode: addr=1221 code=112001312100001
+out_mcode: addr=1222 code=000050100000600
+out_mcode: addr=1223 code=050210000000600
+out_mcode: addr=1224 code=070060000000000
+out_mcode: addr=1225 code=070060000000000
+out_mcode: addr=1226 code=070060000000000
+out_mcode: addr=1227 code=077000000000000
+out_mcode: addr=1230 code=777777777777777
+Make listing filename: strela_1964.l20
+«авершено успешно.
