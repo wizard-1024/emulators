@@ -1,0 +1,473 @@
+encoding type: 1
+Processing filename: autocode_m20_eng.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.NAME'
+PS_OPS: idx='02', name='.TITLE'
+PS_OPS: idx='03', name='.START'
+PS_OPS: idx='04', name='.FINISH'
+PS_OPS: idx='05', name='.ADDRESS'
+PS_OPS: idx='06', name='.ABS'
+PS_OPS: idx='07', name='.MEM'
+PS_OPS: idx='08', name='.AUTHOR'
+PS_OPS: idx='09', name='.LIST'
+PS_OPS: idx='10', name='.NOLIST'
+File parsed and accepted.
+Processing filename: autocode_m20_dos_cp866.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.àåü'
+PS_OPS: idx='02', name='.çÄáÇÄçàÖ'
+PS_OPS: idx='03', name='.ëíÄêí'
+PS_OPS: idx='04', name='.îàçàò'
+PS_OPS: idx='05', name='.ÄÑêÖë'
+PS_OPS: idx='06', name='.ÄÅë'
+PS_OPS: idx='07', name='.èÄå'
+PS_OPS: idx='08', name='.ÄÇíéê'
+PS_OPS: idx='09', name='.èÖóÄíú'
+PS_OPS: idx='10', name='.çÖèÖóÄíú'
+File parsed and accepted.
+Processing filename: autocode_m20_win_cp1251.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.»Ãﬂ'
+PS_OPS: idx='02', name='.Õ¿«¬¿Õ»≈'
+PS_OPS: idx='03', name='.—“¿–“'
+PS_OPS: idx='04', name='.‘»Õ»ÿ'
+PS_OPS: idx='05', name='.¿ƒ–≈—'
+PS_OPS: idx='06', name='.¿¡—'
+PS_OPS: idx='07', name='.œ¿Ã'
+PS_OPS: idx='08', name='.¿¬“Œ–'
+PS_OPS: idx='09', name='.œ≈◊¿“‹'
+PS_OPS: idx='10', name='.Õ≈œ≈◊¿“‹'
+File parsed and accepted.
+Processing filename: autocode_m20_unix_koi8r.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.ÈÌÒ'
+PS_OPS: idx='02', name='.Ó·˙˜·ÓÈÂ'
+PS_OPS: idx='03', name='.ÛÙ·ÚÙ'
+PS_OPS: idx='04', name='.ÊÈÓÈ˚'
+PS_OPS: idx='05', name='.·‰ÚÂÛ'
+PS_OPS: idx='06', name='.·‚Û'
+PS_OPS: idx='07', name='.·Ì'
+PS_OPS: idx='08', name='.·˜ÙÔÚ'
+PS_OPS: idx='09', name='.Â˛·Ù¯'
+PS_OPS: idx='10', name='.ÓÂÂ˛·Ù¯'
+File parsed and accepted.
+Processing filename: autocode_m20_rus_utf8.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.–ò–ú–Ø'
+PS_OPS: idx='02', name='.–ù–ê–ó–í–ê–ù–ò–ï'
+PS_OPS: idx='03', name='.–°–¢–ê–†–¢'
+PS_OPS: idx='04', name='.–§–ò–ù–ò–®'
+PS_OPS: idx='05', name='.–ê–î–†–ï–°'
+PS_OPS: idx='06', name='.–ê–ë–°'
+PS_OPS: idx='07', name='.–ü–ê–ú'
+PS_OPS: idx='08', name='.–ê–í–¢–û–†'
+PS_OPS: idx='09', name='.–ü–ï–ß–ê–¢–¨'
+PS_OPS: idx='10', name='.–ù–ï–ü–ï–ß–ê–¢–¨'
+File parsed and accepted.
+Parsing filename: hello14.a20
+Read lines: 68
+orig_text: *
+orig_text: * Sample file for M-20 autocode 
+orig_text: * encoding: english,ASCII-7
+orig_text: *
+orig_text: * Copyright (c) 2015 Stefankov
+orig_text: *
+orig_text: 
+orig_text: 	.NAME    hello14.a20
+orig_text: 	.TITLE	 Hello Program for M-20
+orig_text: 	.AUTHOR  Stefankov Dmitry
+orig_text: *
+orig_text: *
+orig_text: *
+orig_text: 
+orig_text: TWO1 	.ABS	=2
+orig_text: TWO2	.ABS	1 02 4000 0000 0000
+orig_text: TWO3    .ABS    102400000000000
+orig_text: 
+orig_text: 	.START  20
+orig_text: *
+orig_text: NUM1:	=2
+orig_text: num2:	1 02 4000 0000 0000
+orig_text: numTWO:  TWO1
+orig_text: 
+orig_text: NEWMEM:  .MEM  12
+orig_text:  =10
+orig_text:   1 02 4000 0000 0000
+orig_text: 
+orig_text: *
+orig_text: *
+orig_text: 	.ADDRESS  100
+orig_text: START:
+orig_text: 	add_rn	NUM1,NUM2,NUM3		; 2+2=4?
+orig_text: 	sub_rn	NUM3,num1,NUM4		; 4-2=2?
+orig_text:         chg_ra_by_adr  0,0,0
+orig_text:         chg_ra_by_adr  0 0 0
+orig_text:         chg_ra_by_adr  ,,
+orig_text: 	add_rn	(NUM1),NUM2,NUM3	; 2+2=4?
+orig_text: 	add_rn	(0020),(0021),(NUM3)	; 2+2=4?
+orig_text:         cond_jump_w1  0,STOP_17,0
+orig_text: 	stop_77
+orig_text: 
+orig_text: STOP_17:
+orig_text:         0 52 0000 0000 0000
+orig_text:         chg_ra_by_adr  0 * 0
+orig_text:         chg_ra_by_adr  0 *+1 0
+orig_text:         chg_ra_by_adr  0, num4-1, 0
+orig_text:         chg_ra_by_adr  0, num4-newmem, 0
+orig_text: 	stop_17
+orig_text: 
+orig_text: 	.ADDRESS  200
+orig_text: num3:	0 00 0000 0000 0000
+orig_text: num4:  
+orig_text:   =6.25
+orig_text: *
+orig_text:         .NOLIST
+orig_text: *
+orig_text: *
+orig_text: *
+orig_text:         .LIST
+orig_text: *
+orig_text: NEWMEM2: .MEM  100
+orig_text:  =10
+orig_text:  =11
+orig_text:  =12
+orig_text: 
+orig_text: 
+orig_text: 	.FINISH 100
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.NAME    hello14.a20
+clean_text: 	.TITLE	 Hello Program for M-20
+clean_text: 	.AUTHOR  Stefankov Dmitry
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: TWO1 	.ABS	=2
+clean_text: TWO2	.ABS	1 02 4000 0000 0000
+clean_text: TWO3    .ABS    102400000000000
+clean_text: 
+clean_text: 	.START  20
+clean_text: 
+clean_text: NUM1:	=2
+clean_text: num2:	1 02 4000 0000 0000
+clean_text: numTWO:  TWO1
+clean_text: 
+clean_text: NEWMEM:  .MEM  12
+clean_text:  =10
+clean_text:   1 02 4000 0000 0000
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.ADDRESS  100
+clean_text: START:
+clean_text: 	add_rn	NUM1,NUM2,NUM3		
+clean_text: 	sub_rn	NUM3,num1,NUM4		
+clean_text:         chg_ra_by_adr  0,0,0
+clean_text:         chg_ra_by_adr  0 0 0
+clean_text:         chg_ra_by_adr  ,,
+clean_text: 	add_rn	(NUM1),NUM2,NUM3	
+clean_text: 	add_rn	(0020),(0021),(NUM3)	
+clean_text:         cond_jump_w1  0,STOP_17,0
+clean_text: 	stop_77
+clean_text: 
+clean_text: STOP_17:
+clean_text:         0 52 0000 0000 0000
+clean_text:         chg_ra_by_adr  0 * 0
+clean_text:         chg_ra_by_adr  0 *+1 0
+clean_text:         chg_ra_by_adr  0, num4-1, 0
+clean_text:         chg_ra_by_adr  0, num4-newmem, 0
+clean_text: 	stop_17
+clean_text: 
+clean_text: 	.ADDRESS  200
+clean_text: num3:	0 00 0000 0000 0000
+clean_text: num4:  
+clean_text:   =6.25
+clean_text: 
+clean_text:         .NOLIST
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         .LIST
+clean_text: 
+clean_text: NEWMEM2: .MEM  100
+clean_text:  =10
+clean_text:  =11
+clean_text:  =12
+clean_text: 
+clean_text: 
+clean_text: 	.FINISH 100
+Lexical scanning.
+work_buf (len=21): 	.NAME    hello14.a20
+work_buf (len=31): 	.TITLE	 Hello Program for M-20
+work_buf (len=26): 	.AUTHOR  Stefankov Dmitry
+work_buf (len=13): TWO1 	.ABS	=2
+work_buf (len=29): TWO2	.ABS	1 02 4000 0000 0000
+work_buf (len=31): TWO3    .ABS    102400000000000
+work_buf (len=11): 	.START  20
+work_buf (len=8): NUM1:	=2
+work_buf (len=25): num2:	1 02 4000 0000 0000
+work_buf (len=13): numTWO:  TWO1
+work_buf (len=17): NEWMEM:  .MEM  12
+work_buf (len=4):  =10
+work_buf (len=21):   1 02 4000 0000 0000
+work_buf (len=14): 	.ADDRESS  100
+work_buf (len=6): START:
+work_buf (len=24): 	add_rn	NUM1,NUM2,NUM3		
+work_buf (len=24): 	sub_rn	NUM3,num1,NUM4		
+work_buf (len=28):         chg_ra_by_adr  0,0,0
+work_buf (len=28):         chg_ra_by_adr  0 0 0
+work_buf (len=25):         chg_ra_by_adr  ,,
+work_buf (len=25): 	add_rn	(NUM1),NUM2,NUM3	
+work_buf (len=29): 	add_rn	(0020),(0021),(NUM3)	
+work_buf (len=33):         cond_jump_w1  0,STOP_17,0
+work_buf (len=8): 	stop_77
+work_buf (len=8): STOP_17:
+work_buf (len=27):         0 52 0000 0000 0000
+work_buf (len=28):         chg_ra_by_adr  0 * 0
+work_buf (len=30):         chg_ra_by_adr  0 *+1 0
+work_buf (len=35):         chg_ra_by_adr  0, num4-1, 0
+work_buf (len=40):         chg_ra_by_adr  0, num4-newmem, 0
+work_buf (len=8): 	stop_17
+work_buf (len=14): 	.ADDRESS  200
+work_buf (len=25): num3:	0 00 0000 0000 0000
+work_buf (len=7): num4:  
+work_buf (len=7):   =6.25
+work_buf (len=15):         .NOLIST
+work_buf (len=13):         .LIST
+work_buf (len=18): NEWMEM2: .MEM  100
+work_buf (len=4):  =10
+work_buf (len=4):  =11
+work_buf (len=4):  =12
+work_buf (len=12): 	.FINISH 100
+lex_words: 1=.NAME;2=hello14.a20;
+lex_words: 1=.TITLE;2=Hello;3=Program;4=for;5=M-20;
+lex_words: 1=.AUTHOR;2=Stefankov;3=Dmitry;
+lex_words: 1=TWO1;2=.ABS;3==2;
+lex_words: 1=TWO2;2=.ABS;3=1;4=02;5=4000;6=0000;7=0000;
+lex_words: 1=TWO3;2=.ABS;3=102400000000000;
+lex_words: 1=.START;2=20;
+lex_words: 1=NUM1:;2==2;
+lex_words: 1=num2:;2=1;3=02;4=4000;5=0000;6=0000;
+lex_words: 1=numTWO:;2=TWO1;
+lex_words: 1=NEWMEM:;2=.MEM;3=12;
+lex_words: 1==10;
+lex_words: 1=1;2=02;3=4000;4=0000;5=0000;
+lex_words: 1=.ADDRESS;2=100;
+lex_words: 1=START:;
+lex_words: 1=add_rn;2=NUM1;3=NUM2;4=NUM3;
+lex_words: 1=sub_rn;2=NUM3;3=num1;4=NUM4;
+lex_words: 1=chg_ra_by_adr;2=0;3=0;4=0;
+lex_words: 1=chg_ra_by_adr;2=0;3=0;4=0;
+lex_words: 1=chg_ra_by_adr;
+lex_words: 1=add_rn;2=(NUM1);3=NUM2;4=NUM3;
+lex_words: 1=add_rn;2=(0020);3=(0021);4=(NUM3);
+lex_words: 1=cond_jump_w1;2=0;3=STOP_17;4=0;
+lex_words: 1=stop_77;
+lex_words: 1=STOP_17:;
+lex_words: 1=0;2=52;3=0000;4=0000;5=0000;
+lex_words: 1=chg_ra_by_adr;2=0;3=*;4=0;
+lex_words: 1=chg_ra_by_adr;2=0;3=*+1;4=0;
+lex_words: 1=chg_ra_by_adr;2=0;3=num4-1;4=0;
+lex_words: 1=chg_ra_by_adr;2=0;3=num4-newmem;4=0;
+lex_words: 1=stop_17;
+lex_words: 1=.ADDRESS;2=200;
+lex_words: 1=num3:;2=0;3=00;4=0000;5=0000;6=0000;
+lex_words: 1=num4:;
+lex_words: 1==6.25;
+lex_words: 1=.NOLIST;
+lex_words: 1=.LIST;
+lex_words: 1=NEWMEM2:;2=.MEM;3=100;
+lex_words: 1==10;
+lex_words: 1==11;
+lex_words: 1==12;
+lex_words: 1=.FINISH;2=100;
+Syntax parsing (pass 1).
+cur_loc_counter=0001
+.NAME directive: 'hello14.a20'
+cur_loc_counter=0001
+.TITLE directive: 'Hello Program for M-20 '
+cur_loc_counter=0001
+.AUTHOR directive: 'Stefankov Dmitry '
+cur_loc_counter=0001
+abs_name=TWO1 value=102400000000000
+cur_loc_counter=0001
+abs_name=TWO2 value=102400000000000
+cur_loc_counter=0001
+abs_name=TWO3 value=102400000000000
+cur_loc_counter=0001
+.START directive:  cur_location_counter=0020, program_start_address=0020
+cur_loc_counter=0020
+LABEL: addr=0020, name=NUM1
+DATA_LINE: line_num=21: =2
+cur_loc_counter=0021
+LABEL: addr=0021, name=num2
+DATA_LINE: line_num=22: 1
+cur_loc_counter=0022
+LABEL: addr=0022, name=numTWO
+DATA_LINE: line_num=23: TWO1
+cur_loc_counter=0023
+LABEL: addr=0023, name=NEWMEM
+.MEM directive:  cur_location_counter=0035
+cur_loc_counter=0035
+DATA_LINE: line_num=26: =10
+cur_loc_counter=0036
+DATA_LINE: line_num=27: 1
+cur_loc_counter=0037
+.ADDRESS directive:  cur_location_counter=0100
+cur_loc_counter=0100
+LABEL: addr=0100, name=START
+cur_loc_counter=0100
+CODE_LINE: line_num=33 op=01 sym='add_rn'
+cur_loc_counter=0101
+CODE_LINE: line_num=34 op=02 sym='sub_rn'
+cur_loc_counter=0102
+CODE_LINE: line_num=35 op=52 sym='chg_ra_by_adr'
+cur_loc_counter=0103
+CODE_LINE: line_num=36 op=52 sym='chg_ra_by_adr'
+cur_loc_counter=0104
+CODE_LINE: line_num=37 op=52 sym='chg_ra_by_adr'
+cur_loc_counter=0105
+CODE_LINE: line_num=38 op=01 sym='add_rn'
+cur_loc_counter=0106
+CODE_LINE: line_num=39 op=01 sym='add_rn'
+cur_loc_counter=0107
+CODE_LINE: line_num=40 op=36 sym='cond_jump_w1'
+cur_loc_counter=0110
+CODE_LINE: line_num=41 op=77 sym='stop_77'
+cur_loc_counter=0111
+LABEL: addr=0111, name=STOP_17
+cur_loc_counter=0111
+DATA_LINE: line_num=44: 0
+cur_loc_counter=0112
+CODE_LINE: line_num=45 op=52 sym='chg_ra_by_adr'
+cur_loc_counter=0113
+CODE_LINE: line_num=46 op=52 sym='chg_ra_by_adr'
+cur_loc_counter=0114
+CODE_LINE: line_num=47 op=52 sym='chg_ra_by_adr'
+cur_loc_counter=0115
+CODE_LINE: line_num=48 op=52 sym='chg_ra_by_adr'
+cur_loc_counter=0116
+CODE_LINE: line_num=49 op=17 sym='stop_17'
+cur_loc_counter=0117
+.ADDRESS directive:  cur_location_counter=0200
+cur_loc_counter=0200
+LABEL: addr=0200, name=num3
+DATA_LINE: line_num=52: 0
+cur_loc_counter=0201
+LABEL: addr=0201, name=num4
+cur_loc_counter=0201
+DATA_LINE: line_num=54: =6.25
+cur_loc_counter=0202
+.NOLIST directive: do_list=0
+cur_loc_counter=0202
+.LIST directive: do_list=1
+cur_loc_counter=0202
+LABEL: addr=0202, name=NEWMEM2
+.MEM directive:  cur_location_counter=0302
+cur_loc_counter=0302
+DATA_LINE: line_num=63: =10
+cur_loc_counter=0303
+DATA_LINE: line_num=64: =11
+cur_loc_counter=0304
+DATA_LINE: line_num=65: =12
+cur_loc_counter=0305
+.FINISH directive:  program_start_address=0100
+Print symbolic names table (9 names).
+0: name=NUM1 value=0020
+1: name=num2 value=0021
+2: name=numTWO value=0022
+3: name=NEWMEM value=0023
+4: name=START value=0100
+5: name=STOP_17 value=0111
+6: name=num3 value=0200
+7: name=num4 value=0201
+8: name=NEWMEM2 value=0202
+Print absolute values table (3 names).
+0: name=TWO1 value=102400000000000
+1: name=TWO2 value=102400000000000
+2: name=TWO3 value=102400000000000
+References resolving (pass 2).
+DATA_LINE: line_num=21: addr=0020: 1='=2';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=22: addr=0021: 1='1';2='02';3='4000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=23: addr=0022: 1='TWO1';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=26: addr=0035: 0='=10';
+FIN_OBJ_MCODE: m_code=104500000000000
+DATA_LINE: line_num=27: addr=0036: 0='1';1='02';2='4000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=102400000000000
+CODE_LINE: line_num=33: addr=0100: op=01: 0='add_rn';1='NUM1';2='NUM2';3='NUM3';
+FIN_OBJ_MCODE: m_code=001002000210200
+CODE_LINE: line_num=34: addr=0101: op=02: 0='sub_rn';1='NUM3';2='num1';3='NUM4';
+FIN_OBJ_MCODE: m_code=002020000200201
+CODE_LINE: line_num=35: addr=0102: op=52: 0='chg_ra_by_adr';1='0';2='0';3='0';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=36: addr=0103: op=52: 0='chg_ra_by_adr';1='0';2='0';3='0';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=37: addr=0104: op=52: 0='chg_ra_by_adr';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=38: addr=0105: op=01: 0='add_rn';1='NUM1';2='NUM2';3='NUM3';
+FIN_OBJ_MCODE: m_code=401002000210200
+CODE_LINE: line_num=39: addr=0106: op=01: 0='add_rn';1='0020';2='0021';3='NUM3';
+FIN_OBJ_MCODE: m_code=701002000210200
+CODE_LINE: line_num=40: addr=0107: op=36: 0='cond_jump_w1';1='0';2='STOP_17';3='0';
+FIN_OBJ_MCODE: m_code=036000001110000
+CODE_LINE: line_num=41: addr=0110: op=77: 0='stop_77';
+FIN_OBJ_MCODE: m_code=077000000000000
+DATA_LINE: line_num=44: addr=0111: 0='0';1='52';2='0000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=45: addr=0112: op=52: 0='chg_ra_by_adr';1='0';2='*';3='0';
+FIN_OBJ_MCODE: m_code=052000001120000
+CODE_LINE: line_num=46: addr=0113: op=52: 0='chg_ra_by_adr';1='0';2='*+1';3='0';
+FIN_OBJ_MCODE: m_code=052000001140000
+CODE_LINE: line_num=47: addr=0114: op=52: 0='chg_ra_by_adr';1='0';2='num4-1';3='0';
+FIN_OBJ_MCODE: m_code=052000002000000
+CODE_LINE: line_num=48: addr=0115: op=52: 0='chg_ra_by_adr';1='0';2='num4-newmem';3='0';
+FIN_OBJ_MCODE: m_code=052000001560000
+CODE_LINE: line_num=49: addr=0116: op=17: 0='stop_17';
+FIN_OBJ_MCODE: m_code=017000000000000
+DATA_LINE: line_num=52: addr=0200: 1='0';2='00';3='0000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=000000000000000
+DATA_LINE: line_num=54: addr=0201: 0='=6.25';
+FIN_OBJ_MCODE: m_code=103620000000000
+DATA_LINE: line_num=63: addr=0302: 0='=10';
+FIN_OBJ_MCODE: m_code=104500000000000
+DATA_LINE: line_num=64: addr=0303: 0='=11';
+FIN_OBJ_MCODE: m_code=104540000000000
+DATA_LINE: line_num=65: addr=0304: 0='=12';
+FIN_OBJ_MCODE: m_code=104600000000000
+Make output filename: hello14.m20
+out_mcode: addr=0020 code=102400000000000
+out_mcode: addr=0021 code=102400000000000
+out_mcode: addr=0022 code=102400000000000
+out_mcode: addr=0035 code=104500000000000
+out_mcode: addr=0036 code=102400000000000
+out_mcode: addr=0100 code=001002000210200
+out_mcode: addr=0101 code=002020000200201
+out_mcode: addr=0102 code=052000000000000
+out_mcode: addr=0103 code=052000000000000
+out_mcode: addr=0104 code=052000000000000
+out_mcode: addr=0105 code=401002000210200
+out_mcode: addr=0106 code=701002000210200
+out_mcode: addr=0107 code=036000001110000
+out_mcode: addr=0110 code=077000000000000
+out_mcode: addr=0111 code=052000000000000
+out_mcode: addr=0112 code=052000001120000
+out_mcode: addr=0113 code=052000001140000
+out_mcode: addr=0114 code=052000002000000
+out_mcode: addr=0115 code=052000001560000
+out_mcode: addr=0116 code=017000000000000
+out_mcode: addr=0200 code=000000000000000
+out_mcode: addr=0201 code=103620000000000
+out_mcode: addr=0302 code=104500000000000
+out_mcode: addr=0303 code=104540000000000
+out_mcode: addr=0304 code=104600000000000
+Make listing filename: hello14.l20
+Completed successfully.

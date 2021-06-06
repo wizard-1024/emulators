@@ -1,0 +1,14 @@
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02_debug.txt
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.lst
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.cdp
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.drum1
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.drum2
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.mt0
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.mt1
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.mt2
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_02.mt3
+ADD: ENTER: no_round=0 no_norm=0 x=177000077770000 y=100000000000000
+add: xexp=127 y_exp=64
+add: xexp=127 y_exp=64 x=177000077770000 y=100000000000000
+add: LEAVE: FINAL 0: r=163777700000000
+

@@ -1,0 +1,113 @@
+; Комплексный тест (тест "нет 0" №1)
+; [1963, ЛВИКА]
+; (2015 Стефанков)
+;
+! del test_04_debug.txt
+! del test_04.lst
+! del test_04.cdp
+! del test_04.drum1
+! del test_04.drum2
+! del test_04.mt0
+! del test_04.mt1
+! del test_04.mt2
+! del test_04.mt3
+;
+set console debug=test_04_debug.txt
+;set console debug=console
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;de DISABLE_IS2_TRACE 1
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;de ENABLE_OPCODE_040_HACK 1
+;de DRUM_READ_DATA_DUMP 1
+;de DRUM_WRITE_DATA_DUMP 1
+;de PRINT_STAT_ON_BREAK 0
+;
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt test_04.lst
+;
+set cdr extfmt
+attach cdp test_04.cdp
+;
+de DRUM_0_ACCESS_MODE 1
+;
+att drum0 test_04.drum0
+att drum1 test_04.drum1
+att drum2 test_04.drum2
+;
+;
+;de TAPE_3_ACCESS_MODE 1
+;
+att mt0 test_04.mt0
+att mt1 test_04.mt1
+att mt2 test_04.mt2
+att mt3 test_04.mt3
+;
+att -r cdr test_04.cdr
+;
+;de RPU1 0100000100010377
+;de RPU4  0016000000000000
+; 10**5
+;de RPU1  121606500000000       
+; 10**-18 
+;de RPU1  005447113564352        
+; 10**-19
+;de RPU2  001730171123733        
+; 0,009
+;de RPU2  072446722743250        
+; 0,05
+;de RPU1  074631463146315        
+; 10**12
+;de RPU2  150721522450400        
+;de RPU3  0000000000000000
+de RPU4  0001000000010000
+ex RPU1
+ex RPU2
+ex RPU3
+ex RPU4
+;
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+de USE_ADD_SBST 1
+;
+load test_04.m20
+;
+;break -e 1[10]
+;break -e 1[2]
+break -e 40[2]
+show break all
+;
+;
+echo Run
+run
+;
+show queue
+show time
+;show throttle
+;
+ex 1-471
+ex -m 1-471
+;
+;ex 1000-1147
+;ex -m 1000-1147
+ex 7630-7766
+ex -m 7630-7766
+;
+quit

@@ -1,0 +1,36 @@
+; Пример умножения и деления. Стефанков Д.В.
+;
+! del hello2.lst
+;
+show lpt
+ex LPTWIDTH
+de LPTWIDTH 1
+ex LPTWIDTH
+ex DPTYPE 
+;de DPTYPE 0
+;de DPTYPE 1
+de DPTYPE 2
+;de DPTYPE 3
+ex DPTYPE 
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+show lpt
+att lpt hello2.lst
+;
+;
+load hello2.m20
+;
+ex 20-25
+echo 
+ex 30-33
+echo
+ex -m 30-33
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 20-25
+echo
+quit

@@ -1,0 +1,31 @@
+; Программа ввода и суммирования с выдачей КС на перфокарту. [2014 Стефанков]
+;
+! del sample_0011_debug.txt
+! del sample_0011.lst
+! del sample_0011.cdp
+;
+set console debug=sample_0011_debug.txt
+set cpu debug
+set lpt debug
+set cdp debug
+set cdr debug
+att lpt sample_0011.lst
+att -r cdr sample_0011.cdr
+attach cdp sample_0011.cdp
+;
+load sample_0011.m20
+;
+ex 1-13
+echo
+ex -m 1-13
+echo
+ex 30-31
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 30-31
+echo
+quit

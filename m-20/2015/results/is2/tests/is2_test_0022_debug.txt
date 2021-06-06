@@ -1,0 +1,115 @@
+Debug output to "is2_test_0022_debug.txt" at Sat Feb 28 14:43:12 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+drm: drum_attach(..), name='is2_test_0022.drum0' res=0
+drm: drum_attach(..), name='is2_test_0022.drum1' res=0
+drm: drum_attach(..), name='is2_test_0022.drum2' res=0
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0100: [op=50 mod=0] ввод_пред_050                  0013, 7000, 7767
+cpu: 0101: [op=70 mod=0] ввод_исп_070                   7500, 0000, 0000
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07000,7500,7767,..)
+drm: reading MD 07000 mem_region 7500-7767
+drm: seek file_pos=28672
+drm: read_count=0270
+drm: read_count=0001
+drm: old_sum=533773610545717 chksum=533773610545717
+cpu: err=0, codes_num=0271 sum=533773610545717
+cpu: 0102: [op=16 mod=0] безусл_пер_упр_с_возв          0103, 7500, 7610
+cpu: ext_io_op=0413
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07600,7544,7544,..)
+drm: reading MD 07600 mem_region 7544-7544
+drm: seek file_pos=31744
+drm: read_count=0001
+drm: read_count=0001
+drm: old_sum=150001312000063 chksum=150001323100046
+cpu: err=13, codes_num=0002 sum=150001323100046
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,02310,7200,7246,..)
+drm: reading MD 02310 mem_region 7200-7246
+drm: seek file_pos=9792
+drm: read_count=0047
+drm: read_count=0001
+drm: old_sum=760552523166746 chksum=760552523166746
+cpu: err=0, codes_num=0050 sum=760552523166746
+cpu: 0002: [op=50 mod=0] ввод_пред_050                  0013, 2310, 0246
+cpu: 0003: [op=70 mod=0] ввод_исп_070                   0200, 0002, 0001
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,02310,0200,0246,..)
+drm: reading MD 02310 mem_region 0200-0246
+drm: seek file_pos=9792
+drm: read_count=0047
+drm: read_count=0001
+drm: old_sum=760552523166746 chksum=760552523166746
+cpu: err=0, codes_num=0050 sum=760552523166746
+cpu: 0004: [op=75 mod=0] лог_слож                       0000, 0001, 0247
+cpu: 0005: [op=16 mod=0] безусл_пер_упр_с_возв          0000, 7610, 0000
+cpu: 0104: [op=77 mod=0] останов_077                    0000, 0000, 0000
+
+Останов, KRA: 0104 ([op=77 mod=0] останов_077                    0000, 0000, 0000)
+
+
+
+
+
+
+
+
+
+
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)

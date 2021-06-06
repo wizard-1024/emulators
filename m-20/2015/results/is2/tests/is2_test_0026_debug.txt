@@ -1,0 +1,106 @@
+Debug output to "is2_test_0026_debug.txt" at Sat Feb 28 14:51:07 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+drm: drum_attach(..), name='is2_test_0026.drum0' res=0
+drm: drum_attach(..), name='is2_test_0026.drum1' res=0
+drm: drum_attach(..), name='is2_test_0026.drum2' res=0
+cdr: cdr_set_mode(..)
+cdp: cdp_attach(..)
+CDP: creating new file
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0100: [op=50 mod=0] ввод_пред_050                  0013, 7000, 7767
+cpu: 0101: [op=70 mod=0] ввод_исп_070                   7500, 0000, 0000
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07000,7500,7767,..)
+drm: reading MD 07000 mem_region 7500-7767
+drm: seek file_pos=28672
+drm: read_count=0270
+drm: read_count=0001
+drm: old_sum=533773610545717 chksum=533773610545717
+cpu: err=0, codes_num=0271 sum=533773610545717
+cpu: 0102: [op=16 mod=0] безусл_пер_упр_с_возв          0103, 7501, 7610
+cpu: ext_io_op=0413
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07607,7544,7544,..)
+drm: reading MD 07607 mem_region 7544-7544
+drm: seek file_pos=31800
+drm: read_count=0001
+drm: read_count=0001
+drm: old_sum=150001307400025 chksum=150001326700040
+cpu: err=13, codes_num=0002 sum=150001326700040
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,02670,7200,7240,..)
+drm: reading MD 02670 mem_region 7200-7240
+drm: seek file_pos=11712
+drm: read_count=0041
+drm: read_count=0001
+drm: old_sum=556460364770677 chksum=556460364770677
+cpu: err=0, codes_num=0042 sum=556460364770677
+cpu: ext_io_op=3300
+cdp: punch_card(..)
+cdp: punch_card: zone_buf_addr=0
+cdp: punch_card: start_addr=0002, end_addr=0003, count=2
+cdp: punch_card: update buffer only.
+cpu: err=0, codes_num=0000
+cpu: ext_io_op=3100
+lpt: write_line(..)
+lpt: write_line: start_addr=0002, end_addr=0003, count=2, pr_type=1
+cpu: err=0, codes_num=0004
+cpu: 0104: [op=77 mod=0] останов_077                    0000, 0000, 0000
+
+Останов, KRA: 0104 ([op=77 mod=0] останов_077                    0000, 0000, 0000)
+
+
+
+
+
+
+
+
+
+
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)

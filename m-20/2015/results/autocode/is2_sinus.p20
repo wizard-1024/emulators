@@ -1,0 +1,495 @@
+encoding type: 3
+Processing filename: autocode_m20_eng.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.NAME'
+PS_OPS: idx='02', name='.TITLE'
+PS_OPS: idx='03', name='.START'
+PS_OPS: idx='04', name='.FINISH'
+PS_OPS: idx='05', name='.ADDRESS'
+PS_OPS: idx='06', name='.ABS'
+PS_OPS: idx='07', name='.MEM'
+PS_OPS: idx='08', name='.AUTHOR'
+PS_OPS: idx='09', name='.LIST'
+PS_OPS: idx='10', name='.NOLIST'
+File parsed and accepted.
+Processing filename: autocode_m20_dos_cp866.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.€Њџ'
+PS_OPS: idx='02', name='.ЌЂ‡‚ЂЌ€…'
+PS_OPS: idx='03', name='.‘’Ђђ’'
+PS_OPS: idx='04', name='.”€Ќ€'
+PS_OPS: idx='05', name='.Ђ„ђ…‘'
+PS_OPS: idx='06', name='.ЂЃ‘'
+PS_OPS: idx='07', name='.ЏЂЊ'
+PS_OPS: idx='08', name='.Ђ‚’Ћђ'
+PS_OPS: idx='09', name='.Џ…—Ђ’њ'
+PS_OPS: idx='10', name='.Ќ…Џ…—Ђ’њ'
+File parsed and accepted.
+Processing filename: autocode_m20_win_cp1251.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.ИМЯ'
+PS_OPS: idx='02', name='.НАЗВАНИЕ'
+PS_OPS: idx='03', name='.СТАРТ'
+PS_OPS: idx='04', name='.ФИНИШ'
+PS_OPS: idx='05', name='.АДРЕС'
+PS_OPS: idx='06', name='.АБС'
+PS_OPS: idx='07', name='.ПАМ'
+PS_OPS: idx='08', name='.АВТОР'
+PS_OPS: idx='09', name='.ПЕЧАТЬ'
+PS_OPS: idx='10', name='.НЕПЕЧАТЬ'
+File parsed and accepted.
+Processing filename: autocode_m20_unix_koi8r.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.йнс'
+PS_OPS: idx='02', name='.объчбойе'
+PS_OPS: idx='03', name='.уфбтф'
+PS_OPS: idx='04', name='.жйойы'
+PS_OPS: idx='05', name='.бдтеу'
+PS_OPS: idx='06', name='.бву'
+PS_OPS: idx='07', name='.рбн'
+PS_OPS: idx='08', name='.бчфпт'
+PS_OPS: idx='09', name='.реюбфш'
+PS_OPS: idx='10', name='.оереюбфш'
+File parsed and accepted.
+Processing filename: autocode_m20_rus_utf8.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.РРњРЇ'
+PS_OPS: idx='02', name='.РќРђР—Р’РђРќРР•'
+PS_OPS: idx='03', name='.РЎРўРђР Рў'
+PS_OPS: idx='04', name='.Р¤РРќРРЁ'
+PS_OPS: idx='05', name='.РђР”Р Р•РЎ'
+PS_OPS: idx='06', name='.РђР‘РЎ'
+PS_OPS: idx='07', name='.РџРђРњ'
+PS_OPS: idx='08', name='.РђР’РўРћР '
+PS_OPS: idx='09', name='.РџР•Р§РђРўР¬'
+PS_OPS: idx='10', name='.РќР•РџР•Р§РђРўР¬'
+File parsed and accepted.
+Parsing filename: is2_sinus.a20
+Read lines: 85
+orig_text: *
+orig_text: *
+orig_text: * Загрузка ИС-2, к/с для ИС-2 и вызов СП 05 с печатью результатов (10 раз)
+orig_text: * (использует готовые образы МБ из is2_build)
+orig_text: * Language: M-20 autocode 
+orig_text: * encoding: russian, cp-1251
+orig_text: *
+orig_text: * Copyright (c) 2015 Stefankov
+orig_text: *
+orig_text: 
+orig_text: 	.ИМЯ  is2_sunus.a20
+orig_text: 	.НАЗВАНИЕ  Программа вызова ИС-2 для печати результатов СП 5 (y=sinx) для ЭЦВМ M-20
+orig_text: 	.АВТОР  Стефанков Дмитрий
+orig_text: *
+orig_text: *
+orig_text: ИС2_НАЧАЛО 		.АБС	7500
+orig_text: ИС2_КОНЕЦ	  	.АБС	7767
+orig_text: ИС2_СОХР                .АБС    7610
+orig_text: ИС2_МБ3_АДР_ЗГР 	.АБС	7000
+orig_text: МБ3_ЧТЕНИЕ      	.АБС	0013
+orig_text: ДЕСЯТ_ПЕЧАТЬ            .АБС    2100
+orig_text: СЧЕТЧИК                 .АБС    012
+orig_text: *
+orig_text: *
+orig_text: 	.СТАРТ  20
+orig_text: ; Данные
+orig_text: АРГ:  =1E-1                ; x (=0.1)
+orig_text: ШАГ:  =1E-1                ; step (=0.1)
+orig_text: ;РЕЗ:  =0 		   ; sin x НЕ ИСПОЛЬЗУЕТСЯ
+orig_text: *
+orig_text: *
+orig_text: 	.АДРЕС  30
+orig_text: КС1:	5 33 7736 0762 5717     ; к/c для суммирования 7500-7767 (ожидаемая, но старая)
+orig_text: КС2:	0 00 0000 0000 0000     ; 
+orig_text: *
+orig_text: *
+orig_text: 	.АДРЕС  40
+orig_text: РАБ_ЯЧ:
+orig_text: *
+orig_text: *
+orig_text: 	.АДРЕС  100
+orig_text: @НАЧАЛО:
+orig_text: ; Загружаем ИС-2
+orig_text: 	ввод_пред_050    МБ3_ЧТЕНИЕ, ИС2_МБ3_АДР_ЗГР, ИС2_КОНЕЦ
+orig_text: 	ввод_исп_070     ИС2_НАЧАЛО
+orig_text: 
+orig_text: ; считаем к/с
+orig_text: 	изм_ра_по_адр    ,,     		; очистка РА
+orig_text:         пересылка	 0, 0, КС2
+orig_text: @СЛОЖ:
+orig_text:         цикл_слож	 (ИС2_НАЧАЛО), КС2, КС2
+orig_text: 	пер_если_ра_мнш_a1 ИС2_КОНЕЦ-ИС2_НАЧАЛО, @СЛОЖ, (1)
+orig_text: 
+orig_text: ; подготовка
+orig_text:         пересылка	 АРГ, 0, РАБ_ЯЧ
+orig_text: 	изм_ра_по_адр    ,,    		; очистка РА
+orig_text: 
+orig_text: ; печать аргумента х
+orig_text: @ЦИКЛ:
+orig_text:         ввод_пред_050    ДЕСЯТ_ПЕЧАТЬ, 0, РАБ_ЯЧ
+orig_text:         ввод_исп_070     РАБ_ЯЧ
+orig_text: 
+orig_text: ; вызов СП 5, y=sinx(x)
+orig_text: 	безусл_пер_упр_с_возв    *+1, ИС2_НАЧАЛО+1, ИС2_СОХР	
+orig_text: 	лог_слож РАБ_ЯЧ, 5, РАБ_ЯЧ+1	         ; адрес x, номер СП, адрес y
+orig_text: 
+orig_text: ; печать результата y
+orig_text:         ввод_пред_050    ДЕСЯТ_ПЕЧАТЬ, 0, РАБ_ЯЧ+1
+orig_text:         ввод_исп_070     РАБ_ЯЧ+1
+orig_text: 
+orig_text: ; увеличить на ШАГ и продолжить цикл
+orig_text: 	слож_он          РАБ_ЯЧ, ШАГ, РАБ_ЯЧ    
+orig_text: 	пер_если_ра_мнш_a1  СЧЕТЧИК-1, @ЦИКЛ, (1)
+orig_text: 
+orig_text: ;
+orig_text: ; завершение
+orig_text: ;
+orig_text: 	останов_077                              ;  ОСТАНОВ ЭЦВМ
+orig_text:         останов_077  (7777),(7777),(7777)        ; останов после выдачи
+orig_text: *
+orig_text: *
+orig_text: 	.ФИНИШ 100
+orig_text: 
+orig_text: * конец программы
+orig_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.ИМЯ  is2_sunus.a20
+clean_text: 	.НАЗВАНИЕ  Программа вызова ИС-2 для печати результатов СП 5 (y=sinx) для ЭЦВМ M-20
+clean_text: 	.АВТОР  Стефанков Дмитрий
+clean_text: 
+clean_text: 
+clean_text: ИС2_НАЧАЛО 		.АБС	7500
+clean_text: ИС2_КОНЕЦ	  	.АБС	7767
+clean_text: ИС2_СОХР                .АБС    7610
+clean_text: ИС2_МБ3_АДР_ЗГР 	.АБС	7000
+clean_text: МБ3_ЧТЕНИЕ      	.АБС	0013
+clean_text: ДЕСЯТ_ПЕЧАТЬ            .АБС    2100
+clean_text: СЧЕТЧИК                 .АБС    012
+clean_text: 
+clean_text: 
+clean_text: 	.СТАРТ  20
+clean_text: 
+clean_text: АРГ:  =1E-1                
+clean_text: ШАГ:  =1E-1                
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.АДРЕС  30
+clean_text: КС1:	5 33 7736 0762 5717     
+clean_text: КС2:	0 00 0000 0000 0000     
+clean_text: 
+clean_text: 
+clean_text: 	.АДРЕС  40
+clean_text: РАБ_ЯЧ:
+clean_text: 
+clean_text: 
+clean_text: 	.АДРЕС  100
+clean_text: @НАЧАЛО:
+clean_text: 
+clean_text: 	ввод_пред_050    МБ3_ЧТЕНИЕ, ИС2_МБ3_АДР_ЗГР, ИС2_КОНЕЦ
+clean_text: 	ввод_исп_070     ИС2_НАЧАЛО
+clean_text: 
+clean_text: 
+clean_text: 	изм_ра_по_адр    ,,     		
+clean_text:         пересылка	 0, 0, КС2
+clean_text: @СЛОЖ:
+clean_text:         цикл_слож	 (ИС2_НАЧАЛО), КС2, КС2
+clean_text: 	пер_если_ра_мнш_a1 ИС2_КОНЕЦ-ИС2_НАЧАЛО, @СЛОЖ, (1)
+clean_text: 
+clean_text: 
+clean_text:         пересылка	 АРГ, 0, РАБ_ЯЧ
+clean_text: 	изм_ра_по_адр    ,,    		
+clean_text: 
+clean_text: 
+clean_text: @ЦИКЛ:
+clean_text:         ввод_пред_050    ДЕСЯТ_ПЕЧАТЬ, 0, РАБ_ЯЧ
+clean_text:         ввод_исп_070     РАБ_ЯЧ
+clean_text: 
+clean_text: 
+clean_text: 	безусл_пер_упр_с_возв    *+1, ИС2_НАЧАЛО+1, ИС2_СОХР	
+clean_text: 	лог_слож РАБ_ЯЧ, 5, РАБ_ЯЧ+1	         
+clean_text: 
+clean_text: 
+clean_text:         ввод_пред_050    ДЕСЯТ_ПЕЧАТЬ, 0, РАБ_ЯЧ+1
+clean_text:         ввод_исп_070     РАБ_ЯЧ+1
+clean_text: 
+clean_text: 
+clean_text: 	слож_он          РАБ_ЯЧ, ШАГ, РАБ_ЯЧ    
+clean_text: 	пер_если_ра_мнш_a1  СЧЕТЧИК-1, @ЦИКЛ, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	останов_077                              
+clean_text:         останов_077  (7777),(7777),(7777)        
+clean_text: 
+clean_text: 
+clean_text: 	.ФИНИШ 100
+clean_text: 
+clean_text: 
+clean_text: 
+Lexical scanning.
+work_buf (len=20): 	.ИМЯ  is2_sunus.a20
+work_buf (len=84): 	.НАЗВАНИЕ  Программа вызова ИС-2 для печати результатов СП 5 (y=sinx) для ЭЦВМ M-20
+work_buf (len=26): 	.АВТОР  Стефанков Дмитрий
+work_buf (len=22): ИС2_НАЧАЛО 		.АБС	7500
+work_buf (len=22): ИС2_КОНЕЦ	  	.АБС	7767
+work_buf (len=36): ИС2_СОХР                .АБС    7610
+work_buf (len=26): ИС2_МБ3_АДР_ЗГР 	.АБС	7000
+work_buf (len=26): МБ3_ЧТЕНИЕ      	.АБС	0013
+work_buf (len=36): ДЕСЯТ_ПЕЧАТЬ            .АБС    2100
+work_buf (len=35): СЧЕТЧИК                 .АБС    012
+work_buf (len=11): 	.СТАРТ  20
+work_buf (len=27): АРГ:  =1E-1                
+work_buf (len=27): ШАГ:  =1E-1                
+work_buf (len=11): 	.АДРЕС  30
+work_buf (len=29): КС1:	5 33 7736 0762 5717     
+work_buf (len=29): КС2:	0 00 0000 0000 0000     
+work_buf (len=11): 	.АДРЕС  40
+work_buf (len=7): РАБ_ЯЧ:
+work_buf (len=12): 	.АДРЕС  100
+work_buf (len=8): @НАЧАЛО:
+work_buf (len=56): 	ввод_пред_050    МБ3_ЧТЕНИЕ, ИС2_МБ3_АДР_ЗГР, ИС2_КОНЕЦ
+work_buf (len=28): 	ввод_исп_070     ИС2_НАЧАЛО
+work_buf (len=27): 	изм_ра_по_адр    ,,     		
+work_buf (len=28):         пересылка	 0, 0, КС2
+work_buf (len=6): @СЛОЖ:
+work_buf (len=41):         цикл_слож	 (ИС2_НАЧАЛО), КС2, КС2
+work_buf (len=52): 	пер_если_ра_мнш_a1 ИС2_КОНЕЦ-ИС2_НАЧАЛО, @СЛОЖ, (1)
+work_buf (len=33):         пересылка	 АРГ, 0, РАБ_ЯЧ
+work_buf (len=26): 	изм_ра_по_адр    ,,    		
+work_buf (len=6): @ЦИКЛ:
+work_buf (len=48):         ввод_пред_050    ДЕСЯТ_ПЕЧАТЬ, 0, РАБ_ЯЧ
+work_buf (len=31):         ввод_исп_070     РАБ_ЯЧ
+work_buf (len=54): 	безусл_пер_упр_с_возв    *+1, ИС2_НАЧАЛО+1, ИС2_СОХР	
+work_buf (len=39): 	лог_слож РАБ_ЯЧ, 5, РАБ_ЯЧ+1	         
+work_buf (len=50):         ввод_пред_050    ДЕСЯТ_ПЕЧАТЬ, 0, РАБ_ЯЧ+1
+work_buf (len=33):         ввод_исп_070     РАБ_ЯЧ+1
+work_buf (len=41): 	слож_он          РАБ_ЯЧ, ШАГ, РАБ_ЯЧ    
+work_buf (len=42): 	пер_если_ра_мнш_a1  СЧЕТЧИК-1, @ЦИКЛ, (1)
+work_buf (len=42): 	останов_077                              
+work_buf (len=49):         останов_077  (7777),(7777),(7777)        
+work_buf (len=11): 	.ФИНИШ 100
+lex_words: 1=.ИМЯ;2=is2_sunus.a20;
+lex_words: 1=.НАЗВАНИЕ;2=Программа;3=вызова;4=ИС-2;5=для;6=печати;7=результатов;8=СП;9=5;10=(y=sinx);11=для;12=ЭЦВМ;13=M-20;
+lex_words: 1=.АВТОР;2=Стефанков;3=Дмитрий;
+lex_words: 1=ИС2_НАЧАЛО;2=.АБС;3=7500;
+lex_words: 1=ИС2_КОНЕЦ;2=.АБС;3=7767;
+lex_words: 1=ИС2_СОХР;2=.АБС;3=7610;
+lex_words: 1=ИС2_МБ3_АДР_ЗГР;2=.АБС;3=7000;
+lex_words: 1=МБ3_ЧТЕНИЕ;2=.АБС;3=0013;
+lex_words: 1=ДЕСЯТ_ПЕЧАТЬ;2=.АБС;3=2100;
+lex_words: 1=СЧЕТЧИК;2=.АБС;3=012;
+lex_words: 1=.СТАРТ;2=20;
+lex_words: 1=АРГ:;2==1E-1;
+lex_words: 1=ШАГ:;2==1E-1;
+lex_words: 1=.АДРЕС;2=30;
+lex_words: 1=КС1:;2=5;3=33;4=7736;5=0762;6=5717;
+lex_words: 1=КС2:;2=0;3=00;4=0000;5=0000;6=0000;
+lex_words: 1=.АДРЕС;2=40;
+lex_words: 1=РАБ_ЯЧ:;
+lex_words: 1=.АДРЕС;2=100;
+lex_words: 1=@НАЧАЛО:;
+lex_words: 1=ввод_пред_050;2=МБ3_ЧТЕНИЕ;3=ИС2_МБ3_АДР_ЗГР;4=ИС2_КОНЕЦ;
+lex_words: 1=ввод_исп_070;2=ИС2_НАЧАЛО;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=пересылка;2=0;3=0;4=КС2;
+lex_words: 1=@СЛОЖ:;
+lex_words: 1=цикл_слож;2=(ИС2_НАЧАЛО);3=КС2;4=КС2;
+lex_words: 1=пер_если_ра_мнш_a1;2=ИС2_КОНЕЦ-ИС2_НАЧАЛО;3=@СЛОЖ;4=(1);
+lex_words: 1=пересылка;2=АРГ;3=0;4=РАБ_ЯЧ;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=@ЦИКЛ:;
+lex_words: 1=ввод_пред_050;2=ДЕСЯТ_ПЕЧАТЬ;3=0;4=РАБ_ЯЧ;
+lex_words: 1=ввод_исп_070;2=РАБ_ЯЧ;
+lex_words: 1=безусл_пер_упр_с_возв;2=*+1;3=ИС2_НАЧАЛО+1;4=ИС2_СОХР;
+lex_words: 1=лог_слож;2=РАБ_ЯЧ;3=5;4=РАБ_ЯЧ+1;
+lex_words: 1=ввод_пред_050;2=ДЕСЯТ_ПЕЧАТЬ;3=0;4=РАБ_ЯЧ+1;
+lex_words: 1=ввод_исп_070;2=РАБ_ЯЧ+1;
+lex_words: 1=слож_он;2=РАБ_ЯЧ;3=ШАГ;4=РАБ_ЯЧ;
+lex_words: 1=пер_если_ра_мнш_a1;2=СЧЕТЧИК-1;3=@ЦИКЛ;4=(1);
+lex_words: 1=останов_077;
+lex_words: 1=останов_077;2=(7777);3=(7777);4=(7777);
+lex_words: 1=.ФИНИШ;2=100;
+Syntax parsing (pass 1).
+cur_loc_counter=0001
+.ИМЯ directive: 'is2_sunus.a20'
+cur_loc_counter=0001
+.НАЗВАНИЕ directive: 'Программа вызова ИС-2 для печати результатов СП 5 (y=sinx) для ЭЦВМ M-20 '
+cur_loc_counter=0001
+.АВТОР directive: 'Стефанков Дмитрий '
+cur_loc_counter=0001
+abs_name=ИС2_НАЧАЛО value=000000000007500
+cur_loc_counter=0001
+abs_name=ИС2_КОНЕЦ value=000000000007767
+cur_loc_counter=0001
+abs_name=ИС2_СОХР value=000000000007610
+cur_loc_counter=0001
+abs_name=ИС2_МБ3_АДР_ЗГР value=000000000007000
+cur_loc_counter=0001
+abs_name=МБ3_ЧТЕНИЕ value=000000000000013
+cur_loc_counter=0001
+abs_name=ДЕСЯТ_ПЕЧАТЬ value=000000000002100
+cur_loc_counter=0001
+abs_name=СЧЕТЧИК value=000000000000012
+cur_loc_counter=0001
+.СТАРТ directive:  cur_location_counter=0020, program_start_address=0020
+cur_loc_counter=0020
+LABEL: addr=0020, name=АРГ
+DATA_LINE: line_num=27: =1E-1
+cur_loc_counter=0021
+LABEL: addr=0021, name=ШАГ
+DATA_LINE: line_num=28: =1E-1
+cur_loc_counter=0022
+.АДРЕС directive:  cur_location_counter=0030
+cur_loc_counter=0030
+LABEL: addr=0030, name=КС1
+DATA_LINE: line_num=33: 5
+cur_loc_counter=0031
+LABEL: addr=0031, name=КС2
+DATA_LINE: line_num=34: 0
+cur_loc_counter=0032
+.АДРЕС directive:  cur_location_counter=0040
+cur_loc_counter=0040
+LABEL: addr=0040, name=РАБ_ЯЧ
+cur_loc_counter=0040
+.АДРЕС directive:  cur_location_counter=0100
+cur_loc_counter=0100
+LABEL: addr=0100, name=@НАЧАЛО
+cur_loc_counter=0100
+CODE_LINE: line_num=44 op=50 sym='ввод_пред_050'
+cur_loc_counter=0101
+CODE_LINE: line_num=45 op=70 sym='ввод_исп_070'
+cur_loc_counter=0102
+CODE_LINE: line_num=48 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=0103
+CODE_LINE: line_num=49 op=00 sym='пересылка'
+cur_loc_counter=0104
+LABEL: addr=0104, name=@СЛОЖ
+cur_loc_counter=0104
+CODE_LINE: line_num=51 op=07 sym='цикл_слож'
+cur_loc_counter=0105
+CODE_LINE: line_num=52 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=0106
+CODE_LINE: line_num=55 op=00 sym='пересылка'
+cur_loc_counter=0107
+CODE_LINE: line_num=56 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=0110
+LABEL: addr=0110, name=@ЦИКЛ
+cur_loc_counter=0110
+CODE_LINE: line_num=60 op=50 sym='ввод_пред_050'
+cur_loc_counter=0111
+CODE_LINE: line_num=61 op=70 sym='ввод_исп_070'
+cur_loc_counter=0112
+CODE_LINE: line_num=64 op=16 sym='безусл_пер_упр_с_возв'
+cur_loc_counter=0113
+CODE_LINE: line_num=65 op=75 sym='лог_слож'
+cur_loc_counter=0114
+CODE_LINE: line_num=68 op=50 sym='ввод_пред_050'
+cur_loc_counter=0115
+CODE_LINE: line_num=69 op=70 sym='ввод_исп_070'
+cur_loc_counter=0116
+CODE_LINE: line_num=72 op=01 sym='слож_он'
+cur_loc_counter=0117
+CODE_LINE: line_num=73 op=12 sym='пер_если_ра_мнш_a1'
+cur_loc_counter=0120
+CODE_LINE: line_num=78 op=77 sym='останов_077'
+cur_loc_counter=0121
+CODE_LINE: line_num=79 op=77 sym='останов_077'
+cur_loc_counter=0122
+.ФИНИШ directive:  program_start_address=0100
+Print symbolic names table (8 names).
+0: name=АРГ value=0020
+1: name=ШАГ value=0021
+2: name=КС1 value=0030
+3: name=КС2 value=0031
+4: name=РАБ_ЯЧ value=0040
+5: name=@НАЧАЛО value=0100
+6: name=@СЛОЖ value=0104
+7: name=@ЦИКЛ value=0110
+Print absolute values table (7 names).
+0: name=ИС2_НАЧАЛО value=000000000007500
+1: name=ИС2_КОНЕЦ value=000000000007767
+2: name=ИС2_СОХР value=000000000007610
+3: name=ИС2_МБ3_АДР_ЗГР value=000000000007000
+4: name=МБ3_ЧТЕНИЕ value=000000000000013
+5: name=ДЕСЯТ_ПЕЧАТЬ value=000000000002100
+6: name=СЧЕТЧИК value=000000000000012
+References resolving (pass 2).
+DATA_LINE: line_num=27: addr=0020: 1='=1E-1';
+FIN_OBJ_MCODE: m_code=075631463146315
+DATA_LINE: line_num=28: addr=0021: 1='=1E-1';
+FIN_OBJ_MCODE: m_code=075631463146315
+DATA_LINE: line_num=33: addr=0030: 1='5';2='33';3='7736';4='0762';5='5717';
+FIN_OBJ_MCODE: m_code=533773607625717
+DATA_LINE: line_num=34: addr=0031: 1='0';2='00';3='0000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=000000000000000
+CODE_LINE: line_num=44: addr=0100: op=50: 0='ввод_пред_050';1='МБ3_ЧТЕНИЕ';2='ИС2_МБ3_АДР_ЗГР';3='ИС2_КОНЕЦ';
+FIN_OBJ_MCODE: m_code=050001370007767
+CODE_LINE: line_num=45: addr=0101: op=70: 0='ввод_исп_070';1='ИС2_НАЧАЛО';
+FIN_OBJ_MCODE: m_code=070750000000000
+CODE_LINE: line_num=48: addr=0102: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=49: addr=0103: op=00: 0='пересылка';1='0';2='0';3='КС2';
+FIN_OBJ_MCODE: m_code=000000000000031
+CODE_LINE: line_num=51: addr=0104: op=07: 0='цикл_слож';1='ИС2_НАЧАЛО';2='КС2';3='КС2';
+FIN_OBJ_MCODE: m_code=407750000310031
+CODE_LINE: line_num=52: addr=0105: op=12: 0='пер_если_ра_мнш_a1';1='ИС2_КОНЕЦ-ИС2_НАЧАЛО';2='@СЛОЖ';3='1';
+FIN_OBJ_MCODE: m_code=112026701040001
+CODE_LINE: line_num=55: addr=0106: op=00: 0='пересылка';1='АРГ';2='0';3='РАБ_ЯЧ';
+FIN_OBJ_MCODE: m_code=000002000000040
+CODE_LINE: line_num=56: addr=0107: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=60: addr=0110: op=50: 0='ввод_пред_050';1='ДЕСЯТ_ПЕЧАТЬ';2='0';3='РАБ_ЯЧ';
+FIN_OBJ_MCODE: m_code=050210000000040
+CODE_LINE: line_num=61: addr=0111: op=70: 0='ввод_исп_070';1='РАБ_ЯЧ';
+FIN_OBJ_MCODE: m_code=070004000000000
+CODE_LINE: line_num=64: addr=0112: op=16: 0='безусл_пер_упр_с_возв';1='*+1';2='ИС2_НАЧАЛО+1';3='ИС2_СОХР';
+FIN_OBJ_MCODE: m_code=016011375017610
+CODE_LINE: line_num=65: addr=0113: op=75: 0='лог_слож';1='РАБ_ЯЧ';2='5';3='РАБ_ЯЧ+1';
+FIN_OBJ_MCODE: m_code=075004000050041
+CODE_LINE: line_num=68: addr=0114: op=50: 0='ввод_пред_050';1='ДЕСЯТ_ПЕЧАТЬ';2='0';3='РАБ_ЯЧ+1';
+FIN_OBJ_MCODE: m_code=050210000000041
+CODE_LINE: line_num=69: addr=0115: op=70: 0='ввод_исп_070';1='РАБ_ЯЧ+1';
+FIN_OBJ_MCODE: m_code=070004100000000
+CODE_LINE: line_num=72: addr=0116: op=01: 0='слож_он';1='РАБ_ЯЧ';2='ШАГ';3='РАБ_ЯЧ';
+FIN_OBJ_MCODE: m_code=001004000210040
+CODE_LINE: line_num=73: addr=0117: op=12: 0='пер_если_ра_мнш_a1';1='СЧЕТЧИК-1';2='@ЦИКЛ';3='1';
+FIN_OBJ_MCODE: m_code=112001101100001
+CODE_LINE: line_num=78: addr=0120: op=77: 0='останов_077';
+FIN_OBJ_MCODE: m_code=077000000000000
+CODE_LINE: line_num=79: addr=0121: op=77: 0='останов_077';1='7777';2='7777';3='7777';
+FIN_OBJ_MCODE: m_code=777777777777777
+Make output filename: is2_sinus.m20
+out_mcode: addr=0020 code=075631463146315
+out_mcode: addr=0021 code=075631463146315
+out_mcode: addr=0030 code=533773607625717
+out_mcode: addr=0031 code=000000000000000
+out_mcode: addr=0100 code=050001370007767
+out_mcode: addr=0101 code=070750000000000
+out_mcode: addr=0102 code=052000000000000
+out_mcode: addr=0103 code=000000000000031
+out_mcode: addr=0104 code=407750000310031
+out_mcode: addr=0105 code=112026701040001
+out_mcode: addr=0106 code=000002000000040
+out_mcode: addr=0107 code=052000000000000
+out_mcode: addr=0110 code=050210000000040
+out_mcode: addr=0111 code=070004000000000
+out_mcode: addr=0112 code=016011375017610
+out_mcode: addr=0113 code=075004000050041
+out_mcode: addr=0114 code=050210000000041
+out_mcode: addr=0115 code=070004100000000
+out_mcode: addr=0116 code=001004000210040
+out_mcode: addr=0117 code=112001101100001
+out_mcode: addr=0120 code=077000000000000
+out_mcode: addr=0121 code=777777777777777
+Make listing filename: is2_sinus.l20
+Завершено успешно.

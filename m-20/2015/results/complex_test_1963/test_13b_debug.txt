@@ -1,0 +1,365 @@
+Debug output to "test_13b_debug.txt" at Sun Mar 08 17:51:03 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+cdr: cdr_set_mode(..)
+cdp: cdp_attach(..)
+CDP: creating new file
+drm: drum_attach(..), name='test_13b.drum0' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='test_13b.drum1' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='test_13b.drum2' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_13b.mt0' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_13b.mt1' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_13b.mt2' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_13b.mt3' res=0
+cdr: cdr_attach(..)
+CDR: unit is read only
+
+Run
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0100: [op=50 mod=0] ввод_пред_050                  0011, 4000, 7766
+cpu: 0101: [op=70 mod=0] ввод_исп_070                   7630, 0103, 0000
+cpu: ext_io_op=0011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04000,7630,7766,..)
+drm: reading MD 04000 mem_region 7630-7766
+drm: seek file_pos=16384
+drm: read_count=0137
+drm: read_count=0001
+drm: old_sum=002646677400702 chksum=002646677400702
+cpu: err=0, codes_num=0140 sum=002646677400702
+cpu: 0102: [op=56 mod=0] безусл_пер_упр                 0000, 7731, 0000
+cpu: 7731: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7727
+cpu: 7732: [op=55 mod=0] лог_умнож                      7727, 7730, 7764
+cpu: 7733: [op=36 mod=0] усл_пер_упр_по_w1              0000, 7746, 7763
+cpu: 7734: [op=72 mod=0] изм_ра_по_коду                 0000, 7763, 0000
+cpu: 7735: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7727
+cpu: 7736: [op=55 mod=0] лог_умнож                      7727, 7730, 7764
+cpu: 7737: [op=76 mod=0] усл_пер_упр_по_w0              0000, 7754, 0000
+cpu: 7754: [op=54 mod=0] сдвиг_кода_по_адр              0050, 7764, 7764
+cpu: 7755: [op=13 mod=0] слож_команд                    0000, 7763, 7765
+cpu: 7756: [op=15 mod=0] сравн                          7764, 7765, 0000
+cpu: 7757: [op=36 mod=0] усл_пер_упр_по_w1              0000, 7647, 0000
+cpu: 7760: [op=72 mod=0] изм_ра_по_коду                 0000, 7764, 0000
+cpu: 7761: [op=56 mod=0] безусл_пер_упр                 7643, 7747, 7665
+cpu: 7747: [op=75 mod=4] лог_слож                       @+7667, 0000, 7751
+cpu: 7750: [op=75 mod=4] лог_слож                       @-72, 0000, 7762
+cpu: 7751: [op=50 mod=0] ввод_пред_050                  0011, 5706, 0217
+cpu: 7752: [op=70 mod=0] ввод_исп_070                   0001, 7751, 0000
+cpu: ext_io_op=0011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,05706,0001,0217,..)
+drm: reading MD 05706 mem_region 0001-0217
+drm: seek file_pos=24112
+drm: read_count=0217
+drm: read_count=0001
+drm: old_sum=571035015311014 chksum=571035015311014
+cpu: err=0, codes_num=0220 sum=571035015311014
+cpu: 7753: [op=16 mod=4] безусл_пер_упр_с_возв          @+0000, 7647, 7763
+cpu: 7647: [op=75 mod=0] лог_слож                       7646, 0000, 7767
+cpu: 7650: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7667
+cpu: 7651: [op=72 mod=0] изм_ра_по_коду                 0000, 7667, 0000
+cpu: 7652: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7653: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7654: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7655: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7656: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7657: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7660: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7661: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7662: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7663: [op=32 mod=1] пер_если_ра_не_менш_a1         0001, 7652, @-1
+cpu: 7664: [op=35 mod=0] сравн_останов                  7767, 7646, 7644
+cpu: 7665: [op=56 mod=0] безусл_пер_упр                 0000, 0001, 7665
+cpu: 0001: [op=75 mod=0] лог_слож                       0136, 0000, 0110
+cpu: 0002: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0220
+cpu: 0003: [op=55 mod=0] лог_умнож                      0220, 0144, 0000
+cpu: 0004: [op=31 mod=0] пер_если_ра_не_менш_a1_и_w1    0000, 0076, 0000
+cpu: 0076: [op=55 mod=0] лог_умнож                      0220, 0142, 0000
+cpu: 0077: [op=36 mod=0] усл_пер_упр_по_w1              0135, 0106, 0100
+cpu: 0106: [op=55 mod=0] лог_умнож                      0220, 0143, 0000
+cpu: 0107: [op=31 mod=0] пер_если_ра_не_менш_a1_и_w1    0000, 7734, 0000
+cpu: 0110: [op=56 mod=0] безусл_пер_упр                 0137, 0111, 0110
+cpu: 0111: [op=50 mod=0] ввод_пред_050                  1041, 0002, 0157
+cpu: 0112: [op=70 mod=0] ввод_исп_070                   0146, 0000, 0000
+cpu: ext_io_op=1041
+mt: format_tape(..), user_mt_no=1
+mt: format_tape(..), mt_no=1 user_mt_no=1
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=0
+mt: format_tape(): codes_group_size=0012
+mt: format_tape(): new codes_group_size=0012
+mt: format_tape(): zone_num=0002
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=0
+mt: format_tape(): last_fmt_pos=0
+mt: format_tape(): last_exp_pos=96 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0014
+cpu: 0113: [op=50 mod=0] ввод_пред_050                  5021, 0002, 0212
+cpu: 0114: [op=70 mod=0] ввод_исп_070                   0201, 0113, 0000
+cpu: ext_io_op=5021
+mt: mt_tape_io(..), user_mt_no=1
+mt: mt_tape_io(..), mt_no=1 user_mt_no=1
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_read(1,00002,0201,0212,..)
+mt: mt_read(): no_mosu_access=2048
+mt: mt_read(): get tape length
+mt: mt_read(): rewind tape to beginning
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=2, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=96, tape_len=96
+mt: mt_read(): matching_zone_found (2==2)
+mt: mt_read(): userwords=10, cur_zone_size=10
+mt: mt_read(): [new] userwords=10, cur_zone_size=10
+mt: mt_read(): read_chksum=000000000000000 calc_chksum=000000000000000
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0014 sum=000000000000000
+cpu: 0115: [op=50 mod=0] ввод_пред_050                  1041, 0003, 0157
+cpu: 0116: [op=70 mod=0] ввод_исп_070                   0146, 0000, 0000
+cpu: ext_io_op=1041
+mt: format_tape(..), user_mt_no=1
+mt: format_tape(..), mt_no=1 user_mt_no=1
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=0
+mt: format_tape(): codes_group_size=0012
+mt: format_tape(): new codes_group_size=0012
+mt: format_tape(): zone_num=0003
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=96
+mt: format_tape(): last_fmt_pos=96
+mt: format_tape(): last_exp_pos=192 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0014
+cpu: 0117: [op=50 mod=0] ввод_пред_050                  5021, 0003, 0212
+cpu: 0120: [op=70 mod=0] ввод_исп_070                   0201, 0117, 0000
+cpu: ext_io_op=5021
+mt: mt_tape_io(..), user_mt_no=1
+mt: mt_tape_io(..), mt_no=1 user_mt_no=1
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_read(1,00003,0201,0212,..)
+mt: mt_read(): no_mosu_access=2048
+mt: mt_read(): get tape length
+mt: mt_read(): rewind tape to beginning
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=2, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=96, tape_len=192
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=3, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=192, tape_len=192
+mt: mt_read(): matching_zone_found (3==3)
+mt: mt_read(): userwords=10, cur_zone_size=10
+mt: mt_read(): [new] userwords=10, cur_zone_size=10
+mt: mt_read(): read_chksum=000000000000000 calc_chksum=000000000000000
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0030 sum=000000000000000
+cpu: 0121: [op=50 mod=0] ввод_пред_050                  1021, 0002, 0212
+cpu: 0122: [op=70 mod=0] ввод_исп_070                   0201, 0121, 0000
+cpu: ext_io_op=1021
+mt: mt_tape_io(..), user_mt_no=1
+mt: mt_tape_io(..), mt_no=1 user_mt_no=1
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_read(1,00002,0201,0212,..)
+mt: mt_read(): no_mosu_access=0
+mt: mt_read(): get tape length
+mt: mt_read(): rewind tape to beginning
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=2, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=96, tape_len=192
+mt: mt_read(): matching_zone_found (2==2)
+mt: mt_read(): userwords=10, cur_zone_size=10
+mt: mt_read(): [new] userwords=10, cur_zone_size=10
+mt: mt_read(): read_chksum=000000000000000 calc_chksum=000000000000000
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0014 sum=000000000000000
+cpu: 0123: [op=50 mod=0] ввод_пред_050                  0021, 0002, 0212
+cpu: 0124: [op=70 mod=0] ввод_исп_070                   0201, 0123, 0000
+cpu: ext_io_op=0021
+mt: mt_tape_io(..), user_mt_no=1
+mt: mt_tape_io(..), mt_no=1 user_mt_no=1
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_read(1,00002,0201,0212,..)
+mt: mt_read(): no_mosu_access=0
+mt: mt_read(): get tape length
+mt: mt_read(): rewind tape to beginning
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=2, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=96, tape_len=192
+mt: mt_read(): matching_zone_found (2==2)
+mt: mt_read(): userwords=10, cur_zone_size=10
+mt: mt_read(): [new] userwords=10, cur_zone_size=10
+mt: mt_read(): read_chksum=000000000000000 calc_chksum=000000000000000
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0014 sum=000000000000000
+cpu: 0125: [op=50 mod=0] ввод_пред_050                  1021, 0003, 0212
+cpu: 0126: [op=70 mod=0] ввод_исп_070                   0201, 0125, 0000
+cpu: ext_io_op=1021
+mt: mt_tape_io(..), user_mt_no=1
+mt: mt_tape_io(..), mt_no=1 user_mt_no=1
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_read(1,00003,0201,0212,..)
+mt: mt_read(): no_mosu_access=0
+mt: mt_read(): get tape length
+mt: mt_read(): rewind tape to beginning
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=2, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=96, tape_len=192
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=3, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=192, tape_len=192
+mt: mt_read(): matching_zone_found (3==3)
+mt: mt_read(): userwords=10, cur_zone_size=10
+mt: mt_read(): [new] userwords=10, cur_zone_size=10
+mt: mt_read(): read_chksum=000000000000000 calc_chksum=000000000000000
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0030 sum=000000000000000
+cpu: 0127: [op=50 mod=0] ввод_пред_050                  1021, 0002, 0212
+cpu: 0130: [op=70 mod=0] ввод_исп_070                   0201, 0127, 0000
+cpu: ext_io_op=1021
+mt: mt_tape_io(..), user_mt_no=1
+mt: mt_tape_io(..), mt_no=1 user_mt_no=1
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_read(1,00002,0201,0212,..)
+mt: mt_read(): no_mosu_access=0
+mt: mt_read(): get tape length
+mt: mt_read(): rewind tape to beginning
+mt: mt_read(): read_zone_num_count=1
+mt: mt_read(): cur_zone_num=2, cur_zone_size=10
+mt: mt_read(): read_userdata_zone_count=10
+mt: mt_read(): read_chksum_count=1
+mt: mt_read(): read_chksum_value=000000000000000
+mt: mt_read(): cur_tape_pos=96, tape_len=192
+mt: mt_read(): matching_zone_found (2==2)
+mt: mt_read(): userwords=10, cur_zone_size=10
+mt: mt_read(): [new] userwords=10, cur_zone_size=10
+mt: mt_read(): read_chksum=000000000000000 calc_chksum=000000000000000
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0014 sum=000000000000000
+cpu: 0131: [op=56 mod=0] безусл_пер_упр                 0000, 7734, 0000
+cpu: 7734: [op=72 mod=0] изм_ра_по_коду                 0000, 7763, 0000
+cpu: 7735: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7727
+cpu: 7736: [op=55 mod=0] лог_умнож                      7727, 7730, 7764
+cpu: 7737: [op=76 mod=0] усл_пер_упр_по_w0              0000, 7754, 0000
+cpu: 7754: [op=54 mod=0] сдвиг_кода_по_адр              0050, 7764, 7764
+cpu: 7755: [op=13 mod=0] слож_команд                    0000, 7763, 7765
+cpu: 7756: [op=15 mod=0] сравн                          7764, 7765, 0000
+cpu: 7757: [op=36 mod=0] усл_пер_упр_по_w1              0000, 7647, 0000
+cpu: 7647: [op=75 mod=0] лог_слож                       7646, 0000, 7767
+cpu: 7650: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7667
+cpu: 7651: [op=72 mod=0] изм_ра_по_коду                 0000, 7667, 0000
+cpu: 7652: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7653: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7654: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7655: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7656: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7657: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7660: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7661: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7662: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7663: [op=32 mod=1] пер_если_ра_не_менш_a1         0001, 7652, @-1
+cpu: 7664: [op=35 mod=0] сравн_останов                  7767, 7646, 7644
+cpu: 7665: [op=00 mod=0] пересылка                      0000, 0000, 0000
+cpu: 7666: [op=56 mod=0] безусл_пер_упр                 0000, 7762, 0000
+cpu: 7762: [op=56 mod=0] безусл_пер_упр                 0000, 0002, 0000
+
+Точка останова, KRA: 0002 ([op=20 mod=0] выборка_с_КР                   7774, 0000, 0220)
+cdr: cdr_detach(..)
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)

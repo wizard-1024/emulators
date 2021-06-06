@@ -1,0 +1,32 @@
+
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+20:	1 02 4000 0000 0000
+21:	1 02 4000 0000 0000
+22:	1 00 0000 0000 0000
+23:	1 00 0000 0000 0000
+
+30:	0 02 0020 0021 0022
+31:	0 77 0000 0000 0000
+
+30:	[op=02 mod=0] вычит_он                       0020, 0021, 0022
+31:	[op=77 mod=0] останов_077                    0000, 0000, 0000
+
+Start
+
+*** Command time profile stat ***
+opcode=02   count=1          times=28.50            avg_time=28.50             (вычит_он)
+opcode=77   count=1          times=24.00            avg_time=24.00             (останов_077)
+Summary:  times=52.50  count=2  avg_time=26.25
+**********
+
+hello1.simh-14> run
+
+ќстанов, KRA: 0031 ([op=77 mod=0] останов_077                    0000, 0000, 0000)
+M-20 event queue empty, time = 53, executing 50000 instructios/sec
+Time:	53
+20:	1 02 4000 0000 0000
+21:	1 02 4000 0000 0000
+22:	0 00 0000 0000 0000
+23:	1 00 0000 0000 0000
+
+Goodbye

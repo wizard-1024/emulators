@@ -1,0 +1,504 @@
+encoding type: 1
+Processing filename: autocode_m20_eng.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.NAME'
+PS_OPS: idx='02', name='.TITLE'
+PS_OPS: idx='03', name='.START'
+PS_OPS: idx='04', name='.FINISH'
+PS_OPS: idx='05', name='.ADDRESS'
+PS_OPS: idx='06', name='.ABS'
+PS_OPS: idx='07', name='.MEM'
+PS_OPS: idx='08', name='.AUTHOR'
+PS_OPS: idx='09', name='.LIST'
+PS_OPS: idx='10', name='.NOLIST'
+File parsed and accepted.
+Processing filename: autocode_m20_dos_cp866.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.àåü'
+PS_OPS: idx='02', name='.çÄáÇÄçàÖ'
+PS_OPS: idx='03', name='.ëíÄêí'
+PS_OPS: idx='04', name='.îàçàò'
+PS_OPS: idx='05', name='.ÄÑêÖë'
+PS_OPS: idx='06', name='.ÄÅë'
+PS_OPS: idx='07', name='.èÄå'
+PS_OPS: idx='08', name='.ÄÇíéê'
+PS_OPS: idx='09', name='.èÖóÄíú'
+PS_OPS: idx='10', name='.çÖèÖóÄíú'
+File parsed and accepted.
+Processing filename: autocode_m20_win_cp1251.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.»Ãﬂ'
+PS_OPS: idx='02', name='.Õ¿«¬¿Õ»≈'
+PS_OPS: idx='03', name='.—“¿–“'
+PS_OPS: idx='04', name='.‘»Õ»ÿ'
+PS_OPS: idx='05', name='.¿ƒ–≈—'
+PS_OPS: idx='06', name='.¿¡—'
+PS_OPS: idx='07', name='.œ¿Ã'
+PS_OPS: idx='08', name='.¿¬“Œ–'
+PS_OPS: idx='09', name='.œ≈◊¿“‹'
+PS_OPS: idx='10', name='.Õ≈œ≈◊¿“‹'
+File parsed and accepted.
+Processing filename: autocode_m20_unix_koi8r.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.ÈÌÒ'
+PS_OPS: idx='02', name='.Ó·˙˜·ÓÈÂ'
+PS_OPS: idx='03', name='.ÛÙ·ÚÙ'
+PS_OPS: idx='04', name='.ÊÈÓÈ˚'
+PS_OPS: idx='05', name='.·‰ÚÂÛ'
+PS_OPS: idx='06', name='.·‚Û'
+PS_OPS: idx='07', name='.·Ì'
+PS_OPS: idx='08', name='.·˜ÙÔÚ'
+PS_OPS: idx='09', name='.Â˛·Ù¯'
+PS_OPS: idx='10', name='.ÓÂÂ˛·Ù¯'
+File parsed and accepted.
+Processing filename: autocode_m20_rus_utf8.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.–ò–ú–Ø'
+PS_OPS: idx='02', name='.–ù–ê–ó–í–ê–ù–ò–ï'
+PS_OPS: idx='03', name='.–°–¢–ê–†–¢'
+PS_OPS: idx='04', name='.–§–ò–ù–ò–®'
+PS_OPS: idx='05', name='.–ê–î–†–ï–°'
+PS_OPS: idx='06', name='.–ê–ë–°'
+PS_OPS: idx='07', name='.–ü–ê–ú'
+PS_OPS: idx='08', name='.–ê–í–¢–û–†'
+PS_OPS: idx='09', name='.–ü–ï–ß–ê–¢–¨'
+PS_OPS: idx='10', name='.–ù–ï–ü–ï–ß–ê–¢–¨'
+File parsed and accepted.
+Parsing filename: is2_sinus2.a20
+Read lines: 85
+orig_text: *
+orig_text: *
+orig_text: * Load IS-2, checksum for IS-2 and call SP 05 with results printing (10 times)
+orig_text: * (uses ready drum images from is2_build)
+orig_text: * Language: M-20 autocode 
+orig_text: * encoding: english
+orig_text: *
+orig_text: * Copyright (c) 2015 Stefankov
+orig_text: *
+orig_text: 
+orig_text: 	.NAME    is2_sunus2.a20
+orig_text: 	.TITLE   Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20
+orig_text: 	.AUTHOR  Stefankov Dmitry
+orig_text: *
+orig_text: *
+orig_text: IS2_START 		.ABS	7500
+orig_text: IS2_END		  	.ABS	7767
+orig_text: IS2_SAVE                .ABS    7610
+orig_text: IS2_DRUM3_LA 		.ABS	7000
+orig_text: DRUM3_READ      	.ABS	0013
+orig_text: DECIMAL_PRINT            .ABS    2100
+orig_text: COUNTER                 .ABS    012
+orig_text: *
+orig_text: *
+orig_text: 	.START  20
+orig_text: ; data
+orig_text: ARG:  =0.1              ; x (=0.1)
+orig_text: STEP: =.1               ; step (=0.1)
+orig_text: RES:  =0 		; sin(x) NOT USED
+orig_text: *
+orig_text: *
+orig_text: 	.ADDRESS  30
+orig_text: KS1:	5 33 7736 0762 5717     ; checksum for 7500-7767 addition (expected,but old)
+orig_text: KS2:	0 00 0000 0000 0000     ; 
+orig_text: *
+orig_text: *
+orig_text: 	.ADDRESS  40
+orig_text: WORK_LOC:
+orig_text: *
+orig_text: *
+orig_text: 	.ADDRESS  100
+orig_text: @BEGIN:
+orig_text: ; Load IS-2
+orig_text: 	io_setup_ext_dev_050        DRUM3_READ, IS2_DRUM3_LA, IS2_END
+orig_text: 	io_operation_ext_dev_070    IS2_START
+orig_text: 
+orig_text: ; calculate checksum (control sum)
+orig_text: 	change_ra_reg_by_address    ,,     		; clear RA
+orig_text:         transfer_m2m	            0, 0, KS2
+orig_text: @CADD:
+orig_text:         add_cyclic	            (IS2_START), KS2, KS2
+orig_text: 	goto_after_cycle_if_ra_less_a1 IS2_END-IS2_START, @CADD, (1)
+orig_text: 
+orig_text: ; prepare
+orig_text:         transfer_m2m	            ARG, 0, WORK_LOC
+orig_text: 	change_ra_reg_by_address    ,,     		; clear RA
+orig_text: 
+orig_text: ; print argument ı
+orig_text: @LOOP:
+orig_text:         io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC
+orig_text:         io_operation_ext_dev_070   WORK_LOC
+orig_text: 
+orig_text: ; call SP 5, y=sinx(x)
+orig_text: 	jump_with_return           *+1, IS2_START+1, IS2_SAVE
+orig_text: 	logical_addition  	   WORK_LOC, 5, WORK_LOC+1	 ; address x, SP number, address y
+orig_text: 
+orig_text: ; print result y
+orig_text:         io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC+1
+orig_text:         io_operation_ext_dev_070   WORK_LOC+1
+orig_text: 
+orig_text: ; increment by STEP and continue loop
+orig_text: 	addition_rn                WORK_LOC, STEP, WORK_LOC    
+orig_text: 	goto_after_cycle_if_ra_less_a1  COUNTER-1, @LOOP, (1)
+orig_text: 
+orig_text: ;
+orig_text: ; termination
+orig_text: ;
+orig_text: 	stop_077                              ;  stop DIGITAL COMPUTER
+orig_text:         stop_077  (7777),(7777),(7777)        ; stop after final print
+orig_text: *
+orig_text: *
+orig_text: 	.FINISH 100
+orig_text: 
+orig_text: * program end
+orig_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.NAME    is2_sunus2.a20
+clean_text: 	.TITLE   Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20
+clean_text: 	.AUTHOR  Stefankov Dmitry
+clean_text: 
+clean_text: 
+clean_text: IS2_START 		.ABS	7500
+clean_text: IS2_END		  	.ABS	7767
+clean_text: IS2_SAVE                .ABS    7610
+clean_text: IS2_DRUM3_LA 		.ABS	7000
+clean_text: DRUM3_READ      	.ABS	0013
+clean_text: DECIMAL_PRINT            .ABS    2100
+clean_text: COUNTER                 .ABS    012
+clean_text: 
+clean_text: 
+clean_text: 	.START  20
+clean_text: 
+clean_text: ARG:  =0.1              
+clean_text: STEP: =.1               
+clean_text: RES:  =0 		
+clean_text: 
+clean_text: 
+clean_text: 	.ADDRESS  30
+clean_text: KS1:	5 33 7736 0762 5717     
+clean_text: KS2:	0 00 0000 0000 0000     
+clean_text: 
+clean_text: 
+clean_text: 	.ADDRESS  40
+clean_text: WORK_LOC:
+clean_text: 
+clean_text: 
+clean_text: 	.ADDRESS  100
+clean_text: @BEGIN:
+clean_text: 
+clean_text: 	io_setup_ext_dev_050        DRUM3_READ, IS2_DRUM3_LA, IS2_END
+clean_text: 	io_operation_ext_dev_070    IS2_START
+clean_text: 
+clean_text: 
+clean_text: 	change_ra_reg_by_address    ,,     		
+clean_text:         transfer_m2m	            0, 0, KS2
+clean_text: @CADD:
+clean_text:         add_cyclic	            (IS2_START), KS2, KS2
+clean_text: 	goto_after_cycle_if_ra_less_a1 IS2_END-IS2_START, @CADD, (1)
+clean_text: 
+clean_text: 
+clean_text:         transfer_m2m	            ARG, 0, WORK_LOC
+clean_text: 	change_ra_reg_by_address    ,,     		
+clean_text: 
+clean_text: 
+clean_text: @LOOP:
+clean_text:         io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC
+clean_text:         io_operation_ext_dev_070   WORK_LOC
+clean_text: 
+clean_text: 
+clean_text: 	jump_with_return           *+1, IS2_START+1, IS2_SAVE
+clean_text: 	logical_addition  	   WORK_LOC, 5, WORK_LOC+1	 
+clean_text: 
+clean_text: 
+clean_text:         io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC+1
+clean_text:         io_operation_ext_dev_070   WORK_LOC+1
+clean_text: 
+clean_text: 
+clean_text: 	addition_rn                WORK_LOC, STEP, WORK_LOC    
+clean_text: 	goto_after_cycle_if_ra_less_a1  COUNTER-1, @LOOP, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	stop_077                              
+clean_text:         stop_077  (7777),(7777),(7777)        
+clean_text: 
+clean_text: 
+clean_text: 	.FINISH 100
+clean_text: 
+clean_text: 
+clean_text: 
+Lexical scanning.
+work_buf (len=24): 	.NAME    is2_sunus2.a20
+work_buf (len=90): 	.TITLE   Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20
+work_buf (len=26): 	.AUTHOR  Stefankov Dmitry
+work_buf (len=21): IS2_START 		.ABS	7500
+work_buf (len=21): IS2_END		  	.ABS	7767
+work_buf (len=36): IS2_SAVE                .ABS    7610
+work_buf (len=24): IS2_DRUM3_LA 		.ABS	7000
+work_buf (len=26): DRUM3_READ      	.ABS	0013
+work_buf (len=37): DECIMAL_PRINT            .ABS    2100
+work_buf (len=35): COUNTER                 .ABS    012
+work_buf (len=11): 	.START  20
+work_buf (len=24): ARG:  =0.1              
+work_buf (len=24): STEP: =.1               
+work_buf (len=11): RES:  =0 		
+work_buf (len=13): 	.ADDRESS  30
+work_buf (len=29): KS1:	5 33 7736 0762 5717     
+work_buf (len=29): KS2:	0 00 0000 0000 0000     
+work_buf (len=13): 	.ADDRESS  40
+work_buf (len=9): WORK_LOC:
+work_buf (len=14): 	.ADDRESS  100
+work_buf (len=7): @BEGIN:
+work_buf (len=62): 	io_setup_ext_dev_050        DRUM3_READ, IS2_DRUM3_LA, IS2_END
+work_buf (len=38): 	io_operation_ext_dev_070    IS2_START
+work_buf (len=38): 	change_ra_reg_by_address    ,,     		
+work_buf (len=42):         transfer_m2m	            0, 0, KS2
+work_buf (len=6): @CADD:
+work_buf (len=52):         add_cyclic	            (IS2_START), KS2, KS2
+work_buf (len=61): 	goto_after_cycle_if_ra_less_a1 IS2_END-IS2_START, @CADD, (1)
+work_buf (len=49):         transfer_m2m	            ARG, 0, WORK_LOC
+work_buf (len=38): 	change_ra_reg_by_address    ,,     		
+work_buf (len=6): @LOOP:
+work_buf (len=61):         io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC
+work_buf (len=43):         io_operation_ext_dev_070   WORK_LOC
+work_buf (len=54): 	jump_with_return           *+1, IS2_START+1, IS2_SAVE
+work_buf (len=48): 	logical_addition  	   WORK_LOC, 5, WORK_LOC+1	 
+work_buf (len=63):         io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC+1
+work_buf (len=45):         io_operation_ext_dev_070   WORK_LOC+1
+work_buf (len=56): 	addition_rn                WORK_LOC, STEP, WORK_LOC    
+work_buf (len=54): 	goto_after_cycle_if_ra_less_a1  COUNTER-1, @LOOP, (1)
+work_buf (len=39): 	stop_077                              
+work_buf (len=46):         stop_077  (7777),(7777),(7777)        
+work_buf (len=12): 	.FINISH 100
+lex_words: 1=.NAME;2=is2_sunus2.a20;
+lex_words: 1=.TITLE;2=Program;3=of;4=IS-2;5=call;6=to;7=print;8=of;9=SP;10=5;11=(y=sinx);12=results;13=for;14=digital;15=computer;16=M-20;
+lex_words: 1=.AUTHOR;2=Stefankov;3=Dmitry;
+lex_words: 1=IS2_START;2=.ABS;3=7500;
+lex_words: 1=IS2_END;2=.ABS;3=7767;
+lex_words: 1=IS2_SAVE;2=.ABS;3=7610;
+lex_words: 1=IS2_DRUM3_LA;2=.ABS;3=7000;
+lex_words: 1=DRUM3_READ;2=.ABS;3=0013;
+lex_words: 1=DECIMAL_PRINT;2=.ABS;3=2100;
+lex_words: 1=COUNTER;2=.ABS;3=012;
+lex_words: 1=.START;2=20;
+lex_words: 1=ARG:;2==0.1;
+lex_words: 1=STEP:;2==.1;
+lex_words: 1=RES:;2==0;
+lex_words: 1=.ADDRESS;2=30;
+lex_words: 1=KS1:;2=5;3=33;4=7736;5=0762;6=5717;
+lex_words: 1=KS2:;2=0;3=00;4=0000;5=0000;6=0000;
+lex_words: 1=.ADDRESS;2=40;
+lex_words: 1=WORK_LOC:;
+lex_words: 1=.ADDRESS;2=100;
+lex_words: 1=@BEGIN:;
+lex_words: 1=io_setup_ext_dev_050;2=DRUM3_READ;3=IS2_DRUM3_LA;4=IS2_END;
+lex_words: 1=io_operation_ext_dev_070;2=IS2_START;
+lex_words: 1=change_ra_reg_by_address;
+lex_words: 1=transfer_m2m;2=0;3=0;4=KS2;
+lex_words: 1=@CADD:;
+lex_words: 1=add_cyclic;2=(IS2_START);3=KS2;4=KS2;
+lex_words: 1=goto_after_cycle_if_ra_less_a1;2=IS2_END-IS2_START;3=@CADD;4=(1);
+lex_words: 1=transfer_m2m;2=ARG;3=0;4=WORK_LOC;
+lex_words: 1=change_ra_reg_by_address;
+lex_words: 1=@LOOP:;
+lex_words: 1=io_setup_ext_dev_050;2=DECIMAL_PRINT;3=0;4=WORK_LOC;
+lex_words: 1=io_operation_ext_dev_070;2=WORK_LOC;
+lex_words: 1=jump_with_return;2=*+1;3=IS2_START+1;4=IS2_SAVE;
+lex_words: 1=logical_addition;2=WORK_LOC;3=5;4=WORK_LOC+1;
+lex_words: 1=io_setup_ext_dev_050;2=DECIMAL_PRINT;3=0;4=WORK_LOC+1;
+lex_words: 1=io_operation_ext_dev_070;2=WORK_LOC+1;
+lex_words: 1=addition_rn;2=WORK_LOC;3=STEP;4=WORK_LOC;
+lex_words: 1=goto_after_cycle_if_ra_less_a1;2=COUNTER-1;3=@LOOP;4=(1);
+lex_words: 1=stop_077;
+lex_words: 1=stop_077;2=(7777);3=(7777);4=(7777);
+lex_words: 1=.FINISH;2=100;
+Syntax parsing (pass 1).
+cur_loc_counter=0001
+.NAME directive: 'is2_sunus2.a20'
+cur_loc_counter=0001
+.TITLE directive: 'Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 '
+cur_loc_counter=0001
+.AUTHOR directive: 'Stefankov Dmitry '
+cur_loc_counter=0001
+abs_name=IS2_START value=000000000007500
+cur_loc_counter=0001
+abs_name=IS2_END value=000000000007767
+cur_loc_counter=0001
+abs_name=IS2_SAVE value=000000000007610
+cur_loc_counter=0001
+abs_name=IS2_DRUM3_LA value=000000000007000
+cur_loc_counter=0001
+abs_name=DRUM3_READ value=000000000000013
+cur_loc_counter=0001
+abs_name=DECIMAL_PRINT value=000000000002100
+cur_loc_counter=0001
+abs_name=COUNTER value=000000000000012
+cur_loc_counter=0001
+.START directive:  cur_location_counter=0020, program_start_address=0020
+cur_loc_counter=0020
+LABEL: addr=0020, name=ARG
+DATA_LINE: line_num=27: =0.1
+cur_loc_counter=0021
+LABEL: addr=0021, name=STEP
+DATA_LINE: line_num=28: =.1
+cur_loc_counter=0022
+LABEL: addr=0022, name=RES
+DATA_LINE: line_num=29: =0
+cur_loc_counter=0023
+.ADDRESS directive:  cur_location_counter=0030
+cur_loc_counter=0030
+LABEL: addr=0030, name=KS1
+DATA_LINE: line_num=33: 5
+cur_loc_counter=0031
+LABEL: addr=0031, name=KS2
+DATA_LINE: line_num=34: 0
+cur_loc_counter=0032
+.ADDRESS directive:  cur_location_counter=0040
+cur_loc_counter=0040
+LABEL: addr=0040, name=WORK_LOC
+cur_loc_counter=0040
+.ADDRESS directive:  cur_location_counter=0100
+cur_loc_counter=0100
+LABEL: addr=0100, name=@BEGIN
+cur_loc_counter=0100
+CODE_LINE: line_num=44 op=50 sym='io_setup_ext_dev_050'
+cur_loc_counter=0101
+CODE_LINE: line_num=45 op=70 sym='io_operation_ext_dev_070'
+cur_loc_counter=0102
+CODE_LINE: line_num=48 op=52 sym='change_ra_reg_by_address'
+cur_loc_counter=0103
+CODE_LINE: line_num=49 op=00 sym='transfer_m2m'
+cur_loc_counter=0104
+LABEL: addr=0104, name=@CADD
+cur_loc_counter=0104
+CODE_LINE: line_num=51 op=07 sym='add_cyclic'
+cur_loc_counter=0105
+CODE_LINE: line_num=52 op=12 sym='goto_after_cycle_if_ra_less_a1'
+cur_loc_counter=0106
+CODE_LINE: line_num=55 op=00 sym='transfer_m2m'
+cur_loc_counter=0107
+CODE_LINE: line_num=56 op=52 sym='change_ra_reg_by_address'
+cur_loc_counter=0110
+LABEL: addr=0110, name=@LOOP
+cur_loc_counter=0110
+CODE_LINE: line_num=60 op=50 sym='io_setup_ext_dev_050'
+cur_loc_counter=0111
+CODE_LINE: line_num=61 op=70 sym='io_operation_ext_dev_070'
+cur_loc_counter=0112
+CODE_LINE: line_num=64 op=16 sym='jump_with_return'
+cur_loc_counter=0113
+CODE_LINE: line_num=65 op=75 sym='logical_addition'
+cur_loc_counter=0114
+CODE_LINE: line_num=68 op=50 sym='io_setup_ext_dev_050'
+cur_loc_counter=0115
+CODE_LINE: line_num=69 op=70 sym='io_operation_ext_dev_070'
+cur_loc_counter=0116
+CODE_LINE: line_num=72 op=01 sym='addition_rn'
+cur_loc_counter=0117
+CODE_LINE: line_num=73 op=12 sym='goto_after_cycle_if_ra_less_a1'
+cur_loc_counter=0120
+CODE_LINE: line_num=78 op=77 sym='stop_077'
+cur_loc_counter=0121
+CODE_LINE: line_num=79 op=77 sym='stop_077'
+cur_loc_counter=0122
+.FINISH directive:  program_start_address=0100
+Print symbolic names table (9 names).
+0: name=ARG value=0020
+1: name=STEP value=0021
+2: name=RES value=0022
+3: name=KS1 value=0030
+4: name=KS2 value=0031
+5: name=WORK_LOC value=0040
+6: name=@BEGIN value=0100
+7: name=@CADD value=0104
+8: name=@LOOP value=0110
+Print absolute values table (7 names).
+0: name=IS2_START value=000000000007500
+1: name=IS2_END value=000000000007767
+2: name=IS2_SAVE value=000000000007610
+3: name=IS2_DRUM3_LA value=000000000007000
+4: name=DRUM3_READ value=000000000000013
+5: name=DECIMAL_PRINT value=000000000002100
+6: name=COUNTER value=000000000000012
+References resolving (pass 2).
+DATA_LINE: line_num=27: addr=0020: 1='=0.1';
+FIN_OBJ_MCODE: m_code=075631463146315
+DATA_LINE: line_num=28: addr=0021: 1='=.1';
+FIN_OBJ_MCODE: m_code=075631463146315
+DATA_LINE: line_num=29: addr=0022: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=33: addr=0030: 1='5';2='33';3='7736';4='0762';5='5717';
+FIN_OBJ_MCODE: m_code=533773607625717
+DATA_LINE: line_num=34: addr=0031: 1='0';2='00';3='0000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=000000000000000
+CODE_LINE: line_num=44: addr=0100: op=50: 0='io_setup_ext_dev_050';1='DRUM3_READ';2='IS2_DRUM3_LA';3='IS2_END';
+FIN_OBJ_MCODE: m_code=050001370007767
+CODE_LINE: line_num=45: addr=0101: op=70: 0='io_operation_ext_dev_070';1='IS2_START';
+FIN_OBJ_MCODE: m_code=070750000000000
+CODE_LINE: line_num=48: addr=0102: op=52: 0='change_ra_reg_by_address';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=49: addr=0103: op=00: 0='transfer_m2m';1='0';2='0';3='KS2';
+FIN_OBJ_MCODE: m_code=000000000000031
+CODE_LINE: line_num=51: addr=0104: op=07: 0='add_cyclic';1='IS2_START';2='KS2';3='KS2';
+FIN_OBJ_MCODE: m_code=407750000310031
+CODE_LINE: line_num=52: addr=0105: op=12: 0='goto_after_cycle_if_ra_less_a1';1='IS2_END-IS2_START';2='@CADD';3='1';
+FIN_OBJ_MCODE: m_code=112026701040001
+CODE_LINE: line_num=55: addr=0106: op=00: 0='transfer_m2m';1='ARG';2='0';3='WORK_LOC';
+FIN_OBJ_MCODE: m_code=000002000000040
+CODE_LINE: line_num=56: addr=0107: op=52: 0='change_ra_reg_by_address';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=60: addr=0110: op=50: 0='io_setup_ext_dev_050';1='DECIMAL_PRINT';2='0';3='WORK_LOC';
+FIN_OBJ_MCODE: m_code=050210000000040
+CODE_LINE: line_num=61: addr=0111: op=70: 0='io_operation_ext_dev_070';1='WORK_LOC';
+FIN_OBJ_MCODE: m_code=070004000000000
+CODE_LINE: line_num=64: addr=0112: op=16: 0='jump_with_return';1='*+1';2='IS2_START+1';3='IS2_SAVE';
+FIN_OBJ_MCODE: m_code=016011375017610
+CODE_LINE: line_num=65: addr=0113: op=75: 0='logical_addition';1='WORK_LOC';2='5';3='WORK_LOC+1';
+FIN_OBJ_MCODE: m_code=075004000050041
+CODE_LINE: line_num=68: addr=0114: op=50: 0='io_setup_ext_dev_050';1='DECIMAL_PRINT';2='0';3='WORK_LOC+1';
+FIN_OBJ_MCODE: m_code=050210000000041
+CODE_LINE: line_num=69: addr=0115: op=70: 0='io_operation_ext_dev_070';1='WORK_LOC+1';
+FIN_OBJ_MCODE: m_code=070004100000000
+CODE_LINE: line_num=72: addr=0116: op=01: 0='addition_rn';1='WORK_LOC';2='STEP';3='WORK_LOC';
+FIN_OBJ_MCODE: m_code=001004000210040
+CODE_LINE: line_num=73: addr=0117: op=12: 0='goto_after_cycle_if_ra_less_a1';1='COUNTER-1';2='@LOOP';3='1';
+FIN_OBJ_MCODE: m_code=112001101100001
+CODE_LINE: line_num=78: addr=0120: op=77: 0='stop_077';
+FIN_OBJ_MCODE: m_code=077000000000000
+CODE_LINE: line_num=79: addr=0121: op=77: 0='stop_077';1='7777';2='7777';3='7777';
+FIN_OBJ_MCODE: m_code=777777777777777
+Make output filename: is2_sinus2.m20
+out_mcode: addr=0020 code=075631463146315
+out_mcode: addr=0021 code=075631463146315
+out_mcode: addr=0022 code=100000000000000
+out_mcode: addr=0030 code=533773607625717
+out_mcode: addr=0031 code=000000000000000
+out_mcode: addr=0100 code=050001370007767
+out_mcode: addr=0101 code=070750000000000
+out_mcode: addr=0102 code=052000000000000
+out_mcode: addr=0103 code=000000000000031
+out_mcode: addr=0104 code=407750000310031
+out_mcode: addr=0105 code=112026701040001
+out_mcode: addr=0106 code=000002000000040
+out_mcode: addr=0107 code=052000000000000
+out_mcode: addr=0110 code=050210000000040
+out_mcode: addr=0111 code=070004000000000
+out_mcode: addr=0112 code=016011375017610
+out_mcode: addr=0113 code=075004000050041
+out_mcode: addr=0114 code=050210000000041
+out_mcode: addr=0115 code=070004100000000
+out_mcode: addr=0116 code=001004000210040
+out_mcode: addr=0117 code=112001101100001
+out_mcode: addr=0120 code=077000000000000
+out_mcode: addr=0121 code=777777777777777
+Make listing filename: is2_sinus2.l20
+Completed successfully.

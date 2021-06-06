@@ -1,0 +1,2002 @@
+Debug output to "kt_1963_test_16_debug.txt" at Sat Mar 07 18:07:14 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+cdr: cdr_set_mode(..)
+cdp: cdp_attach(..)
+CDP: creating new file
+DRUM: creating new file
+drm: drum_attach(..), name='kt_1963_test_16.drum0' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='kt_1963_test_16.drum1' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='kt_1963_test_16.drum2' res=0
+MT: creating new file
+mt: mt_attach(..), name='kt_1963_test_16.mt0' res=0
+MT: creating new file
+mt: mt_attach(..), name='kt_1963_test_16.mt1' res=0
+MT: creating new file
+mt: mt_attach(..), name='kt_1963_test_16.mt2' res=0
+mt: mt_attach(..), name='kt_1963_test_16.mt3' res=0
+cdr: cdr_attach(..)
+CDR: unit is read only
+
+Boot
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cdr: cdr_boot(..)
+cpu: 0001: [op=10 mod=0] ввод_пфк_останов               0001, 0001, 0000
+cpu: opcode=10: regKRA=2,a1=1,a2=1,a3=0
+cpu: cdr boot detected. Set regKRA=1
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1  0 56 0000 0100 0000   0'
+cdr: read_card(): cdr_buf='0  0 00 0100 0000 0000   1'
+cdr: read_card(): cdr_buf='1  0 10 1000 0101 0060   0  ; Ввод массива; запись контрольной суммы'
+cdr: read_card(): cdr_buf='1  0 10 0001 0102 0061   0  ; Ввод массива; запись контрольной суммы'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 53 1101 0304 0141   1 '
+cdr: read_card(..) r_sum=253110103040141, c_sum=253110103040141
+cdr: read_card(..) read_codes_count=7
+cdr: cdr_svc(..)
+cpu: 0001: [op=56 mod=0] безусл_пер_упр                 0000, 0100, 0000
+cpu: 0100: [op=10 mod=0] ввод_пфк_останов               1000, 0101, 0060
+cpu: opcode=10: regKRA=65,a1=512,a2=65,a3=48
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='0  0 00 1000 0000 0000  1   ; КА'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 7665   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 01 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 75 7646 0000 7767   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 7667   0'
+cdr: read_card(): cdr_buf='1  0 72 0000 7667 0000   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  0 04 7767 7645 7767   0'
+cdr: read_card(): cdr_buf='1  1 32 0001 7652 7777   0'
+cdr: read_card(): cdr_buf='1  0 35 7767 7646 7644   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 7665   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7762 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4140 0124   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4265 0120   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4406 0027   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4436 0143   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4602 0121   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4724 0470   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 5415 0056   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 5474 0031   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 5526 0102   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 5631 0054   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 5706 0217   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 6126 0072   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 6221 0140   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 6362 0060   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 7700 0040 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 6000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0003 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 7400 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 7400 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 7400 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0021 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0004 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 7400 0054 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0002 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 7400 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0011 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 60 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 7727   0'
+cdr: read_card(): cdr_buf='1  0 55 7727 7730 7764   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 7746 7763   0'
+cdr: read_card(): cdr_buf='1  0 72 0000 7763 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 7727   0'
+cdr: read_card(): cdr_buf='1  0 55 7727 7730 7764   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 7754 0000   0'
+cdr: read_card(): cdr_buf='1  0 55 7727 7726 7765   0'
+cdr: read_card(): cdr_buf='1  0 54 0060 7765 7765   0'
+cdr: read_card(): cdr_buf='1  0 13 7762 7765 7762   0'
+cdr: read_card(): cdr_buf='1  0 76 7643 7762 7665   0'
+cdr: read_card(): cdr_buf='1  2 52 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0011 7747 0000   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  4 75 7667 0000 7751   0'
+cdr: read_card(): cdr_buf='1  4 75 7706 0000 7762   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 7751 0000   0'
+cdr: read_card(): cdr_buf='1  4 16 0000 7647 7763   0'
+cdr: read_card(): cdr_buf='1  0 54 0050 7764 7764   0'
+cdr: read_card(): cdr_buf='1  0 13 0000 7763 7765   0'
+cdr: read_card(): cdr_buf='1  0 15 7764 7765 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 7647 0000   0'
+cdr: read_card(): cdr_buf='1  0 72 0000 7764 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 7643 7747 7665   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 02 6466 7740 0702   0  ; к/c N карт'
+cdr: read_card(): cdr_buf='1  0 56 0000 0040 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 54 0100 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0045 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 1000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 54 0101 0073 1000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0051 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 1000 0045 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0045 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 1000 1000 1001   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0055 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 1001 0051 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 1000 1001   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0061 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 1001 0055 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0055 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0002 0065 0000   0'
+cdr: read_card(): cdr_buf='1  0 01 0123 1000 1001   0'
+cdr: read_card(): cdr_buf='1  0 35 0124 1001 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0062 0000   0'
+cdr: read_card(): cdr_buf='1  1 32 0054 0074 0000   0'
+cdr: read_card(): cdr_buf='1  0 54 0077 1000 1000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0074 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 1000 0066 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0066 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0074 0000   0'
+cdr: read_card(): cdr_buf='1  2 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0054 0051 0001   0'
+cdr: read_card(): cdr_buf='1  0 02 0123 0073 1001   0'
+cdr: read_card(): cdr_buf='1  0 35 0124 1001 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0075 0100   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0100   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 4103   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0105   0'
+cdr: read_card(): cdr_buf='1  0 56 0106 0107 2107   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 0077 7777 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0100   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0115   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0152   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0313   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0514   0'
+cdr: read_card(): cdr_buf='1  0 56 0116 0117 0777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 1100   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 0100   0'
+cdr: read_card(): cdr_buf='1  0 75 0106 0000 1121   0'
+cdr: read_card(): cdr_buf='1  0 16 0122 0777 1000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  1 77 0000 7777 0000   0'
+cdr: read_card(): cdr_buf='1  1 63 7777 0000 4000   0'
+cdr: read_card(): cdr_buf='1  0 77 1224 1262 7464   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0057 0000   0'
+cdr: read_card(): cdr_buf='1  4 75 0000 0000 0003   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0007 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 0003 1000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0002 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0075 0002 0001   0'
+cdr: read_card(): cdr_buf='1  4 75 0000 0000 0012   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0016 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0012 1000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0011 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0120 0010 0001   0'
+cdr: read_card(): cdr_buf='1  0 01 0000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 47 0000 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0024 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 0020 1000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0017 0000   0'
+cdr: read_card(): cdr_buf='1  0 01 0042 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 47 0000 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0031 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0025 1000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0024 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 01 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  3 01 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 00 2000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 04 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 20 0001 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 14 0000 0050 1000   0'
+cdr: read_card(): cdr_buf='1  0 02 0042 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 01 0043 0043 1000   0'
+cdr: read_card(): cdr_buf='1  0 13 0041 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 54 0100 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 44 0041 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 04 0041 0047 1000   0'
+cdr: read_card(): cdr_buf='1  0 05 0041 0044 1000   0'
+cdr: read_card(): cdr_buf='1  0 26 0044 0044 1000   0'
+cdr: read_card(): cdr_buf='1  0 05 0041 0045 1000   0'
+cdr: read_card(): cdr_buf='1  0 45 0045 0045 1000   0'
+cdr: read_card(): cdr_buf='1  0 07 0044 0044 1000   0'
+cdr: read_card(): cdr_buf='1  0 27 0047 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 53 0051 0050 1000   0'
+cdr: read_card(): cdr_buf='1  0 73 0047 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 03 0041 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 41 0042 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 01 0043 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 45 0046 0042 1000   0'
+cdr: read_card(): cdr_buf='1  0 45 0046 0047 1000   0'
+cdr: read_card(): cdr_buf='1  0 45 0047 0047 1000   0'
+cdr: read_card(): cdr_buf='1  0 45 0045 0050 1000   0'
+cdr: read_card(): cdr_buf='1  0 05 0043 0043 1000   0'
+cdr: read_card(): cdr_buf='1  0 05 0043 0047 1000   0'
+cdr: read_card(): cdr_buf='1  0 01 0044 0000 1000   0'
+cdr: read_card(): cdr_buf='1  0 33 0041 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 75 0000 0042 1000   0'
+cdr: read_card(): cdr_buf='1  0 54 0111 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 54 0070 0041 1000   0'
+cdr: read_card(): cdr_buf='1  0 07 0000 0046 1000   0'
+cdr: read_card(): cdr_buf='1  0 27 0047 0045 1000   0'
+cdr: read_card(): cdr_buf='1  0 53 0047 0046 1000   0'
+cdr: read_card(): cdr_buf='1  0 73 0047 0046 1000   0'
+cdr: read_card(): cdr_buf='1  0 14 0100 0045 1000   0'
+cdr: read_card(): cdr_buf='1  6 64 0660 6302 4022   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0032   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0033   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0030   0'
+cdr: read_card(): cdr_buf='1  0 20 7772 0000 0031   0'
+cdr: read_card(): cdr_buf='1  0 07 0032 0030 0032   0'
+cdr: read_card(): cdr_buf='1  0 54 0064 0032 0034   0'
+cdr: read_card(): cdr_buf='1  0 72 0000 0034 0000   0'
+cdr: read_card(): cdr_buf='1  0 55 0032 0024 0035   0'
+cdr: read_card(): cdr_buf='1  0 07 0031 0033 0033   0'
+cdr: read_card(): cdr_buf='1  0 55 0033 0024 0036   0'
+cdr: read_card(): cdr_buf='1  0 13 0025 0036 0015   0'
+cdr: read_card(): cdr_buf='1  0 13 0035 0036 0037   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 54 0114 0040 0041   0'
+cdr: read_card(): cdr_buf='1  0 35 0037 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 16 0000 0016 0040   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 12 0454 0370 0542   0  ; к/c N карт'
+cdr: read_card(): cdr_buf='1  0 52 0000 3777 0000   0'
+cdr: read_card(): cdr_buf='1  4 52 0000 0000 0003   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 35 0000 3777 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0022 0001 3777   0'
+cdr: read_card(): cdr_buf='1  0 72 0000 0021 0000   0'
+cdr: read_card(): cdr_buf='1  4 72 0000 0000 0010   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 35 0000 3777 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0006 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0023 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 3777 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0022 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0022 0026 0005   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0030 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0024 0025 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0023 0000   0'
+cdr: read_card(): cdr_buf='1  0 35 0022 0005 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0023 0005   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0035 0000   0'
+cdr: read_card(): cdr_buf='1  0 37 0032 0031 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0031 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0036 0035 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0035 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 51 0000 0043 0004   0'
+cdr: read_card(): cdr_buf='1  0 12 0010 0046 0004   0'
+cdr: read_card(): cdr_buf='1  0 17 0043 0042 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0051 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0022 0053 0005   0'
+cdr: read_card(): cdr_buf='1  0 37 0050 0047 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0046 0000   0'
+cdr: read_card(): cdr_buf='1  0 35 0022 0005 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0046 0005   0'
+cdr: read_card(): cdr_buf='1  0 16 0063 0060 0060   0'
+cdr: read_card(): cdr_buf='1  0 17 0055 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0055 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0060 0055 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0055 0060   0'
+cdr: read_card(): cdr_buf='1  0 35 0060 0141 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0055 0060   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0001 0060   0'
+cdr: read_card(): cdr_buf='1  0 11 0000 0000 0004   0'
+cdr: read_card(): cdr_buf='1  0 51 0001 0071 0004   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0073 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0067 0066 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0065 0005   0'
+cdr: read_card(): cdr_buf='1  0 32 0001 0076 0004   0'
+cdr: read_card(): cdr_buf='1  0 17 0073 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0073 0000   0'
+cdr: read_card(): cdr_buf='1  0 51 0005 0101 0004   0'
+cdr: read_card(): cdr_buf='1  0 17 0076 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0076 0000   0'
+cdr: read_card(): cdr_buf='1  0 71 0007 0103 0004   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0105 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0101 0102 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0101 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0101 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0001 0110 0004   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0112 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0106 0107 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0105 0000   0'
+cdr: read_card(): cdr_buf='1  0 71 0002 0115 0004   0'
+cdr: read_card(): cdr_buf='1  0 17 0112 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0112 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 11 0104 0121 0004   0'
+cdr: read_card(): cdr_buf='1  0 17 0116 0115 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0115 0000   0'
+cdr: read_card(): cdr_buf='1  4 16 0000 0122 0005   0'
+cdr: read_card(): cdr_buf='1  0 35 0142 0005 0005   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0121 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0127 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0124 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0124 0000   0'
+cdr: read_card(): cdr_buf='1  0 11 0104 0130 0004   0'
+cdr: read_card(): cdr_buf='1  0 35 0004 0140 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0140 0127 0004   0'
+cdr: read_card(): cdr_buf='1  0 56 0143 7734 0005   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 35 0000 3777 0000   0'
+cdr: read_card(): cdr_buf='1  0 16 0000 0063 0000   0'
+cdr: read_card(): cdr_buf='1  0 16 0000 0004 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  5 13 2642 2051 4442   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0014 0000   0'
+cdr: read_card(): cdr_buf='1  4 75 0000 0000 0003   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 47 0007 0007 1001   0'
+cdr: read_card(): cdr_buf='1  4 35 0003 1000 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0003 0000   0'
+cdr: read_card(): cdr_buf='1  4 35 0004 1001 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0003 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0115 0002 0005   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 05 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 27 7652 7755 6344   0'
+cdr: read_card(): cdr_buf='1  0 67 6000 0000 0020   0'
+cdr: read_card(): cdr_buf='1  1 16 5700 1762 2673   0'
+cdr: read_card(): cdr_buf='1  1 16 3257 7334 7100   0'
+cdr: read_card(): cdr_buf='1  6 45 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 41 4607 3124 1441   0'
+cdr: read_card(): cdr_buf='1  3 72 1000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 33 0460 7312 4144   0'
+cdr: read_card(): cdr_buf='1  7 33 7000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 25 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 03 7155 6154 6757   0'
+cdr: read_card(): cdr_buf='1  5 20 4400 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 23 4035 5775 1726   0'
+cdr: read_card(): cdr_buf='1  7 23 3400 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 05 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 23 4400 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 54 7155 6154 6757   0'
+cdr: read_card(): cdr_buf='1  5 77 4035 5775 1726   0'
+cdr: read_card(): cdr_buf='1  5 77 5400 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 05 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 04 2461 6355 6272   0'
+cdr: read_card(): cdr_buf='1  1 46 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 51 2461 6355 6272   0'
+cdr: read_card(): cdr_buf='1  0 51 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 45 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 57 7652 7755 6344   0'
+cdr: read_card(): cdr_buf='1  0 16 0400 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0372 5376 6716   0'
+cdr: read_card(): cdr_buf='1  0 75 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 65 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 00 4607 3124 6757   0'
+cdr: read_card(): cdr_buf='1  1 00 1000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 0460 7312 4675   0'
+cdr: read_card(): cdr_buf='1  1 00 7000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 05 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 05 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 73 4000 4000 4000   0'
+cdr: read_card(): cdr_buf='1  2 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  2 77 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 05 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 76 7777 7740 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 4000 0020 0000   0'
+cdr: read_card(): cdr_buf='1  2 73 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 73 1000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 05 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 01 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 05 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 27 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  2 50 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 25 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 72 5252 5252 5252   0'
+cdr: read_card(): cdr_buf='1  0 72 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 64 5252 5252 5251   0'
+cdr: read_card(): cdr_buf='1  0 64 2525 2525 2526   0'
+cdr: read_card(): cdr_buf='1  6 25 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 74 2525 2525 2525   0'
+cdr: read_card(): cdr_buf='1  0 65 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 60 2525 2525 2525   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 65 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 75 0153 1763 3502   0  '
+cdr: read_card(): cdr_buf='1  0 52 0000 0011 0000   0'
+cdr: read_card(): cdr_buf='1  4 75 0000 0000 0003   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 35 0003 1000 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0003 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0465 0002 0004   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 02 3777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 01 7777 7777 7773   0'
+cdr: read_card(): cdr_buf='1  2 37 6000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 41 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 01 0252 5252 5252   0'
+cdr: read_card(): cdr_buf='1  6 77 5252 5252 5256   0'
+cdr: read_card(): cdr_buf='1  7 01 1000 0000 0001   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 77 0000 0000 0020   0'
+cdr: read_card(): cdr_buf='1  0 73 4000 0000 0377   0'
+cdr: read_card(): cdr_buf='1  6 72 7777 7777 7760   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 11 0010 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 01 4000 0000 0200   0'
+cdr: read_card(): cdr_buf='1  4 45 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 03 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 53 0000 0007 7777   0'
+cdr: read_card(): cdr_buf='1  0 54 0000 0004 0000   0'
+cdr: read_card(): cdr_buf='1  2 10 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 21 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 70 0000 0000 0010   0'
+cdr: read_card(): cdr_buf='1  1 30 4040 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 31 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 40 0777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 40 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  3 35 7770 0000 0004   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 00 0107 0707 0707   0'
+cdr: read_card(): cdr_buf='1  3 00 0070 7070 7071   0'
+cdr: read_card(): cdr_buf='1  0 74 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 15 1252 5252 5252   0'
+cdr: read_card(): cdr_buf='1  1 15 1252 5252 5252   0'
+cdr: read_card(): cdr_buf='1  3 14 5252 5252 5250   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 47 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 47 0777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 44 7770 0000 0004   0'
+cdr: read_card(): cdr_buf='1  6 21 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 15 7030 3030 3031   0'
+cdr: read_card(): cdr_buf='1  3 16 6363 6363 6363   0'
+cdr: read_card(): cdr_buf='1  3 17 4777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 15 6212 3456 7010   0'
+cdr: read_card(): cdr_buf='1  3 20 0621 2345 6701   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 16 5141 4141 4141   0'
+cdr: read_card(): cdr_buf='1  0 21 7663 6363 6363   0'
+cdr: read_card(): cdr_buf='1  0 22 4200 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 77 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  5 73 3000 0000 0020   0'
+cdr: read_card(): cdr_buf='1  3 77 4140 0000 0001   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 10 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 10 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 65 6000 0000 7777   0'
+cdr: read_card(): cdr_buf='1  0 65 6000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 66 6000 0000 3777   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 10 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 10 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 21 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 35 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 35 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 36 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 41 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  3 15 0000 2500 0000   0'
+cdr: read_card(): cdr_buf='1  1 01 2500 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 01 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7760   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 02 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7740   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 04 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7600   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 10 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 4000   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 20 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7600 0000   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 40 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 74 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7770   0'
+cdr: read_card(): cdr_buf='1  6 02 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  3 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 14 0000 7777 7777   0'
+cdr: read_card(): cdr_buf='1  5 00 7777 7777 0000   0'
+cdr: read_card(): cdr_buf='1  6 01 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 30 0000 0000 4000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 44 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  5 26 5075 3412 1727   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  5 13 6314 6314 6315   0'
+cdr: read_card(): cdr_buf='1  6 64 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 13 4143 3675 0133   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 46 4061 1156 4570   0'
+cdr: read_card(): cdr_buf='1  6 44 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 33 5753 6040 0000   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 16 4704 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 44 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 04 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 45 5075 3412 1727   0'
+cdr: read_card(): cdr_buf='1  0 47 5000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 77 4061 1156 4571   0'
+cdr: read_card(): cdr_buf='1  6 24 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  6 33 5644 1667 2000   0'
+cdr: read_card(): cdr_buf='1  3 02 7215 2245 0400   0'
+cdr: read_card(): cdr_buf='1  4 31 6314 6314 6314   0'
+cdr: read_card(): cdr_buf='1  6 04 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 50 7215 2245 0400   0'
+cdr: read_card(): cdr_buf='1  7 30 4611 3200 0000   0'
+cdr: read_card(): cdr_buf='1  7 21 6065 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 04 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 02 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 04 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  6 40 3777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 42 2740 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 04 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 54 5200 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 55 3400 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 00 6000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 33 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 00 3777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 13 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 52 0000 0000 0001   0'
+cdr: read_card(): cdr_buf='1  5 25 3777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  2 52 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 33 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 76 2525 2525 2525   0'
+cdr: read_card(): cdr_buf='1  0 01 6525 2525 2525   0'
+cdr: read_card(): cdr_buf='1  7 76 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 13 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 75 5252 5252 5253   0'
+cdr: read_card(): cdr_buf='1  0 02 2525 2525 2525   0'
+cdr: read_card(): cdr_buf='1  7 75 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 53 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  6 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 01 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 53 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 71 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 07 0000 0000 0001   0'
+cdr: read_card(): cdr_buf='1  0 00 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 73 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  3 01 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  3 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 73 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 07 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 10 0000 0000 0001   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 75 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 60 0077 0077 0077   0'
+cdr: read_card(): cdr_buf='1  7 03 0707 0707 0707   0'
+cdr: read_card(): cdr_buf='1  7 63 0777 0777 0777   0'
+cdr: read_card(): cdr_buf='1  6 55 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 56 7070 7007 7700   0'
+cdr: read_card(): cdr_buf='1  5 65 7700 7700 7070   0'
+cdr: read_card(): cdr_buf='1  0 44 7000 7000 7000   0'
+cdr: read_card(): cdr_buf='1  6 15 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 00 7307 2525 6375   0'
+cdr: read_card(): cdr_buf='1  4 77 0070 5252 1402   0'
+cdr: read_card(): cdr_buf='1  3 77 7377 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 07 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 0000 7777   0'
+cdr: read_card(): cdr_buf='1  7 76 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 76 7776 0001 0000   0'
+cdr: read_card(): cdr_buf='1  6 07 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 56 2525 5252 5225   0'
+cdr: read_card(): cdr_buf='1  5 21 5252 0525 2552   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 5777 7777   0'
+cdr: read_card(): cdr_buf='1  6 27 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 00 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 01 0000 0000 0001   0'
+cdr: read_card(): cdr_buf='1  3 77 3777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 27 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  5 77 5777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 77 6777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 77 6777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 54 0140 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 77 7777 7777 7776   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 75 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 6777   0'
+cdr: read_card(): cdr_buf='1  0 77 7777 7777 7677   0'
+cdr: read_card(): cdr_buf='1  6 26 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 07 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 10 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 17 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 06 0053 0002 1000   0'
+cdr: read_card(): cdr_buf='1  4 35 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  3 50 3641 3641 3641   0'
+cdr: read_card(): cdr_buf='1  3 00 3641 3641 3641   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  5 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  3 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  3 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  5 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  2 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 57 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 74 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 37 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 35 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 70 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 57 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 01 7377 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 60 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 67 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0037 3777 7777   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 40 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 73 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0001 7677   0'
+cdr: read_card(): cdr_buf='1  6 74 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 14 0057 0002 1000   0'
+cdr: read_card(): cdr_buf='1  5 55 5555 5555 5555   0'
+cdr: read_card(): cdr_buf='1  7 77 1111 1111 1111   0'
+cdr: read_card(): cdr_buf='1  7 77 1111 1111 1111   0'
+cdr: read_card(): cdr_buf='1  6 14 7353 0002 1000   0'
+cdr: read_card(): cdr_buf='1  5 55 5555 5555 5555   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 14 0112 0002 1000   0'
+cdr: read_card(): cdr_buf='1  5 55 5555 5555 5555   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 77 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 34 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 35 0000 0000 0007   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 77 0000 0000 0001   0'
+cdr: read_card(): cdr_buf='1  6 34 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 44 0007 0007 0007   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 46 7434 0002 1000   0'
+cdr: read_card(): cdr_buf='1  2 22 2222 2222 2222   0'
+cdr: read_card(): cdr_buf='1  1 00 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 66 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 75 0007 0007 0007   0'
+cdr: read_card(): cdr_buf='1  3 74 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  3 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  6 67 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 67 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 0777 7777   0'
+cdr: read_card(): cdr_buf='1  6 67 0001 0002 1000   0'
+cdr: read_card(): cdr_buf='1  1 23 4567 7654 3210   0'
+cdr: read_card(): cdr_buf='1  1 23 4567 7654 3210   0'
+cdr: read_card(): cdr_buf='1  6 54 3210 0123 4567   0'
+cdr: read_card(): cdr_buf='1  3 60 0061 5765 7246   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0020 0057   0'
+cdr: read_card(): cdr_buf='1  0 54 0071 0057 0066   0'
+cdr: read_card(): cdr_buf='1  0 54 0071 0060 0067   0'
+cdr: read_card(): cdr_buf='1  0 13 0066 0067 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0010 0000   0'
+cdr: read_card(): cdr_buf='1  0 55 0057 0052 0057   0'
+cdr: read_card(): cdr_buf='1  0 55 0060 0052 0060   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 55 0061 0017 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0016 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0057 0053 0057   0'
+cdr: read_card(): cdr_buf='1  0 75 0060 0053 0060   0'
+cdr: read_card(): cdr_buf='1  0 05 0057 0060 0061   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  3 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 75 0000 0000 0060   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0070   0'
+cdr: read_card(): cdr_buf='1  0 20 7772 0000 0071   0'
+cdr: read_card(): cdr_buf='1  0 07 0057 0070 0057   0'
+cdr: read_card(): cdr_buf='1  0 07 0060 0071 0060   0'
+cdr: read_card(): cdr_buf='1  0 01 0057 0000 0057   0'
+cdr: read_card(): cdr_buf='1  0 01 0060 0000 0060   0'
+cdr: read_card(): cdr_buf='1  0 16 0030 0002 0010   0'
+cdr: read_card(): cdr_buf='1  0 05 0057 0060 0061   0'
+cdr: read_card(): cdr_buf='1  0 16 0032 0011 0016   0'
+cdr: read_card(): cdr_buf='1  0 04 0061 0060 0062   0'
+cdr: read_card(): cdr_buf='1  0 16 0034 0046 0051   0'
+cdr: read_card(): cdr_buf='1  0 76 0060 0030 0065   0'
+cdr: read_card(): cdr_buf='1  0 55 0056 0057 0057   0'
+cdr: read_card(): cdr_buf='1  0 75 0057 0000 0060   0'
+cdr: read_card(): cdr_buf='1  0 16 0040 0002 0010   0'
+cdr: read_card(): cdr_buf='1  0 05 0057 0060 0061   0'
+cdr: read_card(): cdr_buf='1  0 16 0042 0011 0016   0'
+cdr: read_card(): cdr_buf='1  0 44 0061 0000 0062   0'
+cdr: read_card(): cdr_buf='1  0 16 0044 0046 0051   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0040 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0065 7734 0060   0'
+cdr: read_card(): cdr_buf='1  0 62 0062 0057 0063   0'
+cdr: read_card(): cdr_buf='1  0 55 0055 0063 0064   0'
+cdr: read_card(): cdr_buf='1  0 35 0064 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  1 00 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 7777 7777 7776   0'
+cdr: read_card(): cdr_buf='1  5 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  5 27 6501 1655 2532   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0032   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0034   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0035   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0042   0'
+cdr: read_card(): cdr_buf='1  0 20 7772 0000 0043   0'
+cdr: read_card(): cdr_buf='1  0 07 0042 0034 0034   0'
+cdr: read_card(): cdr_buf='1  0 07 0043 0035 0035   0'
+cdr: read_card(): cdr_buf='1  0 07 0034 0035 0036   0'
+cdr: read_card(): cdr_buf='1  0 55 0036 0030 0037   0'
+cdr: read_card(): cdr_buf='1  0 54 0067 0037 0040   0'
+cdr: read_card(): cdr_buf='1  0 75 0037 0040 0037   0'
+cdr: read_card(): cdr_buf='1  0 05 0037 0031 0037   0'
+cdr: read_card(): cdr_buf='1  0 00 0032 0000 0033   0'
+cdr: read_card(): cdr_buf='1  0 07 0037 0033 0032   0'
+cdr: read_card(): cdr_buf='1  0 55 0032 0030 0036   0'
+cdr: read_card(): cdr_buf='1  0 54 0111 0032 0041   0'
+cdr: read_card(): cdr_buf='1  0 55 0041 0030 0040   0'
+cdr: read_card(): cdr_buf='1  0 35 0040 0036 0000   0'
+cdr: read_card(): cdr_buf='1  1 11 0003 0021 0001   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0033 0000 0032   0'
+cdr: read_card(): cdr_buf='1  0 32 0000 0017 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 01 4004 0040 0400   0'
+cdr: read_card(): cdr_buf='1  1 42 4747 0545 1435    0  '
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0026   0'
+cdr: read_card(): cdr_buf='1  0 00 0026 0000 0027   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0025   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0014 0010   0'
+cdr: read_card(): cdr_buf='1  0 20 7772 0000 0103   0'
+cdr: read_card(): cdr_buf='1  0 20 7773 0000 0025   0'
+cdr: read_card(): cdr_buf='1  0 00 0027 0000 0041   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 35 0041 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 07 0041 0103 0041   0'
+cdr: read_card(): cdr_buf='1  1 12 7777 0010 0001   0'
+cdr: read_card(): cdr_buf='1  0 15 0023 0010 0010   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 0031 0104   0'
+cdr: read_card(): cdr_buf='1  0 07 0027 0025 0027   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0041   0'
+cdr: read_card(): cdr_buf='1  0 15 0041 0026 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0073 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 0041 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0041   0'
+cdr: read_card(): cdr_buf='1  0 55 0041 0030 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0007 0000   0'
+cdr: read_card(): cdr_buf='1  0 13 0072 0041 0041   0'
+cdr: read_card(): cdr_buf='1  0 55 0041 0064 0052   0'
+cdr: read_card(): cdr_buf='1  0 55 0041 0065 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0052 0066 0052   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 70 0104 0043 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0041   0'
+cdr: read_card(): cdr_buf='1  0 55 0041 0051 0000   0'
+cdr: read_card(): cdr_buf='1  0 71 0000 0034 0104   0'
+cdr: read_card(): cdr_buf='1  0 55 0052 0067 0000   0'
+cdr: read_card(): cdr_buf='1  0 71 0000 0007 0104   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 70 0104 0054 0000   0'
+cdr: read_card(): cdr_buf='1  0 55 0052 0070 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 0007 0104   0'
+cdr: read_card(): cdr_buf='1  0 75 0052 0071 0060   0'
+cdr: read_card(): cdr_buf='1  0 55 0060 0063 0060   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 70 0000 0062 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0007 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 0000   0'
+cdr: read_card(): cdr_buf='1  0 77 7733 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0040 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 1020 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0300 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0020 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 6000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0104   0'
+cdr: read_card(): cdr_buf='1  0 55 0104 0024 0104   0'
+cdr: read_card(): cdr_buf='1  0 15 0104 0102 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0005 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4000 7766   0'
+cdr: read_card(): cdr_buf='1  0 70 7630 0077 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7731 0000   0'
+cdr: read_card(): cdr_buf='1  0 11 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 74 0731 6010 1725   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0052 0031   0'
+cdr: read_card(): cdr_buf='1  0 75 0026 0000 0027   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0025   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0014 0010   0'
+cdr: read_card(): cdr_buf='1  0 20 7772 0000 0024   0'
+cdr: read_card(): cdr_buf='1  0 20 7773 0000 0025   0'
+cdr: read_card(): cdr_buf='1  0 75 0027 0000 0030   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 35 0030 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 07 0030 0024 0030   0'
+cdr: read_card(): cdr_buf='1  1 12 0500 0010 0001   0'
+cdr: read_card(): cdr_buf='1  0 15 0023 0010 0010   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 0032 0101   0'
+cdr: read_card(): cdr_buf='1  0 07 0027 0025 0027   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0055   0'
+cdr: read_card(): cdr_buf='1  0 15 0055 0026 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 7734 0101   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  1 75 0030 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0056   0'
+cdr: read_card(): cdr_buf='1  0 55 0056 0051 0060   0'
+cdr: read_card(): cdr_buf='1  0 75 0031 0046 0041   0'
+cdr: read_card(): cdr_buf='1  0 75 0041 0060 0041   0'
+cdr: read_card(): cdr_buf='1  0 75 0041 0047 0037   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 70 0101 0135 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 70 0101 0043 0000   0'
+cdr: read_card(): cdr_buf='1  0 33 0031 0056 0031   0'
+cdr: read_card(): cdr_buf='1  0 55 0031 0050 0031   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0007 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0010 0000 0500   0'
+cdr: read_card(): cdr_buf='1  0 00 0004 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 7777 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0003 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0026   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0002 0000   0'
+cdr: read_card(): cdr_buf='1  0 32 0000 0005 0101   0'
+cdr: read_card(): cdr_buf='1  5 16 1475 1005 2002   0'
+cdr: read_card(): cdr_buf='1  0 75 0136 0000 0110   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0220   0'
+cdr: read_card(): cdr_buf='1  0 55 0220 0144 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 0076 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 1017 0000 0157   0'
+cdr: read_card(): cdr_buf='1  0 70 0146 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4013 0000 0257   0'
+cdr: read_card(): cdr_buf='1  0 70 0246 0005 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 1413 0007 0201   0'
+cdr: read_card(): cdr_buf='1  0 70 0200 0015 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0011 0012 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0011 0000   0'
+cdr: read_card(): cdr_buf='1  1 75 0000 0000 0200   0'
+cdr: read_card(): cdr_buf='1  1 12 0002 0015 0001   0'
+cdr: read_card(): cdr_buf='1  0 50 4013 0000 0201   0'
+cdr: read_card(): cdr_buf='1  0 70 0200 0017 0000   0'
+cdr: read_card(): cdr_buf='1  2 35 0000 0175 0203   0'
+cdr: read_card(): cdr_buf='1  1 12 0005 0021 0001   0'
+cdr: read_card(): cdr_buf='1  0 50 0017 0400 0145   0'
+cdr: read_card(): cdr_buf='1  0 70 0142 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 2017 0400 0150   0'
+cdr: read_card(): cdr_buf='1  0 70 0146 0000 0205   0'
+cdr: read_card(): cdr_buf='1  0 50 2013 0400 0203   0'
+cdr: read_card(): cdr_buf='1  0 70 0200 0036 0000   0'
+cdr: read_card(): cdr_buf='1  0 35 0145 0203 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0140 0023 0052   0'
+cdr: read_card(): cdr_buf='1  0 35 0205 0146 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0141 0023 0056   0'
+cdr: read_card(): cdr_buf='1  0 32 0000 0040 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0027 0030 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0023 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 2017 7776 0153   0'
+cdr: read_card(): cdr_buf='1  0 70 0153 0000 0205   0'
+cdr: read_card(): cdr_buf='1  0 50 2017 7775 0152   0'
+cdr: read_card(): cdr_buf='1  0 70 0152 0000 0206   0'
+cdr: read_card(): cdr_buf='1  0 50 2017 7777 0154   0'
+cdr: read_card(): cdr_buf='1  0 70 0154 0000 0207   0'
+cdr: read_card(): cdr_buf='1  0 50 2013 7775 0202   0'
+cdr: read_card(): cdr_buf='1  0 70 0200 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 35 0152 0200 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0002 0050 0001   0'
+cdr: read_card(): cdr_buf='1  1 50 0017 0300 0147   0'
+cdr: read_card(): cdr_buf='1  4 70 0147 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 13 0140 0155 0052   0'
+cdr: read_card(): cdr_buf='1  1 12 0007 0052 0001   0'
+cdr: read_card(): cdr_buf='1  1 50 0013 0300 0170   0'
+cdr: read_card(): cdr_buf='1  4 70 0170 0056 0000   0'
+cdr: read_card(): cdr_buf='1  2 13 0141 0150 0056   0'
+cdr: read_card(): cdr_buf='1  1 12 0014 0056 0001   0'
+cdr: read_card(): cdr_buf='1  6 35 0135 0163 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0021 0062 0001   0'
+cdr: read_card(): cdr_buf='1  1 75 0000 0000 0256   0'
+cdr: read_card(): cdr_buf='1  1 12 0422 0064 0001   0'
+cdr: read_card(): cdr_buf='1  0 50 2017 0000 0677   0'
+cdr: read_card(): cdr_buf='1  0 70 0300 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 50 2017 7355 0700   0'
+cdr: read_card(): cdr_buf='1  0 70 0700 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 75 0700 0000 0256   0'
+cdr: read_card(): cdr_buf='1  0 13 0700 0145 0700   0'
+cdr: read_card(): cdr_buf='1  1 12 1022 0070 0001   0'
+cdr: read_card(): cdr_buf='1  0 32 0000 0213 0000   0'
+cdr: read_card(): cdr_buf='1  0 55 0220 0142 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0135 0106 0100   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 70 0153 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 13 0100 0145 0100   0'
+cdr: read_card(): cdr_buf='1  1 12 0004 0100 0001   0'
+cdr: read_card(): cdr_buf='1  0 50 1100 0005 0153   0'
+cdr: read_card(): cdr_buf='1  0 70 0153 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 55 0220 0143 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 1041 0002 0157   0'
+cdr: read_card(): cdr_buf='1  0 70 0146 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 5021 0002 0212   0'
+cdr: read_card(): cdr_buf='1  0 70 0201 0113 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 1041 0003 0157   0'
+cdr: read_card(): cdr_buf='1  0 70 0146 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 5021 0003 0212   0'
+cdr: read_card(): cdr_buf='1  0 70 0201 0117 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 1021 0002 0212   0'
+cdr: read_card(): cdr_buf='1  0 70 0201 0121 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0021 0002 0212   0'
+cdr: read_card(): cdr_buf='1  0 70 0201 0123 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 1021 0003 0212   0'
+cdr: read_card(): cdr_buf='1  0 70 0201 0125 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 1021 0002 0212   0'
+cdr: read_card(): cdr_buf='1  0 70 0201 0127 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7734 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 2300 0000 0153   0'
+cdr: read_card(): cdr_buf='1  0 56 0137 0111 0110   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0115 0000   0'
+cdr: read_card(): cdr_buf='1  1 50 0017 0300 0147   0'
+cdr: read_card(): cdr_buf='1  1 50 0013 0300 0170   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  5 55 5432 1054 3210   0'
+cdr: read_card(): cdr_buf='1  1 23 4567 1234 5671   0'
+cdr: read_card(): cdr_buf='1  7 65 4321 0765 4321   0'
+cdr: read_card(): cdr_buf='1  4 32 1074 3210 7654   0'
+cdr: read_card(): cdr_buf='1  0 71 6153 4071 6253   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 1000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 2000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 4000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 6000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4017 0000 0150   0'
+cdr: read_card(): cdr_buf='1  0 70 0146 0000 0200   0'
+cdr: read_card(): cdr_buf='1  0 35 0000 0200 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0171 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0076 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 2013 0000 0677   0'
+cdr: read_card(): cdr_buf='1  0 70 0300 0000 0000   0'
+cdr: read_card(): cdr_buf='1  6 35 0300 0701 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0377 0215 0001   0'
+cdr: read_card(): cdr_buf='1  0 32 0000 0171 0000   0'
+cdr: read_card(): cdr_buf='1   5 71 0350 1531 1014  0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0050   0'
+cdr: read_card(): cdr_buf='1  0 75 0050 0000 0051   0'
+cdr: read_card(): cdr_buf='1  0 75 0045 0000 0010   0'
+cdr: read_card(): cdr_buf='1  0 20 7772 0000 0052   0'
+cdr: read_card(): cdr_buf='1  0 20 7773 0000 0053   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0073 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0051 0000 0054   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0057   0'
+cdr: read_card(): cdr_buf='1  0 75 0057 0046 0055   0'
+cdr: read_card(): cdr_buf='1  7 75 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 75 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 75 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 75 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 75 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 13 0047 0055 0055   0'
+cdr: read_card(): cdr_buf='1  5 76 0000 0013 0000   0'
+cdr: read_card(): cdr_buf='1  2 35 0054 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0057 0046 0055   0'
+cdr: read_card(): cdr_buf='1  7 55 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 55 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 55 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 55 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  7 55 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 13 0047 0055 0055   0'
+cdr: read_card(): cdr_buf='1  5 76 0000 0024 0000   0'
+cdr: read_card(): cdr_buf='1  2 35 0054 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 07 0054 0052 0054   0'
+cdr: read_card(): cdr_buf='1  1 12 7777 0010 0001   0'
+cdr: read_card(): cdr_buf='1  0 15 0045 0010 0010   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0006 0000   0'
+cdr: read_card(): cdr_buf='1  0 07 0051 0053 0051   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0056   0'
+cdr: read_card(): cdr_buf='1  0 15 0050 0056 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0060 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  1 75 0054 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 7777 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0071   0'
+cdr: read_card(): cdr_buf='1  0 55 0071 0067 0072   0'
+cdr: read_card(): cdr_buf='1  0 15 0072 0070 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0004 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4000 7766   0'
+cdr: read_card(): cdr_buf='1  0 70 7630 0064 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7731 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 14 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 01 1072 5114 1273   0  ; к/c N карт  (: нет к/с)'
+cdr: read_card(): cdr_buf='1  0 16 0002 0110 0121   0'
+cdr: read_card(): cdr_buf='1  0 00 0132 0000 0036   0'
+cdr: read_card(): cdr_buf='1  0 16 0004 0034 0043   0'
+cdr: read_card(): cdr_buf='1  0 16 0005 0065 0106   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0014 0160   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0036   0'
+cdr: read_card(): cdr_buf='1  0 30 0201 0013 0000   0'
+cdr: read_card(): cdr_buf='1  0 16 0134 0034 0043   0'
+cdr: read_card(): cdr_buf='1  0 07 0145 0143 0145   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0002 0000   0'
+cdr: read_card(): cdr_buf='1  0 16 0002 0034 0043   0'
+cdr: read_card(): cdr_buf='1  0 00 0145 0000 0157   0'
+cdr: read_card(): cdr_buf='1  0 07 0145 0143 0145   0'
+cdr: read_card(): cdr_buf='1  0 16 0017 0034 0043   0'
+cdr: read_card(): cdr_buf='1  0 13 0160 0124 0160   0'
+cdr: read_card(): cdr_buf='1  0 16 0021 0065 0106   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0015 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0157 0000 0145   0'
+cdr: read_card(): cdr_buf='1  0 17 0160 0000 0036   0'
+cdr: read_card(): cdr_buf='1  0 30 0201 0025 0000   0'
+cdr: read_card(): cdr_buf='1  0 16 0026 0034 0043   0'
+cdr: read_card(): cdr_buf='1  0 07 0145 0143 0145   0'
+cdr: read_card(): cdr_buf='1  0 33 0160 0124 0160   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0024 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0002 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0201 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0145 0000 0146   0'
+cdr: read_card(): cdr_buf='1  1 00 0146 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 15 0146 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 76 0000 0044 0000   0'
+cdr: read_card(): cdr_buf='1  0 07 0146 0142 0146   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 75 0036 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0124 0050 0147   0'
+cdr: read_card(): cdr_buf='1  2 17 0146 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  4 00 0000 0000 0150   0'
+cdr: read_card(): cdr_buf='1  6 52 0000 7600 0061   0'
+cdr: read_card(): cdr_buf='1  1 12 0015 0055 7764   0'
+cdr: read_card(): cdr_buf='1  0 13 0147 0124 0147   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0052 0000   0'
+cdr: read_card(): cdr_buf='1  4 52 0014 0000 0151   0'
+cdr: read_card(): cdr_buf='1  0 13 0147 0151 0147   0'
+cdr: read_card(): cdr_buf='1  0 72 0000 0147 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0146 0150 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 33 0152 0126 0153   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0155   0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 33 0153 0130 0153   0'
+cdr: read_card(): cdr_buf='1  1 31 0000 0077 0770   0'
+cdr: read_card(): cdr_buf='1  1 50 2200 0000 0200   0'
+cdr: read_card(): cdr_buf='1  4 70 7211 0000 0154   0'
+cdr: read_card(): cdr_buf='1  0 07 0155 0154 0155   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0070 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  4 70 7211 0000 0154   0'
+cdr: read_card(): cdr_buf='1  0 07 0155 0154 0155   0'
+cdr: read_card(): cdr_buf='1  0 50 2200 7777 0155   0'
+cdr: read_card(): cdr_buf='1  0 70 0155 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0156   0'
+cdr: read_card(): cdr_buf='1  0 55 0156 0132 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 20 7771 0000 0141   0'
+cdr: read_card(): cdr_buf='1  0 20 7772 0000 0142   0'
+cdr: read_card(): cdr_buf='1  0 20 7773 0000 0143   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0144   0'
+cdr: read_card(): cdr_buf='1  0 00 0141 0000 0145   0'
+cdr: read_card(): cdr_buf='1  0 55 0144 0125 0152   0'
+cdr: read_card(): cdr_buf='1  0 13 0130 0152 0077   0'
+cdr: read_card(): cdr_buf='1  0 54 0130 0152 0042   0'
+cdr: read_card(): cdr_buf='1  0 13 0133 0042 0042   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0100 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0001   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0770   0'
+cdr: read_card(): cdr_buf='1  0 50 2200 0000 0200   0'
+cdr: read_card(): cdr_buf='1  1 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 00 0146 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 12 0200 0036 0001   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0107   0'
+cdr: read_card(): cdr_buf='1  0 55 0107 0123 0107   0'
+cdr: read_card(): cdr_buf='1  0 15 0122 0107 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0011 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7731 0000   0'
+cdr: read_card(): cdr_buf='1  0 01 4532 5262 2144   0  ; к/c N карт  (: нет к/с)'
+cdr: read_card(): cdr_buf='1  0 50 2100 0000 0031   0'
+cdr: read_card(): cdr_buf='1  0 70 0006 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 2500 0000 0051   0'
+cdr: read_card(): cdr_buf='1  0 70 0032 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0052 0000   0'
+cdr: read_card(): cdr_buf='1  # 0 00 111 111 111    0'
+cdr: read_card(): cdr_buf='1  # 0 10 222 222 222    0'
+cdr: read_card(): cdr_buf='1  # 0 01 333 333 333    0'
+cdr: read_card(): cdr_buf='1  # 0 11 444 444 444    0'
+cdr: read_card(): cdr_buf='1  # 0 02 555 555 555    0'
+cdr: read_card(): cdr_buf='1  # 0 12 666 666 666    0'
+cdr: read_card(): cdr_buf='1  # 0 03 777 777 777    0'
+cdr: read_card(): cdr_buf='1  # 0 13 888 888 888    0'
+cdr: read_card(): cdr_buf='1  # 0 04 999 999 999    0'
+cdr: read_card(): cdr_buf='1  # 0 14 000 000 000    0'
+cdr: read_card(): cdr_buf='1  # 0 05 123 456 789    0'
+cdr: read_card(): cdr_buf='1  # 0 15 234 567 890    0'
+cdr: read_card(): cdr_buf='1  # 0 06 345 678 901    0'
+cdr: read_card(): cdr_buf='1  # 0 16 456 789 012    0'
+cdr: read_card(): cdr_buf='1  # 0 07 567 890 123    0'
+cdr: read_card(): cdr_buf='1  # 0 17 678 901 234    0'
+cdr: read_card(): cdr_buf='1  # 0 08 789 012 345    0'
+cdr: read_card(): cdr_buf='1  # 0 18 890 123 456    0'
+cdr: read_card(): cdr_buf='1  # 0 09 901 234 567    0'
+cdr: read_card(): cdr_buf='1  # 0 19 012 345 678    0'
+cdr: read_card(): cdr_buf='1  1 11 1111 1111 1111   0'
+cdr: read_card(): cdr_buf='1  2 22 2222 2222 2222   0'
+cdr: read_card(): cdr_buf='1  3 33 3333 3333 3333   0'
+cdr: read_card(): cdr_buf='1  4 44 4444 4444 4444   0'
+cdr: read_card(): cdr_buf='1  5 55 5555 5555 5555   0'
+cdr: read_card(): cdr_buf='1  6 66 6666 6666 6666   0'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  1 23 4567 0765 4321   0'
+cdr: read_card(): cdr_buf='1  2 34 5670 1076 5432   0'
+cdr: read_card(): cdr_buf='1  3 45 6701 2107 6543   0'
+cdr: read_card(): cdr_buf='1  4 56 7012 3210 7654   0'
+cdr: read_card(): cdr_buf='1  5 67 0123 4321 0765   0'
+cdr: read_card(): cdr_buf='1  6 70 1234 5432 1076   0'
+cdr: read_card(): cdr_buf='1  7 01 2345 6543 2107   0'
+cdr: read_card(): cdr_buf='1  0 12 3456 7654 3210   0'
+cdr: read_card(): cdr_buf='1  0 20 7774 0000 0061   0'
+cdr: read_card(): cdr_buf='1  0 55 0061 0057 0062   0'
+cdr: read_card(): cdr_buf='1  0 15 0062 0060 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7731 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 16 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  2 34 5000 0143 0246   0 ; к/c N карт  (: нет к/с)'
+cdr: read_card(): cdr_buf='1  2 56 4510 0166 3457   1'
+cdr: read_card(..) r_sum=256451001663457, c_sum=256451001663457
+cdr: read_card(..) read_codes_count=1317
+cdr: cdr_svc(..)
+cpu: 0101: [op=10 mod=0] ввод_пфк_останов               0001, 0102, 0061
+cpu: opcode=10: regKRA=66,a1=1,a2=66,a3=49
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1  0 50 0015 4000 3445   0'
+cdr: read_card(): cdr_buf='1  0 70 1000 0003 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4000 3445   0'
+cdr: read_card(): cdr_buf='1  0 70 1000 0001 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4000 0137   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0005 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4140 0124   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0007 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4265 0120   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0011 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4406 0027   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0013 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4436 0143   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0015 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4602 0121   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0017 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 4724 0470   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0021 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 5415 0056   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0023 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 5474 0031   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0025 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 5526 0102   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0027 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 5631 0054   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0031 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 5706 0217   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0033 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 6126 0072   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0035 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 6221 0140   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0037 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 4011 6362 0060   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0041 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0011 4000 7766   0'
+cdr: read_card(): cdr_buf='1  0 70 7630 0043 0000   0'
+cdr: read_card(): cdr_buf='1  0 56 0000 7731 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  3 61 2131 3205 1535   1  ; к/c 4 карт'
+cdr: read_card(..) r_sum=361213132051535, c_sum=361213132051535
+cdr: read_card(..) read_codes_count=41
+cdr: cdr_svc(..)
+cpu: 0102: [op=56 mod=0] безусл_пер_упр                 0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  0015, 4000, 3445
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   1000, 0003, 0000
+cpu: ext_io_op=0015
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(0,04000,1000,3445,..)
+drm: writing MD 04000 mem_region 1000-3445
+drm: seek file_pos=16384
+drm: nwords=2446
+drm: write_count=2446
+drm: write_count=0001
+drm: chksum=256351001663457 (0x00000AE74807672F)
+cpu: err=0, codes_num=2447 sum=256351001663457
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  4011, 4000, 3445
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   1000, 0001, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04000,1000,3445,..)
+drm: reading MD 04000 mem_region 1000-3445
+drm: seek file_pos=16384
+drm: read_count=2446
+drm: read_count=0001
+drm: old_sum=256351001663457 chksum=256351001663457
+cpu: err=0, codes_num=2447 sum=256351001663457
+cpu: 0005: [op=50 mod=0] ввод_пред_050                  4011, 4000, 0137
+cpu: 0006: [op=70 mod=0] ввод_исп_070                   0001, 0005, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04000,0001,0137,..)
+drm: reading MD 04000 mem_region 0001-0137
+drm: seek file_pos=16384
+drm: read_count=0137
+drm: read_count=0001
+drm: old_sum=002646677400702 chksum=002646677400702
+cpu: err=0, codes_num=0140 sum=002646677400702
+cpu: 0007: [op=50 mod=0] ввод_пред_050                  4011, 4140, 0124
+cpu: 0010: [op=70 mod=0] ввод_исп_070                   0001, 0007, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04140,0001,0124,..)
+drm: reading MD 04140 mem_region 0001-0124
+drm: seek file_pos=17152
+drm: read_count=0124
+drm: read_count=0001
+drm: old_sum=077122412627464 chksum=077122412627464
+cpu: err=0, codes_num=0125 sum=077122412627464
+cpu: 0011: [op=50 mod=0] ввод_пред_050                  4011, 4265, 0120
+cpu: 0012: [op=70 mod=0] ввод_исп_070                   0001, 0011, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04265,0001,0120,..)
+drm: reading MD 04265 mem_region 0001-0120
+drm: seek file_pos=17832
+drm: read_count=0120
+drm: read_count=0001
+drm: old_sum=664066063024022 chksum=664066063024022
+cpu: err=0, codes_num=0121 sum=664066063024022
+cpu: 0013: [op=50 mod=0] ввод_пред_050                  4011, 4406, 0027
+cpu: 0014: [op=70 mod=0] ввод_исп_070                   0001, 0013, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04406,0001,0027,..)
+drm: reading MD 04406 mem_region 0001-0027
+drm: seek file_pos=18480
+drm: read_count=0027
+drm: read_count=0001
+drm: old_sum=212045403700542 chksum=212045403700542
+cpu: err=0, codes_num=0030 sum=212045403700542
+cpu: 0015: [op=50 mod=0] ввод_пред_050                  4011, 4436, 0143
+cpu: 0016: [op=70 mod=0] ввод_исп_070                   0001, 0015, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04436,0001,0143,..)
+drm: reading MD 04436 mem_region 0001-0143
+drm: seek file_pos=18672
+drm: read_count=0143
+drm: read_count=0001
+drm: old_sum=513264220514442 chksum=513264220514442
+cpu: err=0, codes_num=0144 sum=513264220514442
+cpu: 0017: [op=50 mod=0] ввод_пред_050                  4011, 4602, 0121
+cpu: 0020: [op=70 mod=0] ввод_исп_070                   0001, 0017, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04602,0001,0121,..)
+drm: reading MD 04602 mem_region 0001-0121
+drm: seek file_pos=19472
+drm: read_count=0121
+drm: read_count=0001
+drm: old_sum=175015317633502 chksum=175015317633502
+cpu: err=0, codes_num=0122 sum=175015317633502
+cpu: 0021: [op=50 mod=0] ввод_пред_050                  4011, 4724, 0470
+cpu: 0022: [op=70 mod=0] ввод_исп_070                   0001, 0021, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04724,0001,0470,..)
+drm: reading MD 04724 mem_region 0001-0470
+drm: seek file_pos=20128
+drm: read_count=0470
+drm: read_count=0001
+drm: old_sum=360006157657246 chksum=360006157657246
+cpu: err=0, codes_num=0471 sum=360006157657246
+cpu: 0023: [op=50 mod=0] ввод_пред_050                  4011, 5415, 0056
+cpu: 0024: [op=70 mod=0] ввод_исп_070                   0001, 0023, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,05415,0001,0056,..)
+drm: reading MD 05415 mem_region 0001-0056
+drm: seek file_pos=22632
+drm: read_count=0056
+drm: read_count=0001
+drm: old_sum=527650116552532 chksum=527650116552532
+cpu: err=0, codes_num=0057 sum=527650116552532
+cpu: 0025: [op=50 mod=0] ввод_пред_050                  4011, 5474, 0031
+cpu: 0026: [op=70 mod=0] ввод_исп_070                   0001, 0025, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,05474,0001,0031,..)
+drm: reading MD 05474 mem_region 0001-0031
+drm: seek file_pos=23008
+drm: read_count=0031
+drm: read_count=0001
+drm: old_sum=142474705451435 chksum=142474705451435
+cpu: err=0, codes_num=0032 sum=142474705451435
+cpu: 0027: [op=50 mod=0] ввод_пред_050                  4011, 5526, 0102
+cpu: 0030: [op=70 mod=0] ввод_исп_070                   0001, 0027, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,05526,0001,0102,..)
+drm: reading MD 05526 mem_region 0001-0102
+drm: seek file_pos=23216
+drm: read_count=0102
+drm: read_count=0001
+drm: old_sum=774073160101725 chksum=774073160101725
+cpu: err=0, codes_num=0103 sum=774073160101725
+cpu: 0031: [op=50 mod=0] ввод_пред_050                  4011, 5631, 0054
+cpu: 0032: [op=70 mod=0] ввод_исп_070                   0001, 0031, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,05631,0001,0054,..)
+drm: reading MD 05631 mem_region 0001-0054
+drm: seek file_pos=23752
+drm: read_count=0054
+drm: read_count=0001
+drm: old_sum=516147510052002 chksum=516147510052002
+cpu: err=0, codes_num=0055 sum=516147510052002
+cpu: 0033: [op=50 mod=0] ввод_пред_050                  4011, 5706, 0217
+cpu: 0034: [op=70 mod=0] ввод_исп_070                   0001, 0033, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,05706,0001,0217,..)
+drm: reading MD 05706 mem_region 0001-0217
+drm: seek file_pos=24112
+drm: read_count=0217
+drm: read_count=0001
+drm: old_sum=571035015311014 chksum=571035015311014
+cpu: err=0, codes_num=0220 sum=571035015311014
+cpu: 0035: [op=50 mod=0] ввод_пред_050                  4011, 6126, 0072
+cpu: 0036: [op=70 mod=0] ввод_исп_070                   0001, 0035, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,06126,0001,0072,..)
+drm: reading MD 06126 mem_region 0001-0072
+drm: seek file_pos=25264
+drm: read_count=0072
+drm: read_count=0001
+drm: old_sum=001107251141273 chksum=001107251141273
+cpu: err=0, codes_num=0073 sum=001107251141273
+cpu: 0037: [op=50 mod=0] ввод_пред_050                  4011, 6221, 0140
+cpu: 0040: [op=70 mod=0] ввод_исп_070                   0001, 0037, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,06221,0001,0140,..)
+drm: reading MD 06221 mem_region 0001-0140
+drm: seek file_pos=25736
+drm: read_count=0140
+drm: read_count=0001
+drm: old_sum=001453252622144 chksum=001453252622144
+cpu: err=0, codes_num=0141 sum=001453252622144
+cpu: 0041: [op=50 mod=0] ввод_пред_050                  4011, 6362, 0060
+cpu: 0042: [op=70 mod=0] ввод_исп_070                   0001, 0041, 0000
+cpu: ext_io_op=4011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,06362,0001,0060,..)
+drm: reading MD 06362 mem_region 0001-0060
+drm: seek file_pos=26512
+drm: read_count=0060
+drm: read_count=0001
+drm: old_sum=234500001430246 chksum=234500001430246
+cpu: err=0, codes_num=0061 sum=234500001430246
+cpu: 0043: [op=50 mod=0] ввод_пред_050                  0011, 4000, 7766
+cpu: 0044: [op=70 mod=0] ввод_исп_070                   7630, 0043, 0000
+cpu: ext_io_op=0011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04000,7630,7766,..)
+drm: reading MD 04000 mem_region 7630-7766
+drm: seek file_pos=16384
+drm: read_count=0137
+drm: read_count=0001
+drm: old_sum=002646677400702 chksum=002646677400702
+cpu: err=0, codes_num=0140 sum=002646677400702
+cpu: 0045: [op=56 mod=0] безусл_пер_упр                 0000, 7731, 0000
+cpu: 7731: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7727
+cpu: 7732: [op=55 mod=0] лог_умнож                      7727, 7730, 7764
+cpu: 7733: [op=36 mod=0] усл_пер_упр_по_w1              0000, 7746, 7763
+cpu: 7734: [op=72 mod=0] изм_ра_по_коду                 0000, 7763, 0000
+cpu: 7735: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7727
+cpu: 7736: [op=55 mod=0] лог_умнож                      7727, 7730, 7764
+cpu: 7737: [op=76 mod=0] усл_пер_упр_по_w0              0000, 7754, 0000
+cpu: 7754: [op=54 mod=0] сдвиг_кода_по_адр              0050, 7764, 7764
+cpu: 7755: [op=13 mod=0] слож_команд                    0000, 7763, 7765
+cpu: 7756: [op=15 mod=0] сравн                          7764, 7765, 0000
+cpu: 7757: [op=36 mod=0] усл_пер_упр_по_w1              0000, 7647, 0000
+cpu: 7760: [op=72 mod=0] изм_ра_по_коду                 0000, 7764, 0000
+cpu: 7761: [op=56 mod=0] безусл_пер_упр                 7643, 7747, 7665
+cpu: 7747: [op=75 mod=4] лог_слож                       @+7667, 0000, 7751
+cpu: 7750: [op=75 mod=4] лог_слож                       @-72, 0000, 7762
+cpu: 7751: [op=50 mod=0] ввод_пред_050                  0011, 6362, 0060
+cpu: 7752: [op=70 mod=0] ввод_исп_070                   0001, 7751, 0000
+cpu: ext_io_op=0011
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=3
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,06362,0001,0060,..)
+drm: reading MD 06362 mem_region 0001-0060
+drm: seek file_pos=26512
+drm: read_count=0060
+drm: read_count=0001
+drm: old_sum=234500001430246 chksum=234500001430246
+cpu: err=0, codes_num=0061 sum=234500001430246
+cpu: 7753: [op=16 mod=4] безусл_пер_упр_с_возв          @+0000, 7647, 7763
+cpu: 7647: [op=75 mod=0] лог_слож                       7646, 0000, 7767
+cpu: 7650: [op=20 mod=0] выборка_с_КР                   7774, 0000, 7667
+cpu: 7651: [op=72 mod=0] изм_ра_по_коду                 0000, 7667, 0000
+cpu: 7652: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7653: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7654: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7655: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7656: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7657: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7660: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7661: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7662: [op=04 mod=0] делен_о                        7767, 7645, 7767
+cpu: 7663: [op=32 mod=1] пер_если_ра_не_менш_a1         0001, 7652, @-1
+cpu: 7664: [op=35 mod=0] сравн_останов                  7767, 7646, 7644
+cpu: 7665: [op=56 mod=0] безусл_пер_упр                 0000, 0001, 7665
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0031
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0006, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0006, end_addr=0031, count=20, pr_type=1
+cpu: err=0, codes_num=0024
+cpu: 0003: [op=50 mod=0] ввод_пред_050                  2500, 0000, 0051
+cpu: 0004: [op=70 mod=0] ввод_исп_070                   0032, 0000, 0000
+cpu: ext_io_op=2500
+lpt: write_line(..)
+lpt: write_line: start_addr=0032, end_addr=0051, count=16, pr_type=2
+cpu: err=0, codes_num=0020
+cpu: 0005: [op=56 mod=0] безусл_пер_упр                 0000, 0052, 0000
+cpu: 0052: [op=20 mod=0] выборка_с_КР                   7774, 0000, 0061
+cpu: 0053: [op=55 mod=0] лог_умнож                      0061, 0057, 0062
+cpu: 0054: [op=15 mod=0] сравн                          0062, 0060, 0000
+cpu: 0055: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0001, 0000

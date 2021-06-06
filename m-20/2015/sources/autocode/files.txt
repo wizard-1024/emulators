@@ -1,0 +1,51 @@
+Краткое описание примеров.
+Версия от 26 февраля 2015 г.
+
+
+*** hello.a20
+Sample file for M-20 autocode 
+encoding: english,ASCII-7
+
+*** hello12.a20
+Sample file for M-20 autocode 
+encoding: russian, cp-866
+
+*** hello13.a20
+Sample file for M-20 autocode 
+encoding: russian, cp-1251
+
+*** hello14.a20
+Sample file for M-20 autocode 
+encoding: english,ASCII-7
+
+*** hello15.a20
+Sample file for M-20 autocode 
+encoding: russian, UTF-8
+
+*** hello16.a20
+Sample file for M-20 autocode 
+encoding: russian, KOI8-R
+
+*** is2_sinus.a20
+Загрузка ИС-2, к/с для ИС-2 и вызов СП 05 с печатью результатов (10 раз)
+(использует готовые образы МБ из is2_build)
+encoding: russian, cp-1251
+
+*** is2_sinus2.a20
+Load IS-2, checksum for IS-2 and call SP 05 with results printing (10 times)
+(uses ready drum images from is2_build)
+encoding: english
+
+*** mt_format.a20
+Форматирование магнитной ленты (МЛ) с проверкой
+encoding: russian, cp-1251
+
+*** primes1.a20
+Print primes numbers from 1 upto 100 
+encoding: russian, cp-1251
+
+*** primes2.a20
+Print primes numbers from 1 upto 100 
+(using short form of commands)
+encoding: russian, cp-1251
+

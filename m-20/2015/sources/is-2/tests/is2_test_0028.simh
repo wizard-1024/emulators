@@ -1,0 +1,70 @@
+; Загрузка ИС-2, к/с для ИС-2 и вызов СП 50 с печатью/перфорацией результатов
+; (использует готовые образы МБ из is2_build)
+; (2015 Стефанков)
+;
+! del is2_test_0028_debug.txt
+! del is2_test_0028.lst
+! del is2_test_0028.cdp
+;
+set console debug=is2_test_0028_debug.txt
+;de DISABLE_IS2_TRACE 1
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;de ENABLE_OPCODE_040_HACK 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+de DPTYPE 4
+;de DPTYPE 2
+set lpt OCTHELPFMT
+;set lpt OCTHELPFMT
+att lpt   is2_test_0028.lst
+;
+att drum0 is2_test_0028.drum0
+att drum1 is2_test_0028.drum1
+att drum2 is2_test_0028.drum2
+;
+att mt0 is2_test_0028.mt0
+att mt1 is2_test_0028.mt1
+att mt2 is2_test_0028.mt2
+att mt3 is2_test_0028.mt3
+;
+set cdr extfmt
+attach cdp is2_test_0028.cdp
+;att -r cdr is2_test_0028.cdr
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 0
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+load is2_test_0028.m20
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 1
+echo
+ex 7625
+echo
+ex 200-205
+echo
+ex 100-127
+echo
+ex -m 100-127
+echo
+;ex 7544-7544
+;echo
+;ex 7200-7420
+;echo
+quit

@@ -1,0 +1,172 @@
+Program: is2_sunus2.a20			Title: Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 			Author: Stefankov Dmitry 
+Page: 0001								Date/Time: Sat Feb 28 13:51:50 2015
+
+00001:   *
+00002:   *
+00003:   * Load IS-2, checksum for IS-2 and call SP 05 with results printing (10 times)
+00004:   * (uses ready drum images from is2_build)
+00005:   * Language: M-20 autocode 
+00006:   * encoding: english
+00007:   *
+00008:   * Copyright (c) 2015 Stefankov
+00009:   *
+00010:   
+00011:   	.NAME    is2_sunus2.a20
+00012:   	.TITLE   Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20
+00013:   	.AUTHOR  Stefankov Dmitry
+00014:   *
+00015:   *
+00016:   IS2_START 		.ABS	7500
+00017:   IS2_END		  	.ABS	7767
+00018:   IS2_SAVE                .ABS    7610
+00019:   IS2_DRUM3_LA 		.ABS	7000
+00020:   DRUM3_READ      	.ABS	0013
+00021:   DECIMAL_PRINT            .ABS    2100
+00022:   COUNTER                 .ABS    012
+00023:   *
+00024:   *
+00025:   	.START  20
+00026:   ; data
+
+
+Program: is2_sunus2.a20			Title: Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 			Author: Stefankov Dmitry 
+Page: 0002								Date/Time: Sat Feb 28 13:51:50 2015
+
+00027:   ARG:  =0.1              ; x (=0.1)
+00027:   :0020
+00027:   :0020  0 75 6314 6314 6315
+00028:   STEP: =.1               ; step (=0.1)
+00028:   :0021  0 75 6314 6314 6315
+00029:   RES:  =0 		; sin(x) NOT USED
+00029:   :0022  1 00 0000 0000 0000
+00030:   *
+00031:   *
+00032:   	.ADDRESS  30
+00033:   KS1:	5 33 7736 0762 5717     ; checksum for 7500-7767 addition (expected,but old)
+00033:   :0030
+00033:   :0030  5 33 7736 0762 5717
+00034:   KS2:	0 00 0000 0000 0000     ; 
+00034:   :0031  0 00 0000 0000 0000
+00035:   *
+00036:   *
+00037:   	.ADDRESS  40
+00038:   WORK_LOC:
+00039:   *
+00040:   *
+00041:   	.ADDRESS  100
+00042:   @BEGIN:
+00043:   ; Load IS-2
+00044:   	io_setup_ext_dev_050        DRUM3_READ, IS2_DRUM3_LA, IS2_END
+00044:   :0100
+00044:   :0100  0 50 0013 7000 7767
+
+
+Program: is2_sunus2.a20			Title: Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 			Author: Stefankov Dmitry 
+Page: 0003								Date/Time: Sat Feb 28 13:51:50 2015
+
+00045:   	io_operation_ext_dev_070    IS2_START
+00045:   :0101  0 70 7500 0000 0000
+00046:   
+00047:   ; calculate checksum (control sum)
+00048:   	change_ra_reg_by_address    ,,     		; clear RA
+00048:   :0102  0 52 0000 0000 0000
+00049:           transfer_m2m	            0, 0, KS2
+00049:   :0103  0 00 0000 0000 0031
+00050:   @CADD:
+00051:           add_cyclic	            (IS2_START), KS2, KS2
+00051:   :0104  4 07 7500 0031 0031
+00052:   	goto_after_cycle_if_ra_less_a1 IS2_END-IS2_START, @CADD, (1)
+00052:   :0105  1 12 0267 0104 0001
+00053:   
+00054:   ; prepare
+00055:           transfer_m2m	            ARG, 0, WORK_LOC
+00055:   :0106  0 00 0020 0000 0040
+00056:   	change_ra_reg_by_address    ,,     		; clear RA
+00056:   :0107  0 52 0000 0000 0000
+00057:   
+00058:   ; print argument õ
+00059:   @LOOP:
+00060:           io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC
+00060:   :0110  0 50 2100 0000 0040
+00061:           io_operation_ext_dev_070   WORK_LOC
+00061:   :0111  0 70 0040 0000 0000
+
+
+Program: is2_sunus2.a20			Title: Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 			Author: Stefankov Dmitry 
+Page: 0004								Date/Time: Sat Feb 28 13:51:50 2015
+
+00062:   
+00063:   ; call SP 5, y=sinx(x)
+00064:   	jump_with_return           *+1, IS2_START+1, IS2_SAVE
+00064:   :0112  0 16 0113 7501 7610
+00065:   	logical_addition  	   WORK_LOC, 5, WORK_LOC+1	 ; address x, SP number, address y
+00065:   :0113  0 75 0040 0005 0041
+00066:   
+00067:   ; print result y
+00068:           io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC+1
+00068:   :0114  0 50 2100 0000 0041
+00069:           io_operation_ext_dev_070   WORK_LOC+1
+00069:   :0115  0 70 0041 0000 0000
+00070:   
+00071:   ; increment by STEP and continue loop
+00072:   	addition_rn                WORK_LOC, STEP, WORK_LOC    
+00072:   :0116  0 01 0040 0021 0040
+00073:   	goto_after_cycle_if_ra_less_a1  COUNTER-1, @LOOP, (1)
+00073:   :0117  1 12 0011 0110 0001
+00074:   
+00075:   ;
+00076:   ; termination
+00077:   ;
+00078:   	stop_077                              ;  stop DIGITAL COMPUTER
+00078:   :0120  0 77 0000 0000 0000
+00079:           stop_077  (7777),(7777),(7777)        ; stop after final print
+00079:   :0121  7 77 7777 7777 7777
+
+
+Program: is2_sunus2.a20			Title: Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 			Author: Stefankov Dmitry 
+Page: 0005								Date/Time: Sat Feb 28 13:51:50 2015
+
+00080:   *
+00081:   *
+00082:   	.FINISH 100
+00083:   
+00084:   * program end
+00085:   
+
+
+
+
+
+
+
+Program: is2_sunus2.a20			Title: Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 			Author: Stefankov Dmitry 
+Page: 0006								Date/Time: Sat Feb 28 13:51:50 2015
+
+Print symbolic names table (9 entries)
+0000: ARG                             	0020
+0001: STEP                            	0021
+0002: RES                             	0022
+0003: KS1                             	0030
+0004: KS2                             	0031
+0005: WORK_LOC                        	0040
+0006: @BEGIN                          	0100
+0007: @CADD                           	0104
+0008: @LOOP                           	0110
+
+
+
+
+
+
+
+Program: is2_sunus2.a20			Title: Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20 			Author: Stefankov Dmitry 
+Page: 0007								Date/Time: Sat Feb 28 13:51:50 2015
+
+Print absolute values table (7 entries)
+0000: IS2_START                       	000000000007500
+0001: IS2_END                         	000000000007767
+0002: IS2_SAVE                        	000000000007610
+0003: IS2_DRUM3_LA                    	000000000007000
+0004: DRUM3_READ                      	000000000000013
+0005: DECIMAL_PRINT                   	000000000002100
+0006: COUNTER                         	000000000000012

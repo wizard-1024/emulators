@@ -1,0 +1,21 @@
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03_debug.txt
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.lst
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.cdp
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.drum1
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.drum2
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.mt0
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.mt1
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.mt2
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_03.mt3
+ADD: ENTER: no_round=0 no_norm=0 x=302377777777777 y=101777777777773
+add: xexp=66 y_exp=65
+add: xexp=66 y_exp=65 x=302377777777777 y=101777777777773
+add: rexp=66 xm=000377777777777 ym=000377777777775
+add: A1: r=000000000000002
+add: FINAL 1: r=000000000000002
+add: FINAL 2: r=102000000000002
+add: FINAL 3: r=302000000000002
+add: LEAVE: FINAL 10: r=240400000000000
+
+add: LEAVE: FINAL 20: r=240400000000000
+

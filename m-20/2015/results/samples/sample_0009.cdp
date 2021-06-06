@@ -1,0 +1,7 @@
+
+; common codes section
+1  5 07 5001 1002 1004  0
+
+; end-of-input marker and checksum
+1  5 07 5001 1002 1004  1
+

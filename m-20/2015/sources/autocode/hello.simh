@@ -1,0 +1,40 @@
+; Пример сложения 2+2. Стефанков Д.В.
+;
+! del hello.txt
+;
+set console debug=hello.txt
+;de DIAG_PRINT 1
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+;set drum debug
+;set cdr  debug
+;set lpt  debug
+;set cdp  debug
+;set mt   debug
+;
+load hello.m20
+;
+ex 20-23
+echo 
+ex 40-43
+echo 
+ex 100-107
+echo
+ex -m 100-107
+;
+echo
+echo Start
+run
+;
+show queue
+show time
+;show throttle
+ex 20-23
+echo
+ex 40-43
+echo 
+;
+quit

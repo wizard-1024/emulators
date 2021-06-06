@@ -1,0 +1,9 @@
+Could Not Find E:\projects\3rd_party\private\stefankov\emulators\simh\v40-beta\sources\m-20\test_mult_05.lst
+MULT: ENTER: x=127765277556344, y=067600000000020 no_round=0 no_norm=0
+mult: xm=000765277556344, ym=000600000000020 xexp=87 yexp=55
+mult: r=000570017622672, regRMR=000525773347100 rexp=78
+mult: r=000570017622673, regRMR=000525773347100 rexp=78
+mult: FINAL 1: r=000570017622673, rexp=78
+
+mult: FINAL 2: r=116570017622673, regRMR=116525773347100 rexp=78
+

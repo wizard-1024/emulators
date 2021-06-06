@@ -1,0 +1,84 @@
+; Программа расчета выбора типа электровоза с использованием ИС-2 и СПП
+; [1971 Исаев и др.] стр. 82-85
+; (использует готовые образы МБ из is2_build)
+;
+! del sample_0034_debug.txt
+! del sample_0034.lst
+! del sample_0034.cdp
+;
+set console debug=sample_0034_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DISABLE_IS2_TRACE 1
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+;de DPTYPE 4
+att lpt   sample_0034.lst
+attach cdp sample_0034.cdp
+;
+de DRUM_MAP_CHECK 1
+de LOG_DRUM_1_MAP 0
+de LOG_DRUM_0_MAP 1
+de DRUM_0_ACCESS_MODE 1
+;
+att drum0 sample_0034.drum0
+;att drum1 sample_0034.drum1
+;att drum2 sample_0034.drum2
+;
+att -r cdr sample_0034.cdr
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de ROUNDING_UP_ON 0
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+;load sample_0034.m20
+;
+echo Boot
+boot cdr
+;
+ex 50-77
+echo
+;
+ex 100-141
+echo
+ex -m 100-141
+echo
+;echo Run
+;run
+show queue
+show time
+;show throttle
+ex 0-3
+echo
+ex 50-77
+echo
+ex 100-141
+echo
+ex -m 100-141
+echo
+ex 62
+echo
+ex 3002
+echo
+ex 66
+echo
+ex 3006-3007
+echo
+ex 30-35
+echo
+quit

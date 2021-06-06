@@ -1,0 +1,58 @@
+Debug output to "sample_0011_debug.txt" at Sat Feb 28 14:17:01 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+cdr: cdr_attach(..)
+CDR: unit is read only
+cdp: cdp_attach(..)
+CDP: creating new file
+
+
+
+
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+cpu: 0001: [op=50 mod=0] ввод_пред_050                  0100, 0777, 0001
+cpu: 0002: [op=70 mod=0] ввод_исп_070                   0001, 0000, 0000
+cpu: ext_io_op=0100
+lpt: write_line(..)
+lpt: write_line: start_addr=0001, end_addr=0001, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0003: [op=30 mod=0] ввод_пфк                       1000, 0004, 0030
+cpu: opcode=30: regKRA=4,a1=512,a2=4,a3=24
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1  0 56 0000 0002 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0100 0777 0001   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 30 1000 0007 0030   0'
+cdr: read_card(): cdr_buf='1  0 35 1000 1007 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 1005 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0030 0031 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0030 0004 0031   0'
+cdr: read_card(): cdr_buf='1  0 50 0200 0777 0030   0'
+cdr: read_card(): cdr_buf='1  0 70 0030 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 00 0000 0000 0000   1'
+cdr: read_card(..) r_sum=000000000000000, c_sum=566241140600112
+cdr: read_card(..) read_codes_count=12
+cdr: cdr_svc(..)
+cpu: 0004: [op=50 mod=0] ввод_пред_050                  0200, 0777, 0030
+cpu: 0005: [op=70 mod=0] ввод_исп_070                   0030, 0000, 0000
+cpu: ext_io_op=0200
+cdp: punch_card(..)
+cdp: punch_card: zone_buf_addr=511
+cdp: punch_card: start_addr=0030, end_addr=0030, count=1
+cdp: punch_card: chksum=566241140600112
+cpu: err=0, codes_num=0002
+cpu: 0006: [op=17 mod=0] останов_017                    0000, 0000, 0000
+
+Останов, KRA: 0006 ([op=17 mod=0] останов_017                    0000, 0000, 0000)
+
+
+cdr: cdr_detach(..)
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)

@@ -1,0 +1,81 @@
+Debug output to "test_11a_debug.txt" at Sun Mar 08 20:36:19 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+cdr: cdr_set_mode(..)
+cdp: cdp_attach(..)
+CDP: creating new file
+drm: drum_attach(..), name='test_11a.drum0' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='test_11a.drum1' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='test_11a.drum2' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_11a.mt0' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_11a.mt1' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_11a.mt2' res=0
+MT: creating new file
+mt: mt_attach(..), name='test_11a.mt3' res=0
+cdr: cdr_attach(..)
+CDR: unit is read only
+
+Run
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,04000,7630,7766,..)
+drm: reading MD 04000 mem_region 7630-7766
+drm: seek file_pos=16384
+drm: read_count=0137
+drm: read: no_mosu_access=0, disable_control=0
+drm: read_count=0001
+drm: old_sum=002646677400702 chksum=002646677400702
+drm: reading_done
+drm: drum_io(..), user_drum_no=1
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=1
+drm: drum_io(..), drum_no=0 user_drum_no=1
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,05526,0001,0102,..)
+drm: reading MD 05526 mem_region 0001-0102
+drm: seek file_pos=23216
+drm: read_count=0102
+drm: read: no_mosu_access=0, disable_control=0
+drm: read_count=0001
+drm: old_sum=774073160101725 chksum=774073160101725
+drm: reading_done
+lpt: write_line(..)
+lpt: write_line: start_addr=0104, end_addr=1234, count=601, pr_type=1
+
+Точка останова, KRA: 0005 ([op=20 mod=0] выборка_с_КР                   7772, 0000, 0103)
+cdr: cdr_detach(..)
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)

@@ -1,0 +1,40 @@
+*
+* Sample file for M-20 autocode 
+* encoding: english,ASCII-7
+*
+* Copyright (c) 2015 Stefankov
+*
+
+	.NAME    hello.a20
+	.TITLE	 Hello Program for M-20
+	.AUTHOR  Stefankov Dmitry
+*
+*
+*
+
+TWO1  	.ABS	=2
+TWO2	.ABS	1 02 4000 0000 0000
+TWO3    .ABS    102400000000000
+
+	.START  20
+*
+num1:	TWO1
+num2:	TWO2
+num3:   TWO3
+*
+	.START  40
+sum1:   .MEM 1
+sum2:   .MEM 1
+sum3:   .MEM 1
+*
+*
+	.ADDRESS  100
+START:
+	add_rn	num1,num2,sum1		; 2+2=4?
+	add_rn	num1,num3,sum2		; 2+2=4?
+	add_rn	num2,num3,sum3		; 2+2=4?
+	stop_77
+	stop_17
+
+
+	.FINISH 100

@@ -1,0 +1,90 @@
+Program: hello.a20			Title: Hello Program for M-20 			Author: Stefankov Dmitry 
+Page: 0001								Date/Time: Sat Feb 28 13:40:40 2015
+
+00001:   *
+00002:   * Sample file for M-20 autocode 
+00003:   * encoding: english,ASCII-7
+00004:   *
+00005:   * Copyright (c) 2015 Stefankov
+00006:   *
+00007:   
+00008:   	.NAME    hello.a20
+00009:   	.TITLE	 Hello Program for M-20
+00010:   	.AUTHOR  Stefankov Dmitry
+00011:   *
+00012:   *
+00013:   *
+00014:   
+00015:   TWO1  	.ABS	=2
+00016:   TWO2	.ABS	1 02 4000 0000 0000
+00017:   TWO3    .ABS    102400000000000
+00018:   
+00019:   	.START  20
+00020:   *
+00021:   num1:	TWO1
+00021:   :0020
+00021:   :0020  1 02 4000 0000 0000
+00022:   num2:	TWO2
+00022:   :0021  1 02 4000 0000 0000
+00023:   num3:   TWO3
+00023:   :0022  1 02 4000 0000 0000
+
+
+Program: hello.a20			Title: Hello Program for M-20 			Author: Stefankov Dmitry 
+Page: 0002								Date/Time: Sat Feb 28 13:40:40 2015
+
+00024:   *
+00025:   	.START  40
+00026:   sum1:   .MEM 1
+00027:   sum2:   .MEM 1
+00028:   sum3:   .MEM 1
+00029:   *
+00030:   *
+00031:   	.ADDRESS  100
+00032:   START:
+00033:   	add_rn	num1,num2,sum1		; 2+2=4?
+00033:   :0100
+00033:   :0100  0 01 0020 0021 0040
+00034:   	add_rn	num1,num3,sum2		; 2+2=4?
+00034:   :0101  0 01 0020 0022 0041
+00035:   	add_rn	num2,num3,sum3		; 2+2=4?
+00035:   :0102  0 01 0021 0022 0042
+00036:   	stop_77
+00036:   :0103  0 77 0000 0000 0000
+00037:   	stop_17
+00037:   :0104  0 17 0000 0000 0000
+00038:   
+00039:   
+00040:   	.FINISH 100
+
+
+
+
+
+
+
+Program: hello.a20			Title: Hello Program for M-20 			Author: Stefankov Dmitry 
+Page: 0003								Date/Time: Sat Feb 28 13:40:40 2015
+
+Print symbolic names table (7 entries)
+0000: num1                            	0020
+0001: num2                            	0021
+0002: num3                            	0022
+0003: sum1                            	0040
+0004: sum2                            	0041
+0005: sum3                            	0042
+0006: START                           	0100
+
+
+
+
+
+
+
+Program: hello.a20			Title: Hello Program for M-20 			Author: Stefankov Dmitry 
+Page: 0004								Date/Time: Sat Feb 28 13:40:40 2015
+
+Print absolute values table (3 entries)
+0000: TWO1                            	102400000000000
+0001: TWO2                            	102400000000000
+0002: TWO3                            	102400000000000

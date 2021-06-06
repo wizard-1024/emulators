@@ -1,0 +1,653 @@
+encoding type: 3
+Processing filename: autocode_m20_eng.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.NAME'
+PS_OPS: idx='02', name='.TITLE'
+PS_OPS: idx='03', name='.START'
+PS_OPS: idx='04', name='.FINISH'
+PS_OPS: idx='05', name='.ADDRESS'
+PS_OPS: idx='06', name='.ABS'
+PS_OPS: idx='07', name='.MEM'
+PS_OPS: idx='08', name='.AUTHOR'
+PS_OPS: idx='09', name='.LIST'
+PS_OPS: idx='10', name='.NOLIST'
+File parsed and accepted.
+Processing filename: autocode_m20_dos_cp866.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.€Њџ'
+PS_OPS: idx='02', name='.ЌЂ‡‚ЂЌ€…'
+PS_OPS: idx='03', name='.‘’Ђђ’'
+PS_OPS: idx='04', name='.”€Ќ€'
+PS_OPS: idx='05', name='.Ђ„ђ…‘'
+PS_OPS: idx='06', name='.ЂЃ‘'
+PS_OPS: idx='07', name='.ЏЂЊ'
+PS_OPS: idx='08', name='.Ђ‚’Ћђ'
+PS_OPS: idx='09', name='.Џ…—Ђ’њ'
+PS_OPS: idx='10', name='.Ќ…Џ…—Ђ’њ'
+File parsed and accepted.
+Processing filename: autocode_m20_win_cp1251.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.ИМЯ'
+PS_OPS: idx='02', name='.НАЗВАНИЕ'
+PS_OPS: idx='03', name='.СТАРТ'
+PS_OPS: idx='04', name='.ФИНИШ'
+PS_OPS: idx='05', name='.АДРЕС'
+PS_OPS: idx='06', name='.АБС'
+PS_OPS: idx='07', name='.ПАМ'
+PS_OPS: idx='08', name='.АВТОР'
+PS_OPS: idx='09', name='.ПЕЧАТЬ'
+PS_OPS: idx='10', name='.НЕПЕЧАТЬ'
+File parsed and accepted.
+Processing filename: autocode_m20_unix_koi8r.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.йнс'
+PS_OPS: idx='02', name='.объчбойе'
+PS_OPS: idx='03', name='.уфбтф'
+PS_OPS: idx='04', name='.жйойы'
+PS_OPS: idx='05', name='.бдтеу'
+PS_OPS: idx='06', name='.бву'
+PS_OPS: idx='07', name='.рбн'
+PS_OPS: idx='08', name='.бчфпт'
+PS_OPS: idx='09', name='.реюбфш'
+PS_OPS: idx='10', name='.оереюбфш'
+File parsed and accepted.
+Processing filename: autocode_m20_rus_utf8.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.РРњРЇ'
+PS_OPS: idx='02', name='.РќРђР—Р’РђРќРР•'
+PS_OPS: idx='03', name='.РЎРўРђР Рў'
+PS_OPS: idx='04', name='.Р¤РРќРРЁ'
+PS_OPS: idx='05', name='.РђР”Р Р•РЎ'
+PS_OPS: idx='06', name='.РђР‘РЎ'
+PS_OPS: idx='07', name='.РџРђРњ'
+PS_OPS: idx='08', name='.РђР’РўРћР '
+PS_OPS: idx='09', name='.РџР•Р§РђРўР¬'
+PS_OPS: idx='10', name='.РќР•РџР•Р§РђРўР¬'
+File parsed and accepted.
+Parsing filename: primes2.a20
+Read lines: 107
+orig_text: *
+orig_text: * Print primes numbers from 1 upto 100 
+orig_text: * (using short form of commands)
+orig_text: * Language: M-20 autocode 
+orig_text: * encoding: russian, cp-1251
+orig_text: *
+orig_text: * Copyright (c) 2015 Stefankov
+orig_text: *
+orig_text: 
+orig_text: 	.ИМЯ  primes1.a20
+orig_text: 	.НАЗВАНИЕ  Программа печати простых числел для ЭЦВМ M-20
+orig_text: 	.АВТОР  Стефанков Дмитрий
+orig_text: *
+orig_text: *
+orig_text: NUM100 	.АБС	144
+orig_text: ONE      .АБС	=1
+orig_text: 
+orig_text: 	.СТАРТ  20
+orig_text: N1:  ONE 		; N
+orig_text: N2:  ONE
+orig_text: N3:  NUM100
+orig_text: *
+orig_text: *
+orig_text: 	.АДРЕС  40
+orig_text: WORK:                   ; рабочие ячейки
+orig_text: *
+orig_text: *
+orig_text: 	.АДРЕС  100
+orig_text: @НАЧАЛО:
+orig_text:         п   N1, 0, WORK
+orig_text:         ра  ,,
+orig_text: ;
+orig_text: ;подготовить массив
+orig_text: ;
+orig_text: @FILL:                                 ; 
+orig_text:         п   WORK,0, (PRIMES)
+orig_text:         с   WORK, N2, WORK        
+orig_text:         пм  NUM100-1, @FILL, (1)
+orig_text: ;
+orig_text: ; печать массива [1..100]
+orig_text: ;
+orig_text:         ра  ,,
+orig_text: @PRINT1:
+orig_text:         п   (PRIMES), 0, WORK
+orig_text:         ма  2100, 0, WORK
+orig_text:         мб  WORK
+orig_text:         пм  NUM100-1, @PRINT1, (1)
+orig_text: ;
+orig_text: ; test=sqrt(N)
+orig_text: ;
+orig_text:         к   WORK, 0, WORK+1
+orig_text:         ма  2100, 0, WORK+1
+orig_text:         мб  WORK+1
+orig_text: ;
+orig_text: ; удаляем числа, которые делятся на 2
+orig_text: ;
+orig_text:         ра  0, 3, 
+orig_text: @DIV2:
+orig_text:         п   0, 0, (PRIMES)
+orig_text:         пм  NUM100-2, @DIV2, (2)
+orig_text: ;
+orig_text: ; удаляем числа, которые делятся на 3
+orig_text: ;
+orig_text:         ра  0, 5,
+orig_text: @DIV3:
+orig_text:         п   0, 0, (PRIMES)
+orig_text:         пм  NUM100-2, @DIV3, (3)
+orig_text: ;
+orig_text: ; удаляем числа, которые делятся на 5
+orig_text: ;
+orig_text:         ра  0, 011,
+orig_text: @DIV5:
+orig_text:         п   0, 0, (PRIMES)
+orig_text:         пм  NUM100-2, @DIV5, (5)
+orig_text: ;
+orig_text: ; удаляем числа, которые делятся на 7
+orig_text: ;
+orig_text:         ра  0, 015,
+orig_text: @DIV7:
+orig_text:         п   0, 0, (PRIMES)
+orig_text:         пм  NUM100-2, @DIV7, (7)
+orig_text: ;
+orig_text: ; печать простых числел из массива [1..100]
+orig_text: ;
+orig_text:         ра  0, 1,
+orig_text: @PRINT3:
+orig_text:         п   (PRIMES), 0, WORK
+orig_text:         н   WORK, 0,
+orig_text:         пе  0, @NEXT,
+orig_text:         ма  2100, 0, WORK
+orig_text:         мб  WORK
+orig_text: @NEXT:
+orig_text:         пм  NUM100-3, @PRINT3, (1)
+orig_text: ;
+orig_text: ; завершение
+orig_text: ;
+orig_text: 	стоп                              ;  ОСТАНОВ ЭЦВМ
+orig_text:         стоп  (7777),(7777),(7777)        ; останов после выдачи
+orig_text: *
+orig_text: *
+orig_text: 	.АДРЕС  1000
+orig_text: PRIMES:  .ПАМ  144
+orig_text: 
+orig_text: 	.ФИНИШ 100
+orig_text: 
+orig_text: * конец программы
+orig_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.ИМЯ  primes1.a20
+clean_text: 	.НАЗВАНИЕ  Программа печати простых числел для ЭЦВМ M-20
+clean_text: 	.АВТОР  Стефанков Дмитрий
+clean_text: 
+clean_text: 
+clean_text: NUM100 	.АБС	144
+clean_text: ONE      .АБС	=1
+clean_text: 
+clean_text: 	.СТАРТ  20
+clean_text: N1:  ONE 		
+clean_text: N2:  ONE
+clean_text: N3:  NUM100
+clean_text: 
+clean_text: 
+clean_text: 	.АДРЕС  40
+clean_text: WORK:                   
+clean_text: 
+clean_text: 
+clean_text: 	.АДРЕС  100
+clean_text: @НАЧАЛО:
+clean_text:         п   N1, 0, WORK
+clean_text:         ра  ,,
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: @FILL:                                 
+clean_text:         п   WORK,0, (PRIMES)
+clean_text:         с   WORK, N2, WORK        
+clean_text:         пм  NUM100-1, @FILL, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         ра  ,,
+clean_text: @PRINT1:
+clean_text:         п   (PRIMES), 0, WORK
+clean_text:         ма  2100, 0, WORK
+clean_text:         мб  WORK
+clean_text:         пм  NUM100-1, @PRINT1, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         к   WORK, 0, WORK+1
+clean_text:         ма  2100, 0, WORK+1
+clean_text:         мб  WORK+1
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         ра  0, 3, 
+clean_text: @DIV2:
+clean_text:         п   0, 0, (PRIMES)
+clean_text:         пм  NUM100-2, @DIV2, (2)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         ра  0, 5,
+clean_text: @DIV3:
+clean_text:         п   0, 0, (PRIMES)
+clean_text:         пм  NUM100-2, @DIV3, (3)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         ра  0, 011,
+clean_text: @DIV5:
+clean_text:         п   0, 0, (PRIMES)
+clean_text:         пм  NUM100-2, @DIV5, (5)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         ра  0, 015,
+clean_text: @DIV7:
+clean_text:         п   0, 0, (PRIMES)
+clean_text:         пм  NUM100-2, @DIV7, (7)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         ра  0, 1,
+clean_text: @PRINT3:
+clean_text:         п   (PRIMES), 0, WORK
+clean_text:         н   WORK, 0,
+clean_text:         пе  0, @NEXT,
+clean_text:         ма  2100, 0, WORK
+clean_text:         мб  WORK
+clean_text: @NEXT:
+clean_text:         пм  NUM100-3, @PRINT3, (1)
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	стоп                              
+clean_text:         стоп  (7777),(7777),(7777)        
+clean_text: 
+clean_text: 
+clean_text: 	.АДРЕС  1000
+clean_text: PRIMES:  .ПАМ  144
+clean_text: 
+clean_text: 	.ФИНИШ 100
+clean_text: 
+clean_text: 
+clean_text: 
+Lexical scanning.
+work_buf (len=18): 	.ИМЯ  primes1.a20
+work_buf (len=57): 	.НАЗВАНИЕ  Программа печати простых числел для ЭЦВМ M-20
+work_buf (len=26): 	.АВТОР  Стефанков Дмитрий
+work_buf (len=16): NUM100 	.АБС	144
+work_buf (len=16): ONE      .АБС	=1
+work_buf (len=11): 	.СТАРТ  20
+work_buf (len=11): N1:  ONE 		
+work_buf (len=8): N2:  ONE
+work_buf (len=11): N3:  NUM100
+work_buf (len=11): 	.АДРЕС  40
+work_buf (len=24): WORK:                   
+work_buf (len=12): 	.АДРЕС  100
+work_buf (len=8): @НАЧАЛО:
+work_buf (len=23):         п   N1, 0, WORK
+work_buf (len=14):         ра  ,,
+work_buf (len=39): @FILL:                                 
+work_buf (len=28):         п   WORK,0, (PRIMES)
+work_buf (len=34):         с   WORK, N2, WORK        
+work_buf (len=32):         пм  NUM100-1, @FILL, (1)
+work_buf (len=14):         ра  ,,
+work_buf (len=8): @PRINT1:
+work_buf (len=29):         п   (PRIMES), 0, WORK
+work_buf (len=25):         ма  2100, 0, WORK
+work_buf (len=16):         мб  WORK
+work_buf (len=34):         пм  NUM100-1, @PRINT1, (1)
+work_buf (len=27):         к   WORK, 0, WORK+1
+work_buf (len=27):         ма  2100, 0, WORK+1
+work_buf (len=18):         мб  WORK+1
+work_buf (len=18):         ра  0, 3, 
+work_buf (len=6): @DIV2:
+work_buf (len=26):         п   0, 0, (PRIMES)
+work_buf (len=32):         пм  NUM100-2, @DIV2, (2)
+work_buf (len=17):         ра  0, 5,
+work_buf (len=6): @DIV3:
+work_buf (len=26):         п   0, 0, (PRIMES)
+work_buf (len=32):         пм  NUM100-2, @DIV3, (3)
+work_buf (len=19):         ра  0, 011,
+work_buf (len=6): @DIV5:
+work_buf (len=26):         п   0, 0, (PRIMES)
+work_buf (len=32):         пм  NUM100-2, @DIV5, (5)
+work_buf (len=19):         ра  0, 015,
+work_buf (len=6): @DIV7:
+work_buf (len=26):         п   0, 0, (PRIMES)
+work_buf (len=32):         пм  NUM100-2, @DIV7, (7)
+work_buf (len=17):         ра  0, 1,
+work_buf (len=8): @PRINT3:
+work_buf (len=29):         п   (PRIMES), 0, WORK
+work_buf (len=20):         н   WORK, 0,
+work_buf (len=21):         пе  0, @NEXT,
+work_buf (len=25):         ма  2100, 0, WORK
+work_buf (len=16):         мб  WORK
+work_buf (len=6): @NEXT:
+work_buf (len=34):         пм  NUM100-3, @PRINT3, (1)
+work_buf (len=35): 	стоп                              
+work_buf (len=42):         стоп  (7777),(7777),(7777)        
+work_buf (len=13): 	.АДРЕС  1000
+work_buf (len=18): PRIMES:  .ПАМ  144
+work_buf (len=11): 	.ФИНИШ 100
+lex_words: 1=.ИМЯ;2=primes1.a20;
+lex_words: 1=.НАЗВАНИЕ;2=Программа;3=печати;4=простых;5=числел;6=для;7=ЭЦВМ;8=M-20;
+lex_words: 1=.АВТОР;2=Стефанков;3=Дмитрий;
+lex_words: 1=NUM100;2=.АБС;3=144;
+lex_words: 1=ONE;2=.АБС;3==1;
+lex_words: 1=.СТАРТ;2=20;
+lex_words: 1=N1:;2=ONE;
+lex_words: 1=N2:;2=ONE;
+lex_words: 1=N3:;2=NUM100;
+lex_words: 1=.АДРЕС;2=40;
+lex_words: 1=WORK:;
+lex_words: 1=.АДРЕС;2=100;
+lex_words: 1=@НАЧАЛО:;
+lex_words: 1=п;2=N1;3=0;4=WORK;
+lex_words: 1=ра;
+lex_words: 1=@FILL:;
+lex_words: 1=п;2=WORK;3=0;4=(PRIMES);
+lex_words: 1=с;2=WORK;3=N2;4=WORK;
+lex_words: 1=пм;2=NUM100-1;3=@FILL;4=(1);
+lex_words: 1=ра;
+lex_words: 1=@PRINT1:;
+lex_words: 1=п;2=(PRIMES);3=0;4=WORK;
+lex_words: 1=ма;2=2100;3=0;4=WORK;
+lex_words: 1=мб;2=WORK;
+lex_words: 1=пм;2=NUM100-1;3=@PRINT1;4=(1);
+lex_words: 1=к;2=WORK;3=0;4=WORK+1;
+lex_words: 1=ма;2=2100;3=0;4=WORK+1;
+lex_words: 1=мб;2=WORK+1;
+lex_words: 1=ра;2=0;3=3;
+lex_words: 1=@DIV2:;
+lex_words: 1=п;2=0;3=0;4=(PRIMES);
+lex_words: 1=пм;2=NUM100-2;3=@DIV2;4=(2);
+lex_words: 1=ра;2=0;3=5;
+lex_words: 1=@DIV3:;
+lex_words: 1=п;2=0;3=0;4=(PRIMES);
+lex_words: 1=пм;2=NUM100-2;3=@DIV3;4=(3);
+lex_words: 1=ра;2=0;3=011;
+lex_words: 1=@DIV5:;
+lex_words: 1=п;2=0;3=0;4=(PRIMES);
+lex_words: 1=пм;2=NUM100-2;3=@DIV5;4=(5);
+lex_words: 1=ра;2=0;3=015;
+lex_words: 1=@DIV7:;
+lex_words: 1=п;2=0;3=0;4=(PRIMES);
+lex_words: 1=пм;2=NUM100-2;3=@DIV7;4=(7);
+lex_words: 1=ра;2=0;3=1;
+lex_words: 1=@PRINT3:;
+lex_words: 1=п;2=(PRIMES);3=0;4=WORK;
+lex_words: 1=н;2=WORK;3=0;
+lex_words: 1=пе;2=0;3=@NEXT;
+lex_words: 1=ма;2=2100;3=0;4=WORK;
+lex_words: 1=мб;2=WORK;
+lex_words: 1=@NEXT:;
+lex_words: 1=пм;2=NUM100-3;3=@PRINT3;4=(1);
+lex_words: 1=стоп;
+lex_words: 1=стоп;2=(7777);3=(7777);4=(7777);
+lex_words: 1=.АДРЕС;2=1000;
+lex_words: 1=PRIMES:;2=.ПАМ;3=144;
+lex_words: 1=.ФИНИШ;2=100;
+Syntax parsing (pass 1).
+cur_loc_counter=0001
+.ИМЯ directive: 'primes1.a20'
+cur_loc_counter=0001
+.НАЗВАНИЕ directive: 'Программа печати простых числел для ЭЦВМ M-20 '
+cur_loc_counter=0001
+.АВТОР directive: 'Стефанков Дмитрий '
+cur_loc_counter=0001
+abs_name=NUM100 value=000000000000144
+cur_loc_counter=0001
+abs_name=ONE value=101400000000000
+cur_loc_counter=0001
+.СТАРТ directive:  cur_location_counter=0020, program_start_address=0020
+cur_loc_counter=0020
+LABEL: addr=0020, name=N1
+DATA_LINE: line_num=19: ONE
+cur_loc_counter=0021
+LABEL: addr=0021, name=N2
+DATA_LINE: line_num=20: ONE
+cur_loc_counter=0022
+LABEL: addr=0022, name=N3
+DATA_LINE: line_num=21: NUM100
+cur_loc_counter=0023
+.АДРЕС directive:  cur_location_counter=0040
+cur_loc_counter=0040
+LABEL: addr=0040, name=WORK
+cur_loc_counter=0040
+.АДРЕС directive:  cur_location_counter=0100
+cur_loc_counter=0100
+LABEL: addr=0100, name=@НАЧАЛО
+cur_loc_counter=0100
+CODE_LINE: line_num=30 op=00 sym='п'
+cur_loc_counter=0101
+CODE_LINE: line_num=31 op=52 sym='ра'
+cur_loc_counter=0102
+LABEL: addr=0102, name=@FILL
+cur_loc_counter=0102
+CODE_LINE: line_num=36 op=00 sym='п'
+cur_loc_counter=0103
+CODE_LINE: line_num=37 op=01 sym='с'
+cur_loc_counter=0104
+CODE_LINE: line_num=38 op=12 sym='пм'
+cur_loc_counter=0105
+CODE_LINE: line_num=42 op=52 sym='ра'
+cur_loc_counter=0106
+LABEL: addr=0106, name=@PRINT1
+cur_loc_counter=0106
+CODE_LINE: line_num=44 op=00 sym='п'
+cur_loc_counter=0107
+CODE_LINE: line_num=45 op=50 sym='ма'
+cur_loc_counter=0110
+CODE_LINE: line_num=46 op=70 sym='мб'
+cur_loc_counter=0111
+CODE_LINE: line_num=47 op=12 sym='пм'
+cur_loc_counter=0112
+CODE_LINE: line_num=51 op=44 sym='к'
+cur_loc_counter=0113
+CODE_LINE: line_num=52 op=50 sym='ма'
+cur_loc_counter=0114
+CODE_LINE: line_num=53 op=70 sym='мб'
+cur_loc_counter=0115
+CODE_LINE: line_num=57 op=52 sym='ра'
+cur_loc_counter=0116
+LABEL: addr=0116, name=@DIV2
+cur_loc_counter=0116
+CODE_LINE: line_num=59 op=00 sym='п'
+cur_loc_counter=0117
+CODE_LINE: line_num=60 op=12 sym='пм'
+cur_loc_counter=0120
+CODE_LINE: line_num=64 op=52 sym='ра'
+cur_loc_counter=0121
+LABEL: addr=0121, name=@DIV3
+cur_loc_counter=0121
+CODE_LINE: line_num=66 op=00 sym='п'
+cur_loc_counter=0122
+CODE_LINE: line_num=67 op=12 sym='пм'
+cur_loc_counter=0123
+CODE_LINE: line_num=71 op=52 sym='ра'
+cur_loc_counter=0124
+LABEL: addr=0124, name=@DIV5
+cur_loc_counter=0124
+CODE_LINE: line_num=73 op=00 sym='п'
+cur_loc_counter=0125
+CODE_LINE: line_num=74 op=12 sym='пм'
+cur_loc_counter=0126
+CODE_LINE: line_num=78 op=52 sym='ра'
+cur_loc_counter=0127
+LABEL: addr=0127, name=@DIV7
+cur_loc_counter=0127
+CODE_LINE: line_num=80 op=00 sym='п'
+cur_loc_counter=0130
+CODE_LINE: line_num=81 op=12 sym='пм'
+cur_loc_counter=0131
+CODE_LINE: line_num=85 op=52 sym='ра'
+cur_loc_counter=0132
+LABEL: addr=0132, name=@PRINT3
+cur_loc_counter=0132
+CODE_LINE: line_num=87 op=00 sym='п'
+cur_loc_counter=0133
+CODE_LINE: line_num=88 op=15 sym='н'
+cur_loc_counter=0134
+CODE_LINE: line_num=89 op=36 sym='пе'
+cur_loc_counter=0135
+CODE_LINE: line_num=90 op=50 sym='ма'
+cur_loc_counter=0136
+CODE_LINE: line_num=91 op=70 sym='мб'
+cur_loc_counter=0137
+LABEL: addr=0137, name=@NEXT
+cur_loc_counter=0137
+CODE_LINE: line_num=93 op=12 sym='пм'
+cur_loc_counter=0140
+CODE_LINE: line_num=97 op=17 sym='стоп'
+cur_loc_counter=0141
+CODE_LINE: line_num=98 op=17 sym='стоп'
+cur_loc_counter=0142
+.АДРЕС directive:  cur_location_counter=1000
+cur_loc_counter=1000
+LABEL: addr=1000, name=PRIMES
+.ПАМ directive:  cur_location_counter=1144
+cur_loc_counter=1144
+.ФИНИШ directive:  program_start_address=0100
+Print symbolic names table (14 names).
+0: name=N1 value=0020
+1: name=N2 value=0021
+2: name=N3 value=0022
+3: name=WORK value=0040
+4: name=@НАЧАЛО value=0100
+5: name=@FILL value=0102
+6: name=@PRINT1 value=0106
+7: name=@DIV2 value=0116
+8: name=@DIV3 value=0121
+9: name=@DIV5 value=0124
+10: name=@DIV7 value=0127
+11: name=@PRINT3 value=0132
+12: name=@NEXT value=0137
+13: name=PRIMES value=1000
+Print absolute values table (2 names).
+0: name=NUM100 value=000000000000144
+1: name=ONE value=101400000000000
+References resolving (pass 2).
+DATA_LINE: line_num=19: addr=0020: 1='ONE';
+FIN_OBJ_MCODE: m_code=101400000000000
+DATA_LINE: line_num=20: addr=0021: 1='ONE';
+FIN_OBJ_MCODE: m_code=101400000000000
+DATA_LINE: line_num=21: addr=0022: 1='NUM100';
+FIN_OBJ_MCODE: m_code=000000000000144
+CODE_LINE: line_num=30: addr=0100: op=00: 0='п';1='N1';2='0';3='WORK';
+FIN_OBJ_MCODE: m_code=000002000000040
+CODE_LINE: line_num=31: addr=0101: op=52: 0='ра';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=36: addr=0102: op=00: 0='п';1='WORK';2='0';3='PRIMES';
+FIN_OBJ_MCODE: m_code=100004000001000
+CODE_LINE: line_num=37: addr=0103: op=01: 0='с';1='WORK';2='N2';3='WORK';
+FIN_OBJ_MCODE: m_code=001004000210040
+CODE_LINE: line_num=38: addr=0104: op=12: 0='пм';1='NUM100-1';2='@FILL';3='1';
+FIN_OBJ_MCODE: m_code=112014301020001
+CODE_LINE: line_num=42: addr=0105: op=52: 0='ра';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=44: addr=0106: op=00: 0='п';1='PRIMES';2='0';3='WORK';
+FIN_OBJ_MCODE: m_code=400100000000040
+CODE_LINE: line_num=45: addr=0107: op=50: 0='ма';1='2100';2='0';3='WORK';
+FIN_OBJ_MCODE: m_code=050210000000040
+CODE_LINE: line_num=46: addr=0110: op=70: 0='мб';1='WORK';
+FIN_OBJ_MCODE: m_code=070004000000000
+CODE_LINE: line_num=47: addr=0111: op=12: 0='пм';1='NUM100-1';2='@PRINT1';3='1';
+FIN_OBJ_MCODE: m_code=112014301060001
+CODE_LINE: line_num=51: addr=0112: op=44: 0='к';1='WORK';2='0';3='WORK+1';
+FIN_OBJ_MCODE: m_code=044004000000041
+CODE_LINE: line_num=52: addr=0113: op=50: 0='ма';1='2100';2='0';3='WORK+1';
+FIN_OBJ_MCODE: m_code=050210000000041
+CODE_LINE: line_num=53: addr=0114: op=70: 0='мб';1='WORK+1';
+FIN_OBJ_MCODE: m_code=070004100000000
+CODE_LINE: line_num=57: addr=0115: op=52: 0='ра';1='0';2='3';
+FIN_OBJ_MCODE: m_code=052000000030000
+CODE_LINE: line_num=59: addr=0116: op=00: 0='п';1='0';2='0';3='PRIMES';
+FIN_OBJ_MCODE: m_code=100000000001000
+CODE_LINE: line_num=60: addr=0117: op=12: 0='пм';1='NUM100-2';2='@DIV2';3='2';
+FIN_OBJ_MCODE: m_code=112014201160002
+CODE_LINE: line_num=64: addr=0120: op=52: 0='ра';1='0';2='5';
+FIN_OBJ_MCODE: m_code=052000000050000
+CODE_LINE: line_num=66: addr=0121: op=00: 0='п';1='0';2='0';3='PRIMES';
+FIN_OBJ_MCODE: m_code=100000000001000
+CODE_LINE: line_num=67: addr=0122: op=12: 0='пм';1='NUM100-2';2='@DIV3';3='3';
+FIN_OBJ_MCODE: m_code=112014201210003
+CODE_LINE: line_num=71: addr=0123: op=52: 0='ра';1='0';2='011';
+FIN_OBJ_MCODE: m_code=052000000110000
+CODE_LINE: line_num=73: addr=0124: op=00: 0='п';1='0';2='0';3='PRIMES';
+FIN_OBJ_MCODE: m_code=100000000001000
+CODE_LINE: line_num=74: addr=0125: op=12: 0='пм';1='NUM100-2';2='@DIV5';3='5';
+FIN_OBJ_MCODE: m_code=112014201240005
+CODE_LINE: line_num=78: addr=0126: op=52: 0='ра';1='0';2='015';
+FIN_OBJ_MCODE: m_code=052000000150000
+CODE_LINE: line_num=80: addr=0127: op=00: 0='п';1='0';2='0';3='PRIMES';
+FIN_OBJ_MCODE: m_code=100000000001000
+CODE_LINE: line_num=81: addr=0130: op=12: 0='пм';1='NUM100-2';2='@DIV7';3='7';
+FIN_OBJ_MCODE: m_code=112014201270007
+CODE_LINE: line_num=85: addr=0131: op=52: 0='ра';1='0';2='1';
+FIN_OBJ_MCODE: m_code=052000000010000
+CODE_LINE: line_num=87: addr=0132: op=00: 0='п';1='PRIMES';2='0';3='WORK';
+FIN_OBJ_MCODE: m_code=400100000000040
+CODE_LINE: line_num=88: addr=0133: op=15: 0='н';1='WORK';2='0';
+FIN_OBJ_MCODE: m_code=015004000000000
+CODE_LINE: line_num=89: addr=0134: op=36: 0='пе';1='0';2='@NEXT';
+FIN_OBJ_MCODE: m_code=036000001370000
+CODE_LINE: line_num=90: addr=0135: op=50: 0='ма';1='2100';2='0';3='WORK';
+FIN_OBJ_MCODE: m_code=050210000000040
+CODE_LINE: line_num=91: addr=0136: op=70: 0='мб';1='WORK';
+FIN_OBJ_MCODE: m_code=070004000000000
+CODE_LINE: line_num=93: addr=0137: op=12: 0='пм';1='NUM100-3';2='@PRINT3';3='1';
+FIN_OBJ_MCODE: m_code=112014101320001
+CODE_LINE: line_num=97: addr=0140: op=17: 0='стоп';
+FIN_OBJ_MCODE: m_code=017000000000000
+CODE_LINE: line_num=98: addr=0141: op=17: 0='стоп';1='7777';2='7777';3='7777';
+FIN_OBJ_MCODE: m_code=717777777777777
+Make output filename: primes2.m20
+out_mcode: addr=0020 code=101400000000000
+out_mcode: addr=0021 code=101400000000000
+out_mcode: addr=0022 code=000000000000144
+out_mcode: addr=0100 code=000002000000040
+out_mcode: addr=0101 code=052000000000000
+out_mcode: addr=0102 code=100004000001000
+out_mcode: addr=0103 code=001004000210040
+out_mcode: addr=0104 code=112014301020001
+out_mcode: addr=0105 code=052000000000000
+out_mcode: addr=0106 code=400100000000040
+out_mcode: addr=0107 code=050210000000040
+out_mcode: addr=0110 code=070004000000000
+out_mcode: addr=0111 code=112014301060001
+out_mcode: addr=0112 code=044004000000041
+out_mcode: addr=0113 code=050210000000041
+out_mcode: addr=0114 code=070004100000000
+out_mcode: addr=0115 code=052000000030000
+out_mcode: addr=0116 code=100000000001000
+out_mcode: addr=0117 code=112014201160002
+out_mcode: addr=0120 code=052000000050000
+out_mcode: addr=0121 code=100000000001000
+out_mcode: addr=0122 code=112014201210003
+out_mcode: addr=0123 code=052000000110000
+out_mcode: addr=0124 code=100000000001000
+out_mcode: addr=0125 code=112014201240005
+out_mcode: addr=0126 code=052000000150000
+out_mcode: addr=0127 code=100000000001000
+out_mcode: addr=0130 code=112014201270007
+out_mcode: addr=0131 code=052000000010000
+out_mcode: addr=0132 code=400100000000040
+out_mcode: addr=0133 code=015004000000000
+out_mcode: addr=0134 code=036000001370000
+out_mcode: addr=0135 code=050210000000040
+out_mcode: addr=0136 code=070004000000000
+out_mcode: addr=0137 code=112014101320001
+out_mcode: addr=0140 code=017000000000000
+out_mcode: addr=0141 code=717777777777777
+Make listing filename: primes2.l20
+Завершено успешно.

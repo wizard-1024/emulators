@@ -1,0 +1,38 @@
+; Программа ввода и суммирования (ПВС). [1967 Прохоров и др.],стр. 233-235
+;
+! del sample_0009_debug.txt
+! del sample_0009.lst
+! del sample_0009.cdp
+;
+set console debug=sample_0009_debug.txt
+set cpu debug
+set lpt debug
+set cdp debug
+set cdr debug
+att lpt sample_0009.lst
+att -r cdr sample_0009.cdr
+attach cdp sample_0009.cdp
+;
+load sample_0009.m20
+;
+ex 1-13
+echo
+ex -m 1-13
+echo
+ex 30-31
+echo
+ex 1000-1007
+echo 
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 30-31
+echo
+ex 1000-1007
+echo 
+ex -m 1005-1007
+echo
+quit

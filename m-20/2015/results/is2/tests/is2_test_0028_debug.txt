@@ -1,0 +1,138 @@
+Debug output to "is2_test_0028_debug.txt" at Sat Feb 28 15:09:45 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+drm: drum_attach(..), name='is2_test_0028.drum0' res=0
+drm: drum_attach(..), name='is2_test_0028.drum1' res=0
+drm: drum_attach(..), name='is2_test_0028.drum2' res=0
+mt: mt_attach(..), name='is2_test_0028.mt0' res=0
+mt: mt_attach(..), name='is2_test_0028.mt1' res=0
+mt: mt_attach(..), name='is2_test_0028.mt2' res=0
+mt: mt_attach(..), name='is2_test_0028.mt3' res=0
+cdr: cdr_set_mode(..)
+cdp: cdp_attach(..)
+CDP: creating new file
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+----------------------------------------------------------------------------------------------------
+cpu: 0100: [op=50 mod=0] ввод_пред_050                  0013, 7000, 7767
+cpu: [dreg]: ra=0000,  sw=0,  rr=000000000000000
+cpu: [dmem]: a1[0013]=000000000000000,  a2[7000]=000000000000000,  a3[7767]=000000000000000
+
+cpu: [dreg]: ra=0000-, sw=0-, rr=000000000000000-
+cpu: [dmem]: a1[0013-]=000000000000000, a2[7000-]=000000000000000, a3[7767-]=000000000000000
+
+----------------------------------------------------------------------------------------------------
+cpu: 0101: [op=70 mod=0] ввод_исп_070                   7500, 0000, 0000
+cpu: [dreg]: ra=0000,  sw=0,  rr=000000000000000
+cpu: [dmem]: a1[7500]=000000000000000,  a2[0000]=000000000000000,  a3[0000]=000000000000000
+
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07000,7500,7767,..)
+drm: reading MD 07000 mem_region 7500-7767
+drm: seek file_pos=28672
+drm: read_count=0270
+drm: read_count=0001
+drm: old_sum=533773610545717 chksum=533773610545717
+cpu: err=0, codes_num=0271 sum=533773610545717
+cpu: [dreg]: ra=0000-, sw=0-, rr=533773610545717*
+cpu: [dmem]: a1[7500*]=016000077057616, a2[0000-]=000000000000000, a3[0000-]=000000000000000
+
+----------------------------------------------------------------------------------------------------
+cpu: 0102: [op=16 mod=0] безусл_пер_упр_с_возв          0103, 7501, 7610
+cpu: [dreg]: ra=0000,  sw=0,  rr=533773610545717
+cpu: [dmem]: a1[0103]=052000000500000,  a2[7501]=472000076107521,  a3[7610]=016000074770000
+
+cpu: ext_io_op=0413
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07650,7544,7544,..)
+drm: reading MD 07650 mem_region 7544-7544
+drm: seek file_pos=32064
+drm: read_count=0001
+drm: read_count=0001
+drm: old_sum=150000000000000 chksum=150001330000247
+cpu: err=13, codes_num=0002 sum=150001330000247
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,03000,7200,7447,..)
+drm: reading MD 03000 mem_region 7200-7447
+drm: seek file_pos=12288
+drm: read_count=0250
+drm: read_count=0001
+drm: old_sum=433576074022466 chksum=433576074022466
+cpu: err=0, codes_num=0251 sum=433576074022466
+cpu: ext_io_op=3013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07600,7500,7677,..)
+drm: reading MD 07600 mem_region 7500-7677
+drm: seek file_pos=31744
+drm: read_count=0177
+cpu: err=18, codes_num=0177 sum=000000000000000
+
+Чтение неинициализированного барабана, KRA: 7247 ([op=52 mod=6] изм_ра_по_адр                  @+0000, @+0000, 7265)
+
+
+
+
+
+
+
+
+
+
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)

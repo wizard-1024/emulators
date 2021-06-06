@@ -1,0 +1,514 @@
+encoding type: 5
+Processing filename: autocode_m20_eng.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.NAME'
+PS_OPS: idx='02', name='.TITLE'
+PS_OPS: idx='03', name='.START'
+PS_OPS: idx='04', name='.FINISH'
+PS_OPS: idx='05', name='.ADDRESS'
+PS_OPS: idx='06', name='.ABS'
+PS_OPS: idx='07', name='.MEM'
+PS_OPS: idx='08', name='.AUTHOR'
+PS_OPS: idx='09', name='.LIST'
+PS_OPS: idx='10', name='.NOLIST'
+File parsed and accepted.
+Processing filename: autocode_m20_dos_cp866.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.���'
+PS_OPS: idx='02', name='.��������'
+PS_OPS: idx='03', name='.�����'
+PS_OPS: idx='04', name='.�����'
+PS_OPS: idx='05', name='.�����'
+PS_OPS: idx='06', name='.���'
+PS_OPS: idx='07', name='.���'
+PS_OPS: idx='08', name='.�����'
+PS_OPS: idx='09', name='.������'
+PS_OPS: idx='10', name='.��������'
+File parsed and accepted.
+Processing filename: autocode_m20_win_cp1251.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.���'
+PS_OPS: idx='02', name='.��������'
+PS_OPS: idx='03', name='.�����'
+PS_OPS: idx='04', name='.�����'
+PS_OPS: idx='05', name='.�����'
+PS_OPS: idx='06', name='.���'
+PS_OPS: idx='07', name='.���'
+PS_OPS: idx='08', name='.�����'
+PS_OPS: idx='09', name='.������'
+PS_OPS: idx='10', name='.��������'
+File parsed and accepted.
+Processing filename: autocode_m20_unix_koi8r.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.���'
+PS_OPS: idx='02', name='.��������'
+PS_OPS: idx='03', name='.�����'
+PS_OPS: idx='04', name='.�����'
+PS_OPS: idx='05', name='.�����'
+PS_OPS: idx='06', name='.���'
+PS_OPS: idx='07', name='.���'
+PS_OPS: idx='08', name='.�����'
+PS_OPS: idx='09', name='.������'
+PS_OPS: idx='10', name='.��������'
+File parsed and accepted.
+Processing filename: autocode_m20_rus_utf8.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.ИМЯ'
+PS_OPS: idx='02', name='.НАЗВАНИЕ'
+PS_OPS: idx='03', name='.СТАРТ'
+PS_OPS: idx='04', name='.ФИНИШ'
+PS_OPS: idx='05', name='.АДРЕС'
+PS_OPS: idx='06', name='.АБС'
+PS_OPS: idx='07', name='.ПАМ'
+PS_OPS: idx='08', name='.АВТОР'
+PS_OPS: idx='09', name='.ПЕЧАТЬ'
+PS_OPS: idx='10', name='.НЕПЕЧАТЬ'
+File parsed and accepted.
+Parsing filename: hello15.a20
+Read lines: 77
+orig_text: *
+orig_text: * Sample file for M-20 autocode 
+orig_text: * encoding: russian, UTF-8
+orig_text: *
+orig_text: * Copyright (c) 2015 Stefankov
+orig_text: *
+orig_text: 
+orig_text: *
+orig_text: *
+orig_text: 
+orig_text: 	.ИМЯ  hello15.a20
+orig_text: 	.НАЗВАНИЕ  Программа для ЭЦВМ M-20
+orig_text: 	.АВТОР  Стефанков Дмитрий
+orig_text: *
+orig_text: *
+orig_text: *
+orig_text: TWO1 	.АБС	=2
+orig_text: TWO2	.АБС	1 02 4000 0000 0000
+orig_text: TWO3    .АБС    102400000000000
+orig_text: 
+orig_text: 	.СТАРТ  20
+orig_text: *
+orig_text: ЧИСЛО1:	  =2
+orig_text: число2:	  1 02 4000 0000 0000
+orig_text: числоЧ2:  TWO1
+orig_text: *
+orig_text: NEWMEM:  .ПАМ  12
+orig_text:  =10
+orig_text:   1 02 4000 0000 0000
+orig_text: 
+orig_text: *
+orig_text: *
+orig_text: 
+orig_text: 	.АДРЕС  100
+orig_text: НАЧАЛО:
+orig_text: 	слож_он	        ЧИСЛО1, число2 число3    ;  число3 = ЧИСЛО1 + число2
+orig_text: *	вычит_он	число3,число1,NUM4		; 4-2=2?
+orig_text: 	вычит_он	число3,ЧИСЛО1,NUM4		; 4-2=2?
+orig_text: 	в	        число3 ЧИСЛО1 NUM4		; 4-2=2?
+orig_text:         изм_ра_по_адр  0,0,0
+orig_text:         ра             0 0 0
+orig_text:         изм_ра_по_адр  ,,
+orig_text: 	слож_он	(ЧИСЛО1),число2,число3	; 2+2=4?
+orig_text: 	слож_он	(0020),(0021),(число3)	; 2+2=4?
+orig_text:         усл_пер_упр_по_w1  0,STOP_17,0
+orig_text: 	останов_077                              ;  ОСТАНОВ ЭЦВМ
+orig_text: STOP_17:
+orig_text:         0 52 0000 0000 0000
+orig_text:         изм_ра_по_адр  0 * 0
+orig_text:         ра             0 *+1 0
+orig_text:         изм_ра_по_адр  0, num4-1, 0
+orig_text:         ра             0, num4-newmem, 0
+orig_text: 	останов_017
+orig_text: 
+orig_text: 	.АДРЕС  200
+orig_text: число3:	0 00 0000 0000 0000
+orig_text: num3:	
+orig_text:   =1.5E+4
+orig_text: num4:  =0
+orig_text:   =6.25
+orig_text: *
+orig_text:         .НЕПЕЧАТЬ
+orig_text: *
+orig_text: *
+orig_text: *
+orig_text:         .ПЕЧАТЬ
+orig_text: *
+orig_text: NEWMEM2: .ПАМ  100
+orig_text:  =10
+orig_text:  =11
+orig_text:  =12
+orig_text: 
+orig_text: *
+orig_text: 	.ФИНИШ 100
+orig_text: 
+orig_text: * конец программы
+orig_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.ИМЯ  hello15.a20
+clean_text: 	.НАЗВАНИЕ  Программа для ЭЦВМ M-20
+clean_text: 	.АВТОР  Стефанков Дмитрий
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: TWO1 	.АБС	=2
+clean_text: TWO2	.АБС	1 02 4000 0000 0000
+clean_text: TWO3    .АБС    102400000000000
+clean_text: 
+clean_text: 	.СТАРТ  20
+clean_text: 
+clean_text: ЧИСЛО1:	  =2
+clean_text: число2:	  1 02 4000 0000 0000
+clean_text: числоЧ2:  TWO1
+clean_text: 
+clean_text: NEWMEM:  .ПАМ  12
+clean_text:  =10
+clean_text:   1 02 4000 0000 0000
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.АДРЕС  100
+clean_text: НАЧАЛО:
+clean_text: 	слож_он	        ЧИСЛО1, число2 число3    
+clean_text: 
+clean_text: 	вычит_он	число3,ЧИСЛО1,NUM4		
+clean_text: 	в	        число3 ЧИСЛО1 NUM4		
+clean_text:         изм_ра_по_адр  0,0,0
+clean_text:         ра             0 0 0
+clean_text:         изм_ра_по_адр  ,,
+clean_text: 	слож_он	(ЧИСЛО1),число2,число3	
+clean_text: 	слож_он	(0020),(0021),(число3)	
+clean_text:         усл_пер_упр_по_w1  0,STOP_17,0
+clean_text: 	останов_077                              
+clean_text: STOP_17:
+clean_text:         0 52 0000 0000 0000
+clean_text:         изм_ра_по_адр  0 * 0
+clean_text:         ра             0 *+1 0
+clean_text:         изм_ра_по_адр  0, num4-1, 0
+clean_text:         ра             0, num4-newmem, 0
+clean_text: 	останов_017
+clean_text: 
+clean_text: 	.АДРЕС  200
+clean_text: число3:	0 00 0000 0000 0000
+clean_text: num3:	
+clean_text:   =1.5E+4
+clean_text: num4:  =0
+clean_text:   =6.25
+clean_text: 
+clean_text:         .НЕПЕЧАТЬ
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text:         .ПЕЧАТЬ
+clean_text: 
+clean_text: NEWMEM2: .ПАМ  100
+clean_text:  =10
+clean_text:  =11
+clean_text:  =12
+clean_text: 
+clean_text: 
+clean_text: 	.ФИНИШ 100
+clean_text: 
+clean_text: 
+clean_text: 
+Lexical scanning.
+work_buf (len=21): 	.ИМЯ  hello15.a20
+work_buf (len=59): 	.НАЗВАНИЕ  Программа для ЭЦВМ M-20
+work_buf (len=47): 	.АВТОР  Стефанков Дмитрий
+work_buf (len=16): TWO1 	.АБС	=2
+work_buf (len=32): TWO2	.АБС	1 02 4000 0000 0000
+work_buf (len=34): TWO3    .АБС    102400000000000
+work_buf (len=16): 	.СТАРТ  20
+work_buf (len=17): ЧИСЛО1:	  =2
+work_buf (len=34): число2:	  1 02 4000 0000 0000
+work_buf (len=20): числоЧ2:  TWO1
+work_buf (len=20): NEWMEM:  .ПАМ  12
+work_buf (len=4):  =10
+work_buf (len=21):   1 02 4000 0000 0000
+work_buf (len=17): 	.АДРЕС  100
+work_buf (len=13): НАЧАЛО:
+work_buf (len=63): 	слож_он	        ЧИСЛО1, число2 число3    
+work_buf (len=47): 	вычит_он	число3,ЧИСЛО1,NUM4		
+work_buf (len=42): 	в	        число3 ЧИСЛО1 NUM4		
+work_buf (len=38):         изм_ра_по_адр  0,0,0
+work_buf (len=30):         ра             0 0 0
+work_buf (len=35):         изм_ра_по_адр  ,,
+work_buf (len=53): 	слож_он	(ЧИСЛО1),число2,число3	
+work_buf (len=43): 	слож_он	(0020),(0021),(число3)	
+work_buf (len=49):         усл_пер_упр_по_w1  0,STOP_17,0
+work_buf (len=49): 	останов_077                              
+work_buf (len=8): STOP_17:
+work_buf (len=27):         0 52 0000 0000 0000
+work_buf (len=38):         изм_ра_по_адр  0 * 0
+work_buf (len=32):         ра             0 *+1 0
+work_buf (len=45):         изм_ра_по_адр  0, num4-1, 0
+work_buf (len=42):         ра             0, num4-newmem, 0
+work_buf (len=19): 	останов_017
+work_buf (len=17): 	.АДРЕС  200
+work_buf (len=32): число3:	0 00 0000 0000 0000
+work_buf (len=6): num3:	
+work_buf (len=9):   =1.5E+4
+work_buf (len=9): num4:  =0
+work_buf (len=7):   =6.25
+work_buf (len=25):         .НЕПЕЧАТЬ
+work_buf (len=21):         .ПЕЧАТЬ
+work_buf (len=21): NEWMEM2: .ПАМ  100
+work_buf (len=4):  =10
+work_buf (len=4):  =11
+work_buf (len=4):  =12
+work_buf (len=16): 	.ФИНИШ 100
+lex_words: 1=.ИМЯ;2=hello15.a20;
+lex_words: 1=.НАЗВАНИЕ;2=Программа;3=для;4=ЭЦВМ;5=M-20;
+lex_words: 1=.АВТОР;2=Стефанков;3=Дмитрий;
+lex_words: 1=TWO1;2=.АБС;3==2;
+lex_words: 1=TWO2;2=.АБС;3=1;4=02;5=4000;6=0000;7=0000;
+lex_words: 1=TWO3;2=.АБС;3=102400000000000;
+lex_words: 1=.СТАРТ;2=20;
+lex_words: 1=ЧИСЛО1:;2==2;
+lex_words: 1=число2:;2=1;3=02;4=4000;5=0000;6=0000;
+lex_words: 1=числоЧ2:;2=TWO1;
+lex_words: 1=NEWMEM:;2=.ПАМ;3=12;
+lex_words: 1==10;
+lex_words: 1=1;2=02;3=4000;4=0000;5=0000;
+lex_words: 1=.АДРЕС;2=100;
+lex_words: 1=НАЧАЛО:;
+lex_words: 1=слож_он;2=ЧИСЛО1;3=число2;4=число3;
+lex_words: 1=вычит_он;2=число3;3=ЧИСЛО1;4=NUM4;
+lex_words: 1=в;2=число3;3=ЧИСЛО1;4=NUM4;
+lex_words: 1=изм_ра_по_адр;2=0;3=0;4=0;
+lex_words: 1=ра;2=0;3=0;4=0;
+lex_words: 1=изм_ра_по_адр;
+lex_words: 1=слож_он;2=(ЧИСЛО1);3=число2;4=число3;
+lex_words: 1=слож_он;2=(0020);3=(0021);4=(число3);
+lex_words: 1=усл_пер_упр_по_w1;2=0;3=STOP_17;4=0;
+lex_words: 1=останов_077;
+lex_words: 1=STOP_17:;
+lex_words: 1=0;2=52;3=0000;4=0000;5=0000;
+lex_words: 1=изм_ра_по_адр;2=0;3=*;4=0;
+lex_words: 1=ра;2=0;3=*+1;4=0;
+lex_words: 1=изм_ра_по_адр;2=0;3=num4-1;4=0;
+lex_words: 1=ра;2=0;3=num4-newmem;4=0;
+lex_words: 1=останов_017;
+lex_words: 1=.АДРЕС;2=200;
+lex_words: 1=число3:;2=0;3=00;4=0000;5=0000;6=0000;
+lex_words: 1=num3:;
+lex_words: 1==1.5E+4;
+lex_words: 1=num4:;2==0;
+lex_words: 1==6.25;
+lex_words: 1=.НЕПЕЧАТЬ;
+lex_words: 1=.ПЕЧАТЬ;
+lex_words: 1=NEWMEM2:;2=.ПАМ;3=100;
+lex_words: 1==10;
+lex_words: 1==11;
+lex_words: 1==12;
+lex_words: 1=.ФИНИШ;2=100;
+Syntax parsing (pass 1).
+cur_loc_counter=0001
+.ИМЯ directive: 'hello15.a20'
+cur_loc_counter=0001
+.НАЗВАНИЕ directive: 'Программа для ЭЦВМ M-20 '
+cur_loc_counter=0001
+.АВТОР directive: 'Стефанков Дмитрий '
+cur_loc_counter=0001
+abs_name=TWO1 value=102400000000000
+cur_loc_counter=0001
+abs_name=TWO2 value=102400000000000
+cur_loc_counter=0001
+abs_name=TWO3 value=102400000000000
+cur_loc_counter=0001
+.СТАРТ directive:  cur_location_counter=0020, program_start_address=0020
+cur_loc_counter=0020
+LABEL: addr=0020, name=ЧИСЛО1
+DATA_LINE: line_num=23: =2
+cur_loc_counter=0021
+LABEL: addr=0021, name=число2
+DATA_LINE: line_num=24: 1
+cur_loc_counter=0022
+LABEL: addr=0022, name=числоЧ2
+DATA_LINE: line_num=25: TWO1
+cur_loc_counter=0023
+LABEL: addr=0023, name=NEWMEM
+.ПАМ directive:  cur_location_counter=0035
+cur_loc_counter=0035
+DATA_LINE: line_num=28: =10
+cur_loc_counter=0036
+DATA_LINE: line_num=29: 1
+cur_loc_counter=0037
+.АДРЕС directive:  cur_location_counter=0100
+cur_loc_counter=0100
+LABEL: addr=0100, name=НАЧАЛО
+cur_loc_counter=0100
+CODE_LINE: line_num=36 op=01 sym='слож_он'
+cur_loc_counter=0101
+CODE_LINE: line_num=38 op=02 sym='вычит_он'
+cur_loc_counter=0102
+CODE_LINE: line_num=39 op=02 sym='в'
+cur_loc_counter=0103
+CODE_LINE: line_num=40 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=0104
+CODE_LINE: line_num=41 op=52 sym='ра'
+cur_loc_counter=0105
+CODE_LINE: line_num=42 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=0106
+CODE_LINE: line_num=43 op=01 sym='слож_он'
+cur_loc_counter=0107
+CODE_LINE: line_num=44 op=01 sym='слож_он'
+cur_loc_counter=0110
+CODE_LINE: line_num=45 op=36 sym='усл_пер_упр_по_w1'
+cur_loc_counter=0111
+CODE_LINE: line_num=46 op=77 sym='останов_077'
+cur_loc_counter=0112
+LABEL: addr=0112, name=STOP_17
+cur_loc_counter=0112
+DATA_LINE: line_num=48: 0
+cur_loc_counter=0113
+CODE_LINE: line_num=49 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=0114
+CODE_LINE: line_num=50 op=52 sym='ра'
+cur_loc_counter=0115
+CODE_LINE: line_num=51 op=52 sym='изм_ра_по_адр'
+cur_loc_counter=0116
+CODE_LINE: line_num=52 op=52 sym='ра'
+cur_loc_counter=0117
+CODE_LINE: line_num=53 op=17 sym='останов_017'
+cur_loc_counter=0120
+.АДРЕС directive:  cur_location_counter=0200
+cur_loc_counter=0200
+LABEL: addr=0200, name=число3
+DATA_LINE: line_num=56: 0
+cur_loc_counter=0201
+LABEL: addr=0201, name=num3
+cur_loc_counter=0201
+DATA_LINE: line_num=58: =1.5E+4
+cur_loc_counter=0202
+LABEL: addr=0202, name=num4
+DATA_LINE: line_num=59: =0
+cur_loc_counter=0203
+DATA_LINE: line_num=60: =6.25
+cur_loc_counter=0204
+.НЕПЕЧАТЬ directive: do_list=0
+cur_loc_counter=0204
+.ПЕЧАТЬ directive: do_list=1
+cur_loc_counter=0204
+LABEL: addr=0204, name=NEWMEM2
+.ПАМ directive:  cur_location_counter=0304
+cur_loc_counter=0304
+DATA_LINE: line_num=69: =10
+cur_loc_counter=0305
+DATA_LINE: line_num=70: =11
+cur_loc_counter=0306
+DATA_LINE: line_num=71: =12
+cur_loc_counter=0307
+.ФИНИШ directive:  program_start_address=0100
+Print symbolic names table (10 names).
+0: name=ЧИСЛО1 value=0020
+1: name=число2 value=0021
+2: name=числоЧ2 value=0022
+3: name=NEWMEM value=0023
+4: name=НАЧАЛО value=0100
+5: name=STOP_17 value=0112
+6: name=число3 value=0200
+7: name=num3 value=0201
+8: name=num4 value=0202
+9: name=NEWMEM2 value=0204
+Print absolute values table (3 names).
+0: name=TWO1 value=102400000000000
+1: name=TWO2 value=102400000000000
+2: name=TWO3 value=102400000000000
+References resolving (pass 2).
+DATA_LINE: line_num=23: addr=0020: 1='=2';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=24: addr=0021: 1='1';2='02';3='4000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=25: addr=0022: 1='TWO1';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=28: addr=0035: 0='=10';
+FIN_OBJ_MCODE: m_code=104500000000000
+DATA_LINE: line_num=29: addr=0036: 0='1';1='02';2='4000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=102400000000000
+CODE_LINE: line_num=36: addr=0100: op=01: 0='слож_он';1='ЧИСЛО1';2='число2';3='число3';
+FIN_OBJ_MCODE: m_code=001002000210200
+CODE_LINE: line_num=38: addr=0101: op=02: 0='вычит_он';1='число3';2='ЧИСЛО1';3='NUM4';
+FIN_OBJ_MCODE: m_code=002020000200202
+CODE_LINE: line_num=39: addr=0102: op=02: 0='в';1='число3';2='ЧИСЛО1';3='NUM4';
+FIN_OBJ_MCODE: m_code=002020000200202
+CODE_LINE: line_num=40: addr=0103: op=52: 0='изм_ра_по_адр';1='0';2='0';3='0';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=41: addr=0104: op=52: 0='ра';1='0';2='0';3='0';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=42: addr=0105: op=52: 0='изм_ра_по_адр';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=43: addr=0106: op=01: 0='слож_он';1='ЧИСЛО1';2='число2';3='число3';
+FIN_OBJ_MCODE: m_code=401002000210200
+CODE_LINE: line_num=44: addr=0107: op=01: 0='слож_он';1='0020';2='0021';3='число3';
+FIN_OBJ_MCODE: m_code=701002000210200
+CODE_LINE: line_num=45: addr=0110: op=36: 0='усл_пер_упр_по_w1';1='0';2='STOP_17';3='0';
+FIN_OBJ_MCODE: m_code=036000001120000
+CODE_LINE: line_num=46: addr=0111: op=77: 0='останов_077';
+FIN_OBJ_MCODE: m_code=077000000000000
+DATA_LINE: line_num=48: addr=0112: 0='0';1='52';2='0000';3='0000';4='0000';
+FIN_OBJ_MCODE: m_code=052000000000000
+CODE_LINE: line_num=49: addr=0113: op=52: 0='изм_ра_по_адр';1='0';2='*';3='0';
+FIN_OBJ_MCODE: m_code=052000001130000
+CODE_LINE: line_num=50: addr=0114: op=52: 0='ра';1='0';2='*+1';3='0';
+FIN_OBJ_MCODE: m_code=052000001150000
+CODE_LINE: line_num=51: addr=0115: op=52: 0='изм_ра_по_адр';1='0';2='num4-1';3='0';
+FIN_OBJ_MCODE: m_code=052000002010000
+CODE_LINE: line_num=52: addr=0116: op=52: 0='ра';1='0';2='num4-newmem';3='0';
+FIN_OBJ_MCODE: m_code=052000001570000
+CODE_LINE: line_num=53: addr=0117: op=17: 0='останов_017';
+FIN_OBJ_MCODE: m_code=017000000000000
+DATA_LINE: line_num=56: addr=0200: 1='0';2='00';3='0000';4='0000';5='0000';
+FIN_OBJ_MCODE: m_code=000000000000000
+DATA_LINE: line_num=58: addr=0201: 0='=1.5E+4';
+FIN_OBJ_MCODE: m_code=116724600000000
+DATA_LINE: line_num=59: addr=0202: 1='=0';
+FIN_OBJ_MCODE: m_code=100000000000000
+DATA_LINE: line_num=60: addr=0203: 0='=6.25';
+FIN_OBJ_MCODE: m_code=103620000000000
+DATA_LINE: line_num=69: addr=0304: 0='=10';
+FIN_OBJ_MCODE: m_code=104500000000000
+DATA_LINE: line_num=70: addr=0305: 0='=11';
+FIN_OBJ_MCODE: m_code=104540000000000
+DATA_LINE: line_num=71: addr=0306: 0='=12';
+FIN_OBJ_MCODE: m_code=104600000000000
+Make output filename: hello15.m20
+out_mcode: addr=0020 code=102400000000000
+out_mcode: addr=0021 code=102400000000000
+out_mcode: addr=0022 code=102400000000000
+out_mcode: addr=0035 code=104500000000000
+out_mcode: addr=0036 code=102400000000000
+out_mcode: addr=0100 code=001002000210200
+out_mcode: addr=0101 code=002020000200202
+out_mcode: addr=0102 code=002020000200202
+out_mcode: addr=0103 code=052000000000000
+out_mcode: addr=0104 code=052000000000000
+out_mcode: addr=0105 code=052000000000000
+out_mcode: addr=0106 code=401002000210200
+out_mcode: addr=0107 code=701002000210200
+out_mcode: addr=0110 code=036000001120000
+out_mcode: addr=0111 code=077000000000000
+out_mcode: addr=0112 code=052000000000000
+out_mcode: addr=0113 code=052000001130000
+out_mcode: addr=0114 code=052000001150000
+out_mcode: addr=0115 code=052000002010000
+out_mcode: addr=0116 code=052000001570000
+out_mcode: addr=0117 code=017000000000000
+out_mcode: addr=0200 code=000000000000000
+out_mcode: addr=0201 code=116724600000000
+out_mcode: addr=0202 code=100000000000000
+out_mcode: addr=0203 code=103620000000000
+out_mcode: addr=0304 code=104500000000000
+out_mcode: addr=0305 code=104540000000000
+out_mcode: addr=0306 code=104600000000000
+Make listing filename: hello15.l20
+Завершено успешно.

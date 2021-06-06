@@ -1,0 +1,93 @@
+Debug output to "sample_0039.txt" at Sat Feb 28 14:22:33 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+
+
+
+
+
+
+
+
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0070: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0011
+cpu: 0071: [op=70 mod=0] ввод_исп_070                   0010, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0010, end_addr=0011, count=2, pr_type=1
+cpu: err=0, codes_num=0002
+cpu: 0072: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0020
+cpu: 0073: [op=70 mod=0] ввод_исп_070                   0015, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0015, end_addr=0020, count=4, pr_type=1
+cpu: err=0, codes_num=0004
+cpu: 0074: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0040
+cpu: 0075: [op=70 mod=0] ввод_исп_070                   0035, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0035, end_addr=0040, count=4, pr_type=1
+cpu: err=0, codes_num=0004
+cpu: 0076: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0066
+cpu: 0077: [op=70 mod=0] ввод_исп_070                   0063, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0063, end_addr=0066, count=4, pr_type=1
+cpu: err=0, codes_num=0004
+cpu: 0100: [op=52 mod=0] изм_ра_по_адр                  0000, 0000, 0000
+cpu: 0101: [op=05 mod=6] умнож_он                       @+0015, @+0015, 0012
+cpu: 0102: [op=05 mod=0] умнож_он                       0010, 0012, 0012
+cpu: 0103: [op=05 mod=2] умнож_он                       0011, @+0035, 0013
+cpu: 0104: [op=01 mod=0] слож_он                        0012, 0013, 0012
+cpu: 0105: [op=05 mod=6] умнож_он                       @+0015, @+0035, 0013
+cpu: 0106: [op=04 mod=1] делен_о                        0012, 0013, @+0055
+cpu: 0107: [op=12 mod=1] пер_если_ра_мнш_a1             0003, 0101, @+0001
+cpu: 0101: [op=05 mod=6] умнож_он                       @+0015, @+0015, 0012
+cpu: 0102: [op=05 mod=0] умнож_он                       0010, 0012, 0012
+cpu: 0103: [op=05 mod=2] умнож_он                       0011, @+0035, 0013
+cpu: 0104: [op=01 mod=0] слож_он                        0012, 0013, 0012
+cpu: 0105: [op=05 mod=6] умнож_он                       @+0015, @+0035, 0013
+cpu: 0106: [op=04 mod=1] делен_о                        0012, 0013, @+0055
+cpu: 0107: [op=12 mod=1] пер_если_ра_мнш_a1             0003, 0101, @+0001
+cpu: 0101: [op=05 mod=6] умнож_он                       @+0015, @+0015, 0012
+cpu: 0102: [op=05 mod=0] умнож_он                       0010, 0012, 0012
+cpu: 0103: [op=05 mod=2] умнож_он                       0011, @+0035, 0013
+cpu: 0104: [op=01 mod=0] слож_он                        0012, 0013, 0012
+cpu: 0105: [op=05 mod=6] умнож_он                       @+0015, @+0035, 0013
+cpu: 0106: [op=04 mod=1] делен_о                        0012, 0013, @+0055
+cpu: 0107: [op=12 mod=1] пер_если_ра_мнш_a1             0003, 0101, @+0001
+cpu: 0101: [op=05 mod=6] умнож_он                       @+0015, @+0015, 0012
+cpu: 0102: [op=05 mod=0] умнож_он                       0010, 0012, 0012
+cpu: 0103: [op=05 mod=2] умнож_он                       0011, @+0035, 0013
+cpu: 0104: [op=01 mod=0] слож_он                        0012, 0013, 0012
+cpu: 0105: [op=05 mod=6] умнож_он                       @+0015, @+0035, 0013
+cpu: 0106: [op=04 mod=1] делен_о                        0012, 0013, @+0055
+cpu: 0107: [op=12 mod=1] пер_если_ра_мнш_a1             0003, 0101, @+0001
+cpu: 0110: [op=50 mod=0] ввод_пред_050                  2100, 0000, 0060
+cpu: 0111: [op=70 mod=0] ввод_исп_070                   0055, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: write_line: start_addr=0055, end_addr=0060, count=4, pr_type=1
+cpu: err=0, codes_num=0004
+cpu: 0112: [op=77 mod=0] останов_077                    0000, 0000, 0000
+
+ќстанов, KRA: 0112 ([op=77 mod=0] останов_077                    0000, 0000, 0000)
+
+
+
+
+
+
+
+
+
+
+lpt: lpt_detach(..)

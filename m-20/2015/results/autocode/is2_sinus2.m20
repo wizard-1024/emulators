@@ -1,0 +1,72 @@
+*
+*
+* Load IS-2, checksum for IS-2 and call SP 05 with results printing (10 times)
+* (uses ready drum images from is2_build)
+* Language: M-20 autocode 
+* encoding: english
+*
+* Copyright (c) 2015 Stefankov
+*
+
+*
+*
+*
+*
+; data
+:0020
+0 75 6314 6314 6315
+0 75 6314 6314 6315
+1 00 0000 0000 0000
+*
+*
+:0030
+5 33 7736 0762 5717
+0 00 0000 0000 0000
+*
+*
+*
+*
+; Load IS-2
+:0100
+0 50 0013 7000 7767
+0 70 7500 0000 0000
+
+; calculate checksum (control sum)
+0 52 0000 0000 0000
+0 00 0000 0000 0031
+4 07 7500 0031 0031
+1 12 0267 0104 0001
+
+; prepare
+0 00 0020 0000 0040
+0 52 0000 0000 0000
+
+; print argument õ
+0 50 2100 0000 0040
+0 70 0040 0000 0000
+
+; call SP 5, y=sinx(x)
+0 16 0113 7501 7610
+0 75 0040 0005 0041
+
+; print result y
+0 50 2100 0000 0041
+0 70 0041 0000 0000
+
+; increment by STEP and continue loop
+0 01 0040 0021 0040
+1 12 0011 0110 0001
+
+;
+; termination
+;
+0 77 0000 0000 0000
+7 77 7777 7777 7777
+*
+*
+
+* program end
+
+
+@0100
+

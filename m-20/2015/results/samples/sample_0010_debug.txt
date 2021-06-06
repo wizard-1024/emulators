@@ -1,0 +1,83 @@
+Debug output to "sample_0010_debug.txt" at Sat Feb 28 14:15:59 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+lpt: lpt_attach(..)
+LPT: creating new file
+cdr: cdr_attach(..)
+CDR: unit is read only
+cdp: cdp_attach(..)
+CDP: creating new file
+
+
+
+
+
+
+
+
+
+Boot
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+cdr: cdr_boot(..)
+cpu: 0001: [op=10 mod=0] ввод_пфк_останов               0001, 0001, 0000
+cpu: opcode=10: regKRA=2,a1=1,a2=1,a3=0
+cpu: cdr boot detected. Set regKRA=1
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1  0 56 0000 0002 0000   0'
+cdr: read_card(): cdr_buf='1  0 50 0100 0777 0001   0'
+cdr: read_card(): cdr_buf='1  0 70 0001 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 30 1000 0007 0030   0'
+cdr: read_card(): cdr_buf='1  0 35 1000 1007 0000   0'
+cdr: read_card(): cdr_buf='1  0 31 0000 1005 0000   0'
+cdr: read_card(): cdr_buf='1  0 15 0030 0031 0000   0'
+cdr: read_card(): cdr_buf='1  0 36 0030 0004 0031   0'
+cdr: read_card(): cdr_buf='1  0 50 0200 0777 0030   0'
+cdr: read_card(): cdr_buf='1  0 70 0030 0000 0000   0'
+cdr: read_card(): cdr_buf='1  0 17 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1  5 66 2411 4060 0112  1'
+cdr: read_card(..) r_sum=566241140600112, c_sum=566241140600112
+cdr: read_card(..) read_codes_count=12
+cdr: cdr_svc(..)
+cpu: 0001: [op=56 mod=0] безусл_пер_упр                 0000, 0002, 0000
+cpu: 0002: [op=50 mod=0] ввод_пред_050                  0100, 0777, 0001
+cpu: 0003: [op=70 mod=0] ввод_исп_070                   0001, 0000, 0000
+cpu: ext_io_op=0100
+lpt: write_line(..)
+lpt: write_line: start_addr=0001, end_addr=0001, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0004: [op=30 mod=0] ввод_пфк                       1000, 0007, 0030
+cpu: opcode=30: regKRA=5,a1=512,a2=7,a3=24
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1       7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1	1 02 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	1 02 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	1 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	1 03 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	0 01 1001 1002 1003   0'
+cdr: read_card(): cdr_buf='1	0 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1       7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='1  5 07 5001 1002 1004  1'
+cdr: read_card(..) r_sum=507500110021004, c_sum=507500110021004
+cdr: read_card(..) read_codes_count=9
+cdr: cdr_svc(..)
+cpu: 0005: [op=35 mod=0] сравн_останов                  1000, 1007, 0000
+cpu: 0006: [op=31 mod=0] пер_если_ра_не_менш_a1_и_w1    0000, 1005, 0000
+cpu: 1005: [op=01 mod=0] слож_он                        1001, 1002, 1003
+cpu: 1006: [op=77 mod=0] останов_077                    0000, 0000, 0000
+
+Останов, KRA: 1006 ([op=77 mod=0] останов_077                    0000, 0000, 0000)
+
+
+
+
+
+
+
+
+
+
+cdr: cdr_detach(..)
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)

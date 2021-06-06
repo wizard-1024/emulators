@@ -1,0 +1,375 @@
+Debug output to "sample_0041_debug.txt" at Sat Feb 28 14:23:18 2015
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+cdr: cdr_set_mode(..)
+cdr: cdr_attach(..)
+CDR: unit is read only
+cdp: cdp_attach(..)
+CDP: creating new file
+lpt: lpt_attach(..)
+LPT: creating new file
+drm: drum_attach(..), name='sample_0041.drum0' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='sample_0041.drum1' res=0
+DRUM: creating new file
+drm: drum_attach(..), name='sample_0041.drum2' res=0
+
+Boot
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cdr: cdr_boot(..)
+cpu: 0001: [op=10 mod=0] ввод_пфк_останов               0001, 0001, 0000
+cpu: opcode=10: regKRA=2,a1=1,a2=1,a3=0
+cpu: cdr boot detected. Set regKRA=1
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1  0 16 0006 0002 0001  0   ; Засылка в 0001 команды передачи управления на ввод массивов данных'
+cdr: read_card(): cdr_buf='1  0 50 0010 7000 7767  0   ; Вызов ИС-2 с a_МБ = 0000'
+cdr: read_card(): cdr_buf='1  0 70 7500 0004 0012  0'
+cdr: read_card(): cdr_buf='1  0 15 0014 0013 0000  0   ; Сравнение суммы ввода с контрольной суммой ИС-2'
+cdr: read_card(): cdr_buf='1  0 71 0000 0002 0000  0   ; Очистка РА и передача управления на повторное чтение при несовпадении сумм'
+cdr: read_card(): cdr_buf='1  0 10 0001 0010 0014  0   ; Ввод очередного массива рабочей программы. '
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000  0   ; При несовпадении сумм переход в 0010'
+cdr: read_card(): cdr_buf='1  0 50 0200 1777 0014  0   ; Перфорация контрольной суммы массимв, если суммы не совпали'
+cdr: read_card(): cdr_buf='1  0 56 0000 0001 0000  0'
+cdr: read_card(): cdr_buf='1  2 61 5472 5621 3404  0'
+cdr: read_card(): cdr_buf='1  7 61 5426 6656 3437  1'
+cdr: read_card(..) r_sum=761542666563437, c_sum=761542666563437
+cdr: read_card(..) read_codes_count=11
+cdr: cdr_svc(..)
+cpu: 0001: [op=16 mod=0] безусл_пер_упр_с_возв          0006, 0002, 0001
+cpu: 0002: [op=50 mod=0] ввод_пред_050                  0010, 7000, 7767
+cpu: 0003: [op=70 mod=0] ввод_исп_070                   7500, 0004, 0012
+cpu: ext_io_op=0010
+drm: drum_io(..), user_drum_no=0
+drm: drum_io(..), log_drum_map_array[0]=1
+drm: drum_io(..), log_drum_map_array[1]=0
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=0
+drm: drum_io(..), drum_no=0 user_drum_no=0
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,07000,7500,7767,..)
+drm: reading MD 07000 mem_region 7500-7767
+drm: seek file_pos=28672
+drm: read_count=0270
+drm: read_count=0001
+drm: old_sum=261547256213404 chksum=261547256213404
+cpu: err=0, codes_num=0271 sum=261547256213404
+cpu: 0004: [op=15 mod=0] сравн                          0014, 0013, 0000
+cpu: 0005: [op=71 mod=0] пер_ра_не_мнш_a1_и_w1          0000, 0002, 0000
+cpu: 0006: [op=10 mod=0] ввод_пфк_останов               0001, 0010, 0014
+cpu: opcode=10: regKRA=7,a1=1,a2=8,a3=12
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1  0 16 0000 0020 0000  0'
+cdr: read_card(): cdr_buf='0  0 00 0050 0000 0000  1'
+cdr: read_card(): cdr_buf='1  # 0 04 105000000  0'
+cdr: read_card(): cdr_buf='1  # 0 02 400000000  0'
+cdr: read_card(): cdr_buf='1  # 0 01 450000000  0'
+cdr: read_card(): cdr_buf='1  # 0 00 700000000  0'
+cdr: read_card(): cdr_buf='1  # 0 01 800000000  0'
+cdr: read_card(): cdr_buf='1  # 0 00 100000000  0'
+cdr: read_card(): cdr_buf='1  # 1 02 250000000  0'
+cdr: read_card(): cdr_buf='1  # 0 02 160000000  0'
+cdr: read_card(): cdr_buf='1  # 0 01 190000000  0'
+cdr: read_card(): cdr_buf='1  # 1 01 100000000  0'
+cdr: read_card(): cdr_buf='1  # 1 03 300000000  0'
+cdr: read_card(): cdr_buf='1  # 0 05 237000000  0'
+cdr: read_card(): cdr_buf='1  # 0 05 330000000  0'
+cdr: read_card(): cdr_buf='1  # 0 05 349000000  0'
+cdr: read_card(): cdr_buf='1  # 0 05 465000000  0'
+cdr: read_card(): cdr_buf='1  # 0 02 521000000  0'
+cdr: read_card(): cdr_buf='1  # 0 02 355000000  0'
+cdr: read_card(): cdr_buf='1  # 0 02 433000000  0'
+cdr: read_card(): cdr_buf='1  # 0 02 433000000  0'
+cdr: read_card(): cdr_buf='1  # 0 03 132000000  0'
+cdr: read_card(): cdr_buf='1  # 0 03 132000000  0'
+cdr: read_card(): cdr_buf='1  # 0 03 138000000  0'
+cdr: read_card(): cdr_buf='1  # 0 03 184000000  0'
+cdr: read_card(): cdr_buf='1  # 0 01 900000000  0'
+cdr: read_card(): cdr_buf='0  0 00 0020 0000 0000  1'
+cdr: read_card(): cdr_buf='1  0 16 0000 0022 0000  0'
+cdr: read_card(): cdr_buf='0  0 00 0022 0000 0000  1'
+cdr: read_card(): cdr_buf='1  0 50 0010 7000 7767	0 ; Загружаем ИС-2'
+cdr: read_card(): cdr_buf='1  0 70 7500 0000 0026  0'
+cdr: read_card(): cdr_buf='1  0 16 0000 0100 0000  0'
+cdr: read_card(): cdr_buf='0  0 00 1005 0000 0000  1'
+cdr: read_card(): cdr_buf='1  0 16 0000 0020 0000  0'
+cdr: read_card(): cdr_buf='0  0 00 0100 0000 0000  1'
+cdr: read_card(): cdr_buf='1  0 16 0101 7501 7610	0 ; Вызов 10->2'
+cdr: read_card(): cdr_buf='1  0 52 0050 0042 0077	0 ; адрес x, номер СП, адрес y'
+cdr: read_card(): cdr_buf='1  0 02 0050 0051 3000	0'
+cdr: read_card(): cdr_buf='1  0 05 0052 3000 3007	0'
+cdr: read_card(): cdr_buf='1  0 52 0000 0000 0000	0'
+cdr: read_card(): cdr_buf='1  2 05 0062 0067 3001	0'
+cdr: read_card(): cdr_buf='1  0 01 0061 3001 3001	0'
+cdr: read_card(): cdr_buf='1  4 05 0067 3001 3001	0'
+cdr: read_card(): cdr_buf='1  0 01 0060 3001 3001	0'
+cdr: read_card(): cdr_buf='1  2 05 0056 0067 3002	0'
+cdr: read_card(): cdr_buf='1  0 01 0055 3002 3002	0'
+cdr: read_card(): cdr_buf='1  4 05 0067 3002 3002	0'
+cdr: read_card(): cdr_buf='1  0 01 0054 3002 3002	0'
+cdr: read_card(): cdr_buf='1  0 04 3002 0057 3002	0'
+cdr: read_card(): cdr_buf='1  0 01 0053 3002 3002	0'
+cdr: read_card(): cdr_buf='1  0 01 0077 3002 3002	0'
+cdr: read_card(): cdr_buf='1  0 01 0077 3001 3001	0'
+cdr: read_card(): cdr_buf='1  4 05 0073 3001 3001	0'
+cdr: read_card(): cdr_buf='1  4 02 0063 3001 3001	0'
+cdr: read_card(): cdr_buf='1  1 04 3001 3002 3003	0'
+cdr: read_card(): cdr_buf='1  4 02 3003 3007 0000	0'
+cdr: read_card(): cdr_buf='1  1 11 0003 0105 0001	0'
+cdr: read_card(): cdr_buf='1  0 36 0000 0135 0000	0'
+cdr: read_card(): cdr_buf='1  2 52 0000 7777 7777	0'
+cdr: read_card(): cdr_buf='1  0 16 0131 7501 7610	0'
+cdr: read_card(): cdr_buf='1  5 72 0062 0027 0062	0'
+cdr: read_card(): cdr_buf='1  0 16 0133 7501 7610	0'
+cdr: read_card(): cdr_buf='1  5 72 3002 0027 3002	0'
+cdr: read_card(): cdr_buf='1  0 56 0000 0141 0000	0'
+cdr: read_card(): cdr_buf='1  0 16 0136 7501 7610	0'
+cdr: read_card(): cdr_buf='1  0 72 0066 0027 0066	0'
+cdr: read_card(): cdr_buf='1  0 16 0140 7501 7610	0'
+cdr: read_card(): cdr_buf='1  0 72 3006 0027 3007	0'
+cdr: read_card(): cdr_buf='1  0 77 0000 0000 0000	0'
+cdr: read_card(): cdr_buf='1  0 77 0000 0000 0000	0     ; Остановка'
+cdr: read_card(): cdr_buf='1  7 77 7777 7777 7777	0     ; останов после выдачи'
+cdr: read_card(): cdr_buf='1  7 12 1716 0444 0214  1'
+cdr: read_card(..) r_sum=712171604440214, c_sum=712171604440214
+cdr: read_card(..) read_codes_count=72
+cdr: cdr_svc(..)
+cpu: 0007: [op=56 mod=0] безусл_пер_упр                 0000, 0001, 0000
+cpu: 0001: [op=16 mod=0] безусл_пер_упр_с_возв          0000, 0020, 0000
+cpu: 0020: [op=16 mod=0] безусл_пер_упр_с_возв          0000, 0022, 0000
+cpu: 0022: [op=50 mod=0] ввод_пред_050                  0010, 7000, 7767
+cpu: 0023: [op=70 mod=0] ввод_исп_070                   7500, 0000, 0026
+cpu: ext_io_op=0010
+drm: drum_io(..), user_drum_no=0
+drm: drum_io(..), log_drum_map_array[0]=1
+drm: drum_io(..), log_drum_map_array[1]=0
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=0
+drm: drum_io(..), drum_no=0 user_drum_no=0
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,07000,7500,7767,..)
+drm: reading MD 07000 mem_region 7500-7767
+drm: seek file_pos=28672
+drm: read_count=0270
+drm: read_count=0001
+drm: old_sum=261547256213404 chksum=261547256213404
+cpu: err=0, codes_num=0271 sum=261547256213404
+cpu: 0024: [op=16 mod=0] безусл_пер_упр_с_возв          0000, 0100, 0000
+cpu: 0100: [op=16 mod=0] безусл_пер_упр_с_возв          0101, 7501, 7610
+cpu: ext_io_op=0410
+drm: drum_io(..), user_drum_no=0
+drm: drum_io(..), log_drum_map_array[0]=1
+drm: drum_io(..), log_drum_map_array[1]=0
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=0
+drm: drum_io(..), drum_no=0 user_drum_no=0
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,07642,7544,7544,..)
+drm: reading MD 07642 mem_region 7544-7544
+drm: seek file_pos=32016
+drm: read_count=0001
+drm: read_count=0001
+drm: old_sum=150000000000000 chksum=150001005000037
+cpu: err=13, codes_num=0002 sum=150001005000037
+cpu: ext_io_op=0010
+drm: drum_io(..), user_drum_no=0
+drm: drum_io(..), log_drum_map_array[0]=1
+drm: drum_io(..), log_drum_map_array[1]=0
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=0
+drm: drum_io(..), drum_no=0 user_drum_no=0
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,00500,7200,7237,..)
+drm: reading MD 00500 mem_region 7200-7237
+drm: seek file_pos=2560
+drm: read_count=0040
+drm: read_count=0001
+drm: old_sum=520520226447630 chksum=520520226447630
+cpu: err=0, codes_num=0041 sum=520520226447630
+cpu: 0102: [op=02 mod=0] вычит_он                       0050, 0051, 3000
+cpu: 0103: [op=05 mod=0] умнож_он                       0052, 3000, 3007
+cpu: 0104: [op=52 mod=0] изм_ра_по_адр                  0000, 0000, 0000
+cpu: 0105: [op=05 mod=2] умнож_он                       0062, @+0067, 3001
+cpu: 0106: [op=01 mod=0] слож_он                        0061, 3001, 3001
+cpu: 0107: [op=05 mod=4] умнож_он                       @+0067, 3001, 3001
+cpu: 0110: [op=01 mod=0] слож_он                        0060, 3001, 3001
+cpu: 0111: [op=05 mod=2] умнож_он                       0056, @+0067, 3002
+cpu: 0112: [op=01 mod=0] слож_он                        0055, 3002, 3002
+cpu: 0113: [op=05 mod=4] умнож_он                       @+0067, 3002, 3002
+cpu: 0114: [op=01 mod=0] слож_он                        0054, 3002, 3002
+cpu: 0115: [op=04 mod=0] делен_о                        3002, 0057, 3002
+cpu: 0116: [op=01 mod=0] слож_он                        0053, 3002, 3002
+cpu: 0117: [op=01 mod=0] слож_он                        0077, 3002, 3002
+cpu: 0120: [op=01 mod=0] слож_он                        0077, 3001, 3001
+cpu: 0121: [op=05 mod=4] умнож_он                       @+0073, 3001, 3001
+cpu: 0122: [op=02 mod=4] вычит_он                       @+0063, 3001, 3001
+cpu: 0123: [op=04 mod=1] делен_о                        3001, 3002, @+3003
+cpu: 0124: [op=02 mod=4] вычит_он                       @+3003, 3007, 0000
+cpu: 0125: [op=11 mod=1] пер_если_ра_менш_a1_и_w1       0003, 0105, @+0001
+cpu: 0105: [op=05 mod=2] умнож_он                       0062, @+0067, 3001
+cpu: 0106: [op=01 mod=0] слож_он                        0061, 3001, 3001
+cpu: 0107: [op=05 mod=4] умнож_он                       @+0067, 3001, 3001
+cpu: 0110: [op=01 mod=0] слож_он                        0060, 3001, 3001
+cpu: 0111: [op=05 mod=2] умнож_он                       0056, @+0067, 3002
+cpu: 0112: [op=01 mod=0] слож_он                        0055, 3002, 3002
+cpu: 0113: [op=05 mod=4] умнож_он                       @+0067, 3002, 3002
+cpu: 0114: [op=01 mod=0] слож_он                        0054, 3002, 3002
+cpu: 0115: [op=04 mod=0] делен_о                        3002, 0057, 3002
+cpu: 0116: [op=01 mod=0] слож_он                        0053, 3002, 3002
+cpu: 0117: [op=01 mod=0] слож_он                        0077, 3002, 3002
+cpu: 0120: [op=01 mod=0] слож_он                        0077, 3001, 3001
+cpu: 0121: [op=05 mod=4] умнож_он                       @+0073, 3001, 3001
+cpu: 0122: [op=02 mod=4] вычит_он                       @+0063, 3001, 3001
+cpu: 0123: [op=04 mod=1] делен_о                        3001, 3002, @+3003
+cpu: 0124: [op=02 mod=4] вычит_он                       @+3003, 3007, 0000
+cpu: 0125: [op=11 mod=1] пер_если_ра_менш_a1_и_w1       0003, 0105, @+0001
+cpu: 0105: [op=05 mod=2] умнож_он                       0062, @+0067, 3001
+cpu: 0106: [op=01 mod=0] слож_он                        0061, 3001, 3001
+cpu: 0107: [op=05 mod=4] умнож_он                       @+0067, 3001, 3001
+cpu: 0110: [op=01 mod=0] слож_он                        0060, 3001, 3001
+cpu: 0111: [op=05 mod=2] умнож_он                       0056, @+0067, 3002
+cpu: 0112: [op=01 mod=0] слож_он                        0055, 3002, 3002
+cpu: 0113: [op=05 mod=4] умнож_он                       @+0067, 3002, 3002
+cpu: 0114: [op=01 mod=0] слож_он                        0054, 3002, 3002
+cpu: 0115: [op=04 mod=0] делен_о                        3002, 0057, 3002
+cpu: 0116: [op=01 mod=0] слож_он                        0053, 3002, 3002
+cpu: 0117: [op=01 mod=0] слож_он                        0077, 3002, 3002
+cpu: 0120: [op=01 mod=0] слож_он                        0077, 3001, 3001
+cpu: 0121: [op=05 mod=4] умнож_он                       @+0073, 3001, 3001
+cpu: 0122: [op=02 mod=4] вычит_он                       @+0063, 3001, 3001
+cpu: 0123: [op=04 mod=1] делен_о                        3001, 3002, @+3003
+cpu: 0124: [op=02 mod=4] вычит_он                       @+3003, 3007, 0000
+cpu: 0125: [op=11 mod=1] пер_если_ра_менш_a1_и_w1       0003, 0105, @+0001
+cpu: 0105: [op=05 mod=2] умнож_он                       0062, @+0067, 3001
+cpu: 0106: [op=01 mod=0] слож_он                        0061, 3001, 3001
+cpu: 0107: [op=05 mod=4] умнож_он                       @+0067, 3001, 3001
+cpu: 0110: [op=01 mod=0] слож_он                        0060, 3001, 3001
+cpu: 0111: [op=05 mod=2] умнож_он                       0056, @+0067, 3002
+cpu: 0112: [op=01 mod=0] слож_он                        0055, 3002, 3002
+cpu: 0113: [op=05 mod=4] умнож_он                       @+0067, 3002, 3002
+cpu: 0114: [op=01 mod=0] слож_он                        0054, 3002, 3002
+cpu: 0115: [op=04 mod=0] делен_о                        3002, 0057, 3002
+cpu: 0116: [op=01 mod=0] слож_он                        0053, 3002, 3002
+cpu: 0117: [op=01 mod=0] слож_он                        0077, 3002, 3002
+cpu: 0120: [op=01 mod=0] слож_он                        0077, 3001, 3001
+cpu: 0121: [op=05 mod=4] умнож_он                       @+0073, 3001, 3001
+cpu: 0122: [op=02 mod=4] вычит_он                       @+0063, 3001, 3001
+cpu: 0123: [op=04 mod=1] делен_о                        3001, 3002, @+3003
+cpu: 0124: [op=02 mod=4] вычит_он                       @+3003, 3007, 0000
+cpu: 0125: [op=11 mod=1] пер_если_ра_менш_a1_и_w1       0003, 0105, @+0001
+cpu: 0126: [op=36 mod=0] усл_пер_упр_по_w1              0000, 0135, 0000
+cpu: 0135: [op=16 mod=0] безусл_пер_упр_с_возв          0136, 7501, 7610
+cpu: ext_io_op=0410
+drm: drum_io(..), user_drum_no=0
+drm: drum_io(..), log_drum_map_array[0]=1
+drm: drum_io(..), log_drum_map_array[1]=0
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=0
+drm: drum_io(..), drum_no=0 user_drum_no=0
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,07627,7544,7544,..)
+drm: reading MD 07627 mem_region 7544-7544
+drm: seek file_pos=31928
+drm: read_count=0001
+drm: read_count=0001
+drm: old_sum=150000000000000 chksum=150001005500101
+cpu: err=13, codes_num=0002 sum=150001005500101
+cpu: ext_io_op=0010
+drm: drum_io(..), user_drum_no=0
+drm: drum_io(..), log_drum_map_array[0]=1
+drm: drum_io(..), log_drum_map_array[1]=0
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=1 user_drum_no=0
+drm: drum_io(..), drum_no=0 user_drum_no=0
+drm: drum_io(..), drum_access_mode_array[0]=1
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(0,00550,7240,7341,..)
+drm: reading MD 00550 mem_region 7240-7341
+drm: seek file_pos=2880
+drm: read_count=0102
+drm: read_count=0001
+drm: old_sum=511375077115330 chksum=511375077115330
+cpu: err=0, codes_num=0103 sum=511375077115330
+cpu: ext_io_op=3100
+lpt: write_line(..)
+lpt: write_line: start_addr=7325, end_addr=7325, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0137: [op=16 mod=0] безусл_пер_упр_с_возв          0140, 7501, 7610
+cpu: ext_io_op=3100
+lpt: write_line(..)
+lpt: write_line: start_addr=7325, end_addr=7326, count=2, pr_type=1
+cpu: err=0, codes_num=0002
+cpu: 0141: [op=77 mod=0] останов_077                    0000, 0000, 0000
+
+Останов, KRA: 0141 ([op=77 mod=0] останов_077                    0000, 0000, 0000)
+
+
+
+
+
+
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0141: [op=77 mod=0] останов_077                    0000, 0000, 0000
+
+Останов, KRA: 0141 ([op=77 mod=0] останов_077                    0000, 0000, 0000)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+cdr: cdr_detach(..)
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)

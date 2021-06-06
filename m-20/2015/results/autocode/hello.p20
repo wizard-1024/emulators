@@ -1,0 +1,284 @@
+encoding type: 1
+Processing filename: autocode_m20_eng.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.NAME'
+PS_OPS: idx='02', name='.TITLE'
+PS_OPS: idx='03', name='.START'
+PS_OPS: idx='04', name='.FINISH'
+PS_OPS: idx='05', name='.ADDRESS'
+PS_OPS: idx='06', name='.ABS'
+PS_OPS: idx='07', name='.MEM'
+PS_OPS: idx='08', name='.AUTHOR'
+PS_OPS: idx='09', name='.LIST'
+PS_OPS: idx='10', name='.NOLIST'
+File parsed and accepted.
+Processing filename: autocode_m20_dos_cp866.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.àåü'
+PS_OPS: idx='02', name='.çÄáÇÄçàÖ'
+PS_OPS: idx='03', name='.ëíÄêí'
+PS_OPS: idx='04', name='.îàçàò'
+PS_OPS: idx='05', name='.ÄÑêÖë'
+PS_OPS: idx='06', name='.ÄÅë'
+PS_OPS: idx='07', name='.èÄå'
+PS_OPS: idx='08', name='.ÄÇíéê'
+PS_OPS: idx='09', name='.èÖóÄíú'
+PS_OPS: idx='10', name='.çÖèÖóÄíú'
+File parsed and accepted.
+Processing filename: autocode_m20_win_cp1251.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.»Ãﬂ'
+PS_OPS: idx='02', name='.Õ¿«¬¿Õ»≈'
+PS_OPS: idx='03', name='.—“¿–“'
+PS_OPS: idx='04', name='.‘»Õ»ÿ'
+PS_OPS: idx='05', name='.¿ƒ–≈—'
+PS_OPS: idx='06', name='.¿¡—'
+PS_OPS: idx='07', name='.œ¿Ã'
+PS_OPS: idx='08', name='.¿¬“Œ–'
+PS_OPS: idx='09', name='.œ≈◊¿“‹'
+PS_OPS: idx='10', name='.Õ≈œ≈◊¿“‹'
+File parsed and accepted.
+Processing filename: autocode_m20_unix_koi8r.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.ÈÌÒ'
+PS_OPS: idx='02', name='.Ó·˙˜·ÓÈÂ'
+PS_OPS: idx='03', name='.ÛÙ·ÚÙ'
+PS_OPS: idx='04', name='.ÊÈÓÈ˚'
+PS_OPS: idx='05', name='.·‰ÚÂÛ'
+PS_OPS: idx='06', name='.·‚Û'
+PS_OPS: idx='07', name='.·Ì'
+PS_OPS: idx='08', name='.·˜ÙÔÚ'
+PS_OPS: idx='09', name='.Â˛·Ù¯'
+PS_OPS: idx='10', name='.ÓÂÂ˛·Ù¯'
+File parsed and accepted.
+Processing filename: autocode_m20_rus_utf8.tab
+messages_num=7, ps_ops_num=10, ops_num=64
+PS_OPS: idx='01', name='.–ò–ú–Ø'
+PS_OPS: idx='02', name='.–ù–ê–ó–í–ê–ù–ò–ï'
+PS_OPS: idx='03', name='.–°–¢–ê–†–¢'
+PS_OPS: idx='04', name='.–§–ò–ù–ò–®'
+PS_OPS: idx='05', name='.–ê–î–†–ï–°'
+PS_OPS: idx='06', name='.–ê–ë–°'
+PS_OPS: idx='07', name='.–ü–ê–ú'
+PS_OPS: idx='08', name='.–ê–í–¢–û–†'
+PS_OPS: idx='09', name='.–ü–ï–ß–ê–¢–¨'
+PS_OPS: idx='10', name='.–ù–ï–ü–ï–ß–ê–¢–¨'
+File parsed and accepted.
+Parsing filename: hello.a20
+Read lines: 40
+orig_text: *
+orig_text: * Sample file for M-20 autocode 
+orig_text: * encoding: english,ASCII-7
+orig_text: *
+orig_text: * Copyright (c) 2015 Stefankov
+orig_text: *
+orig_text: 
+orig_text: 	.NAME    hello.a20
+orig_text: 	.TITLE	 Hello Program for M-20
+orig_text: 	.AUTHOR  Stefankov Dmitry
+orig_text: *
+orig_text: *
+orig_text: *
+orig_text: 
+orig_text: TWO1  	.ABS	=2
+orig_text: TWO2	.ABS	1 02 4000 0000 0000
+orig_text: TWO3    .ABS    102400000000000
+orig_text: 
+orig_text: 	.START  20
+orig_text: *
+orig_text: num1:	TWO1
+orig_text: num2:	TWO2
+orig_text: num3:   TWO3
+orig_text: *
+orig_text: 	.START  40
+orig_text: sum1:   .MEM 1
+orig_text: sum2:   .MEM 1
+orig_text: sum3:   .MEM 1
+orig_text: *
+orig_text: *
+orig_text: 	.ADDRESS  100
+orig_text: START:
+orig_text: 	add_rn	num1,num2,sum1		; 2+2=4?
+orig_text: 	add_rn	num1,num3,sum2		; 2+2=4?
+orig_text: 	add_rn	num2,num3,sum3		; 2+2=4?
+orig_text: 	stop_77
+orig_text: 	stop_17
+orig_text: 
+orig_text: 
+orig_text: 	.FINISH 100
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 	.NAME    hello.a20
+clean_text: 	.TITLE	 Hello Program for M-20
+clean_text: 	.AUTHOR  Stefankov Dmitry
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: 
+clean_text: TWO1  	.ABS	=2
+clean_text: TWO2	.ABS	1 02 4000 0000 0000
+clean_text: TWO3    .ABS    102400000000000
+clean_text: 
+clean_text: 	.START  20
+clean_text: 
+clean_text: num1:	TWO1
+clean_text: num2:	TWO2
+clean_text: num3:   TWO3
+clean_text: 
+clean_text: 	.START  40
+clean_text: sum1:   .MEM 1
+clean_text: sum2:   .MEM 1
+clean_text: sum3:   .MEM 1
+clean_text: 
+clean_text: 
+clean_text: 	.ADDRESS  100
+clean_text: START:
+clean_text: 	add_rn	num1,num2,sum1		
+clean_text: 	add_rn	num1,num3,sum2		
+clean_text: 	add_rn	num2,num3,sum3		
+clean_text: 	stop_77
+clean_text: 	stop_17
+clean_text: 
+clean_text: 
+clean_text: 	.FINISH 100
+Lexical scanning.
+work_buf (len=19): 	.NAME    hello.a20
+work_buf (len=31): 	.TITLE	 Hello Program for M-20
+work_buf (len=26): 	.AUTHOR  Stefankov Dmitry
+work_buf (len=14): TWO1  	.ABS	=2
+work_buf (len=29): TWO2	.ABS	1 02 4000 0000 0000
+work_buf (len=31): TWO3    .ABS    102400000000000
+work_buf (len=11): 	.START  20
+work_buf (len=10): num1:	TWO1
+work_buf (len=10): num2:	TWO2
+work_buf (len=12): num3:   TWO3
+work_buf (len=11): 	.START  40
+work_buf (len=14): sum1:   .MEM 1
+work_buf (len=14): sum2:   .MEM 1
+work_buf (len=14): sum3:   .MEM 1
+work_buf (len=14): 	.ADDRESS  100
+work_buf (len=6): START:
+work_buf (len=24): 	add_rn	num1,num2,sum1		
+work_buf (len=24): 	add_rn	num1,num3,sum2		
+work_buf (len=24): 	add_rn	num2,num3,sum3		
+work_buf (len=8): 	stop_77
+work_buf (len=8): 	stop_17
+work_buf (len=12): 	.FINISH 100
+lex_words: 1=.NAME;2=hello.a20;
+lex_words: 1=.TITLE;2=Hello;3=Program;4=for;5=M-20;
+lex_words: 1=.AUTHOR;2=Stefankov;3=Dmitry;
+lex_words: 1=TWO1;2=.ABS;3==2;
+lex_words: 1=TWO2;2=.ABS;3=1;4=02;5=4000;6=0000;7=0000;
+lex_words: 1=TWO3;2=.ABS;3=102400000000000;
+lex_words: 1=.START;2=20;
+lex_words: 1=num1:;2=TWO1;
+lex_words: 1=num2:;2=TWO2;
+lex_words: 1=num3:;2=TWO3;
+lex_words: 1=.START;2=40;
+lex_words: 1=sum1:;2=.MEM;3=1;
+lex_words: 1=sum2:;2=.MEM;3=1;
+lex_words: 1=sum3:;2=.MEM;3=1;
+lex_words: 1=.ADDRESS;2=100;
+lex_words: 1=START:;
+lex_words: 1=add_rn;2=num1;3=num2;4=sum1;
+lex_words: 1=add_rn;2=num1;3=num3;4=sum2;
+lex_words: 1=add_rn;2=num2;3=num3;4=sum3;
+lex_words: 1=stop_77;
+lex_words: 1=stop_17;
+lex_words: 1=.FINISH;2=100;
+Syntax parsing (pass 1).
+cur_loc_counter=0001
+.NAME directive: 'hello.a20'
+cur_loc_counter=0001
+.TITLE directive: 'Hello Program for M-20 '
+cur_loc_counter=0001
+.AUTHOR directive: 'Stefankov Dmitry '
+cur_loc_counter=0001
+abs_name=TWO1 value=102400000000000
+cur_loc_counter=0001
+abs_name=TWO2 value=102400000000000
+cur_loc_counter=0001
+abs_name=TWO3 value=102400000000000
+cur_loc_counter=0001
+.START directive:  cur_location_counter=0020, program_start_address=0020
+cur_loc_counter=0020
+LABEL: addr=0020, name=num1
+DATA_LINE: line_num=21: TWO1
+cur_loc_counter=0021
+LABEL: addr=0021, name=num2
+DATA_LINE: line_num=22: TWO2
+cur_loc_counter=0022
+LABEL: addr=0022, name=num3
+DATA_LINE: line_num=23: TWO3
+cur_loc_counter=0023
+.START directive:  cur_location_counter=0040, program_start_address=0040
+cur_loc_counter=0040
+LABEL: addr=0040, name=sum1
+.MEM directive:  cur_location_counter=0041
+cur_loc_counter=0041
+LABEL: addr=0041, name=sum2
+.MEM directive:  cur_location_counter=0042
+cur_loc_counter=0042
+LABEL: addr=0042, name=sum3
+.MEM directive:  cur_location_counter=0043
+cur_loc_counter=0043
+.ADDRESS directive:  cur_location_counter=0100
+cur_loc_counter=0100
+LABEL: addr=0100, name=START
+cur_loc_counter=0100
+CODE_LINE: line_num=33 op=01 sym='add_rn'
+cur_loc_counter=0101
+CODE_LINE: line_num=34 op=01 sym='add_rn'
+cur_loc_counter=0102
+CODE_LINE: line_num=35 op=01 sym='add_rn'
+cur_loc_counter=0103
+CODE_LINE: line_num=36 op=77 sym='stop_77'
+cur_loc_counter=0104
+CODE_LINE: line_num=37 op=17 sym='stop_17'
+cur_loc_counter=0105
+.FINISH directive:  program_start_address=0100
+Print symbolic names table (7 names).
+0: name=num1 value=0020
+1: name=num2 value=0021
+2: name=num3 value=0022
+3: name=sum1 value=0040
+4: name=sum2 value=0041
+5: name=sum3 value=0042
+6: name=START value=0100
+Print absolute values table (3 names).
+0: name=TWO1 value=102400000000000
+1: name=TWO2 value=102400000000000
+2: name=TWO3 value=102400000000000
+References resolving (pass 2).
+DATA_LINE: line_num=21: addr=0020: 1='TWO1';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=22: addr=0021: 1='TWO2';
+FIN_OBJ_MCODE: m_code=102400000000000
+DATA_LINE: line_num=23: addr=0022: 1='TWO3';
+FIN_OBJ_MCODE: m_code=102400000000000
+CODE_LINE: line_num=33: addr=0100: op=01: 0='add_rn';1='num1';2='num2';3='sum1';
+FIN_OBJ_MCODE: m_code=001002000210040
+CODE_LINE: line_num=34: addr=0101: op=01: 0='add_rn';1='num1';2='num3';3='sum2';
+FIN_OBJ_MCODE: m_code=001002000220041
+CODE_LINE: line_num=35: addr=0102: op=01: 0='add_rn';1='num2';2='num3';3='sum3';
+FIN_OBJ_MCODE: m_code=001002100220042
+CODE_LINE: line_num=36: addr=0103: op=77: 0='stop_77';
+FIN_OBJ_MCODE: m_code=077000000000000
+CODE_LINE: line_num=37: addr=0104: op=17: 0='stop_17';
+FIN_OBJ_MCODE: m_code=017000000000000
+Make output filename: hello.m20
+out_mcode: addr=0020 code=102400000000000
+out_mcode: addr=0021 code=102400000000000
+out_mcode: addr=0022 code=102400000000000
+out_mcode: addr=0100 code=001002000210040
+out_mcode: addr=0101 code=001002000220041
+out_mcode: addr=0102 code=001002100220042
+out_mcode: addr=0103 code=077000000000000
+out_mcode: addr=0104 code=017000000000000
+Make listing filename: hello.l20
+Completed successfully.
