@@ -1,0 +1,489 @@
+/root/work/emulators/base_tests_0001/add_0001.simh-6> set console debug=add_0001.txt
+Debug output to "add_0001.txt"
+Debug output to "add_0001.txt" at Sun Jul  4 04:01:32 2021
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+lpt: lpt_attach(..)
+/root/work/emulators/base_tests_0001/add_0001.simh-19> att lpt   add_0001.lst
+LPT: creating new file
+
+
+
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0100: [op=00 mod=0] пересылка             0020, 0000, 0040
+cpu: 0101: [op=52 mod=0] изм_ра_по_адр        0000, 0000, 0000
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0104: [op=01 mod=0] слож_он                  0040, 0021, 0040
+cpu: 0105: [op=12 mod=1] пер_если_ра_мнш_a1 0061, 0102, @+0001
+cpu: 0106: [op=50 mod=0] ввод_пред_050          2100, 0000, 0040
+cpu: 0107: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0040, count=1, pr_type=1
+cpu: err=0, codes_num=0001
+cpu: 0110: [op=77 mod=0] останов_077             0000, 0000, 0000
+
+[op=77 mod=0] останов_077             0000, 0000, 0000Останов, KRA: 0110 ()
+M-20 event queue empty, time = 4953722, executing 4,999,956 instructions/sec
+Time:	4953722
+
+
+
+
+
+Goodbye
+lpt: lpt_detach(..)

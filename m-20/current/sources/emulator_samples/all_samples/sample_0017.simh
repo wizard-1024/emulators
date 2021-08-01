@@ -1,0 +1,50 @@
+; Программа расчета выбора типа электровоза, [1971 Исаев и др.] стр. 82-85
+; (использует образы МБ из sample_0014)
+;
+! del sample_0017_debug.txt
+! del sample_0017.lst
+;
+set console debug=sample_0017_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DPTYPE 3
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+;de DPTYPE 4
+att lpt   sample_0017.lst
+att drum0 sample_0014.drum0
+att drum1 sample_0014.drum1
+att drum2 sample_0014.drum2
+;
+load sample_0017.m20
+;
+ex 50-77
+echo
+;
+ex 100-141
+echo
+ex -m 100-141
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 50-77
+echo
+ex 100-141
+echo
+ex -m 100-141
+echo
+ex 62
+echo
+ex 3002
+echo
+ex 66
+echo
+ex 3006-3007
+quit

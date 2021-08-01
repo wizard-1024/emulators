@@ -1,0 +1,41 @@
+; Вычисление квадратного корня [1977 Лавров, стр.81-83]
+; (2015 Стефанков)
+;
+! del sample_0035_debug.txt
+! del sample_0035.lst
+;
+set console debug=sample_0035_debug.txt
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DPTYPE 2
+set lpt OCTHELPFMT
+att lpt   sample_0035.lst
+;
+load sample_0035.m20
+;
+ex 100-117
+echo
+ex -m 100-117
+echo
+ex 20-24
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 100-117
+echo
+ex -m 100-117
+echo
+ex 20-24
+echo
+quit

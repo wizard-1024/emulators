@@ -1,0 +1,713 @@
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_cpu.o m20_cpu.c
+m20_cpu.c:1914:45: warning: format specifies type 'int' but the argument has type 't_value' (aka 'unsigned long long') [-Wformat]
+                           i, sign_sigma_r, delta_r, mask_e2r, mask_2r_1 );
+                                            ^~~~~~~
+m20_cpu.c:3150:73: warning: format specifies type 'unsigned int' but the argument has type 't_value' (aka 'unsigned long long') [-Wformat]
+              fprintf (sim_deb, "cpu: [dreg]: ra=%04o,  sw=%d,  rr=%015llo\n", t_ra, t_sw, t_rr );
+                                                 ~~~~                          ^~~~
+                                                 %04llo
+2 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_sys.o m20_sys.c
+m20_sys.c:171:31: warning: 'size' argument to memset is '0'; did you mean to transpose the last two arguments? [-Wmemset-transposed-args]
+    memset( buf, sizeof(buf), 0 );
+                              ^
+m20_sys.c:171:31: note: parenthesize the third argument to silence
+m20_sys.c:393:48: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+                                               ^~~~
+m20_sys.c:357:43: note: passing argument to parameter 'fname' here
+t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+                                          ^
+m20_sys.c:505:10: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    cptr = get_glyph (cptr, gbuf, 0);   /* get address */
+         ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_sys.c:506:35: warning: passing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers]
+    *offset = (int)strtotv (gbuf, &tptr, 8);
+                                  ^~~~~
+./scp.h:189:49: note: passing argument to parameter 'endptr' here
+t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+                                                ^
+m20_sys.c:552:10: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    cptr = get_glyph (cptr, gbuf, 0);           /* get opcode */
+         ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_sys.c:598:25: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    cptr = skip_spaces (cptr);                  /* absorb spaces */
+                        ^~~~
+m20_sys.c:138:26: note: passing argument to parameter 'p' here
+char *skip_spaces (char *p)
+                         ^
+m20_sys.c:599:30: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    if (! parse_instruction (cptr, val, sw))    /* symbolic parse? */
+                             ^~~~
+m20_sys.c:547:33: note: passing argument to parameter 'cptr' here
+t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+                                ^
+m20_sys.c:607:22: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        cptr = skip_spaces (cptr+1);            /* next char */
+                            ^~~~~~
+m20_sys.c:138:26: note: passing argument to parameter 'p' here
+char *skip_spaces (char *p)
+                         ^
+8 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_eng.o m20_eng.c
+m20_eng.c:153:15: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                ^
+m20_eng.c:153:22: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                          ^
+m20_eng.c:153:29: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                                    ^
+m20_eng.c:153:36: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                                              ^
+m20_eng.c:153:43: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                                                        ^
+m20_eng.c:153:50: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                                                                  ^
+m20_eng.c:153:57: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                                                                            ^
+m20_eng.c:153:64: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 040-047 */   '<C0>',   '<C1>',   '<C2>',   '<C3>',   '<C4>',   '<C5>',   '<C6>',   '<C7>',
+                                                                                      ^
+m20_eng.c:154:15: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                ^
+m20_eng.c:154:22: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                          ^
+m20_eng.c:154:29: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                                    ^
+m20_eng.c:154:36: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                                              ^
+m20_eng.c:154:43: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                                                        ^
+m20_eng.c:154:50: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                                                                  ^
+m20_eng.c:154:57: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                                                                            ^
+m20_eng.c:154:64: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 050-057 */   '<C8>',   '<C9>',   '<CA>',   '<CB>',   '<CC>',   '<CD>',   '<CE>',   '<CF>',
+                                                                                      ^
+m20_eng.c:155:15: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                ^
+m20_eng.c:155:22: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                          ^
+m20_eng.c:155:29: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                                    ^
+m20_eng.c:155:36: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                                              ^
+m20_eng.c:155:43: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                                                        ^
+m20_eng.c:155:50: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                                                                  ^
+m20_eng.c:155:57: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                                                                            ^
+m20_eng.c:155:64: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 060-067 */   '<D0>',   '<D1>',   '<D2>',   '<D3>',   '<D4>',   '<D5>',   '<D6>',   '<D7>',
+                                                                                      ^
+m20_eng.c:156:15: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 070-077 */   '<D8>',   '<D9>',   '<DB>',   '<DA>',   '<DD>',   '<DE>',   '<DF>',   'D',
+                ^
+m20_eng.c:156:22: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 070-077 */   '<D8>',   '<D9>',   '<DB>',   '<DA>',   '<DD>',   '<DE>',   '<DF>',   'D',
+                          ^
+m20_eng.c:156:29: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 070-077 */   '<D8>',   '<D9>',   '<DB>',   '<DA>',   '<DD>',   '<DE>',   '<DF>',   'D',
+                                    ^
+m20_eng.c:156:36: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 070-077 */   '<D8>',   '<D9>',   '<DB>',   '<DA>',   '<DD>',   '<DE>',   '<DF>',   'D',
+                                              ^
+m20_eng.c:156:43: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 070-077 */   '<D8>',   '<D9>',   '<DB>',   '<DA>',   '<DD>',   '<DE>',   '<DF>',   'D',
+                                                        ^
+m20_eng.c:156:50: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 070-077 */   '<D8>',   '<D9>',   '<DB>',   '<DA>',   '<DD>',   '<DE>',   '<DF>',   'D',
+                                                                  ^
+m20_eng.c:156:57: warning: illegal character encoding in character literal [-Winvalid-source-encoding]
+/* 070-077 */   '<D8>',   '<D9>',   '<DB>',   '<DA>',   '<DD>',   '<DE>',   '<DF>',   'D',
+                                                                            ^
+31 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_drm.o m20_drm.c
+m20_drm.c:97:9: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+        &drum_attach, &drum_detach, NULL,
+        ^~~~~~~~~~~~
+m20_drm.c:257:83: warning: format specifies type 'unsigned long long' but the argument has type 'unsigned long' [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+                                                                         ~~~~     ^~~~~~~~~~~~~~~~~~~~
+                                                                         %lu
+m20_drm.c:264:81: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+                                                                       ~~~~     ^~~~~
+                                                                       %04zo
+m20_drm.c:282:87: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+          if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+                                                                             ~~~~     ^~~~~
+                                                                             %04zo
+m20_drm.c:325:83: warning: format specifies type 'unsigned long long' but the argument has type 'unsigned long' [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+                                                                         ~~~~     ^~~~~~~~~~~~~~~~~~~~
+                                                                         %lu
+m20_drm.c:330:80: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+                                                                      ~~~~     ^~~~~
+                                                                      %04zo
+m20_drm.c:357:84: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+        if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+                                                                          ~~~~     ^~~~~
+                                                                          %04zo
+7 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_cd.o m20_cd.c
+m20_cd.c:119:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:120:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:128:16: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+    &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+               ^~~~~~~~~~~
+m20_cd.c:152:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:153:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:161:11: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+    NULL, &cdp_attach, &cdp_detach, NULL,
+          ^~~~~~~~~~~
+m20_cd.c:765:23: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:765:62: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:766:23: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:766:58: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:767:23: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_0 & MAX_ADDR_VALUE );
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:800:21: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:800:60: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:801:21: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:801:56: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:802:21: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_0 & MAX_ADDR_VALUE );
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+16 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_mt.o m20_mt.c
+m20_mt.c:97:9: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+        &mt_attach, &mt_detach, NULL,
+        ^~~~~~~~~~
+m20_mt.c:281:18: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                 last_fmt_pos+(codes_group_size+2)*sizeof(t_value), MAX_TAPE_SIZE*sizeof(t_value) );
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_mt.c:281:69: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                 last_fmt_pos+(codes_group_size+2)*sizeof(t_value), MAX_TAPE_SIZE*sizeof(t_value) );
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./m20_defs.h:40:27: note: expanded from macro 'MAX_TAPE_SIZE'
+#define MAX_TAPE_SIZE     75000       /* magnetic tape size = N codes */
+                          ^
+m20_mt.c:294:93: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+                                                                                   ~~~~     ^~~~~
+                                                                                   %04zo
+m20_mt.c:327:93: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+                                                                                   ~~~~     ^~~~~
+                                                                                   %04zo
+m20_mt.c:409:6: warning: expression result unused [-Wunused-value]
+        if (cur_zone_num,cur_zone_size > MAX_TAPE_ZONE_SIZE) return STOP_TAPEBADRLEN;
+            ^~~~~~~~~~~~
+m20_mt.c:424:78: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                ~~                  ^~~~~~~~~~~~
+                                                                %lu
+m20_mt.c:424:92: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                             ~~                   ^~~~~~~~
+                                                                             %lu
+m20_mt.c:500:74: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                            ~~                  ^~~~~~~~~~~~
+                                                            %lu
+m20_mt.c:500:88: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                         ~~                   ^~~~~~~~
+                                                                         %lu
+m20_mt.c:586:6: warning: expression result unused [-Wunused-value]
+        if (cur_zone_num,cur_zone_size > MAX_TAPE_ZONE_SIZE) return STOP_TAPEBADRLEN;
+            ^~~~~~~~~~~~
+m20_mt.c:629:73: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                           ~~                  ^~~~~~~~~~~~
+                                                           %lu
+m20_mt.c:629:87: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                        ~~                   ^~~~~~~~
+                                                                        %lu
+13 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_lp.o m20_lp.c
+m20_lp.c:103:11: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+    NULL, &lpt_attach, &lpt_detach, NULL,
+          ^~~~~~~~~~~
+1 warning generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -o scp.o scp.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_console.o sim_console.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_tape.o sim_tape.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_timer.o sim_timer.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_tmxr.o sim_tmxr.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_sock.o sim_sock.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_serial.o sim_serial.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_disk.o sim_disk.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_fio.o sim_fio.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_ether.o sim_ether.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_imd.o sim_imd.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_video.o sim_video.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_frontpanel.o sim_frontpanel.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_scsi.o sim_scsi.c
+cc   -o m20 m20_cpu.o m20_sys.o m20_eng.o m20_drm.o m20_cd.o m20_mt.o  m20_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o  sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o  sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cpu.o m20_cpu.c
+m20_cpu.c:1914:45: warning: format specifies type 'int' but the argument has type 't_value' (aka 'unsigned long long') [-Wformat]
+                           i, sign_sigma_r, delta_r, mask_e2r, mask_2r_1 );
+                                            ^~~~~~~
+m20_cpu.c:3150:73: warning: format specifies type 'unsigned int' but the argument has type 't_value' (aka 'unsigned long long') [-Wformat]
+              fprintf (sim_deb, "cpu: [dreg]: ra=%04o,  sw=%d,  rr=%015llo\n", t_ra, t_sw, t_rr );
+                                                 ~~~~                          ^~~~
+                                                 %04llo
+2 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_sys.o m20_sys.c
+m20_sys.c:171:31: warning: 'size' argument to memset is '0'; did you mean to transpose the last two arguments? [-Wmemset-transposed-args]
+    memset( buf, sizeof(buf), 0 );
+                              ^
+m20_sys.c:171:31: note: parenthesize the third argument to silence
+m20_sys.c:393:48: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+                                               ^~~~
+m20_sys.c:357:43: note: passing argument to parameter 'fname' here
+t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+                                          ^
+m20_sys.c:505:10: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    cptr = get_glyph (cptr, gbuf, 0);   /* get address */
+         ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_sys.c:506:35: warning: passing 'char **' to parameter of type 'const char **' discards qualifiers in nested pointer types [-Wincompatible-pointer-types-discards-qualifiers]
+    *offset = (int)strtotv (gbuf, &tptr, 8);
+                                  ^~~~~
+./scp.h:189:49: note: passing argument to parameter 'endptr' here
+t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+                                                ^
+m20_sys.c:552:10: warning: assigning to 'char *' from 'const char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    cptr = get_glyph (cptr, gbuf, 0);           /* get opcode */
+         ^ ~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_sys.c:598:25: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    cptr = skip_spaces (cptr);                  /* absorb spaces */
+                        ^~~~
+m20_sys.c:138:26: note: passing argument to parameter 'p' here
+char *skip_spaces (char *p)
+                         ^
+m20_sys.c:599:30: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+    if (! parse_instruction (cptr, val, sw))    /* symbolic parse? */
+                             ^~~~
+m20_sys.c:547:33: note: passing argument to parameter 'cptr' here
+t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+                                ^
+m20_sys.c:607:22: warning: passing 'const char *' to parameter of type 'char *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+        cptr = skip_spaces (cptr+1);            /* next char */
+                            ^~~~~~
+m20_sys.c:138:26: note: passing argument to parameter 'p' here
+char *skip_spaces (char *p)
+                         ^
+8 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20_rus.o m20_rus.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_drm.o m20_drm.c
+m20_drm.c:97:9: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+        &drum_attach, &drum_detach, NULL,
+        ^~~~~~~~~~~~
+m20_drm.c:257:83: warning: format specifies type 'unsigned long long' but the argument has type 'unsigned long' [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+                                                                         ~~~~     ^~~~~~~~~~~~~~~~~~~~
+                                                                         %lu
+m20_drm.c:264:81: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+                                                                       ~~~~     ^~~~~
+                                                                       %04zo
+m20_drm.c:282:87: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+          if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+                                                                             ~~~~     ^~~~~
+                                                                             %04zo
+m20_drm.c:325:83: warning: format specifies type 'unsigned long long' but the argument has type 'unsigned long' [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+                                                                         ~~~~     ^~~~~~~~~~~~~~~~~~~~
+                                                                         %lu
+m20_drm.c:330:80: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+                                                                      ~~~~     ^~~~~
+                                                                      %04zo
+m20_drm.c:357:84: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+        if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+                                                                          ~~~~     ^~~~~
+                                                                          %04zo
+7 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cd.o m20_cd.c
+m20_cd.c:119:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:120:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:128:16: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+    &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+               ^~~~~~~~~~~
+m20_cd.c:152:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:153:81: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, int32, const char *, void *)' (aka 'int (*)(struct UNIT *, int, const char *, void *)') with an expression of type 't_stat (*)(UNIT *, int32, char *, void *)' (aka 'int (*)(struct UNIT *, int, char *, void *)') [-Wincompatible-function-pointer-types]
+    { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+                                                                                ^~~~~~~~~~~~~
+m20_cd.c:161:11: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+    NULL, &cdp_attach, &cdp_detach, NULL,
+          ^~~~~~~~~~~
+m20_cd.c:765:23: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:765:62: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                                                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:766:23: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:766:58: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                                                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:767:23: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                      mcode >> BITS_0 & MAX_ADDR_VALUE );
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:800:21: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:800:60: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_42 & MAX_ADDR_TAG_VALUE, mcode >> BITS_36 & MAX_OPCODE_VALUE, 
+                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:801:21: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:801:56: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_24 & MAX_ADDR_VALUE, mcode >> BITS_12 & MAX_ADDR_VALUE, 
+                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_cd.c:802:21: warning: format specifies type 'unsigned int' but the argument has type 'unsigned long long' [-Wformat]
+                    mcode >> BITS_0 & MAX_ADDR_VALUE );
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+16 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_mt.o m20_mt.c
+m20_mt.c:97:9: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+        &mt_attach, &mt_detach, NULL,
+        ^~~~~~~~~~
+m20_mt.c:281:18: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                 last_fmt_pos+(codes_group_size+2)*sizeof(t_value), MAX_TAPE_SIZE*sizeof(t_value) );
+                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+m20_mt.c:281:69: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                 last_fmt_pos+(codes_group_size+2)*sizeof(t_value), MAX_TAPE_SIZE*sizeof(t_value) );
+                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./m20_defs.h:40:27: note: expanded from macro 'MAX_TAPE_SIZE'
+#define MAX_TAPE_SIZE     75000       /* magnetic tape size = N codes */
+                          ^
+m20_mt.c:294:93: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+                                                                                   ~~~~     ^~~~~
+                                                                                   %04zo
+m20_mt.c:327:93: warning: format specifies type 'unsigned int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+    if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+                                                                                   ~~~~     ^~~~~
+                                                                                   %04zo
+m20_mt.c:409:6: warning: expression result unused [-Wunused-value]
+        if (cur_zone_num,cur_zone_size > MAX_TAPE_ZONE_SIZE) return STOP_TAPEBADRLEN;
+            ^~~~~~~~~~~~
+m20_mt.c:424:78: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                ~~                  ^~~~~~~~~~~~
+                                                                %lu
+m20_mt.c:424:92: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+                fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                             ~~                   ^~~~~~~~
+                                                                             %lu
+m20_mt.c:500:74: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                            ~~                  ^~~~~~~~~~~~
+                                                            %lu
+m20_mt.c:500:88: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                         ~~                   ^~~~~~~~
+                                                                         %lu
+m20_mt.c:586:6: warning: expression result unused [-Wunused-value]
+        if (cur_zone_num,cur_zone_size > MAX_TAPE_ZONE_SIZE) return STOP_TAPEBADRLEN;
+            ^~~~~~~~~~~~
+m20_mt.c:629:73: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                           ~~                  ^~~~~~~~~~~~
+                                                           %lu
+m20_mt.c:629:87: warning: format specifies type 'int' but the argument has type 'unsigned long' [-Wformat]
+            fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+                                                                        ~~                   ^~~~~~~~
+                                                                        %lu
+13 warnings generated.
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_lp.o m20_lp.c
+m20_lp.c:103:11: warning: incompatible function pointer types initializing 't_stat (*)(UNIT *, const char *)' (aka 'int (*)(struct UNIT *, const char *)') with an expression of type 't_stat (*)(UNIT *, char *)' (aka 'int (*)(struct UNIT *, char *)') [-Wincompatible-function-pointer-types]
+    NULL, &lpt_attach, &lpt_detach, NULL,
+          ^~~~~~~~~~~
+1 warning generated.
+cc   -o m20ru m20ru_cpu.o m20ru_sys.o m20_rus.o m20ru_drm.o m20ru_cd.o  m20ru_mt.o m20ru_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o  sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o  sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -o code2pcard.o code2pcard.c
+code2pcard.c:156:16: warning: passing 'unsigned char [2048]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  while( fgets(big_text_buf,sizeof(big_text_buf)-1,fp_in) != NULL) {
+               ^~~~~~~~~~~~
+/usr/include/stdio.h:258:30: note: passing argument to parameter here
+char    *fgets(char * __restrict, int, FILE * __restrict);
+                                ^
+code2pcard.c:159:19: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       s = strchr(big_text_buf,'\r');
+                  ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+code2pcard.c:161:19: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       s = strchr(big_text_buf,'\n');
+                  ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+code2pcard.c:164:22: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       slen = strlen(big_text_buf);
+                     ^~~~~~~~~~~~
+/usr/include/string.h:97:28: note: passing argument to parameter here
+size_t   strlen(const char *) __pure;
+                            ^
+code2pcard.c:169:19: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         strncpy( out_text_buf, big_text_buf, sizeof(out_text_buf)-1 );
+                  ^~~~~~~~~~~~
+/usr/include/string.h:103:32: note: passing argument to parameter here
+char    *strncpy(char * __restrict, const char * __restrict, size_t);
+                                  ^
+code2pcard.c:169:33: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         strncpy( out_text_buf, big_text_buf, sizeof(out_text_buf)-1 );
+                                ^~~~~~~~~~~~
+/usr/include/string.h:103:57: note: passing argument to parameter here
+char    *strncpy(char * __restrict, const char * __restrict, size_t);
+                                                           ^
+code2pcard.c:177:19: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         strncpy( out_text_buf, big_text_buf, sizeof(out_text_buf)-1 );
+                  ^~~~~~~~~~~~
+/usr/include/string.h:103:32: note: passing argument to parameter here
+char    *strncpy(char * __restrict, const char * __restrict, size_t);
+                                  ^
+code2pcard.c:177:33: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         strncpy( out_text_buf, big_text_buf, sizeof(out_text_buf)-1 );
+                                ^~~~~~~~~~~~
+/usr/include/string.h:103:57: note: passing argument to parameter here
+char    *strncpy(char * __restrict, const char * __restrict, size_t);
+                                                           ^
+code2pcard.c:184:32: warning: passing 'unsigned char *' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         address_code = strtol(&big_text_buf[1],NULL,8);
+                               ^~~~~~~~~~~~~~~~
+/usr/include/stdlib.h:117:37: note: passing argument to parameter here
+long     strtol(const char * __restrict, char ** __restrict, int);
+                                       ^
+code2pcard.c:187:25: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+             _snprintf( out_text_buf, sizeof(out_text_buf)-1,   "0   0 00 %04o 0000 0000   1", address_code );
+                        ^~~~~~~~~~~~
+/usr/include/stdio.h:298:32: note: passing argument to parameter here
+int      snprintf(char * __restrict, size_t, const char * __restrict,
+                                   ^
+code2pcard.c:189:25: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+             _snprintf( out_text_buf, sizeof(out_text_buf)-1, ";;0   0 00 %04o 0000 0000   1", address_code );
+                        ^~~~~~~~~~~~
+/usr/include/stdio.h:298:32: note: passing argument to parameter here
+int      snprintf(char * __restrict, size_t, const char * __restrict,
+                                   ^
+code2pcard.c:195:21: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         s = strchr(big_text_buf, ';' );
+                    ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+code2pcard.c:197:23: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+           _snprintf( out_text_buf, sizeof(out_text_buf)-1,   "1  %s  0", big_text_buf );
+                      ^~~~~~~~~~~~
+/usr/include/stdio.h:298:32: note: passing argument to parameter here
+int      snprintf(char * __restrict, size_t, const char * __restrict,
+                                   ^
+code2pcard.c:201:23: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+           _snprintf( out_text_buf, sizeof(out_text_buf)-1,   "1 %s", big_text_buf );
+                      ^~~~~~~~~~~~
+/usr/include/stdio.h:298:32: note: passing argument to parameter here
+int      snprintf(char * __restrict, size_t, const char * __restrict,
+                                   ^
+code2pcard.c:208:21: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         _snprintf( out_text_buf, sizeof(out_text_buf)-1, ";;%s", big_text_buf );
+                    ^~~~~~~~~~~~
+/usr/include/stdio.h:298:32: note: passing argument to parameter here
+int      snprintf(char * __restrict, size_t, const char * __restrict,
+                                   ^
+code2pcard.c:213:20: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+        s = strchr(big_text_buf, ';' );
+                   ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+code2pcard.c:215:21: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         _snprintf( out_text_buf, sizeof(out_text_buf)-1,   "1   %s   0", big_text_buf );
+                    ^~~~~~~~~~~~
+/usr/include/stdio.h:298:32: note: passing argument to parameter here
+int      snprintf(char * __restrict, size_t, const char * __restrict,
+                                   ^
+code2pcard.c:219:21: warning: passing 'unsigned char [2176]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+         _snprintf( out_text_buf, sizeof(out_text_buf)-1,   "1   %s", big_text_buf );
+                    ^~~~~~~~~~~~
+/usr/include/stdio.h:298:32: note: passing argument to parameter here
+int      snprintf(char * __restrict, size_t, const char * __restrict,
+                                   ^
+18 warnings generated.
+cc   -o code2pcard code2pcard.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX  -Foautocode_m20.obj autocode_m20.c
+autocode_m20.c:460:16: warning: passing 'unsigned char [2048]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  while( fgets(big_text_buf,sizeof(big_text_buf)-1,fp) != NULL) {
+               ^~~~~~~~~~~~
+/usr/include/stdio.h:258:30: note: passing argument to parameter here
+char    *fgets(char * __restrict, int, FILE * __restrict);
+                                ^
+autocode_m20.c:464:19: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       s = strchr(big_text_buf,'\r');
+                  ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+autocode_m20.c:466:19: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       s = strchr(big_text_buf,'\n');
+                  ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+autocode_m20.c:469:22: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       slen = strlen(big_text_buf);
+                     ^~~~~~~~~~~~
+/usr/include/string.h:97:28: note: passing argument to parameter here
+size_t   strlen(const char *) __pure;
+                            ^
+autocode_m20.c:478:12: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       if (strcasecmp(big_text_buf,"[MessagesTable]") == 0) {
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./sim_fio.h:178:48: note: expanded from macro 'strcasecmp'
+#define strcasecmp(str1, str2) sim_strcasecmp ((str1), (str2))
+                                               ^~~~~~
+autocode_m20.c:289:33: note: passing argument to parameter 'string1' here
+int sim_strcasecmp (const char *string1, const char *string2)
+                                ^
+autocode_m20.c:482:12: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       if (strcasecmp(big_text_buf,"[PseudoOperationsTable]") == 0) {
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./sim_fio.h:178:48: note: expanded from macro 'strcasecmp'
+#define strcasecmp(str1, str2) sim_strcasecmp ((str1), (str2))
+                                               ^~~~~~
+autocode_m20.c:289:33: note: passing argument to parameter 'string1' here
+int sim_strcasecmp (const char *string1, const char *string2)
+                                ^
+autocode_m20.c:486:12: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       if (strcasecmp(big_text_buf,"[InstructionTables]") == 0) {
+           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+./sim_fio.h:178:48: note: expanded from macro 'strcasecmp'
+#define strcasecmp(str1, str2) sim_strcasecmp ((str1), (str2))
+                                               ^~~~~~
+autocode_m20.c:289:33: note: passing argument to parameter 'string1' here
+int sim_strcasecmp (const char *string1, const char *string2)
+                                ^
+autocode_m20.c:496:12: warning: assigning to 'char *' from 'unsigned char [2048]' converts between pointers to integer types with different sign [-Wpointer-sign]
+         s = big_text_buf;
+           ^ ~~~~~~~~~~~~
+autocode_m20.c:523:12: warning: assigning to 'char *' from 'unsigned char [2048]' converts between pointers to integer types with different sign [-Wpointer-sign]
+         s = big_text_buf;
+           ^ ~~~~~~~~~~~~
+autocode_m20.c:550:12: warning: assigning to 'char *' from 'unsigned char [2048]' converts between pointers to integer types with different sign [-Wpointer-sign]
+         s = big_text_buf;
+           ^ ~~~~~~~~~~~~
+autocode_m20.c:999:16: warning: passing 'unsigned char [2048]' to parameter of type 'char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+  while( fgets(big_text_buf,sizeof(big_text_buf)-1,fp) != NULL) {
+               ^~~~~~~~~~~~
+/usr/include/stdio.h:258:30: note: passing argument to parameter here
+char    *fgets(char * __restrict, int, FILE * __restrict);
+                                ^
+autocode_m20.c:1002:19: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       s = strchr(big_text_buf,'\r');
+                  ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+autocode_m20.c:1004:19: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       s = strchr(big_text_buf,'\n');
+                  ^~~~~~~~~~~~
+/usr/include/string.h:78:26: note: passing argument to parameter here
+char    *strchr(const char *, int) __pure;
+                            ^
+autocode_m20.c:1012:22: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       slen = strlen(big_text_buf);
+                     ^~~~~~~~~~~~
+/usr/include/string.h:97:28: note: passing argument to parameter here
+size_t   strlen(const char *) __pure;
+                            ^
+autocode_m20.c:1020:62: warning: passing 'unsigned char [2048]' to parameter of type 'const char *' converts between pointers to integer types with different sign [-Wpointer-sign]
+       strncpy( parsed_lines_array[line_idx].orig_text_line, big_text_buf, slen );
+                                                             ^~~~~~~~~~~~
+/usr/include/string.h:103:57: note: passing argument to parameter here
+char    *strncpy(char * __restrict, const char * __restrict, size_t);
+                                                           ^
+autocode_m20.c:1082:60: warning: format specifies type 'int' but the argument has type 'size_t' (aka 'unsigned long') [-Wformat]
+     if (debug_parsing) printf( "work_buf (len=%d): %s\n", slen,work_buf );
+                                               ~~          ^~~~
+                                               %zu
+autocode_m20.c:1962:3: warning: add explicit braces to avoid dangling else [-Wdangling-else]
+  else 
+  ^
+17 warnings generated.
+cc   -o autocode_m20 autocode_m20.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -o dump_drm.o dump_drm.c
+cc   -o dump_drm dump_drm.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -o dump_mt.o dump_mt.c
+dump_mt.c:151:10: warning: expression result unused [-Wunused-value]
+     if (cur_zone_num,cur_zone_size > MAX_TAPE_ZONE_SIZE) break;
+         ^~~~~~~~~~~~
+dump_mt.c:152:46: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+     printf( "****** ZONE %lu, LEN = %lu\n", cur_zone_num, cur_zone_size );
+                          ~~~                ^~~~~~~~~~~~
+                          %d
+dump_mt.c:152:60: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+     printf( "****** ZONE %lu, LEN = %lu\n", cur_zone_num, cur_zone_size );
+                                     ~~~                   ^~~~~~~~~~~~~
+                                     %d
+3 warnings generated.
+cc   -o dump_mt dump_mt.o -lm -lrt -lpthread

@@ -1,0 +1,67 @@
+; Загрузка ИС-2, к/с для ИС-2 и вызов СП 34 с печатью результатов
+; (использует готовые образы МБ из is2_build)
+; (2015 Стефанков)
+;
+! del is2_test_0019_debug.txt
+! del is2_test_0019.lst
+;
+set console debug=is2_test_0019_debug.txt
+;de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;de ENABLE_OPCODE_040_HACK 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+;de DPTYPE 4
+de DPTYPE 2
+set lpt OCTHELPFMT
+;set lpt OCTHELPFMT
+att lpt   is2_test_0019.lst
+att drum0 is2_test_0019.drum0
+att drum1 is2_test_0019.drum1
+att drum2 is2_test_0019.drum2
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 0
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+load is2_test_0019.m20
+;
+ex 100-127
+echo
+ex -m 100-127
+echo
+ex 20-25
+echo
+ex 30-31
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 30-31
+echo
+ex 100-127
+echo
+ex -m 100-127
+echo
+ex 0-3
+echo
+ex 20-25
+echo
+;ex 7544-7544
+;echo
+;ex 7200-7215
+;echo
+quit

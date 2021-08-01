@@ -1,0 +1,24 @@
+Краткое описание примеров.
+Версия от 3 июля 2021 г.
+
+
+*** hello12.a20
+Sample file for M-20 autocode 
+encoding: russian, cp-866
+
+*** hello13.a20
+Sample file for M-20 autocode 
+encoding: russian, cp-1251
+
+*** hello14.a20
+Sample file for M-20 autocode 
+encoding: english,ASCII-7
+
+*** hello15.a20
+Sample file for M-20 autocode 
+encoding: russian, UTF-8
+
+*** hello16.a20
+Sample file for M-20 autocode 
+encoding: russian, KOI8-R
+

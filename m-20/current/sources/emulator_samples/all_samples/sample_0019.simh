@@ -1,0 +1,55 @@
+; Программа тестирования использования ИС-2 и СПП
+; [2014 Стефанков Д.В]
+; (использует готовые образы МБ из is2_build)
+;
+! del sample_0019_debug.txt
+! del sample_0019.lst
+;
+set console debug=sample_0019_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+;set cdp  debug
+;set mt   debug
+;de DISABLE_IS2_TRACE 1
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de LPTWIDTH 1
+de DPTYPE 3
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt   sample_0019.lst
+att drum0 sample_0019.drum0
+att drum1 sample_0019.drum1
+att drum2 sample_0019.drum2
+;
+load sample_0019.m20
+;
+ex 50-77
+echo
+;
+ex 100-141
+echo
+ex -m 100-141
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 0-3
+echo
+ex 50-77
+echo
+ex 100-141
+echo
+ex -m 100-141
+echo
+ex 62
+echo
+ex 66
+echo
+ex 3000-3007
+quit

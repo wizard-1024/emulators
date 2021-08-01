@@ -1,0 +1,48 @@
+/root/work/m-20/sources/emulator_tests/base_tests_0001/add_0002.simh-6> set console debug=add_0002.txt
+Debug output to "add_0002.txt"
+Debug output to "add_0002.txt" at Sat Jul 31 20:48:40 2021
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+lpt: lpt_attach(..)
+/root/work/m-20/sources/emulator_tests/base_tests_0001/add_0002.simh-19> att lpt   add_0002.lst
+LPT: creating new file
+
+
+
+
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 1000: [op=01 mod=0] слож_он                  0020, 0021, 0022
+cpu: 1001: [op=21 mod=0] слож_н                    0020, 0021, 0023
+cpu: 1002: [op=41 mod=0] слож_о                    0020, 0021, 0024
+cpu: 1003: [op=61 mod=0] слож                       0020, 0021, 0025
+cpu: 1004: [op=01 mod=0] слож_он                  0030, 0031, 0032
+cpu: 1005: [op=21 mod=0] слож_н                    0030, 0031, 0033
+cpu: 1006: [op=41 mod=0] слож_о                    0030, 0031, 0034
+cpu: 1007: [op=61 mod=0] слож                       0030, 0031, 0035
+cpu: 1010: [op=01 mod=0] слож_он                  0040, 0041, 0042
+cpu: 1011: [op=21 mod=0] слож_н                    0040, 0041, 0043
+cpu: 1012: [op=41 mod=0] слож_о                    0040, 0041, 0044
+cpu: 1013: [op=61 mod=0] слож                       0040, 0041, 0045
+cpu: 1014: [op=50 mod=0] ввод_пред_050          2100, 0000, 0047
+cpu: 1015: [op=70 mod=0] ввод_исп_070            0020, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0020, end_addr=0047, count=24, pr_type=1
+cpu: err=0, codes_num=0030
+cpu: 1016: [op=77 mod=0] останов_077             0000, 0000, 0000
+
+[op=00 mod=0] пересылка             0000, 0000, 0000Останов, KRA: 0000 ()
+M-20 event queue empty, time = 1250023, executing 5,000,000 instructions/sec
+Time:	1250023
+
+
+
+Goodbye
+lpt: lpt_detach(..)

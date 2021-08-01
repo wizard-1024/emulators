@@ -1,0 +1,71 @@
+; М.А.Айзенберг,Л.И.Зима
+; "Классификация геологических объектов по геофизическим данным на основе Байесовского подхода.Вып.У-3.Программа для ЭЦВМ М-20,БЭСМ-3М и БЭСМ-4."
+; 1970, Москва, ВНИИ Геофизика (Волго-Уральский Филиал)
+; (использует готовые образы МБ из is2_build)
+; (2015 Стефанков)
+;
+! del sample_0105_debug.txt
+! del sample_0105.lst
+! del sample_0105.cdp
+;
+set console debug=sample_0105_debug.txt
+;set console debug=console
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+de ENABLE_OPCODE_040_HACK 1
+;
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt sample_0105.lst
+;
+set cdr extfmt
+attach cdp sample_0105.cdp
+;
+de DRUM_3_ACCESS_MODE 1
+;
+att drum0 sample_0105.drum0
+att drum1 sample_0105.drum1
+att drum2 sample_0105.drum2
+;
+att -r cdr sample_0105.cdr
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+echo Boot
+boot cdr
+;
+;echo Run
+;run
+show queue
+show time
+;show throttle
+ex 1000-1070
+echo
+ex -m 1000-1070
+echo
+ex 0124-0662
+echo
+ex -m 0124-0662
+echo
+;g 1043
+g 1047
+;g 1052
+quit

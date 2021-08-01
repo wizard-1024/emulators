@@ -1,0 +1,232 @@
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_cpu.o m20_cpu.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_sys.o m20_sys.c
+m20_sys.c: In function ‘sim_load’:
+m20_sys.c:393:48: warning: passing argument 2 of ‘m20_abs_mem_dump’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+                                                ^~~~
+m20_sys.c:357:43: note: expected ‘char *’ but argument is of type ‘const char *’
+ t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+                                     ~~~~~~^~~~~
+m20_sys.c: In function ‘m20_parse_offset’:
+m20_sys.c:505:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     cptr = get_glyph (cptr, gbuf, 0); /* get address */
+          ^
+m20_sys.c:506:35: warning: passing argument 2 of ‘strtotv’ from incompatible pointer type [-Wincompatible-pointer-types]
+     *offset = (int)strtotv (gbuf, &tptr, 8);
+                                   ^~~~~
+In file included from sim_defs.h:1088,
+                 from m20_defs.h:23,
+                 from m20_sys.c:36:
+scp.h:189:49: note: expected ‘const char **’ but argument is of type ‘char **’
+ t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+m20_sys.c: In function ‘parse_instruction’:
+m20_sys.c:552:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     cptr = get_glyph (cptr, gbuf, 0);  /* get opcode */
+          ^
+m20_sys.c: In function ‘parse_sym’:
+m20_sys.c:598:25: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     cptr = skip_spaces (cptr);   /* absorb spaces */
+                         ^~~~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+ char *skip_spaces (char *p)
+                    ~~~~~~^
+m20_sys.c:599:30: warning: passing argument 1 of ‘parse_instruction’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     if (! parse_instruction (cptr, val, sw)) /* symbolic parse? */
+                              ^~~~
+m20_sys.c:547:33: note: expected ‘char *’ but argument is of type ‘const char *’
+ t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+                           ~~~~~~^~~~
+m20_sys.c:607:26: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  cptr = skip_spaces (cptr+1);  /* next char */
+                      ~~~~^~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+ char *skip_spaces (char *p)
+                    ~~~~~~^
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_eng.o m20_eng.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_drm.o m20_drm.c
+m20_drm.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+         &drum_attach, &drum_detach, NULL,
+         ^
+m20_drm.c:97:9: note: (near initialization for ‘drum_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_cd.o m20_cd.c
+m20_cd.c:119:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:119:81: note: (near initialization for ‘cdr_mod[0].valid’)
+m20_cd.c:120:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:120:81: note: (near initialization for ‘cdr_mod[1].valid’)
+m20_cd.c:128:16: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+     &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+                ^
+m20_cd.c:128:16: note: (near initialization for ‘cdr_dev.attach’)
+m20_cd.c:152:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:152:81: note: (near initialization for ‘cdp_mod[0].valid’)
+m20_cd.c:153:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:153:81: note: (near initialization for ‘cdp_mod[1].valid’)
+m20_cd.c:161:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+     NULL, &cdp_attach, &cdp_detach, NULL,
+           ^
+m20_cd.c:161:11: note: (near initialization for ‘cdp_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_mt.o m20_mt.c
+m20_mt.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+         &mt_attach, &mt_detach, NULL,
+         ^
+m20_mt.c:97:9: note: (near initialization for ‘mt_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_lp.o m20_lp.c
+m20_lp.c:103:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+     NULL, &lpt_attach, &lpt_detach, NULL,
+           ^
+m20_lp.c:103:11: note: (near initialization for ‘lpt_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o scp.o scp.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_console.o sim_console.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_tape.o sim_tape.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_timer.o sim_timer.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_tmxr.o sim_tmxr.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_sock.o sim_sock.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_serial.o sim_serial.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_disk.o sim_disk.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_fio.o sim_fio.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_ether.o sim_ether.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_imd.o sim_imd.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_video.o sim_video.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_frontpanel.o sim_frontpanel.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_scsi.o sim_scsi.c
+cc   -o m20 m20_cpu.o m20_sys.o m20_eng.o m20_drm.o m20_cd.o m20_mt.o m20_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cpu.o m20_cpu.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_sys.o m20_sys.c
+m20_sys.c: In function ‘sim_load’:
+m20_sys.c:393:48: warning: passing argument 2 of ‘m20_abs_mem_dump’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+                                                ^~~~
+m20_sys.c:357:43: note: expected ‘char *’ but argument is of type ‘const char *’
+ t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+                                     ~~~~~~^~~~~
+m20_sys.c: In function ‘m20_parse_offset’:
+m20_sys.c:505:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     cptr = get_glyph (cptr, gbuf, 0); /* get address */
+          ^
+m20_sys.c:506:35: warning: passing argument 2 of ‘strtotv’ from incompatible pointer type [-Wincompatible-pointer-types]
+     *offset = (int)strtotv (gbuf, &tptr, 8);
+                                   ^~~~~
+In file included from sim_defs.h:1088,
+                 from m20_defs.h:23,
+                 from m20_sys.c:36:
+scp.h:189:49: note: expected ‘const char **’ but argument is of type ‘char **’
+ t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+m20_sys.c: In function ‘parse_instruction’:
+m20_sys.c:552:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     cptr = get_glyph (cptr, gbuf, 0);  /* get opcode */
+          ^
+m20_sys.c: In function ‘parse_sym’:
+m20_sys.c:598:25: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     cptr = skip_spaces (cptr);   /* absorb spaces */
+                         ^~~~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+ char *skip_spaces (char *p)
+                    ~~~~~~^
+m20_sys.c:599:30: warning: passing argument 1 of ‘parse_instruction’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+     if (! parse_instruction (cptr, val, sw)) /* symbolic parse? */
+                              ^~~~
+m20_sys.c:547:33: note: expected ‘char *’ but argument is of type ‘const char *’
+ t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+                           ~~~~~~^~~~
+m20_sys.c:607:26: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  cptr = skip_spaces (cptr+1);  /* next char */
+                      ~~~~^~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+ char *skip_spaces (char *p)
+                    ~~~~~~^
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20_rus.o m20_rus.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_drm.o m20_drm.c
+m20_drm.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+         &drum_attach, &drum_detach, NULL,
+         ^
+m20_drm.c:97:9: note: (near initialization for ‘drum_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cd.o m20_cd.c
+m20_cd.c:119:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:119:81: note: (near initialization for ‘cdr_mod[0].valid’)
+m20_cd.c:120:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:120:81: note: (near initialization for ‘cdr_mod[1].valid’)
+m20_cd.c:128:16: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+     &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+                ^
+m20_cd.c:128:16: note: (near initialization for ‘cdr_dev.attach’)
+m20_cd.c:152:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:152:81: note: (near initialization for ‘cdp_mod[0].valid’)
+m20_cd.c:153:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(struct UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+     { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+                                                                                 ^
+m20_cd.c:153:81: note: (near initialization for ‘cdp_mod[1].valid’)
+m20_cd.c:161:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+     NULL, &cdp_attach, &cdp_detach, NULL,
+           ^
+m20_cd.c:161:11: note: (near initialization for ‘cdp_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_mt.o m20_mt.c
+m20_mt.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+         &mt_attach, &mt_detach, NULL,
+         ^
+m20_mt.c:97:9: note: (near initialization for ‘mt_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_lp.o m20_lp.c
+m20_lp.c:103:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(struct UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(struct UNIT *, char *)’} [-Wincompatible-pointer-types]
+     NULL, &lpt_attach, &lpt_detach, NULL,
+           ^
+m20_lp.c:103:11: note: (near initialization for ‘lpt_dev.attach’)
+cc   -o m20ru m20ru_cpu.o m20ru_sys.o m20_rus.o m20ru_drm.o m20ru_cd.o m20ru_mt.o m20ru_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o code2pcard.o code2pcard.c
+cc   -o code2pcard code2pcard.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX  -Foautocode_m20.obj autocode_m20.c
+autocode_m20.c: In function ‘process_tables_file’:
+autocode_m20.c:575:20: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+                    strncpy( p_sym_tables->sym_op_instr_table[ops_num].short_op_name, temp_buf, slen );
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:570:27: note: length computed here
+                    slen = strlen(temp_buf);
+                           ^~~~~~~~~~~~~~~~
+autocode_m20.c:576:20: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+                    strncpy( p_sym_tables->sym_op_instr_table[ops_num].long_op_name, temp_buf_2, slen2 );
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:572:27: note: length computed here
+                    slen2 =strlen(temp_buf_2);
+                           ^~~~~~~~~~~~~~~~~~
+autocode_m20.c:538:16: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+                strncpy( p_sym_tables->pseudo_op_table[ps_ops_num].pseudo_op_name, temp_buf, slen );
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:535:23: note: length computed here
+                slen = strlen(temp_buf);
+                       ^~~~~~~~~~~~~~~~
+autocode_m20.c:511:16: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+                strncpy( p_sym_tables->messages_table[messages_num].msg_text, temp_buf, slen );
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:508:23: note: length computed here
+                slen = strlen(temp_buf);
+                       ^~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘parse_input_assembly_file’:
+autocode_m20.c:1057:10: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+          strncpy( parsed_lines_array[i].cleaned_text_line, temp_buf, slen );
+          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:1056:17: note: length computed here
+          slen = strlen(temp_buf);
+                 ^~~~~~~~~~~~~~~~
+autocode_m20.c:1160:12: warning: ‘strncpy’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+            strncpy( parsed_lines_array[i].label_name, parsed_lines_array[i].lexical_word_array[k].lex_word_value, slen-1);
+            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:1155:16: note: length computed here
+         slen = strlen(parsed_lines_array[i].lexical_word_array[k].lex_word_value);
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc   -o autocode_m20 autocode_m20.o -lm -lrt -lpthread 
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o dump_drm.o dump_drm.c
+cc   -o dump_drm dump_drm.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o dump_mt.o dump_mt.c
+cc   -o dump_mt dump_mt.o -lm -lrt -lpthread

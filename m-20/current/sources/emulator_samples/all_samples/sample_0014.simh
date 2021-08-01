@@ -1,0 +1,32 @@
+; Программа записи ИС-2, ПТХ, СП 05,13,42 на МБ 1,3
+; (2014 Стефанков)
+;
+! del sample_0014_debug.txt
+;
+set console debug=sample_0014_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+! del sample_0014.drum0
+! del sample_0014.drum1
+! del sample_0014.drum2
+att drum0 sample_0014.drum0
+att drum1 sample_0014.drum1
+att drum2 sample_0014.drum2
+;
+;
+load sample_0014.m20
+;
+ex 100-117
+echo
+ex -m 100-117
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+quit

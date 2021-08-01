@@ -1,0 +1,27 @@
+; Пример сложения 2+2. Стефанков Д.В.
+; Использование отладочных опций эмулятора М-20
+;
+! del debug_demo.txt
+;
+set console debug=debug_demo.txt
+set cpu debug
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;
+load debug_demo.m20
+;
+ex 20-23
+echo 
+ex 30-31
+echo
+ex -m 30-31
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 20-23
+echo
+quit

@@ -1,0 +1,81 @@
+; Вычисление коэффициентов связи альтернативных признаков
+; Шифр: КОКОН
+; [1972 Программы для ЭЦВМ БЭСМ-4 (ВСЕГЕИ)] стр. 13-21
+; (использует готовые образы МБ из is3_build, с использованием ИС-2 и СПП)
+; (Стефанков 2015)
+;
+! del sample_0100_debug.txt
+! del sample_0100.lst
+! del sample_0100.cdp
+;
+set console debug=sample_0100_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+set cdr extfmt
+;
+;de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+de ARITHMETIC_OP_DEBUG 1
+de SKIP_STOP_57 1
+;
+;de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+;de DPTYPE 4
+att lpt   sample_0100.lst
+;
+attach cdp sample_0100.cdp
+;
+de DRUM_MAP_CHECK 1
+de LOG_DRUM_1_MAP 0
+de LOG_DRUM_0_MAP 1
+de DRUM_0_ACCESS_MODE 3
+;
+att drum0 sample_0100.drum0
+;att drum1 sample_0100.drum1
+;att drum2 sample_0100.drum2
+;
+att -r cdr sample_0100.cdr
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de ROUNDING_UP_ON 0
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+;load sample_0100.m20
+;
+echo Boot
+boot cdr
+;
+ex 0-12
+echo
+ex -m 1-11
+echo
+;echo Run
+;run
+show queue
+show time
+;show throttle
+ex 0-12
+echo
+ex 500-511
+echo
+ex -m 1-11
+echo
+ex 100-211
+echo
+ex -m 100-211
+echo
+quit

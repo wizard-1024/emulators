@@ -1,0 +1,20 @@
+; Пример вычитания 2-2. Стефанков Д.В.
+;
+de ARITHMETIC_OP_DEBUG 1
+;
+load hello1.m20
+;
+ex 20-23
+echo 
+ex 30-31
+echo
+ex -m 30-31
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 20-23
+echo
+quit

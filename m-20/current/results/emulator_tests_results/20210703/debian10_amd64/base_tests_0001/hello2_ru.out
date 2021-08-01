@@ -1,0 +1,54 @@
+
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+/root/work/emulators/20210703/base_tests_0001/hello2.simh-3> ! del hello2.lst
+Error 32512
+LPT     
+        not attached, no new output format , no octal help format 
+LPTWIDTH:	7
+LPTWIDTH:	1
+DPTYPE:	4
+DPTYPE:	2
+LPT     
+        not attached, no new output format , octal help format 
+/root/work/emulators/20210703/base_tests_0001/hello2.simh-18> att lpt hello2.lst
+LPT: creating new file
+20:	1 01 4000 0000 0000
+21:	1 02 4000 0000 0000
+22:	1 02 6000 0000 0000
+23:	1 00 0000 0000 0000
+24:	1 00 0000 0000 0000
+25:	0 00 0000 0000 0000
+
+30:	0 05 0020 0021 0023
+31:	0 04 0023 0022 0024
+32:	0 50 2100 0000 0025
+33:	0 70 0020 0000 0000
+
+30:	[op=05 mod=0] умнож_он                0020, 0021, 0023
+31:	[op=04 mod=0] делен_о                  0023, 0022, 0024
+32:	[op=50 mod=0] ввод_пред_050          2100, 0000, 0025
+33:	[op=70 mod=0] ввод_исп_070            0020, 0000, 0000
+
+Start
+
+*** Command time profile stat ***
+opcode=04   count=1          times=136.50           avg_time=136.50            (делен_о)
+opcode=05   count=1          times=69.50            avg_time=69.50             (умнож_он)
+opcode=50   count=1          times=24.00            avg_time=24.00             (ввод_пред_050)
+opcode=70   count=1          times=300024.00        avg_time=300024.00         (ввод_исп_070)
+opcode=77   count=1          times=24.00            avg_time=24.00             (останов_077)
+Summary:  times=300278.00  count=5  avg_time=60055.60
+**********
+
+
+Останов, KRA: 0034 ([op=77 mod=0] останов_077             0000, 0000, 0000)
+M-20 event queue empty, time = 350023, executing 5,000,000 instructions/sec
+Time:	350023
+20:	1 01 4000 0000 0000
+21:	1 02 4000 0000 0000
+22:	1 02 6000 0000 0000
+23:	1 02 4000 0000 0000
+24:	1 00 5252 5252 5252
+25:	0 00 0000 0000 0000
+
+Goodbye

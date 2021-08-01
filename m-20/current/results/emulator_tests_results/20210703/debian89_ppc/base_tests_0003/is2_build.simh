@@ -1,0 +1,124 @@
+; Программа записи ИС-2, ПТХ, ССП  на МБ 
+; ССП 05,13,42 и так далее
+; (2014 Стефанков)
+;
+! del is2_build_debug.txt
+! del is2_build.lst
+! del is2_build.drum0
+! del is2_build.drum1
+! del is2_build.drum2
+;
+set console debug=is2_build_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+de LPTWIDTH 1
+de DPTYPE 2
+;set lpt OCTHELPFMT
+att lpt is2_build.lst
+;
+att drum0 is2_build.drum0
+att drum1 is2_build.drum1
+att drum2 is2_build.drum2
+;
+;
+load is2.m20
+load is2_build.m20
+;
+ex 100-377
+echo
+ex -m 100-377
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+;
+echo СП 5 (sin x)
+ex -m 400-424
+echo
+echo СП 13 (тест печати)
+ex -m 440-471
+echo
+echo СП 42 (перевод массива в двоичную систему)
+ex -m 500-535
+echo
+echo СП 27 (печать с десятичным переводом и сохранением двоичной записи)
+ex -m 550-661
+echo
+echo СП 02 (перевод 10 -> 2)
+ex -m 700-726
+echo
+echo СП 10 (перевод 2 -> 10)
+ex -m 740-765
+echo
+echo СП 32 (умножение диагональной матрицы на вектор)
+ex -m 1000-1015
+echo
+echo СП 03 (e^x)
+ex -m 1030-1054
+echo
+echo СП 04 (ln x)
+ex -m 1070-1122
+echo
+echo СП 11 (tg x)
+ex -m 1140-1165
+echo
+echo СП 01 (x^y)
+ex -m 1200-1263
+echo
+echo СП 06 (arcsin x)
+ex -m 1310-1334
+echo
+echo СП 12 (arctg x)
+ex -m 1350-1376
+echo
+echo СП 30 (печать с десятичным переводом без сохранения двоичной записи)
+ex -m 1410-1527
+echo
+echo СП 43 (перевод материала в десятичную систему и вывод на печать без теста печати)
+ex -m 1540-1611
+echo
+echo СП 36 (умножение матриц)
+ex -m 1630-1673
+echo
+echo СП 33 (умножение матрицы на вектор)
+ex -m 1710-1736
+echo
+echo СП 34 (умножение матрицы на диагональную матрицу)
+ex -m 1750-1773
+echo
+echo СП 35 (умножение диагональной матрицы на матрицу)
+ex -m 2010-2034
+echo
+echo СП 37 (обращение матрицы методом Жордана)
+ex -m 2050-2270
+echo
+echo СП 00 (программа обмена)
+ex -m 2310-2356
+echo
+echo СП 15 (печать более 510 кодов)
+ex -m 2370-2454
+echo
+echo СП 16 (перфорация более 510 кодов)
+ex -m 2470-2526
+echo
+echo СП 40 (перевод в десятичную систему и перфорация)
+ex -m 2540-2657
+echo
+echo СП 07 (выдача восьмеричных кодов на десятичную печать с возможностью изменения их нумерации)
+ex -m 2670-2730
+echo
+echo СП 47 (выдача восьмеричных кодов на десятичную печать)
+ex -m 2740-2775
+echo
+echo СП 50 (перестановка стандартных программ)
+ex -m 3000-3247
+echo
+;
+quit

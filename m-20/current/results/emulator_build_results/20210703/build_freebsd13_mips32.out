@@ -1,0 +1,112 @@
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_cpu.o m20_cpu.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_sys.o m20_sys.c
+m20_sys.c: In function 'sim_load':
+m20_sys.c:393: warning: passing argument 2 of 'm20_abs_mem_dump' discards qualifiers from pointer target type
+m20_sys.c: In function 'm20_parse_offset':
+m20_sys.c:505: warning: assignment discards qualifiers from pointer target type
+m20_sys.c:506: warning: passing argument 2 of 'strtotv' from incompatible pointer type
+m20_sys.c: In function 'parse_instruction':
+m20_sys.c:552: warning: assignment discards qualifiers from pointer target type
+m20_sys.c: In function 'parse_sym':
+m20_sys.c:598: warning: passing argument 1 of 'skip_spaces' discards qualifiers from pointer target type
+m20_sys.c:599: warning: passing argument 1 of 'parse_instruction' discards qualifiers from pointer target type
+m20_sys.c:607: warning: passing argument 1 of 'skip_spaces' discards qualifiers from pointer target type
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_eng.o m20_eng.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_drm.o m20_drm.c
+m20_drm.c:97: warning: initialization from incompatible pointer type
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_cd.o m20_cd.c
+m20_cd.c:119: warning: initialization from incompatible pointer type
+m20_cd.c:120: warning: initialization from incompatible pointer type
+m20_cd.c:128: warning: initialization from incompatible pointer type
+m20_cd.c:152: warning: initialization from incompatible pointer type
+m20_cd.c:153: warning: initialization from incompatible pointer type
+m20_cd.c:161: warning: initialization from incompatible pointer type
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_mt.o m20_mt.c
+m20_mt.c:97: warning: initialization from incompatible pointer type
+cc -c -O2 -DUSE_INT64  -D_UNIX -o m20_lp.o m20_lp.c
+m20_lp.c:103: warning: initialization from incompatible pointer type
+cc -c -O2 -DUSE_INT64  -D_UNIX -o scp.o scp.c
+scp.c:837: warning: integer constant is too large for 'long' type
+scp.c:837: warning: integer constant is too large for 'long' type
+scp.c:837: warning: integer constant is too large for 'long' type
+scp.c:837: warning: integer constant is too large for 'long' type
+scp.c:838: warning: integer constant is too large for 'long' type
+scp.c:838: warning: integer constant is too large for 'long' type
+scp.c:838: warning: integer constant is too large for 'long' type
+scp.c:838: warning: integer constant is too large for 'long' type
+scp.c:839: warning: integer constant is too large for 'long' type
+scp.c:839: warning: integer constant is too large for 'long' type
+scp.c:839: warning: integer constant is too large for 'long' type
+scp.c:839: warning: integer constant is too large for 'long' type
+scp.c:840: warning: integer constant is too large for 'long' type
+scp.c:840: warning: integer constant is too large for 'long' type
+scp.c:840: warning: integer constant is too large for 'long' type
+scp.c:840: warning: integer constant is too large for 'long' type
+scp.c:841: warning: integer constant is too large for 'long' type
+scp.c:841: warning: integer constant is too large for 'long' type
+scp.c:841: warning: integer constant is too large for 'long' type
+scp.c:841: warning: integer constant is too large for 'long' type
+scp.c:842: warning: integer constant is too large for 'long' type
+scp.c:842: warning: integer constant is too large for 'long' type
+scp.c:842: warning: integer constant is too large for 'long' type
+scp.c:842: warning: integer constant is too large for 'long' type
+scp.c:843: warning: integer constant is too large for 'long' type
+scp.c:843: warning: integer constant is too large for 'long' type
+scp.c:844: warning: integer constant is too large for 'long' type
+scp.c:844: warning: integer constant is too large for 'long' type
+scp.c:845: warning: integer constant is too large for 'long' type
+scp.c:845: warning: integer constant is too large for 'long' type
+scp.c:846: warning: integer constant is too large for 'long' type
+scp.c:846: warning: integer constant is too large for 'long' type
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_console.o sim_console.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_tape.o sim_tape.c
+sim_tape.c: In function 'sim_tape_tpc_map':
+sim_tape.c:3383: warning: comparison is always false due to limited range of data type
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_timer.o sim_timer.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_tmxr.o sim_tmxr.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_sock.o sim_sock.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_serial.o sim_serial.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_disk.o sim_disk.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_fio.o sim_fio.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_ether.o sim_ether.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_imd.o sim_imd.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_video.o sim_video.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_frontpanel.o sim_frontpanel.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -o sim_scsi.o sim_scsi.c
+cc   -o m20 m20_cpu.o m20_sys.o m20_eng.o m20_drm.o m20_cd.o m20_mt.o  m20_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o  sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o  sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cpu.o m20_cpu.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_sys.o m20_sys.c
+m20_sys.c: In function 'sim_load':
+m20_sys.c:393: warning: passing argument 2 of 'm20_abs_mem_dump' discards qualifiers from pointer target type
+m20_sys.c: In function 'm20_parse_offset':
+m20_sys.c:505: warning: assignment discards qualifiers from pointer target type
+m20_sys.c:506: warning: passing argument 2 of 'strtotv' from incompatible pointer type
+m20_sys.c: In function 'parse_instruction':
+m20_sys.c:552: warning: assignment discards qualifiers from pointer target type
+m20_sys.c: In function 'parse_sym':
+m20_sys.c:598: warning: passing argument 1 of 'skip_spaces' discards qualifiers from pointer target type
+m20_sys.c:599: warning: passing argument 1 of 'parse_instruction' discards qualifiers from pointer target type
+m20_sys.c:607: warning: passing argument 1 of 'skip_spaces' discards qualifiers from pointer target type
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20_rus.o m20_rus.c
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_drm.o m20_drm.c
+m20_drm.c:97: warning: initialization from incompatible pointer type
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cd.o m20_cd.c
+m20_cd.c:119: warning: initialization from incompatible pointer type
+m20_cd.c:120: warning: initialization from incompatible pointer type
+m20_cd.c:128: warning: initialization from incompatible pointer type
+m20_cd.c:152: warning: initialization from incompatible pointer type
+m20_cd.c:153: warning: initialization from incompatible pointer type
+m20_cd.c:161: warning: initialization from incompatible pointer type
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_mt.o m20_mt.c
+m20_mt.c:97: warning: initialization from incompatible pointer type
+cc -c -O2 -DUSE_INT64  -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_lp.o m20_lp.c
+m20_lp.c:103: warning: initialization from incompatible pointer type
+cc   -o m20ru m20ru_cpu.o m20ru_sys.o m20_rus.o m20ru_drm.o m20ru_cd.o  m20ru_mt.o m20ru_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o  sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o  sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -o code2pcard.o code2pcard.c
+cc   -o code2pcard code2pcard.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX  -Foautocode_m20.obj autocode_m20.c
+cc   -o autocode_m20 autocode_m20.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -o dump_drm.o dump_drm.c
+cc   -o dump_drm dump_drm.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64  -D_UNIX -o dump_mt.o dump_mt.c
+cc   -o dump_mt dump_mt.o -lm -lrt -lpthread

@@ -1,0 +1,50 @@
+; Пример программы, Стефанков Д.В.
+;
+! del sample_0051_debug.txt
+! del sample_0051.lst
+;
+set console debug=sample_0051_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+;
+;de USE_NEW_MATH 0
+;de ENABLE_LEAD_ZEROES_ROUND_MATH 0
+;
+;
+show lpt
+ex LPTWIDTH
+de LPTWIDTH 1
+ex LPTWIDTH
+ex DPTYPE 
+;de DPTYPE 0
+;de DPTYPE 1
+;de DPTYPE 2
+de DPTYPE 3
+ex DPTYPE 
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+show lpt
+att lpt sample_0051.lst
+;
+load sample_0051.m20
+;
+ex 20-21
+echo
+ex 30-32
+echo
+ex 100-112
+echo
+ex -m 100-112
+echo
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 20-21
+echo
+ex 30-32
+quit

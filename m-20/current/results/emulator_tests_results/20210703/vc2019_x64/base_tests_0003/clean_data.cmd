@@ -1,0 +1,12 @@
+del *.lst 
+del *.out 
+del *.cdp 
+del *.err 
+del *.txt
+del *.mt0
+del *.mt1
+del *.mt2
+del *.mt3
+del *.drum0
+del *.drum1
+del *.drum2

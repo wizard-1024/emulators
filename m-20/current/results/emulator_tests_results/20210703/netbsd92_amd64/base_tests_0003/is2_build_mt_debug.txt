@@ -1,0 +1,4007 @@
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-15> set console debug=is2_build_mt_debug.txt
+Debug output to "is2_build_mt_debug.txt"
+Debug output to "is2_build_mt_debug.txt" at Sun Jul  4 00:33:15 2021
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+lpt: lpt_attach(..)
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-26> att lpt is2_build_mt.lst
+LPT: creating new file
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-28> att mt0 is2_build_mt.mt0
+MT0: creating new file
+mt: mt_attach(..), name='is2_build_mt.mt0' res=0
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-29> att mt1 is2_build_mt.mt1
+MT1: creating new file
+mt: mt_attach(..), name='is2_build_mt.mt1' res=0
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-30> att mt2 is2_build_mt.mt2
+MT2: creating new file
+mt: mt_attach(..), name='is2_build_mt.mt2' res=0
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-31> att mt3 is2_build_mt.mt3
+MT3: creating new file
+mt: mt_attach(..), name='is2_build_mt.mt3' res=0
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-33> att drum0 is2_build_mt.drum0
+DRUM0: creating new file
+drm: drum_attach(..), name='is2_build_mt.drum0' res=0
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-34> att drum1 is2_build_mt.drum1
+DRUM1: creating new file
+drm: drum_attach(..), name='is2_build_mt.drum1' res=0
+/root/work/emulators/20210703/base_tests_0003/is2_build_mt.simh-35> att drum2 is2_build_mt.drum2
+DRUM2: creating new file
+drm: drum_attach(..), name='is2_build_mt.drum2' res=0
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0100: [op=52 mod=0] изм_ра_по_адр        0000, 0000, 0000
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0001
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=0
+mt: format_tape(): last_fmt_pos=0
+mt: format_tape(): last_exp_pos=1552 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0002
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=1552
+mt: format_tape(): last_fmt_pos=1552
+mt: format_tape(): last_exp_pos=3104 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0003
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=3104
+mt: format_tape(): last_fmt_pos=3104
+mt: format_tape(): last_exp_pos=4656 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0004
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=4656
+mt: format_tape(): last_fmt_pos=4656
+mt: format_tape(): last_exp_pos=6208 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0005
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=6208
+mt: format_tape(): last_fmt_pos=6208
+mt: format_tape(): last_exp_pos=7760 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0006
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=7760
+mt: format_tape(): last_fmt_pos=7760
+mt: format_tape(): last_exp_pos=9312 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0007
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=9312
+mt: format_tape(): last_fmt_pos=9312
+mt: format_tape(): last_exp_pos=10864 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0010
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=10864
+mt: format_tape(): last_fmt_pos=10864
+mt: format_tape(): last_exp_pos=12416 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0011
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=12416
+mt: format_tape(): last_fmt_pos=12416
+mt: format_tape(): last_exp_pos=13968 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0012
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=13968
+mt: format_tape(): last_fmt_pos=13968
+mt: format_tape(): last_exp_pos=15520 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0013
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=15520
+mt: format_tape(): last_fmt_pos=15520
+mt: format_tape(): last_exp_pos=17072 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0014
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=17072
+mt: format_tape(): last_fmt_pos=17072
+mt: format_tape(): last_exp_pos=18624 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0015
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=18624
+mt: format_tape(): last_fmt_pos=18624
+mt: format_tape(): last_exp_pos=20176 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0016
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=20176
+mt: format_tape(): last_fmt_pos=20176
+mt: format_tape(): last_exp_pos=21728 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0017
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=21728
+mt: format_tape(): last_fmt_pos=21728
+mt: format_tape(): last_exp_pos=23280 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0020
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=23280
+mt: format_tape(): last_fmt_pos=23280
+mt: format_tape(): last_exp_pos=24832 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0021
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=24832
+mt: format_tape(): last_fmt_pos=24832
+mt: format_tape(): last_exp_pos=26384 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0022
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=26384
+mt: format_tape(): last_fmt_pos=26384
+mt: format_tape(): last_exp_pos=27936 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0023
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=27936
+mt: format_tape(): last_fmt_pos=27936
+mt: format_tape(): last_exp_pos=29488 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0024
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=29488
+mt: format_tape(): last_fmt_pos=29488
+mt: format_tape(): last_exp_pos=31040 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0025
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=31040
+mt: format_tape(): last_fmt_pos=31040
+mt: format_tape(): last_exp_pos=32592 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0026
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=32592
+mt: format_tape(): last_fmt_pos=32592
+mt: format_tape(): last_exp_pos=34144 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0027
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=34144
+mt: format_tape(): last_fmt_pos=34144
+mt: format_tape(): last_exp_pos=35696 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0030
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=35696
+mt: format_tape(): last_fmt_pos=35696
+mt: format_tape(): last_exp_pos=37248 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0031
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=37248
+mt: format_tape(): last_fmt_pos=37248
+mt: format_tape(): last_exp_pos=38800 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0032
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=38800
+mt: format_tape(): last_fmt_pos=38800
+mt: format_tape(): last_exp_pos=40352 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0033
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=40352
+mt: format_tape(): last_fmt_pos=40352
+mt: format_tape(): last_exp_pos=41904 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0034
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=41904
+mt: format_tape(): last_fmt_pos=41904
+mt: format_tape(): last_exp_pos=43456 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0035
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=43456
+mt: format_tape(): last_fmt_pos=43456
+mt: format_tape(): last_exp_pos=45008 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0036
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=45008
+mt: format_tape(): last_fmt_pos=45008
+mt: format_tape(): last_exp_pos=46560 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0037
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=46560
+mt: format_tape(): last_fmt_pos=46560
+mt: format_tape(): last_exp_pos=48112 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0040
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=48112
+mt: format_tape(): last_fmt_pos=48112
+mt: format_tape(): last_exp_pos=49664 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0041
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=49664
+mt: format_tape(): last_fmt_pos=49664
+mt: format_tape(): last_exp_pos=51216 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0042
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=51216
+mt: format_tape(): last_fmt_pos=51216
+mt: format_tape(): last_exp_pos=52768 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0043
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=52768
+mt: format_tape(): last_fmt_pos=52768
+mt: format_tape(): last_exp_pos=54320 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0044
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=54320
+mt: format_tape(): last_fmt_pos=54320
+mt: format_tape(): last_exp_pos=55872 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0045
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=55872
+mt: format_tape(): last_fmt_pos=55872
+mt: format_tape(): last_exp_pos=57424 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0046
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=57424
+mt: format_tape(): last_fmt_pos=57424
+mt: format_tape(): last_exp_pos=58976 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0047
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=58976
+mt: format_tape(): last_fmt_pos=58976
+mt: format_tape(): last_exp_pos=60528 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0050
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=60528
+mt: format_tape(): last_fmt_pos=60528
+mt: format_tape(): last_exp_pos=62080 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0051
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=62080
+mt: format_tape(): last_fmt_pos=62080
+mt: format_tape(): last_exp_pos=63632 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0052
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=63632
+mt: format_tape(): last_fmt_pos=63632
+mt: format_tape(): last_exp_pos=65184 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0053
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=65184
+mt: format_tape(): last_fmt_pos=65184
+mt: format_tape(): last_exp_pos=66736 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0054
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=66736
+mt: format_tape(): last_fmt_pos=66736
+mt: format_tape(): last_exp_pos=68288 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0055
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=68288
+mt: format_tape(): last_fmt_pos=68288
+mt: format_tape(): last_exp_pos=69840 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0056
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=69840
+mt: format_tape(): last_fmt_pos=69840
+mt: format_tape(): last_exp_pos=71392 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0057
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=71392
+mt: format_tape(): last_fmt_pos=71392
+mt: format_tape(): last_exp_pos=72944 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0060
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=72944
+mt: format_tape(): last_fmt_pos=72944
+mt: format_tape(): last_exp_pos=74496 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0061
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=74496
+mt: format_tape(): last_fmt_pos=74496
+mt: format_tape(): last_exp_pos=76048 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0062
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=76048
+mt: format_tape(): last_fmt_pos=76048
+mt: format_tape(): last_exp_pos=77600 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0063
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=77600
+mt: format_tape(): last_fmt_pos=77600
+mt: format_tape(): last_exp_pos=79152 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0064
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=79152
+mt: format_tape(): last_fmt_pos=79152
+mt: format_tape(): last_exp_pos=80704 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0065
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=80704
+mt: format_tape(): last_fmt_pos=80704
+mt: format_tape(): last_exp_pos=82256 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0066
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=82256
+mt: format_tape(): last_fmt_pos=82256
+mt: format_tape(): last_exp_pos=83808 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0067
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=83808
+mt: format_tape(): last_fmt_pos=83808
+mt: format_tape(): last_exp_pos=85360 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0070
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=85360
+mt: format_tape(): last_fmt_pos=85360
+mt: format_tape(): last_exp_pos=86912 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0071
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=86912
+mt: format_tape(): last_fmt_pos=86912
+mt: format_tape(): last_exp_pos=88464 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0072
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=88464
+mt: format_tape(): last_fmt_pos=88464
+mt: format_tape(): last_exp_pos=90016 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0073
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=90016
+mt: format_tape(): last_fmt_pos=90016
+mt: format_tape(): last_exp_pos=91568 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0074
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=91568
+mt: format_tape(): last_fmt_pos=91568
+mt: format_tape(): last_exp_pos=93120 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0075
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=93120
+mt: format_tape(): last_fmt_pos=93120
+mt: format_tape(): last_exp_pos=94672 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0076
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=94672
+mt: format_tape(): last_fmt_pos=94672
+mt: format_tape(): last_exp_pos=96224 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0077
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=96224
+mt: format_tape(): last_fmt_pos=96224
+mt: format_tape(): last_exp_pos=97776 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0100
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=97776
+mt: format_tape(): last_fmt_pos=97776
+mt: format_tape(): last_exp_pos=99328 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0101
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=99328
+mt: format_tape(): last_fmt_pos=99328
+mt: format_tape(): last_exp_pos=100880 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0102
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=100880
+mt: format_tape(): last_fmt_pos=100880
+mt: format_tape(): last_exp_pos=102432 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0103
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=102432
+mt: format_tape(): last_fmt_pos=102432
+mt: format_tape(): last_exp_pos=103984 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0101: [op=50 mod=2] ввод_пред_050          4043, @+0001, 0300
+cpu: 0102: [op=70 mod=0] ввод_исп_070            0000, 0000, 0000
+cpu: ext_io_op=4043
+mt: format_tape(..), user_mt_no=3,user_first=0000,user_last=0300
+mt: format_tape(..), mt_no=3 user_mt_no=3
+mt: format_tape(..), tape_access_mode_array[0]=7
+mt: format_tape(..), tape_access_mode_array[1]=7
+mt: format_tape(..), tape_access_mode_array[2]=7
+mt: format_tape(..), tape_access_mode_array[3]=7
+mt: format_tape(..), tape_access_mode_array[4]=7
+mt: format_tape(): no_mosu_access=1
+mt: format_tape(): codes_group_size=0300
+mt: format_tape(): new codes_group_size=0300
+mt: format_tape(): zone_num=0104
+mt: format_tape(): get tape length
+mt: format_tape(): tape_length=103984
+mt: format_tape(): last_fmt_pos=103984
+mt: format_tape(): last_exp_pos=105536 (max_mt_userdata_size=600000)
+mt: format_tape(): write_count=0001
+mt: format_tape(): write zone data or zeroes
+mt: format_tape(): chksum=000000000000000
+mt: format_tape(): write_count=0001
+cpu: err=0 codes_num=0302
+cpu: 0103: [op=12 mod=1] пер_если_ра_мнш_a1 0103, 0101, @+0001
+cpu: 0104: [op=50 mod=0] ввод_пред_050          0027, 0001, 7767
+cpu: 0105: [op=70 mod=0] ввод_исп_070            7500, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00001,7500,7767,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): matching_zone_found (1==1)
+mt: mt_write(): userwords=184, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=8, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=533773610545717
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0272 sum=533773610545717
+cpu: 0106: [op=50 mod=0] ввод_пред_050          0017, 7600, 7277
+cpu: 0107: [op=70 mod=0] ввод_исп_070            7200, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,07600,7200,7277,..)
+drm: writing MD 07600 mem_region 7200-7277
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=31744
+drm: nwords=0100
+drm: write_count=0100
+drm: write_count=0001
+drm: chksum=015064204511454 (0x000000D1A212932C)
+drm: writing_done
+cpu: err=0, codes_num=0101 sum=015064204511454
+cpu: 0110: [op=50 mod=0] ввод_пред_050          0027, 0002, 7277
+cpu: 0111: [op=70 mod=0] ввод_исп_070            7200, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00002,7200,7277,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): matching_zone_found (2==2)
+mt: mt_write(): userwords=64, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=1560, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=015064204511454
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0404 sum=015064204511454
+cpu: 0112: [op=50 mod=0] ввод_пред_050          0027, 0003, 0424
+cpu: 0113: [op=70 mod=0] ввод_исп_070            0400, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00003,0400,0424,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): matching_zone_found (3==3)
+mt: mt_write(): userwords=21, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=3112, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=270361571164755
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=0633 sum=270361571164755
+cpu: 0114: [op=50 mod=0] ввод_пред_050          0027, 0004, 0471
+cpu: 0115: [op=70 mod=0] ввод_исп_070            0440, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00004,0440,0471,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): matching_zone_found (4==4)
+mt: mt_write(): userwords=26, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=4664, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=561167160736442
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=1142 sum=561167160736442
+cpu: 0116: [op=50 mod=0] ввод_пред_050          0027, 0005, 0535
+cpu: 0117: [op=70 mod=0] ввод_исп_070            0500, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00005,0500,0535,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): matching_zone_found (5==5)
+mt: mt_write(): userwords=30, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=6216, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=106315027015576
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=1450 sum=106315027015576
+cpu: 0120: [op=50 mod=0] ввод_пред_050          0027, 0006, 0661
+cpu: 0121: [op=70 mod=0] ввод_исп_070            0550, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00006,0550,0661,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): matching_zone_found (6==6)
+mt: mt_write(): userwords=74, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=7768, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=217715017163467
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=2026 sum=217715017163467
+cpu: 0122: [op=50 mod=0] ввод_пред_050          0027, 0007, 0726
+cpu: 0123: [op=70 mod=0] ввод_исп_070            0700, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00007,0700,0726,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): matching_zone_found (7==7)
+mt: mt_write(): userwords=23, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=9320, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=471243500625657
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=2245 sum=471243500625657
+cpu: 0124: [op=50 mod=0] ввод_пред_050          0027, 0010, 0765
+cpu: 0125: [op=70 mod=0] ввод_исп_070            0740, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00010,0740,0765,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): matching_zone_found (8==8)
+mt: mt_write(): userwords=22, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=10872, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=673032575506061
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=2546 sum=673032575506061
+cpu: 0126: [op=50 mod=0] ввод_пред_050          0027, 0011, 1015
+cpu: 0127: [op=70 mod=0] ввод_исп_070            1000, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00011,1000,1015,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): matching_zone_found (9==9)
+mt: mt_write(): userwords=14, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=12424, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=443405624704326
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=3040 sum=443405624704326
+cpu: 0130: [op=50 mod=0] ввод_пред_050          0027, 0012, 1054
+cpu: 0131: [op=70 mod=0] ввод_исп_070            1030, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00012,1030,1054,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): matching_zone_found (10==10)
+mt: mt_write(): userwords=21, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=13976, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=747323613334723
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=3351 sum=747323613334723
+cpu: 0132: [op=50 mod=0] ввод_пред_050          0027, 0013, 1122
+cpu: 0133: [op=70 mod=0] ввод_исп_070            1070, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00013,1070,1122,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): matching_zone_found (11==11)
+mt: mt_write(): userwords=27, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=15528, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=347536742161030
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=3661 sum=347536742161030
+cpu: 0134: [op=50 mod=0] ввод_пред_050          0027, 0014, 1165
+cpu: 0135: [op=70 mod=0] ввод_исп_070            1140, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00014,1140,1165,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): matching_zone_found (12==12)
+mt: mt_write(): userwords=22, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=17080, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=126041336100535
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=4156 sum=126041336100535
+cpu: 0136: [op=50 mod=0] ввод_пред_050          0027, 0015, 1263
+cpu: 0137: [op=70 mod=0] ввод_исп_070            1200, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00015,1200,1263,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): matching_zone_found (13==13)
+mt: mt_write(): userwords=52, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=18632, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=373476601665460
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=4516 sum=373476601665460
+cpu: 0140: [op=50 mod=0] ввод_пред_050          0027, 0016, 1334
+cpu: 0141: [op=70 mod=0] ввод_исп_070            1310, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00016,1310,1334,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): matching_zone_found (14==14)
+mt: mt_write(): userwords=21, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=20184, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=276737470370310
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=4761 sum=276737470370310
+cpu: 0142: [op=50 mod=0] ввод_пред_050          0027, 0017, 1376
+cpu: 0143: [op=70 mod=0] ввод_исп_070            1350, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00017,1350,1376,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): matching_zone_found (15==15)
+mt: mt_write(): userwords=23, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=21736, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=512150210372662
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=5265 sum=512150210372662
+cpu: 0144: [op=50 mod=0] ввод_пред_050          0027, 0020, 1527
+cpu: 0145: [op=70 mod=0] ввод_исп_070            1410, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00020,1410,1527,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): matching_zone_found (16==16)
+mt: mt_write(): userwords=80, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=23288, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=054774663405076
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=5660 sum=054774663405076
+cpu: 0146: [op=50 mod=0] ввод_пред_050          0027, 0021, 1611
+cpu: 0147: [op=70 mod=0] ввод_исп_070            1540, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00021,1540,1611,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): matching_zone_found (17==17)
+mt: mt_write(): userwords=42, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=24840, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=562202362354146
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=6114 sum=562202362354146
+cpu: 0150: [op=50 mod=0] ввод_пред_050          0027, 0022, 1673
+cpu: 0151: [op=70 mod=0] ввод_исп_070            1630, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00022,1630,1673,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=26384, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=18, cur_zone_size=192
+mt: mt_write(): matching_zone_found (18==18)
+mt: mt_write(): userwords=36, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=26392, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=325615267506676
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=6410 sum=325615267506676
+cpu: 0152: [op=50 mod=0] ввод_пред_050          0027, 0023, 1736
+cpu: 0153: [op=70 mod=0] ввод_исп_070            1710, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00023,1710,1736,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=26384, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=18, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=27936, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=19, cur_zone_size=192
+mt: mt_write(): matching_zone_found (19==19)
+mt: mt_write(): userwords=23, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=27944, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=150364026372424
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=6675 sum=150364026372424
+cpu: 0154: [op=50 mod=0] ввод_пред_050          0027, 0024, 1773
+cpu: 0155: [op=70 mod=0] ввод_исп_070            1750, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00024,1750,1773,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=26384, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=18, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=27936, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=19, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=29488, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=20, cur_zone_size=192
+mt: mt_write(): matching_zone_found (20==20)
+mt: mt_write(): userwords=20, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=29496, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=431211025210400
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=7174 sum=431211025210400
+cpu: 0156: [op=50 mod=0] ввод_пред_050          0027, 0025, 2034
+cpu: 0157: [op=70 mod=0] ввод_исп_070            2010, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00025,2010,2034,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=26384, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=18, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=27936, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=19, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=29488, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=20, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=31040, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=21, cur_zone_size=192
+mt: mt_write(): matching_zone_found (21==21)
+mt: mt_write(): userwords=21, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=31048, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=525171406336373
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=7477 sum=525171406336373
+cpu: 0160: [op=50 mod=0] ввод_пред_050          0027, 0026, 2270
+cpu: 0161: [op=70 mod=0] ввод_исп_070            2050, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00026,2050,2270,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=26384, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=18, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=27936, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=19, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=29488, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=20, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=31040, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=21, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=32592, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=22, cur_zone_size=192
+mt: mt_write(): matching_zone_found (22==22)
+mt: mt_write(): userwords=145, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=32600, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=333311656743670
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=10175 sum=333311656743670
+cpu: 0162: [op=50 mod=0] ввод_пред_050          0027, 0027, 2356
+cpu: 0163: [op=70 mod=0] ввод_исп_070            2310, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00027,2310,2356,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=26384, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=18, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=27936, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=19, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=29488, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=20, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=31040, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=21, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=32592, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=22, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=34144, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=23, cur_zone_size=192
+mt: mt_write(): matching_zone_found (23==23)
+mt: mt_write(): userwords=39, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=34152, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=760552523166746
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=10325 sum=760552523166746
+cpu: 0164: [op=50 mod=0] ввод_пред_050          0027, 0030, 2454
+cpu: 0165: [op=70 mod=0] ввод_исп_070            2370, 0000, 0000
+cpu: ext_io_op=0027
+mt: mt_tape_io(..), user_mt_no=3
+mt: mt_tape_io(..), mt_no=3 user_mt_no=3
+mt: mt_tape_io(..), tape_access_mode_array[0]=7
+mt: mt_tape_io(..), tape_access_mode_array[1]=7
+mt: mt_tape_io(..), tape_access_mode_array[2]=7
+mt: mt_tape_io(..), tape_access_mode_array[3]=7
+mt: mt_tape_io(..), tape_access_mode_array[4]=7
+mt: mt_write(3,00030,2370,2454,..)
+mt: write: no_mosu_access=0, disable_control=0
+mt: mt_write(): get tape length
+mt: mt_write(): rewind tape to beginning
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=1, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=1552, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=2, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=3104, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=3, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=4656, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=4, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=6208, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=5, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=7760, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=6, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=9312, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=7, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=10864, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=8, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=12416, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=9, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=13968, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=10, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=15520, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=11, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=17072, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=12, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=18624, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=13, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=20176, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=14, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=21728, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=15, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=23280, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=16, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=24832, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=17, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=26384, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=18, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=27936, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=19, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=29488, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=20, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=31040, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=21, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=32592, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=22, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=34144, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=23, cur_zone_size=192
+mt: mt_write(): read_data_zone_count=192
+mt: mt_write(): read_chksum_count=1
+mt: mt_write(): read_chksum_value=000000000000000
+mt: mt_write(): cur_tape_pos=35696, tape_len=105536
+mt: mt_write(): read_zone_num_count=1
+mt: mt_write(): cur_zone_num=24, cur_zone_size=192
+mt: mt_write(): matching_zone_found (24==24)
+mt: mt_write(): userwords=53, cur_zone_size=192
+mt: mt_write(): cur_tape_pos=35704, tape_len=105536
+mt: mt_write(): write zone data or zeroes
+mt: mt_write(): sum=310504720437050
+mt: mt_write(): write_data_chksum_count=1
+mt: writing_done
+mt: mt_tape_io(..), err=0
+cpu: err=0, codes_num=10645 sum=310504720437050
+cpu: 0166: [op=77 mod=0] останов_077             0000, 0000, 0000
+
+[op=77 mod=0] останов_077             0000, 0000, 0000Останов, KRA: 0166 ()
+M-20 event queue empty, time = 9375073, executing 5,000,000 instructions/sec
+Time:	9375073
+�� 5 (sin x)
+
+�� 13 (���� ������)
+
+�� 42 (������� ������� � �������� �������)
+
+�� 27 (������ � ���������� ��������� � ����������� �������� ������)
+
+�� 02 (������� 10 -> 2)
+
+�� 10 (������� 2 -> 10)
+
+�� 32 (��������� ������������ ������� �� ������)
+
+�� 03 (e^x)
+
+�� 04 (ln x)
+
+�� 11 (tg x)
+
+�� 01 (x^y)
+
+�� 06 (arcsin x)
+
+�� 12 (arctg x)
+
+�� 30 (������ � ���������� ��������� ��� ���������� �������� ������)
+
+�� 43 (������� ��������� � ���������� ������� � ����� �� ������ ��� ����� ������)
+
+�� 36 (��������� ������)
+
+�� 33 (��������� ������� �� ������)
+
+�� 34 (��������� ������� �� ������������ �������)
+
+�� 35 (��������� ������������ ������� �� �������)
+
+�� 37 (��������� ������� ������� �������)
+
+�� 00 (��������� ������)
+
+�� 15 (������ ����� 510 �����)
+
+Goodbye
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)
+mt: mt_detach(..)

@@ -1,0 +1,58 @@
+; Программа расчета выбора типа электровоза с использованием ИС-2 и СПП
+; [1971 Исаев и др.] стр. 82-85
+; (использует готовые образы МБ из is2_build)
+;
+! del sample_0018_debug.txt
+! del sample_0018.lst
+;! del sample_0018.cdp
+;
+set console debug=sample_0018_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+;set cdp  debug
+;set mt   debug
+de DISABLE_IS2_TRACE 1
+de LPTWIDTH 1
+de DPTYPE 4
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+;de DPTYPE 4
+att lpt   sample_0018.lst
+;attach cdp sample_0018.cdp
+att drum0 sample_0018.drum0
+att drum1 sample_0018.drum1
+att drum2 sample_0018.drum2
+;
+load sample_0018.m20
+;
+ex 50-77
+echo
+;
+ex 100-141
+echo
+ex -m 100-141
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 0-3
+echo
+ex 50-77
+echo
+ex 100-141
+echo
+ex -m 100-141
+echo
+ex 62
+echo
+ex 3002
+echo
+ex 66
+echo
+ex 3006-3007
+quit

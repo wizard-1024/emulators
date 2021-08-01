@@ -1,0 +1,69 @@
+; Теплицкий Э.Д. (г.Калинин)
+; Автономная программа метода активных расписаний (ЭВМ М-20)
+; Сборник "Стандартные программы. Выпуск 3."
+; ЦЭМИ СССР, 1967 г.
+; (использует готовые образы МБ из is2_build)
+; (2015 Стефанков)
+;
+! del sample_0101_debug.txt
+! del sample_0101.lst
+! del sample_0101.cdp
+;
+set console debug=sample_0101_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt sample_0101.lst
+;
+set cdr extfmt
+attach cdp sample_0101.cdp
+;
+de DRUM_3_ACCESS_MODE 1
+;
+att drum0 sample_0101.drum0
+att drum1 sample_0101.drum1
+att drum2 sample_0101.drum2
+;
+att -r cdr sample_0101.cdr
+;
+;;;load sample_0101.m20
+;
+echo Boot
+boot cdr
+;
+;echo Run
+;run
+show queue
+show time
+;show throttle
+ex 0001-0136
+echo
+ex 0137-0203
+echo
+ex 1031-1032
+echo
+ex 1033-1107
+echo
+ex 1110-1310
+echo
+ex 0204-1030
+echo
+ex -m 0204-1030
+echo
+quit

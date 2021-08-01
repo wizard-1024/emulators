@@ -1,0 +1,28 @@
+; Программа вывода на перфокарты [2014 Стефанков]
+;
+! del sample_0012_debug.txt
+! del sample_0012.cdp
+;
+set console debug=sample_0012_debug.txt
+set cpu debug
+set lpt debug
+set cdp debug
+set cdr debug
+attach cdp sample_0012.cdp
+;
+load sample_0012.m20
+;
+ex 1-13
+echo
+ex -m 1-13
+echo
+ex 30-31
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 30-31
+echo
+quit

@@ -1,0 +1,57 @@
+; Программа тестирования кода из СП 06 (arcsin x)
+; [2014 Стефанков Д.В]
+;
+! del sample_0028_debug.txt
+! del sample_0028.lst
+;
+set console debug=sample_0028_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+;set cdp  debug
+;set mt   debug
+de DISABLE_IS2_TRACE 0
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;
+de USE_NEW_ADD 1
+;de USE_NEW_MATH 1
+;de ENABLE_LEAD_ZEROES_ROUND_MATH 1
+;
+de LPTWIDTH 1
+;de DPTYPE 3
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+de DPTYPE 3
+set lpt OCTHELPFMT
+att lpt   sample_0028.lst
+
+;
+load sample_0028.m20
+;
+ex 0-3
+echo
+;
+ex 50-52
+echo
+;
+ex 100-107
+echo
+ex -m 100-107
+echo
+ex 2000-2037
+echo
+ex -m 2000-2037
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 0-3
+echo
+ex 50-52
+echo
+quit

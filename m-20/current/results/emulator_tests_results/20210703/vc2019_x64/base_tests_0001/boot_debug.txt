@@ -1,0 +1,79 @@
+C:/emulators/m-20/base_tests_0001/boot.simh-8> set console debug=boot_debug.txt
+Debug output to "boot_debug.txt"
+Debug output to "boot_debug.txt" at Sat Jul 31 15:18:49 2021
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+lpt: lpt_attach(..)
+C:/emulators/m-20/base_tests_0001/boot.simh-19> att lpt boot.lst
+LPT: creating new file
+cdr: cdr_attach(..)
+C:/emulators/m-20/base_tests_0001/boot.simh-20> att -r cdr boot.cdr
+CDR: unit is read only
+cdp: cdp_attach(..)
+C:/emulators/m-20/base_tests_0001/boot.simh-21> attach cdp boot.cdp
+CDP: creating new file
+
+
+
+Boot
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+cdr: cdr_boot(..)
+----------------------------------------------------------------------------------------------------
+cpu: 0001: [op=10 mod=0] ввод_пфк_останов               0001, 0001, 0000
+cpu: [dreg]: ra=0000,  sw=0,  rr=000000000000000
+cpu: [dmem]: a1[0001]=010000100010000,  a2[0001]=010000100010000,  a3[0000]=000000000000000
+cpu: [fmem]: a1[0001]=0.000000000000,  a2[0001]=0.000000000000,  a3[0000]=0.000000000000
+
+cpu: opcode=10: regKRA=2,a1=1,a2=1,a3=0
+cpu: cdr boot detected. Set regKRA=1
+cdr: read_card(..)
+cdr: read_card(): cdr_buf='1	0 01 1001 1002 1003   0'
+cdr: read_card(): cdr_buf='1	0 77 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1       7 77 7777 7777 7777   0'
+cdr: read_card(): cdr_buf='0       0 00 1000 0000 0000   1   ; KA'
+cdr: read_card(): cdr_buf='1       0 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	1 02 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	1 02 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	1 00 0000 0000 0000   0'
+cdr: read_card(): cdr_buf='1	1 03 4000 0000 0000   0'
+cdr: read_card(): cdr_buf='1       5 07 6001 1002 1004   1'
+cdr: read_card(..) r_sum=507600110021004, c_sum=507600110021004
+cdr: read_card(..) read_codes_count=10
+cpu: [dreg]: ra=0000-, sw=0-, rr=000000000000000-
+cpu: [dmem]: a1[0001*]=001100110021003, a2[0001*]=001100110021003, a3[0000-]=000000000000000
+cpu: [fmem]: a1[0001*]=0.000000000000,  a2[0001*]=0.000000000000,  a3[0000-]=0.000000000000
+
+cdr: cdr_svc(..)
+----------------------------------------------------------------------------------------------------
+cpu: 0001: [op=01 mod=0] слож_он                        1001, 1002, 1003
+cpu: [dreg]: ra=0000,  sw=0,  rr=000000000000000
+cpu: [dmem]: a1[1001]=102400000000000,  a2[1002]=102400000000000,  a3[1003]=100000000000000
+cpu: [fmem]: a1[1001]=2.000000000000,  a2[1002]=2.000000000000,  a3[1003]=0.000000000000
+
+cpu: [dreg]: ra=0000-, sw=0-, rr=103400000000000*
+cpu: [dmem]: a1[1001-]=102400000000000, a2[1002-]=102400000000000, a3[1003*]=103400000000000
+cpu: [fmem]: a1[1001-]=2.000000000000,  a2[1002-]=2.000000000000,  a3[1003*]=4.000000000000
+
+----------------------------------------------------------------------------------------------------
+cpu: 0002: [op=77 mod=0] останов_077                    0000, 0000, 0000
+cpu: [dreg]: ra=0000,  sw=0,  rr=103400000000000
+cpu: [dmem]: a1[0000]=000000000000000,  a2[0000]=000000000000000,  a3[0000]=000000000000000
+cpu: [fmem]: a1[0000]=0.000000000000,  a2[0000]=0.000000000000,  a3[0000]=0.000000000000
+
+cpu: [dreg]: ra=0000-, sw=0-, rr=000000000000000*
+cpu: [dmem]: a1[0000-]=000000000000000, a2[0000-]=000000000000000, a3[0000-]=000000000000000
+cpu: [fmem]: a1[0000-]=0.000000000000,  a2[0000-]=0.000000000000,  a3[0000-]=0.000000000000
+
+
+[op=77 mod=0] останов_077                    0000, 0000, 0000Останов, KRA: 0002 ()
+M-20 event queue empty, time = 500052, executing 5,000,000 instructions/sec
+Time:	500052
+
+
+
+Goodbye
+cdr: cdr_detach(..)
+cdp: cdp_detach(..)
+lpt: lpt_detach(..)

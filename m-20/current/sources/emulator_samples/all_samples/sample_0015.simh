@@ -1,0 +1,50 @@
+; Загрузка ИС-2 и вызов СП 13 (использует образы МБ из sample_0014)
+; (2014 Стефанков)
+;
+! del sample_0015_debug.txt
+! del sample_0015.lst
+;
+set console debug=sample_0015_debug.txt
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DPTYPE 4
+att lpt   sample_0015.lst
+att drum0 sample_0014.drum0
+att drum1 sample_0014.drum1
+att drum2 sample_0014.drum2
+;
+load sample_0015.m20
+;
+ex 100-117
+echo
+ex -m 100-117
+echo
+ex 20-23
+echo
+ex 30-31
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 30-31
+echo
+ex 100-117
+echo
+ex -m 100-117
+echo
+ex 0-3
+echo
+ex 20-23
+echo
+ex 7544-7544
+echo
+ex 7200-7230
+quit

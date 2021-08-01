@@ -1,0 +1,57 @@
+; Тест вычитания [Стефанков 2015]
+;
+! del sub_0004_debug.txt
+! del sub_0004.lst
+;
+set console debug=sub_0004_debug.txt
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DPTYPE 2
+set lpt OCTHELPFMT
+att lpt   sub_0004.lst
+;
+de USE_ADD_SBST 1
+;de USE_NEW_ADD 0
+;de ROUND_ERROR_BITS_OFF 0
+;de ROUNDING_UP_ON 0
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+load sub_0004.m20
+;
+ex 100-127
+echo
+ex -m 100-127
+echo
+ex 20-25
+echo
+ex 30-31
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 30-31
+echo
+ex 100-127
+echo
+ex -m 100-127
+echo
+ex 0-3
+echo
+ex 20-25
+echo
+;ex 7544-7544
+;echo
+;ex 7200-7230
+quit

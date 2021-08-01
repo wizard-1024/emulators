@@ -1,0 +1,732 @@
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_cpu.o m20_cpu.c
+m20_cpu.c: In function ‘new_arithmetic_mult_op’:
+m20_cpu.c:1913:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+ 1913 |          fprintf( stderr, "i=%d sign_sigma_r=%d delta_r=%d mask_e2r=%015llo mask_2r_1=%015llo\n",
+      |                                                         ~^
+      |                                                          |
+      |                                                          int
+      |                                                         %lld
+ 1914 |                            i, sign_sigma_r, delta_r, mask_e2r, mask_2r_1 );
+      |                                             ~~~~~~~       
+      |                                             |
+      |                                             t_value {aka long long unsigned int}
+m20_cpu.c: In function ‘sim_instr’:
+m20_cpu.c:3150:46: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+ 3150 |        fprintf (sim_deb, "cpu: [dreg]: ra=%04o,  sw=%d,  rr=%015llo\n", t_ra, t_sw, t_rr );
+      |                                           ~~~^                          ~~~~
+      |                                              |                          |
+      |                                              unsigned int               t_value {aka long long unsigned int}
+      |                                           %04llo
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_sys.o m20_sys.c
+m20_sys.c: In function ‘sim_load’:
+m20_sys.c:393:48: warning: passing argument 2 of ‘m20_abs_mem_dump’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  393 |     if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+      |                                                ^~~~
+m20_sys.c:357:43: note: expected ‘char *’ but argument is of type ‘const char *’
+  357 | t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+      |                                     ~~~~~~^~~~~
+m20_sys.c: In function ‘m20_parse_offset’:
+m20_sys.c:505:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  505 |     cptr = get_glyph (cptr, gbuf, 0); /* get address */
+      |          ^
+m20_sys.c:506:35: warning: passing argument 2 of ‘strtotv’ from incompatible pointer type [-Wincompatible-pointer-types]
+  506 |     *offset = (int)strtotv (gbuf, &tptr, 8);
+      |                                   ^~~~~
+      |                                   |
+      |                                   char **
+In file included from sim_defs.h:1088,
+                 from m20_defs.h:23,
+                 from m20_sys.c:36:
+scp.h:189:49: note: expected ‘const char **’ but argument is of type ‘char **’
+  189 | t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+m20_sys.c: In function ‘parse_instruction’:
+m20_sys.c:552:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  552 |     cptr = get_glyph (cptr, gbuf, 0);  /* get opcode */
+      |          ^
+m20_sys.c: In function ‘parse_sym’:
+m20_sys.c:598:25: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  598 |     cptr = skip_spaces (cptr);   /* absorb spaces */
+      |                         ^~~~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+m20_sys.c:599:30: warning: passing argument 1 of ‘parse_instruction’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  599 |     if (! parse_instruction (cptr, val, sw)) /* symbolic parse? */
+      |                              ^~~~
+m20_sys.c:547:33: note: expected ‘char *’ but argument is of type ‘const char *’
+  547 | t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+      |                           ~~~~~~^~~~
+m20_sys.c:607:26: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  607 |  cptr = skip_spaces (cptr+1);  /* next char */
+      |                      ~~~~^~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_eng.o m20_eng.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_drm.o m20_drm.c
+m20_drm.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+   97 |         &drum_attach, &drum_detach, NULL,
+      |         ^
+m20_drm.c:97:9: note: (near initialization for ‘drum_dev.attach’)
+m20_drm.c: In function ‘drum_write’:
+m20_drm.c:257:77: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  257 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+      |                                                                          ~~~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                                                             |         |
+      |                                                                             |         long unsigned int
+      |                                                                             long long unsigned int
+      |                                                                          %lu
+m20_drm.c:264:75: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  264 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+      |                                                                        ~~~^     ~~~~~
+      |                                                                           |     |
+      |                                                                           |     size_t {aka long unsigned int}
+      |                                                                           unsigned int
+      |                                                                        %04lo
+m20_drm.c:282:81: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  282 |           if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+      |                                                                              ~~~^     ~~~~~
+      |                                                                                 |     |
+      |                                                                                 |     size_t {aka long unsigned int}
+      |                                                                                 unsigned int
+      |                                                                              %04lo
+m20_drm.c: In function ‘drum_read’:
+m20_drm.c:325:77: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  325 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+      |                                                                          ~~~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                                                             |         |
+      |                                                                             |         long unsigned int
+      |                                                                             long long unsigned int
+      |                                                                          %lu
+m20_drm.c:330:74: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  330 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+      |                                                                       ~~~^     ~~~~~
+      |                                                                          |     |
+      |                                                                          |     size_t {aka long unsigned int}
+      |                                                                          unsigned int
+      |                                                                       %04lo
+m20_drm.c:357:78: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  357 |         if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+      |                                                                           ~~~^     ~~~~~
+      |                                                                              |     |
+      |                                                                              |     size_t {aka long unsigned int}
+      |                                                                              unsigned int
+      |                                                                           %04lo
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_cd.o m20_cd.c
+m20_cd.c:119:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  119 |     { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:119:81: note: (near initialization for ‘cdr_mod[0].valid’)
+m20_cd.c:120:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  120 |     { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:120:81: note: (near initialization for ‘cdr_mod[1].valid’)
+m20_cd.c:128:16: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+  128 |     &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+      |                ^
+m20_cd.c:128:16: note: (near initialization for ‘cdr_dev.attach’)
+m20_cd.c:152:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  152 |     { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:152:81: note: (near initialization for ‘cdp_mod[0].valid’)
+m20_cd.c:153:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  153 |     { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:153:81: note: (near initialization for ‘cdp_mod[1].valid’)
+m20_cd.c:161:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+  161 |     NULL, &cdp_attach, &cdp_detach, NULL,
+      |           ^
+m20_cd.c:161:11: note: (near initialization for ‘cdp_dev.attach’)
+m20_cd.c: In function ‘punch_card’:
+m20_cd.c:764:30: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 4 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                           ~~~^
+      |                              |
+      |                              unsigned int
+      |                           %01llo
+m20_cd.c:764:35: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 5 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                ~~~^
+      |                                   |
+      |                                   unsigned int
+      |                                %02llo
+m20_cd.c:764:40: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 6 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                     ~~~^
+      |                                        |
+      |                                        unsigned int
+      |                                     %04llo
+m20_cd.c:764:45: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 7 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                          ~~~^
+      |                                             |
+      |                                             unsigned int
+      |                                          %04llo
+m20_cd.c:764:50: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 8 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                               ~~~^
+      |                                                  |
+      |                                                  unsigned int
+      |                                               %04llo
+m20_cd.c:799:27: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 4 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                        ~~~^
+      |                           |
+      |                           unsigned int
+      |                        %01llo
+m20_cd.c:799:32: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 5 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                             ~~~^
+      |                                |
+      |                                unsigned int
+      |                             %02llo
+m20_cd.c:799:37: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 6 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                                  ~~~^
+      |                                     |
+      |                                     unsigned int
+      |                                  %04llo
+m20_cd.c:799:42: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 7 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                                       ~~~^
+      |                                          |
+      |                                          unsigned int
+      |                                       %04llo
+m20_cd.c:799:47: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 8 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                                            ~~~^
+      |                                               |
+      |                                               unsigned int
+      |                                            %04llo
+m20_cd.c: In function ‘read_card’:
+m20_cd.c:299:9: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  299 |         fgets (cdr_buf, CDR_BUF_SIZE, cdr_unit.fileref);   /* rd char card */
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_mt.o m20_mt.c
+m20_mt.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+   97 |         &mt_attach, &mt_detach, NULL,
+      |         ^
+m20_mt.c:97:9: note: (near initialization for ‘mt_dev.attach’)
+m20_mt.c: In function ‘mt_format_tape’:
+m20_mt.c:280:54: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  280 |  fprintf (sim_deb, "mt: format_tape(): last_exp_pos=%d (max_mt_userdata_size=%d)\n",
+      |                                                     ~^
+      |                                                      |
+      |                                                      int
+      |                                                     %ld
+  281 |                  last_fmt_pos+(codes_group_size+2)*sizeof(t_value), MAX_TAPE_SIZE*sizeof(t_value) );
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              long unsigned int
+m20_mt.c:280:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  280 |  fprintf (sim_deb, "mt: format_tape(): last_exp_pos=%d (max_mt_userdata_size=%d)\n",
+      |                                                                              ~^
+      |                                                                               |
+      |                                                                               int
+      |                                                                              %ld
+m20_mt.c:294:87: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  294 |     if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+      |                                                                                    ~~~^     ~~~~~
+      |                                                                                       |     |
+      |                                                                                       |     size_t {aka long unsigned int}
+      |                                                                                       unsigned int
+      |                                                                                    %04lo
+m20_mt.c:327:87: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  327 |     if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+      |                                                                                    ~~~^     ~~~~~
+      |                                                                                       |     |
+      |                                                                                       |     size_t {aka long unsigned int}
+      |                                                                                       unsigned int
+      |                                                                                    %04lo
+m20_mt.c: In function ‘mt_write’:
+m20_mt.c:424:59: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  424 |          fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                          ~^                  ~~~~~~~~~~~~
+      |                                                           |                  |
+      |                                                           int                long unsigned int
+      |                                                          %ld
+m20_mt.c:424:72: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  424 |          fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                                       ~^                   ~~~~~~~~
+      |                                                                        |                   |
+      |                                                                        int                 long unsigned int
+      |                                                                       %ld
+m20_mt.c:500:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  500 |      fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                      ~^                  ~~~~~~~~~~~~
+      |                                                       |                  |
+      |                                                       int                long unsigned int
+      |                                                      %ld
+m20_mt.c:500:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  500 |      fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                                   ~^                   ~~~~~~~~
+      |                                                                    |                   |
+      |                                                                    int                 long unsigned int
+      |                                                                   %ld
+m20_mt.c: In function ‘mt_read’:
+m20_mt.c:629:54: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  629 |      fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                     ~^                  ~~~~~~~~~~~~
+      |                                                      |                  |
+      |                                                      int                long unsigned int
+      |                                                     %ld
+m20_mt.c:629:67: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  629 |      fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                                  ~^                   ~~~~~~~~
+      |                                                                   |                   |
+      |                                                                   int                 long unsigned int
+      |                                                                  %ld
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o m20_lp.o m20_lp.c
+m20_lp.c:103:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+  103 |     NULL, &lpt_attach, &lpt_detach, NULL,
+      |           ^
+m20_lp.c:103:11: note: (near initialization for ‘lpt_dev.attach’)
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o scp.o scp.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_console.o sim_console.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_tape.o sim_tape.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_timer.o sim_timer.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_tmxr.o sim_tmxr.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_sock.o sim_sock.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_serial.o sim_serial.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_disk.o sim_disk.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_fio.o sim_fio.c
+sim_fio.c: In function ‘sim_filepath_parts’:
+sim_fio.c:944:52: warning: ‘%02d’ directive writing between 2 and 11 bytes into a region of size between 0 and 18 [-Wformat-overflow=]
+  944 |     sprintf (filedatetimebuf, "%02d/%02d/%04d %02d:%02d %cM ", 1 + tm->tm_mon, tm->tm_mday, 1900 + tm->tm_year,
+      |                                                    ^~~~
+In file included from /usr/include/stdio.h:866,
+                 from sim_defs.h:115,
+                 from sim_fio.c:65:
+/usr/include/aarch64-linux-gnu/bits/stdio2.h:38:10: note: ‘__builtin___sprintf_chk’ output between 21 and 56 bytes into a destination of size 32
+   38 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   39 |       __glibc_objsize (__s), __fmt,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   40 |       __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_ether.o sim_ether.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_imd.o sim_imd.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_video.o sim_video.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_frontpanel.o sim_frontpanel.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o sim_scsi.o sim_scsi.c
+cc   -o m20 m20_cpu.o m20_sys.o m20_eng.o m20_drm.o m20_cd.o m20_mt.o m20_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cpu.o m20_cpu.c
+m20_cpu.c: In function ‘new_arithmetic_mult_op’:
+m20_cpu.c:1913:58: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+ 1913 |          fprintf( stderr, "i=%d sign_sigma_r=%d delta_r=%d mask_e2r=%015llo mask_2r_1=%015llo\n",
+      |                                                         ~^
+      |                                                          |
+      |                                                          int
+      |                                                         %lld
+ 1914 |                            i, sign_sigma_r, delta_r, mask_e2r, mask_2r_1 );
+      |                                             ~~~~~~~       
+      |                                             |
+      |                                             t_value {aka long long unsigned int}
+m20_cpu.c: In function ‘sim_instr’:
+m20_cpu.c:3150:46: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+ 3150 |        fprintf (sim_deb, "cpu: [dreg]: ra=%04o,  sw=%d,  rr=%015llo\n", t_ra, t_sw, t_rr );
+      |                                           ~~~^                          ~~~~
+      |                                              |                          |
+      |                                              unsigned int               t_value {aka long long unsigned int}
+      |                                           %04llo
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_sys.o m20_sys.c
+m20_sys.c: In function ‘sim_load’:
+m20_sys.c:393:48: warning: passing argument 2 of ‘m20_abs_mem_dump’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  393 |     if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+      |                                                ^~~~
+m20_sys.c:357:43: note: expected ‘char *’ but argument is of type ‘const char *’
+  357 | t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+      |                                     ~~~~~~^~~~~
+m20_sys.c: In function ‘m20_parse_offset’:
+m20_sys.c:505:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  505 |     cptr = get_glyph (cptr, gbuf, 0); /* get address */
+      |          ^
+m20_sys.c:506:35: warning: passing argument 2 of ‘strtotv’ from incompatible pointer type [-Wincompatible-pointer-types]
+  506 |     *offset = (int)strtotv (gbuf, &tptr, 8);
+      |                                   ^~~~~
+      |                                   |
+      |                                   char **
+In file included from sim_defs.h:1088,
+                 from m20_defs.h:23,
+                 from m20_sys.c:36:
+scp.h:189:49: note: expected ‘const char **’ but argument is of type ‘char **’
+  189 | t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+m20_sys.c: In function ‘parse_instruction’:
+m20_sys.c:552:10: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  552 |     cptr = get_glyph (cptr, gbuf, 0);  /* get opcode */
+      |          ^
+m20_sys.c: In function ‘parse_sym’:
+m20_sys.c:598:25: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  598 |     cptr = skip_spaces (cptr);   /* absorb spaces */
+      |                         ^~~~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+m20_sys.c:599:30: warning: passing argument 1 of ‘parse_instruction’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  599 |     if (! parse_instruction (cptr, val, sw)) /* symbolic parse? */
+      |                              ^~~~
+m20_sys.c:547:33: note: expected ‘char *’ but argument is of type ‘const char *’
+  547 | t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+      |                           ~~~~~~^~~~
+m20_sys.c:607:26: warning: passing argument 1 of ‘skip_spaces’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+  607 |  cptr = skip_spaces (cptr+1);  /* next char */
+      |                      ~~~~^~
+m20_sys.c:138:26: note: expected ‘char *’ but argument is of type ‘const char *’
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20_rus.o m20_rus.c
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_drm.o m20_drm.c
+m20_drm.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+   97 |         &drum_attach, &drum_detach, NULL,
+      |         ^
+m20_drm.c:97:9: note: (near initialization for ‘drum_dev.attach’)
+m20_drm.c: In function ‘drum_write’:
+m20_drm.c:257:77: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  257 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+      |                                                                          ~~~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                                                             |         |
+      |                                                                             |         long unsigned int
+      |                                                                             long long unsigned int
+      |                                                                          %lu
+m20_drm.c:264:75: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  264 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+      |                                                                        ~~~^     ~~~~~
+      |                                                                           |     |
+      |                                                                           |     size_t {aka long unsigned int}
+      |                                                                           unsigned int
+      |                                                                        %04lo
+m20_drm.c:282:81: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  282 |           if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: write_count=%04o\n", count);
+      |                                                                              ~~~^     ~~~~~
+      |                                                                                 |     |
+      |                                                                                 |     size_t {aka long unsigned int}
+      |                                                                                 unsigned int
+      |                                                                              %04lo
+m20_drm.c: In function ‘drum_read’:
+m20_drm.c:325:77: warning: format ‘%llu’ expects argument of type ‘long long unsigned int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  325 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: seek file_pos=%llu\n", addr*sizeof(t_value));
+      |                                                                          ~~~^     ~~~~~~~~~~~~~~~~~~~~
+      |                                                                             |         |
+      |                                                                             |         long unsigned int
+      |                                                                             long long unsigned int
+      |                                                                          %lu
+m20_drm.c:330:74: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  330 |     if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+      |                                                                       ~~~^     ~~~~~
+      |                                                                          |     |
+      |                                                                          |     size_t {aka long unsigned int}
+      |                                                                          unsigned int
+      |                                                                       %04lo
+m20_drm.c:357:78: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  357 |         if (sim_deb && drum_dev.dctrl) fprintf (sim_deb, "drm: read_count=%04o\n", count);
+      |                                                                           ~~~^     ~~~~~
+      |                                                                              |     |
+      |                                                                              |     size_t {aka long unsigned int}
+      |                                                                              unsigned int
+      |                                                                           %04lo
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_cd.o m20_cd.c
+m20_cd.c:119:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  119 |     { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:119:81: note: (near initialization for ‘cdr_mod[0].valid’)
+m20_cd.c:120:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  120 |     { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:120:81: note: (near initialization for ‘cdr_mod[1].valid’)
+m20_cd.c:128:16: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+  128 |     &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+      |                ^
+m20_cd.c:128:16: note: (near initialization for ‘cdr_dev.attach’)
+m20_cd.c:152:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  152 |     { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:152:81: note: (near initialization for ‘cdp_mod[0].valid’)
+m20_cd.c:153:81: warning: initialization of ‘t_stat (*)(UNIT *, int32,  const char *, void *)’ {aka ‘int (*)(UNIT *, int,  const char *, void *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, int32,  char *, void *)’ {aka ‘int (*)(UNIT *, int,  char *, void *)’} [-Wincompatible-pointer-types]
+  153 |     { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:153:81: note: (near initialization for ‘cdp_mod[1].valid’)
+m20_cd.c:161:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+  161 |     NULL, &cdp_attach, &cdp_detach, NULL,
+      |           ^
+m20_cd.c:161:11: note: (near initialization for ‘cdp_dev.attach’)
+m20_cd.c: In function ‘punch_card’:
+m20_cd.c:764:30: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 4 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                           ~~~^
+      |                              |
+      |                              unsigned int
+      |                           %01llo
+m20_cd.c:764:35: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 5 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                ~~~^
+      |                                   |
+      |                                   unsigned int
+      |                                %02llo
+m20_cd.c:764:40: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 6 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                     ~~~^
+      |                                        |
+      |                                        unsigned int
+      |                                     %04llo
+m20_cd.c:764:45: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 7 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                          ~~~^
+      |                                             |
+      |                                             unsigned int
+      |                                          %04llo
+m20_cd.c:764:50: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 8 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  764 |                       "1  %01o %02o %04o %04o %04o  0\n",
+      |                                               ~~~^
+      |                                                  |
+      |                                                  unsigned int
+      |                                               %04llo
+m20_cd.c:799:27: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 4 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                        ~~~^
+      |                           |
+      |                           unsigned int
+      |                        %01llo
+m20_cd.c:799:32: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 5 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                             ~~~^
+      |                                |
+      |                                unsigned int
+      |                             %02llo
+m20_cd.c:799:37: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 6 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                                  ~~~^
+      |                                     |
+      |                                     unsigned int
+      |                                  %04llo
+m20_cd.c:799:42: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 7 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                                       ~~~^
+      |                                          |
+      |                                          unsigned int
+      |                                       %04llo
+m20_cd.c:799:47: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 8 has type ‘t_value’ {aka ‘long long unsigned int’} [-Wformat=]
+  799 |                    "1  %01o %02o %04o %04o %04o  1\n\n",
+      |                                            ~~~^
+      |                                               |
+      |                                               unsigned int
+      |                                            %04llo
+m20_cd.c: In function ‘read_card’:
+m20_cd.c:299:9: warning: ignoring return value of ‘fgets’ declared with attribute ‘warn_unused_result’ [-Wunused-result]
+  299 |         fgets (cdr_buf, CDR_BUF_SIZE, cdr_unit.fileref);   /* rd char card */
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_mt.o m20_mt.c
+m20_mt.c:97:9: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+   97 |         &mt_attach, &mt_detach, NULL,
+      |         ^
+m20_mt.c:97:9: note: (near initialization for ‘mt_dev.attach’)
+m20_mt.c: In function ‘mt_format_tape’:
+m20_mt.c:280:54: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  280 |  fprintf (sim_deb, "mt: format_tape(): last_exp_pos=%d (max_mt_userdata_size=%d)\n",
+      |                                                     ~^
+      |                                                      |
+      |                                                      int
+      |                                                     %ld
+  281 |                  last_fmt_pos+(codes_group_size+2)*sizeof(t_value), MAX_TAPE_SIZE*sizeof(t_value) );
+      |                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                              |
+      |                              long unsigned int
+m20_mt.c:280:79: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  280 |  fprintf (sim_deb, "mt: format_tape(): last_exp_pos=%d (max_mt_userdata_size=%d)\n",
+      |                                                                              ~^
+      |                                                                               |
+      |                                                                               int
+      |                                                                              %ld
+m20_mt.c:294:87: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  294 |     if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+      |                                                                                    ~~~^     ~~~~~
+      |                                                                                       |     |
+      |                                                                                       |     size_t {aka long unsigned int}
+      |                                                                                       unsigned int
+      |                                                                                    %04lo
+m20_mt.c:327:87: warning: format ‘%o’ expects argument of type ‘unsigned int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+  327 |     if (sim_deb && mt_dev.dctrl) fprintf (sim_deb, "mt: format_tape(): write_count=%04o\n", count);
+      |                                                                                    ~~~^     ~~~~~
+      |                                                                                       |     |
+      |                                                                                       |     size_t {aka long unsigned int}
+      |                                                                                       unsigned int
+      |                                                                                    %04lo
+m20_mt.c: In function ‘mt_write’:
+m20_mt.c:424:59: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  424 |          fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                          ~^                  ~~~~~~~~~~~~
+      |                                                           |                  |
+      |                                                           int                long unsigned int
+      |                                                          %ld
+m20_mt.c:424:72: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  424 |          fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                                       ~^                   ~~~~~~~~
+      |                                                                        |                   |
+      |                                                                        int                 long unsigned int
+      |                                                                       %ld
+m20_mt.c:500:55: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  500 |      fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                      ~^                  ~~~~~~~~~~~~
+      |                                                       |                  |
+      |                                                       int                long unsigned int
+      |                                                      %ld
+m20_mt.c:500:68: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  500 |      fprintf (sim_deb, "mt: mt_write(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                                   ~^                   ~~~~~~~~
+      |                                                                    |                   |
+      |                                                                    int                 long unsigned int
+      |                                                                   %ld
+m20_mt.c: In function ‘mt_read’:
+m20_mt.c:629:54: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘long unsigned int’ [-Wformat=]
+  629 |      fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                     ~^                  ~~~~~~~~~~~~
+      |                                                      |                  |
+      |                                                      int                long unsigned int
+      |                                                     %ld
+m20_mt.c:629:67: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘long unsigned int’ [-Wformat=]
+  629 |      fprintf (sim_deb, "mt: mt_read(): cur_tape_pos=%d, tape_len=%d\n", cur_tape_pos, tape_len );
+      |                                                                  ~^                   ~~~~~~~~
+      |                                                                   |                   |
+      |                                                                   int                 long unsigned int
+      |                                                                  %ld
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -DRUSSIAN_LANGUAGE -DRUS_UTF8 -o m20ru_lp.o m20_lp.c
+m20_lp.c:103:11: warning: initialization of ‘t_stat (*)(UNIT *, const char *)’ {aka ‘int (*)(UNIT *, const char *)’} from incompatible pointer type ‘t_stat (*)(UNIT *, char *)’ {aka ‘int (*)(UNIT *, char *)’} [-Wincompatible-pointer-types]
+  103 |     NULL, &lpt_attach, &lpt_detach, NULL,
+      |           ^
+m20_lp.c:103:11: note: (near initialization for ‘lpt_dev.attach’)
+cc   -o m20ru m20ru_cpu.o m20ru_sys.o m20_rus.o m20ru_drm.o m20ru_cd.o m20ru_mt.o m20ru_lp.o scp.o sim_console.o sim_tape.o sim_timer.o sim_tmxr.o sim_sock.o sim_serial.o sim_disk.o sim_fio.o sim_ether.o sim_imd.o sim_video.o sim_frontpanel.o sim_scsi.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o code2pcard.o code2pcard.c
+cc   -o code2pcard code2pcard.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX  -Foautocode_m20.obj autocode_m20.c
+autocode_m20.c: In function ‘parse_input_assembly_file’:
+autocode_m20.c:1082:49: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
+ 1082 |      if (debug_parsing) printf( "work_buf (len=%d): %s\n", slen,work_buf );
+      |                                                ~^          ~~~~
+      |                                                 |          |
+      |                                                 int        size_t {aka long unsigned int}
+      |                                                %ld
+In file included from /usr/include/string.h:519,
+                 from sim_defs.h:124,
+                 from m20_defs.h:23,
+                 from autocode_m20.c:23:
+In function ‘strncpy’,
+    inlined from ‘process_tables_file’ at autocode_m20.c:575:20:
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin___strncpy_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘process_tables_file’:
+autocode_m20.c:570:27: note: length computed here
+  570 |                    slen = strlen(temp_buf);
+      |                           ^~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:519,
+                 from sim_defs.h:124,
+                 from m20_defs.h:23,
+                 from autocode_m20.c:23:
+In function ‘strncpy’,
+    inlined from ‘process_tables_file’ at autocode_m20.c:576:20:
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin___strncpy_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘process_tables_file’:
+autocode_m20.c:572:27: note: length computed here
+  572 |                    slen2 =strlen(temp_buf_2);
+      |                           ^~~~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:519,
+                 from sim_defs.h:124,
+                 from m20_defs.h:23,
+                 from autocode_m20.c:23:
+In function ‘strncpy’,
+    inlined from ‘process_tables_file’ at autocode_m20.c:538:16:
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin___strncpy_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘process_tables_file’:
+autocode_m20.c:535:23: note: length computed here
+  535 |                slen = strlen(temp_buf);
+      |                       ^~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:519,
+                 from sim_defs.h:124,
+                 from m20_defs.h:23,
+                 from autocode_m20.c:23:
+In function ‘strncpy’,
+    inlined from ‘process_tables_file’ at autocode_m20.c:511:16:
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin___strncpy_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘process_tables_file’:
+autocode_m20.c:508:23: note: length computed here
+  508 |                slen = strlen(temp_buf);
+      |                       ^~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:519,
+                 from sim_defs.h:124,
+                 from m20_defs.h:23,
+                 from autocode_m20.c:23:
+In function ‘strncpy’,
+    inlined from ‘parse_input_assembly_file’ at autocode_m20.c:1057:10:
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin___strncpy_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘parse_input_assembly_file’:
+autocode_m20.c:1056:17: note: length computed here
+ 1056 |          slen = strlen(temp_buf);
+      |                 ^~~~~~~~~~~~~~~~
+In file included from /usr/include/string.h:519,
+                 from sim_defs.h:124,
+                 from m20_defs.h:23,
+                 from autocode_m20.c:23:
+In function ‘strncpy’,
+    inlined from ‘parse_input_assembly_file’ at autocode_m20.c:1160:12:
+/usr/include/aarch64-linux-gnu/bits/string_fortified.h:95:10: warning: ‘__builtin___strncpy_chk’ specified bound depends on the length of the source argument [-Wstringop-overflow=]
+   95 |   return __builtin___strncpy_chk (__dest, __src, __len,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   96 |       __glibc_objsize (__dest));
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘parse_input_assembly_file’:
+autocode_m20.c:1155:16: note: length computed here
+ 1155 |         slen = strlen(parsed_lines_array[i].lexical_word_array[k].lex_word_value);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c: In function ‘produce_output_listing_file’:
+autocode_m20.c:1673:64: warning: ‘%s’ directive output may be truncated writing up to 127 bytes into a region of size between 118 and 500 [-Wformat-truncation=]
+ 1673 |   _snprintf(header,sizeof(header),"%s: %s\t\t\t%s: %s\t\t\t%s: %s",
+      |                                                                ^~
+ 1674 |                                    s1,module_name,s2,program_title,s3,author_name );
+      |                                                                       ~~~~~~~~~~~
+In file included from /usr/include/stdio.h:866,
+                 from sim_defs.h:115,
+                 from m20_defs.h:23,
+                 from autocode_m20.c:23:
+/usr/include/aarch64-linux-gnu/bits/stdio2.h:71:10: note: ‘__builtin___snprintf_chk’ output 13 or more bytes (assuming 522) into a destination of size 512
+   71 |   return __builtin___snprintf_chk (__s, __n, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   72 |        __glibc_objsize (__s), __fmt,
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   73 |        __va_arg_pack ());
+      |        ~~~~~~~~~~~~~~~~~
+cc   -o autocode_m20 autocode_m20.o -lm -lrt -lpthread 
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o dump_drm.o dump_drm.c
+cc   -o dump_drm dump_drm.o -lm -lrt -lpthread
+cc -c -O2 -DUSE_INT64 -D__USE_LARGEFILE64 -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_UNIX -o dump_mt.o dump_mt.c
+dump_mt.c: In function ‘main’:
+dump_mt.c:152:29: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 2 has type ‘int’ [-Wformat=]
+  152 |      printf( "****** ZONE %lu, LEN = %lu\n", cur_zone_num, cur_zone_size );
+      |                           ~~^                ~~~~~~~~~~~~
+      |                             |                |
+      |                             |                int
+      |                             long unsigned int
+      |                           %u
+dump_mt.c:152:40: warning: format ‘%lu’ expects argument of type ‘long unsigned int’, but argument 3 has type ‘int’ [-Wformat=]
+  152 |      printf( "****** ZONE %lu, LEN = %lu\n", cur_zone_num, cur_zone_size );
+      |                                      ~~^                   ~~~~~~~~~~~~~
+      |                                        |                   |
+      |                                        long unsigned int   int
+      |                                      %u
+cc   -o dump_mt dump_mt.o -lm -lrt -lpthread

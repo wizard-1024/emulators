@@ -1,0 +1,103 @@
+#
+# Tables for M-20 autocode 
+# encoding: english,ASCII-7
+# (1) messages
+# (2) pseudo operations
+# (3) instructions 
+#
+# Copyright (c) 2015 Stefankov
+#
+
+# Table of
+[MessagesTable]
+0001   "Completed successfully."
+0002   "Completed unsuccessfully.""
+0003   "Program"
+0004   "Title"
+0005   "Author"
+0006   "Page"
+0007   "Date/Time"
+
+
+
+[PseudoOperationsTable]
+01     ".NAME"
+02     ".TITLE"
+03     ".START"
+04     ".FINISH"
+05     ".ADDRESS"
+06     ".ABS"
+07     ".MEM"
+08     ".AUTHOR"
+09     ".LIST"
+10     ".NOLIST"
+
+
+
+[InstructionTables]
+00     "xfr"                          "transfer_m2m"
+01     "add_rn"                       "addition_rn"
+02     "sub_rn"                       "subtract_rnd_nrm"
+03     "sub_mod_rn"                   "subtract_modulo_rnd_nrm"
+04     "div_r"                        "division_rnd"
+05     "mult_rn"                      "multiply_rnd_nrm"
+06     "add_addr2exp"                 "add_address_to_exponent"
+07     "add_cyc"                      "add_cyclic"
+10     "in_codes_stop"                "input_codes_with_stop"
+11     "goto_cyc_pa_w1_011"           "goto_after_cycle_if_ra_less_a1_and_w1"
+12     "goto_cyc_pa_012"              "goto_after_cycle_if_ra_less_a1"
+13     "add_cmds"                     "add_commands"
+14     "shift_mant_by_adr"            "shift_mantissa_by_address"
+15     "comp"                         "compare_no_stop"
+16     "jmp_ret"                      "jump_with_return"
+17     "stop_17"                      "stop_17"
+20     "ld_key_reg"                   "load_mem_from_key_register"
+21     "add_n"                        "addition_nrm"
+22     "sub_n"                        "subtract_nrm"
+23     "sub_mod_n"                    "subtract_modulo_nrm"
+24     "div"                          "division"
+25     "mult_n"                       "multiply_nrm"
+26     "add_exp2exp"                  "add_exponent_to_exponent"
+27     "sub_cyc"                      "subtract_cyclic"
+30     "in_codes"                     "input_codes_no_stop"
+31     "goto_cyc_pa_w1_31"            "goto_after_cycle_if_ra_greater_or_equal_and_w1"
+32     "goto_cyc_pa_32"               "goto_after_cycle_if_ra_greater_or_equal"
+33     "sub_cmds"                     "subtract_commands"
+34     "shift_mant_by_exp"            "shift_mantissa_by_exponent"
+35     "comp_stop"                    "compare_with_stop"
+36     "cond_jump_w1"                 "conditional_jump_by_w1"
+37     "stop_37"                      "stop_037"
+40     "blank_40"                     "blank_a3_addr_040"
+41     "add_r"                        "addition_rnd"
+42     "sub_r"                        "subtract_rnd"
+43     "sub_mod_r"                    "subtract_modulo_rnd"
+44     "sqrt_r"                       "square_root_rnd"
+45     "mult_r"                       "multiply_rnd"
+46     "sub_adr_from_exp"             "subtract_address_from_exponent"
+47     "out_low_bits_of_mult"         "output_low_36_bits_after_multiply"
+50     "io_ext_dev_50"                "io_setup_ext_dev_050"
+51     "goto_cyc_pa_w0_51"            "goto_cycle_if_ra_less_and_w0"
+52     "chg_ra_by_adr"                "change_ra_reg_by_address"
+53     "add_ops"                      "add_operation_codes"
+54     "shift_code_by_adr"            "shift_code_by_address"
+55     "log_mult"                     "logical_multiply"
+56     "jmp_addr"                     "jump_by_address"
+57     "stop_57"                      "stop_057"
+60     "blank_60"                     "blank_a3_addr_060"
+61     "add"                          "addition"
+62     "sub"                          "subtract"
+63     "sub_mod"                      "subtract_modulo"
+64     "sqrt"                         "square_root"
+65     "mult"                         "multiply"
+66     "sub_exp_from_exp"             "subtract_exponent_from_exponent"
+67     "shift_cyc"                    "shift_cyclic"
+70     "io_ext_dev_70"                "io_operation_ext_dev_070"
+71     "goto_cyc_pa_w0_71"            "goto_after_cycle_if_ra_greater_or_equal_and_w0"
+72     "chg_ra_by_code"               "change_ra_reg_by_code"
+73     "sub_ops"                      "subtract_operation_codes"
+74     "shift_code_by_exp"            "shift_code_by_exponent"
+75     "log_add"                      "logical_addition"
+76     "cond_jmp_w0"                  "conditional_jump_if_w0"
+77     "stop_77"                      "stop_077"
+
+

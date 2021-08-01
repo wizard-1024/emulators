@@ -1,0 +1,59 @@
+; Пример программы, "Инструментальная математика для инженеров",1959, стр.54
+; Стефанков Д.В, 2015
+;
+! del sample_0073_debug.txt
+! del sample_0073.lst
+! del sample_0073.drum0
+! del sample_0073.drum1
+;
+set console debug=sample_0073_debug.txt
+set cpu debug
+set drum debug
+;set cdr  debug
+set lpt  debug
+;
+;de USE_NEW_MATH 0
+;de ENABLE_LEAD_ZEROES_ROUND_MATH 0
+;
+;
+show lpt
+ex LPTWIDTH
+de LPTWIDTH 1
+ex LPTWIDTH
+ex DPTYPE 
+;de DPTYPE 0
+;de DPTYPE 1
+;de DPTYPE 2
+de DPTYPE 3
+ex DPTYPE 
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+show lpt
+att lpt sample_0073.lst
+;
+de DRUM_3_ACCESS_MODE 1
+;
+att drum0 sample_0073.drum0
+att drum1 sample_0073.drum1
+att drum2 sample_0073.drum2
+;
+load sample_0073.m20
+;
+ex 20-33
+echo
+ex 40-43
+echo
+ex 100-117
+echo
+ex -m 100-117
+echo
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 20-33
+echo
+ex 40-43
+quit

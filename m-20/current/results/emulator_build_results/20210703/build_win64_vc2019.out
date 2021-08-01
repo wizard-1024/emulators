@@ -1,0 +1,346 @@
+
+C:\build_sources\emulators\m-20\sources\emulator>nmake -f makefile.w64  
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_cpu.obj m20_cpu.c
+m20_cpu.c
+m20_cpu.c(1913): warning C4477: "fprintf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "3" имеет тип "t_value"
+m20_cpu.c(1913): note: рекомендуется использовать "%lld" в строке форматирования
+m20_cpu.c(1913): note: рекомендуется использовать "%Id" в строке форматирования
+m20_cpu.c(1913): note: рекомендуется использовать "%I64d" в строке форматирования
+m20_cpu.c(3150): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "t_value"
+m20_cpu.c(3150): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cpu.c(3150): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cpu.c(3150): note: рекомендуется использовать "%I64o" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_sys.obj m20_sys.c
+m20_sys.c
+m20_sys.c(393): warning C4090: функция: разные квалификаторы "const"
+m20_sys.c(505): warning C4090: =: разные квалификаторы "const"
+m20_sys.c(552): warning C4090: =: разные квалификаторы "const"
+m20_sys.c(598): warning C4090: функция: разные квалификаторы "const"
+m20_sys.c(599): warning C4090: функция: разные квалификаторы "const"
+m20_sys.c(607): warning C4090: функция: разные квалификаторы "const"
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_eng.obj m20_eng.c
+m20_eng.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_drm.obj m20_drm.c
+m20_drm.c
+m20_drm.c(93): warning C4090: функция: разные квалификаторы "const"
+m20_drm.c(93): warning C4028: формальный параметр 2 отличается от объявления
+m20_drm.c(264): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(264): note: рекомендуется использовать "%zo" в строке форматирования
+m20_drm.c(282): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(282): note: рекомендуется использовать "%zo" в строке форматирования
+m20_drm.c(330): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(330): note: рекомендуется использовать "%zo" в строке форматирования
+m20_drm.c(357): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(357): note: рекомендуется использовать "%zo" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_cd.obj m20_cd.c
+m20_cd.c
+m20_cd.c(119): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(119): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(120): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(120): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(124): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(124): warning C4028: формальный параметр 2 отличается от объявления
+m20_cd.c(152): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(152): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(153): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(153): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(157): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(157): warning C4028: формальный параметр 2 отличается от объявления
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%01o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%02o" требуется аргумент типа "unsigned int", но вариативный аргумент "2" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "3" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "4" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "5" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%01o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%02o" требуется аргумент типа "unsigned int", но вариативный аргумент "2" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "3" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "4" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "5" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_mt.obj m20_mt.c
+m20_mt.c
+m20_mt.c(93): warning C4090: функция: разные квалификаторы "const"
+m20_mt.c(93): warning C4028: формальный параметр 2 отличается от объявления
+m20_mt.c(280): warning C4477: "fprintf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+m20_mt.c(280): note: рекомендуется использовать "%zd" в строке форматирования
+m20_mt.c(280): warning C4477: "fprintf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "unsigned __int64"
+m20_mt.c(280): note: рекомендуется использовать "%lld" в строке форматирования
+m20_mt.c(280): note: рекомендуется использовать "%Id" в строке форматирования
+m20_mt.c(280): note: рекомендуется использовать "%I64d" в строке форматирования
+m20_mt.c(294): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_mt.c(294): note: рекомендуется использовать "%zo" в строке форматирования
+m20_mt.c(327): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_mt.c(327): note: рекомендуется использовать "%zo" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_lp.obj m20_lp.c
+m20_lp.c
+m20_lp.c(99): warning C4090: функция: разные квалификаторы "const"
+m20_lp.c(99): warning C4028: формальный параметр 2 отличается от объявления
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Foscp.obj scp.c
+scp.c
+scp.c(3124): warning C4267: +=: преобразование из "size_t" в "int"; возможна потеря данных
+scp.c(6499): warning C4267: =: преобразование из "size_t" в "int32"; возможна потеря данных
+scp.c(6507): warning C4267: =: преобразование из "size_t" в "int32"; возможна потеря данных
+scp.c(10873): warning C4267: =: преобразование из "size_t" в "int32"; возможна потеря данных
+scp.c(10940): warning C4267: =: преобразование из "size_t" в "int32"; возможна потеря данных
+scp.c(11294): warning C4267: return: преобразование из "size_t" в "t_stat"; возможна потеря данных
+scp.c(12564): warning C4244: =: преобразование "__int64" в "int32", возможна потеря данных
+scp.c(12579): warning C4244: функция: преобразование "__int64" в "int32", возможна потеря данных
+scp.c(12721): warning C4267: инициализация: преобразование из "size_t" в "uint32"; возможна потеря данных
+scp.c(12786): warning C4244: функция: преобразование "__int64" в "int32", возможна потеря данных
+scp.c(12997): warning C4267: +=: преобразование из "size_t" в "int32"; возможна потеря данных
+scp.c(13744): warning C4267: =: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+scp.c(13746): warning C4267: =: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+scp.c(13748): warning C4267: =: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+scp.c(13750): warning C4267: =: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+scp.c(14193): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+scp.c(14197): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+scp.c(15352): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+scp.c(15359): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+scp.c(15565): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+scp.c(15606): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+scp.c(15625): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+scp.c(15597): warning C4267: инициализация: преобразование из "size_t" в "uint32"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_console.obj sim_console.c
+sim_console.c
+sim_console.c(1279): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+sim_console.c(1345): warning C4244: инициализация: преобразование "__int64" в "int", возможна потеря данных
+sim_console.c(1513): warning C4267: =: преобразование из "size_t" в "int32"; возможна потеря данных
+sim_console.c(1521): warning C4244: функция: преобразование "__int64" в "int32", возможна потеря данных
+sim_console.c(1522): warning C4244: функция: преобразование "__int64" в "int32", возможна потеря данных
+sim_console.c(1527): warning C4267: =: преобразование из "size_t" в "int32"; возможна потеря данных
+sim_console.c(1747): warning C4244: функция: преобразование "__int64" в "int32", возможна потеря данных
+sim_console.c(4368): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_tape.obj sim_tape.c
+sim_tape.c
+sim_tape.c(813): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(1296): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(1668): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(4460): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_tape.c(4491): warning C4267: функция: преобразование из "size_t" в "long"; возможна потеря данных
+sim_tape.c(4560): warning C4244: =: преобразование "__int64" в "uint16", возможна потеря данных
+sim_tape.c(4561): warning C4244: +=: преобразование "__int64" в "uint16", возможна потеря данных
+sim_tape.c(4562): warning C4244: +=: преобразование "__int64" в "uint16", возможна потеря данных
+sim_tape.c(4599): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(4605): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(4615): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(4627): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(4717): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tape.c(4933): warning C4267: функция: преобразование из "size_t" в "uint32"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_timer.obj sim_timer.c
+sim_timer.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_tmxr.obj sim_tmxr.c
+sim_tmxr.c
+sim_tmxr.c(1999): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_tmxr.c(2383): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_tmxr.c(2387): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tmxr.c(2396): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_tmxr.c(2398): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_sock.obj sim_sock.c
+sim_sock.c
+sim_sock.c(924): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_sock.c(982): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_sock.c(1021): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_serial.obj sim_serial.c
+sim_serial.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_disk.obj sim_disk.c
+sim_disk.c
+sim_disk.c(631): warning C4267: +=: преобразование из "size_t" в "t_seccnt"; возможна потеря данных
+sim_disk.c(635): warning C4267: -=: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_disk.c(2744): warning C4267: функция: преобразование из "size_t" в "int32"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_fio.obj sim_fio.c
+sim_fio.c
+sim_fio.c(834): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_ether.obj sim_ether.c
+sim_ether.c
+sim_ether.c(755): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+sim_ether.c(757): warning C4267: =: преобразование из "size_t" в "uint32"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_imd.obj sim_imd.c
+sim_imd.c
+sim_imd.c(368): warning C4267: =: преобразование из "size_t" в "int32"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_video.obj sim_video.c
+sim_video.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_frontpanel.obj sim_frontpanel.c
+sim_frontpanel.c
+sim_frontpanel.c(1358): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_frontpanel.c(1364): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_frontpanel.c(2155): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+sim_frontpanel.c(2377): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+sim_frontpanel.c(2664): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+sim_frontpanel.c(2669): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_frontpanel.c(2717): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+sim_frontpanel.c(2719): warning C4267: функция: преобразование из "size_t" в "int"; возможна потеря данных
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_scsi.obj sim_scsi.c
+sim_scsi.c
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:m20.exe m20_cpu.obj m20_sys.obj m20_eng.obj m20_drm.obj m20_cd.obj m20_mt.obj  m20_lp.obj scp.obj sim_console.obj sim_tape.obj sim_timer.obj sim_tmxr.obj  sim_sock.obj sim_serial.obj sim_disk.obj sim_fio.obj sim_ether.obj  sim_imd.obj sim_video.obj sim_frontpanel.obj sim_scsi.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x64\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_cpu.obj m20_cpu.c
+m20_cpu.c
+m20_cpu.c(1913): warning C4477: "fprintf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "3" имеет тип "t_value"
+m20_cpu.c(1913): note: рекомендуется использовать "%lld" в строке форматирования
+m20_cpu.c(1913): note: рекомендуется использовать "%Id" в строке форматирования
+m20_cpu.c(1913): note: рекомендуется использовать "%I64d" в строке форматирования
+m20_cpu.c(3150): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "t_value"
+m20_cpu.c(3150): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cpu.c(3150): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cpu.c(3150): note: рекомендуется использовать "%I64o" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_sys.obj m20_sys.c
+m20_sys.c
+m20_sys.c(393): warning C4090: функция: разные квалификаторы "const"
+m20_sys.c(505): warning C4090: =: разные квалификаторы "const"
+m20_sys.c(552): warning C4090: =: разные квалификаторы "const"
+m20_sys.c(598): warning C4090: функция: разные квалификаторы "const"
+m20_sys.c(599): warning C4090: функция: разные квалификаторы "const"
+m20_sys.c(607): warning C4090: функция: разные квалификаторы "const"
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20_rus.obj m20_rus.c
+m20_rus.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_drm.obj m20_drm.c
+m20_drm.c
+m20_drm.c(93): warning C4090: функция: разные квалификаторы "const"
+m20_drm.c(93): warning C4028: формальный параметр 2 отличается от объявления
+m20_drm.c(264): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(264): note: рекомендуется использовать "%zo" в строке форматирования
+m20_drm.c(282): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(282): note: рекомендуется использовать "%zo" в строке форматирования
+m20_drm.c(330): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(330): note: рекомендуется использовать "%zo" в строке форматирования
+m20_drm.c(357): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_drm.c(357): note: рекомендуется использовать "%zo" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_cd.obj m20_cd.c
+m20_cd.c
+m20_cd.c(119): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(119): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(120): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(120): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(124): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(124): warning C4028: формальный параметр 2 отличается от объявления
+m20_cd.c(152): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(152): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(153): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(153): warning C4028: формальный параметр 3 отличается от объявления
+m20_cd.c(157): warning C4090: функция: разные квалификаторы "const"
+m20_cd.c(157): warning C4028: формальный параметр 2 отличается от объявления
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%01o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%02o" требуется аргумент типа "unsigned int", но вариативный аргумент "2" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "3" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "4" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(764): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "5" имеет тип "t_value"
+m20_cd.c(764): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(764): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%01o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%02o" требуется аргумент типа "unsigned int", но вариативный аргумент "2" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "3" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "4" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+m20_cd.c(799): warning C4477: "_snprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "5" имеет тип "t_value"
+m20_cd.c(799): note: рекомендуется использовать "%llo" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%Io" в строке форматирования
+m20_cd.c(799): note: рекомендуется использовать "%I64o" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_mt.obj m20_mt.c
+m20_mt.c
+m20_mt.c(93): warning C4090: функция: разные квалификаторы "const"
+m20_mt.c(93): warning C4028: формальный параметр 2 отличается от объявления
+m20_mt.c(280): warning C4477: "fprintf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+m20_mt.c(280): note: рекомендуется использовать "%zd" в строке форматирования
+m20_mt.c(280): warning C4477: "fprintf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "2" имеет тип "unsigned __int64"
+m20_mt.c(280): note: рекомендуется использовать "%lld" в строке форматирования
+m20_mt.c(280): note: рекомендуется использовать "%Id" в строке форматирования
+m20_mt.c(280): note: рекомендуется использовать "%I64d" в строке форматирования
+m20_mt.c(294): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_mt.c(294): note: рекомендуется использовать "%zo" в строке форматирования
+m20_mt.c(327): warning C4477: "fprintf": в строке форматирования "%04o" требуется аргумент типа "unsigned int", но вариативный аргумент "1" имеет тип "size_t"
+m20_mt.c(327): note: рекомендуется использовать "%zo" в строке форматирования
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_lp.obj m20_lp.c
+m20_lp.c
+m20_lp.c(99): warning C4090: функция: разные квалификаторы "const"
+m20_lp.c(99): warning C4028: формальный параметр 2 отличается от объявления
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:m20ru.exe m20ru_cpu.obj m20ru_sys.obj m20_rus.obj m20ru_drm.obj m20ru_cd.obj  m20ru_mt.obj m20ru_lp.obj scp.obj sim_console.obj sim_tape.obj sim_timer.obj sim_tmxr.obj  sim_sock.obj sim_serial.obj sim_disk.obj sim_fio.obj sim_ether.obj  sim_imd.obj sim_video.obj sim_frontpanel.obj sim_scsi.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x64\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fogetopt.obj getopt.c
+getopt.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Focode2pcard.obj code2pcard.c
+code2pcard.c
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:code2pcard.exe code2pcard.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x64\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Foautocode_m20.obj autocode_m20.c
+autocode_m20.c
+autocode_m20.c(1082): warning C4477: "printf": в строке форматирования "%d" требуется аргумент типа "int", но вариативный аргумент "1" имеет тип "size_t"
+autocode_m20.c(1082): note: рекомендуется использовать "%zd" в строке форматирования
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:autocode_m20.exe autocode_m20.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x64\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fodump_drm.obj dump_drm.c
+dump_drm.c
+dump_drm.c(163): warning C4477: "printf": в строке форматирования "%lu" требуется аргумент типа "unsigned long", но вариативный аргумент "1" имеет тип "size_t"
+dump_drm.c(163): note: рекомендуется использовать "%zu" в строке форматирования
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:dump_drm.exe dump_drm.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x64\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fodump_mt.obj dump_mt.c
+dump_mt.c
+dump_mt.c(175): warning C4477: "printf": в строке форматирования "%lu" требуется аргумент типа "unsigned long", но вариативный аргумент "1" имеет тип "size_t"
+dump_mt.c(175): note: рекомендуется использовать "%zu" в строке форматирования
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:dump_mt.exe dump_mt.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x64\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 14.20.27508.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+

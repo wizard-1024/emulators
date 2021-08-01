@@ -1,0 +1,11 @@
+tar: unknown option -- -
+usage: tar {crtux}[014578befHhjLmNOoPpqsvwXZz]
+           [blocking-factor | archive | replstr] [-C directory] [-I file]
+           [file ...]
+       tar {-crtux} [-014578eHhjLmNOoPpqvwXZz] [-b blocking-factor]
+           [-C directory] [-f archive] [-I file] [-s replstr] [file ...]
+sh: del: not found
+sh: del: not found
+sh: del: not found
+sh: del: not found
+sh: del: not found

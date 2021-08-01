@@ -1,0 +1,47 @@
+; Тест деления (2015 Стефанков)
+;
+! del div_0001_debug.txt
+! del div_0001.lst
+;
+set console debug=div_0001.txt
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DPTYPE 2
+set lpt OCTHELPFMT
+att lpt   div_0001.lst
+;
+;de USE_ADD_SBST 1
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 0
+;de ROUNDING_UP_ON 0
+;de USE_NEW_MULT 1
+de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+load div_0001.m20
+;
+ex 100-105
+echo
+ex -m 100-105
+echo
+ex 20-23
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 20-23
+echo
+ex 100-105
+echo
+ex -m 100-105
+quit

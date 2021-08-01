@@ -1,0 +1,284 @@
+
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+
+---VERSION
+M-20 simulator V4.0-0 Current
+    Simulator Framework Capabilities:
+        64b data
+        32b addresses
+        no Ethernet
+        Idle/Throttling support is available
+        Virtual Hard Disk (VHD) support
+        RAW disk and CD/DVD ROM support
+        FrontPanel API Version 12
+    Host Platform:
+        Compiler: Microsoft Visual C++ 19.00.24210.00
+        Simulator Compiled as C arch: x86 (Release Build) on Jul 30 2021 at 23:34:28
+        Build Tool: undefined (probably cmake)
+        Memory Access: Little Endian
+        Memory Pointer Size: 32 bits
+        Large File (>2GB) support
+        SDL Video support: No Video Support
+        No RegEx support for EXPECT commands
+        OS clock resolution: 1ms
+        Time taken by msleep(1): 1ms
+        OS: Microsoft Windows [Version 6.1.7601]
+        Architecture: x86 on AMD64, Processors: 12
+        Processor Id: Intel64 Family 6 Model 62 Stepping 4, GenuineIntel, Level: 6, Revision: 3e04
+        tar tool: tar (GNU tar) 1.12
+        git commit id: 6728b3f4
+        git commit time: 2021-06-22T03:54:25-07:00
+
+---DEFAULT
+C:\emulators\m-20\base_tests_0001
+
+---ASYNC
+Asynchronous I/O is not available in this simulator
+
+---SERIAL
+Serial devices:
+ ser0	COM1 (\Device\Serial0)
+
+---ETHERNET
+ETH devices:
+  network support not available in simulator
+
+---REMOTE
+Remote Console Input automatically continues after 30 seconds
+Remote Console Command input is disabled
+
+---CLOCKS
+Minimum Host Sleep Time:        1 ms (1000Hz)
+Host Clock Resolution:          1 ms
+Execution Rate:                 0 instructions/sec
+Calibrated Timer:               Undetermined
+Pre-Calibration Estimated Rate: 5,000,000
+Calibration:                    Always
+
+M-20 clock device is Internal Calibrated Timer(INT-TIMER)
+Calibrated Timer 8:
+  Running at:                100 Hz
+  Tick Size:                 
+  Ticks in current second:   1
+  Seconds Running:           0 ()
+  Real Time:                 7476156
+  Virtual Time:              7476156
+  Next Interval:             1,000
+  Base Tick Delay:           50,000
+  Initial Insts Per Tick:    50,000
+  Current Insts Per Tick:    50,000
+  Initializations:           1
+  Ticks:                     0
+  Initialize Base Time:      23:43:14.049
+  Wall Clock Time Now:       23:43:14.848
+
+---CONFIGURATION
+M-20 simulator configuration
+
+CPU     
+        4096W, long  symbolic instruction name
+CDR     
+        not attached, no input extended format 
+CDP     
+        not attached, no output extended format 
+LPT     
+        not attached, no new output format , no octal help format 
+DRUM    3 units
+  DRUM0 4096W, not attached
+  DRUM1 4096W, not attached
+  DRUM2 4096W, not attached
+MT      4 units
+  MT0   75KW, not attached
+  MT1   75KW, not attached
+  MT2   75KW, not attached
+  MT3   75KW, not attached
+
+---DEVICES
+M-20 simulator configuration
+
+CPU     
+CDR     
+CDP     
+LPT     
+DRUM    3 units
+MT      4 units
+
+---FEATURES
+M-20 simulator configuration
+
+CPU     
+CDR     
+CDP     
+LPT     
+DRUM    3 units
+MT      4 units
+
+---STATE
+KRA:	0000
+RK:	000000000000000
+ROP:	00
+RA:	0000
+SMA:	0000
+TSW:	0
+RR:	000000000000000
+RPU1:	000000000000000
+RPU2:	000000000000000
+RPU3:	000000000000000
+RPU4:	000000000000000
+PRINT_STAT_ON_BREAK:	1
+RUN_MODE:	0
+MOSU_MODE:	1
+PRINT_SYS_STAT:	1
+DIAG_PRINT:	0
+DEBUG_DUMP_REGS:	0
+DEBUG_DUMP_MEM:	0
+DEBUG_DUMP_MODERM_MEM:	0
+ENABLE_M20_PRINT_ASCII_TEXT:	0
+DISABLE_IS2_TRACE:	0
+MEMORY_45_CHECKING:	1
+ENABLE_OPCODE_040_HACK:	0
+ARITHMETIC_OP_DEBUG:	0
+ROUND_ERROR_BITS_OFF:	1
+ROUNDING_UP_ON:	0
+USE_NEW_ADD:	0
+USE_NEW_MULT:	0
+USE_NEW_DIV:	0
+USE_NEW_SQRT:	0
+USE_ADD_SBST:	0
+
+---MODIFIERS
+
+CPU device SET commands:
+
+set CPU SHORT_SYM_OPCODE      	
+set CPU LONG_SYM_OPCODE       	
+set CPU DEBUG                 	Enables debugging for device CPU
+set CPU NODEBUG               	Disables debugging for device CPU
+
+CDR device SET commands:
+
+set CDR NOEXT                 	
+set CDR EXTFMT                	
+set CDR ENABLE                	Enables device CDR
+set CDR DISABLE               	Disables device CDR
+set CDR DEBUG                 	Enables debugging for device CDR
+set CDR NODEBUG               	Disables debugging for device CDR
+set CDR APPEND                	Sets CDR position to EOF
+
+CDP device SET commands:
+
+set CDP NOEXT                 	
+set CDP EXTFMT                	
+set CDP ENABLE                	Enables device CDP
+set CDP DISABLE               	Disables device CDP
+set CDP DEBUG                 	Enables debugging for device CDP
+set CDP NODEBUG               	Disables debugging for device CDP
+set CDP APPEND                	Sets CDP position to EOF
+
+LPT device SET commands:
+
+set LPT NONEWEXTFMT           	
+set LPT NEWEXTFMT             	
+set LPT NOOCTHELPFMT          	
+set LPT OCTHELPFMT            	
+set LPT ENABLE                	Enables device LPT
+set LPT DISABLE               	Disables device LPT
+set LPT DEBUG                 	Enables debugging for device LPT
+set LPT NODEBUG               	Disables debugging for device LPT
+set LPT APPEND                	Sets LPT position to EOF
+
+DRUM device SET commands:
+
+set DRUM ENABLE               	Enables device DRUM
+set DRUM DISABLE              	Disables device DRUM
+set DRUM DEBUG                	Enables debugging for device DRUM
+set DRUM NODEBUG              	Disables debugging for device DRUM
+
+MT device SET commands:
+
+set MT ENABLE                 	Enables device MT
+set MT DISABLE                	Disables device MT
+set MT DEBUG                  	Enables debugging for device MT
+set MT NODEBUG                	Disables debugging for device MT
+
+INT-CLOCK device SET commands:
+
+set INT-CLOCK DEBUG           	Enables debugging for device INT-CLOCK
+set INT-CLOCK NODEBUG         	Disables debugging for device INT-CLOCK
+set INT-CLOCK DEBUG=TRACE;IDLE;QUEUE;IACK;CALIB;TICK;TIME;GETTIME;INTER;THROT;MUX;CHECK
+                              	Enables specific debugging for device INT-CLOCK
+set INT-CLOCK NODEBUG=TRACE;IDLE;QUEUE;IACK;CALIB;TICK;TIME;GETTIME;INTER;THROT;MUX;CHECK
+                              	Disables specific debugging for device INT-CLOCK
+
+*INT-CLOCK device DEBUG settings:
+    TRACE       Trace routine calls
+    IDLE        Idling activities
+    QUEUE       Event queuing activities
+    IACK        interrupt acknowledgement activities
+    CALIB       Calibration activities
+    TICK        Calibration tick activities
+    TIME        Activation and scheduling activities
+    GETTIME     get_time activities
+    INTER       Internal timer activities
+    THROT       Throttling activities
+    MUX         Tmxr scheduling activities
+    CHECK       Check scheduled activation time
+
+SCP-PROCESS device SET commands:
+
+set SCP-PROCESS DEBUG         	Enables debugging for device SCP-PROCESS
+set SCP-PROCESS NODEBUG       	Disables debugging for device SCP-PROCESS
+set SCP-PROCESS DEBUG=EVENT;NEGATIVE;ACTIVATE;QUEUE;EXPSTACK;EXPEVAL;ACTION;DO;SAVE;RESTORE
+                              	Enables specific debugging for device SCP-PROCESS
+set SCP-PROCESS NODEBUG=EVENT;NEGATIVE;ACTIVATE;QUEUE;EXPSTACK;EXPEVAL;ACTION;DO;SAVE;RESTORE
+                              	Disables specific debugging for device SCP-PROCESS
+
+*SCP-PROCESS device DEBUG settings:
+    EVENT       Event Dispatch Activities
+    NEGATIVE    Negative Event Dispatch Activities
+    ACTIVATE    Event Queue Insertion Activities
+    QUEUE       Asynch Event Queue Activities
+    EXPSTACK    Expression Stack Activities
+    EXPEVAL     Expression Evaluation Activities
+    ACTION      If/Breakpoint/Expect Action Activities
+    DO          Do Command/Expansion Activities
+    SAVE        Save Activities
+    RESTORE     Restore Activities
+
+CON-TELNET device SET commands:
+
+set CON-TELNET DEBUG          	Enables debugging for device CON-TELNET
+set CON-TELNET NODEBUG        	Disables debugging for device CON-TELNET
+set CON-TELNET DEBUG=TRC;XMT;RCV;RET;ASY;CON;EXP;SND
+                              	Enables specific debugging for device CON-TELNET
+set CON-TELNET NODEBUG=TRC;XMT;RCV;RET;ASY;CON;EXP;SND
+                              	Disables specific debugging for device CON-TELNET
+
+*CON-TELNET device DEBUG settings:
+    TRC         routine calls
+    XMT         Transmitted Data
+    RCV         Received Data
+    RET         Returned Received Data
+    ASY         asynchronous activity
+    CON         connection activity
+    EXP         Expect match activity
+    SND         Send (Inject) data activity
+
+---NAMES
+
+---BREAK
+Supported Breakpoint Types: -E -R -W
+
+---QUEUE
+M-20 event queue empty, time = 0, executing 0 instructions/sec
+
+---TIME
+Time:	0
+
+---TH
+Throttling:                    Disabled
+
+---THROTTLE
+Throttling:                    Disabled
+
+Goodbye

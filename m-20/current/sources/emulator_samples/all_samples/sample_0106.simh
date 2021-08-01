@@ -1,0 +1,84 @@
+; А.В.Головина,Г.И.Баклушин и др.
+; "Типовая программа на ЭВМ М-20 для статистического анализа экономической информации"
+; 1968, Свердловск, НИИ экономики и организации производства
+; (использует готовые образы МБ из is2_build)
+; (2015 Стефанков)
+;
+! del sample_0106_debug.txt
+! del sample_0106.lst
+! del sample_0106.cdp
+! del sample_0106.drum0
+! del sample_0106.drum1
+;
+set console debug=sample_0106_debug.txt
+;set console debug=console
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;de MEMORY_45_CHECKING 1
+;de ENABLE_OPCODE_040_HACK 1
+;
+de LPTWIDTH 1
+de DPTYPE 4
+;de DPTYPE 2
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+set lpt OCTHELPFMT
+att lpt sample_0106.lst
+;
+set cdr extfmt
+attach cdp sample_0106.cdp
+;
+de DRUM_0_ACCESS_MODE 3
+de DRUM_2_ACCESS_MODE 1
+de DRUM_3_ACCESS_MODE 1
+;
+att drum0 sample_0106.drum0
+att drum1 sample_0106.drum1
+att drum2 sample_0106.drum2
+;
+att -r cdr sample_0106.cdr
+;
+de RPU1 0100000100010377
+ex RPU1
+;
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 1
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+;echo Boot
+;boot cdr
+;
+load sample_0106.m20
+;
+ex 1-1077
+echo
+ex -m 1-744
+echo
+ex -m 1023-1077
+;
+;quit
+;
+echo Run
+run
+;
+show queue
+show time
+;show throttle
+ex 1-1077
+echo
+ex -m 1-744
+echo
+ex -m 1023-1077
+;g
+quit

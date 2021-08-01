@@ -1,0 +1,84 @@
+
+M-20 simulator V4.0-0 Beta        git commit id: c317f685
+Logging to file "example8_log.txt"
+Debug output to "example8_debug.txt"
+LPT: creating new file
+
+РџСЂРѕРіСЂР°РјРјР° РІС‹С‡РёСЃР»РµРЅРёСЏ СЃРёРЅСѓСЃР°:
+20:	1 00 4000 0000 0000
+21:	1 00 0000 0000 0000
+
+30:	0 75 6314 6314 6315
+31:	1 00 0000 0000 0000
+
+100:	[op=50 mod=0] ввод_пред_050                  0013, 7000, 7767
+101:	[op=70 mod=0] ввод_исп_070                   7500, 0000, 0000
+102:	[op=16 mod=0] безусл_пер_упр_с_возв          0103, 7501, 7610
+103:	[op=75 mod=0] лог_слож                       0020, 0005, 0021
+104:	[op=50 mod=0] ввод_пред_050                  2100, 0000, 0021
+105:	[op=70 mod=0] ввод_исп_070                   0020, 0000, 0000
+106:	[op=16 mod=0] безусл_пер_упр_с_возв          0107, 7501, 7610
+
+РЎС‚Р°СЂС‚
+
+*** Command time profile stat ***
+opcode=00   count=4          times=96.00            avg_time=24.00             (пересылка)
+opcode=01   count=5          times=142.50           avg_time=28.50             (слож_он)
+opcode=02   count=2          times=57.00            avg_time=28.50             (вычит_он)
+opcode=04   count=1          times=136.50           avg_time=136.50            (делен_о)
+opcode=05   count=29         times=2015.50          avg_time=69.50             (умнож_он)
+opcode=06   count=1          times=61.50            avg_time=61.50             (слож_прдк_с_адр)
+opcode=12   count=26         times=624.00           avg_time=24.00             (пер_если_ра_мнш_a1)
+opcode=13   count=93         times=2232.00          avg_time=24.00             (слож_команд)
+opcode=14   count=383        times=30448.50         avg_time=79.50             (сдвиг_мант_по_адр)
+opcode=15   count=16         times=384.00           avg_time=24.00             (сравн)
+opcode=16   count=51         times=1224.00          avg_time=24.00             (безусл_пер_упр_с_возв)
+opcode=31   count=5          times=120.00           avg_time=24.00             (пер_если_ра_не_менш_a1_и_w1)
+opcode=32   count=4          times=96.00            avg_time=24.00             (пер_если_ра_не_менш_a1)
+opcode=33   count=343        times=8232.00          avg_time=24.00             (вычит_команд)
+opcode=34   count=21         times=720.00           avg_time=34.29             (сдвиг_мант_по_прдк)
+opcode=36   count=198        times=4752.00          avg_time=24.00             (усл_пер_упр_по_w1)
+opcode=41   count=35         times=997.50           avg_time=28.50             (слож_о)
+opcode=46   count=5          times=307.50           avg_time=61.50             (выч_адр_из_прдк)
+opcode=47   count=9          times=216.00           avg_time=24.00             (вывод_мл_разрядов)
+opcode=50   count=8          times=192.00           avg_time=24.00             (ввод_пред_050)
+opcode=51   count=10         times=240.00           avg_time=24.00             (пер_если_ра_мнш_a1_и_w0)
+opcode=52   count=84         times=2394.00          avg_time=28.50             (изм_ра_по_адр)
+opcode=53   count=66         times=1584.00          avg_time=24.00             (слож_коп)
+opcode=54   count=4          times=327.00           avg_time=81.75             (сдвиг_кода_по_адр)
+opcode=55   count=106        times=2544.00          avg_time=24.00             (лог_умнож)
+opcode=56   count=6          times=144.00           avg_time=24.00             (безусл_пер_упр)
+opcode=62   count=66         times=1881.00          avg_time=28.50             (вычит)
+opcode=65   count=9          times=625.50           avg_time=69.50             (умнож)
+opcode=70   count=8          times=380192.04        avg_time=47524.01          (ввод_исп_070)
+opcode=71   count=6          times=144.00           avg_time=24.00             (пер_ра_не_мнш_a1_и_w1)
+opcode=72   count=22         times=627.00           avg_time=28.50             (изм_ра_по_коду)
+opcode=74   count=6          times=252.00           avg_time=42.00             (сдвиг_кода_по_прдк)
+opcode=75   count=7          times=168.00           avg_time=24.00             (лог_слож)
+opcode=76   count=409        times=9816.00          avg_time=24.00             (усл_пер_упр_по_w0)
+opcode=77   count=1          times=24.00            avg_time=24.00             (останов_077)
+Summary:  times=454017.04  count=2049  avg_time=221.58
+**********
+
+example8.ini-42> run
+
+Останов, KRA: 0113 ([op=00 mod=0] пересылка                      0000, 0000, 0000)
+20:	1 00 4000 0000 0000
+21:	0 77 7527 3503 5046
+
+30:	0 75 6314 6314 6315
+31:	1 00 0000 0000 0000
+
+66:	1 20 5532 2000 0000
+
+3000:	0 05 2145 0000 0000
+3001:	1 20 5532 2000 0010
+3002:	0 00 0000 0000 0000
+3003:	0 00 0000 0000 0000
+3004:	0 00 0000 0000 0000
+3005:	0 00 0000 0000 0000
+3006:	0 00 0000 0000 0000
+3007:	0 00 0000 0000 0000
+Goodbye
+Debug output disabled
+Log file closed

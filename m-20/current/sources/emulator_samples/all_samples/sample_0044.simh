@@ -1,0 +1,65 @@
+; Программа ввода и умножения элементов квадратных матриц [1969 Геронимус, стр.185-189] 
+; (2015 Стефанков)
+;
+! del sample_0044_debug.txt
+! del sample_0044.lst
+;
+set console debug=sample_0044_debug.txt
+de DISABLE_IS2_TRACE 1
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+;de DPTYPE 4
+de LPTWIDTH 1
+;de DPTYPE 2
+;set lpt NEWEXTFMT
+;set lpt OCTHELPFMT
+att lpt sample_0044.lst
+;
+set cdr extfmt
+att -r cdr sample_0044.cdr
+;
+att drum0 sample_0044.drum0
+att drum1 sample_0044.drum1
+att drum2 sample_0044.drum2
+;
+;de USE_ADD_SBST 1
+;de USE_NEW_ADD 1
+;de ROUND_ERROR_BITS_OFF 0
+;de ROUNDING_UP_ON 0
+;de USE_NEW_MULT 1
+;de USE_NEW_DIV 1
+;de USE_NEW_SQRT 1
+;
+load sample_0044.m20
+;
+ex 21-27
+echo
+;
+ex 30-103
+echo
+ex -m 30-103
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 21-27
+echo
+ex 3377
+echo
+ex 3400-3411
+echo
+ex 0200-0211
+echo
+ex 3300-3311
+quit

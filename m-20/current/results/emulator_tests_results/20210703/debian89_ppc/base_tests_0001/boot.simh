@@ -1,0 +1,43 @@
+; Запуск рабочей программы (2+2) с перфоркарты (пример начальной загрузки)
+; (2015 Стефанков Д.В.)
+;
+! del boot_debug.txt
+! del boot.lst
+! del boot.cdp
+;
+set console debug=boot_debug.txt
+set cpu debug
+set lpt debug
+set cdp debug
+set cdr debug
+;
+de DEBUG_DUMP_REGS 1
+de DEBUG_DUMP_MEM  1
+de DEBUG_DUMP_MODERM_MEM 1
+;de ARITHMETIC_OP_DEBUG 1
+;
+att lpt boot.lst
+att -r cdr boot.cdr
+attach cdp boot.cdp
+;
+;
+ex 1-5
+echo
+ex -m 1-5
+echo
+ex 1000-1005
+echo 
+;
+echo Boot
+boot cdr
+;
+show queue
+show time
+;show throttle
+ex 1-5
+echo
+ex -m 1-5
+echo
+ex 1000-1005
+echo
+quit

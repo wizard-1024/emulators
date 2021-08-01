@@ -1,0 +1,129 @@
+/home/pi/work/emulators/20210703/base_tests_0003/is2_test_0009.simh-8> set console debug=is2_test_0009_debug.txt
+Debug output to "is2_test_0009_debug.txt"
+Debug output to "is2_test_0009_debug.txt" at Sat Jul 10 00:06:47 2021
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+lpt: lpt_attach(..)
+/home/pi/work/emulators/20210703/base_tests_0003/is2_test_0009.simh-22> att lpt   is2_test_0009.lst
+LPT: creating new file
+drm: drum_attach(..), name='is2_test_0009.drum0' res=0
+drm: drum_attach(..), name='is2_test_0009.drum1' res=0
+drm: drum_attach(..), name='is2_test_0009.drum2' res=0
+
+
+
+
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0100: [op=50 mod=0] ввод_пред_050          0013, 7000, 7767
+cpu: 0101: [op=70 mod=0] ввод_исп_070            7500, 0000, 0035
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07000,7500,7767,..)
+drm: reading MD 07000 mem_region 7500-7767
+drm: seek file_pos=18446744069414612992
+drm: read_count=0270
+drm: read: no_mosu_access=0, disable_control=0
+drm: read_count=0001
+drm: old_sum=533773610545717 chksum=533773610545717
+drm: reading_done
+cpu: err=0, codes_num=0271 sum=533773610545717
+cpu: 0102: [op=50 mod=0] ввод_пред_050          2100, 0000, 0033
+cpu: 0103: [op=70 mod=0] ввод_исп_070            0020, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0020, end_addr=0033, count=12, pr_type=1
+cpu: err=0, codes_num=0014
+cpu: 0104: [op=16 mod=0] безусл_пер_упр_с_возв 0105, 7501, 7610
+cpu: ext_io_op=0413
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,07602,7544,7544,..)
+drm: reading MD 07602 mem_region 7544-7544
+drm: seek file_pos=18446744069414616080
+drm: read_count=0001
+drm: read: no_mosu_access=0, disable_control=0
+drm: read_count=0001
+drm: old_sum=150001310300024 chksum=150001307000026
+cpu: err=15, codes_num=0002 sum=150001307000026
+cpu: ext_io_op=0013
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_read(2,00700,7200,7226,..)
+drm: reading MD 00700 mem_region 7200-7226
+drm: seek file_pos=18446744069414587904
+drm: read_count=0027
+drm: read: no_mosu_access=0, disable_control=0
+drm: read_count=0001
+drm: old_sum=471243500625657 chksum=471243500625657
+drm: reading_done
+cpu: err=0, codes_num=0030 sum=471243500625657
+cpu: 0106: [op=16 mod=0] безусл_пер_упр_с_возв 0107, 7501, 7610
+cpu: 0110: [op=16 mod=0] безусл_пер_упр_с_возв 0111, 7501, 7610
+cpu: 0112: [op=16 mod=0] безусл_пер_упр_с_возв 0113, 7501, 7610
+cpu: 0114: [op=16 mod=0] безусл_пер_упр_с_возв 0115, 7501, 7610
+cpu: 0116: [op=16 mod=0] безусл_пер_упр_с_возв 0117, 7501, 7610
+cpu: 0120: [op=16 mod=0] безусл_пер_упр_с_возв 0121, 7501, 7610
+cpu: 0122: [op=16 mod=0] безусл_пер_упр_с_возв 0123, 7501, 7610
+cpu: 0124: [op=16 mod=0] безусл_пер_упр_с_возв 0125, 7501, 7610
+cpu: 0126: [op=16 mod=0] безусл_пер_упр_с_возв 0127, 7501, 7610
+cpu: 0130: [op=16 mod=0] безусл_пер_упр_с_возв 0131, 7501, 7610
+cpu: 0132: [op=16 mod=0] безусл_пер_упр_с_возв 0133, 7501, 7610
+cpu: 0134: [op=50 mod=0] ввод_пред_050          2100, 0000, 0053
+cpu: 0135: [op=70 mod=0] ввод_исп_070            0040, 0000, 0000
+cpu: ext_io_op=2100
+lpt: write_line(..)
+lpt: zone_buf_addr=0
+lpt: write_line: start_addr=0040, end_addr=0053, count=12, pr_type=1
+cpu: err=0, codes_num=0014
+cpu: 0136: [op=77 mod=0] останов_077             0000, 0000, 0000
+
+[op=77 mod=0] останов_077             0000, 0000, 0000Останов, KRA: 0136 ()
+M-20 event queue empty, time = 1450023, executing 5,000,000 instructions/sec
+Time:	1450023
+
+
+
+
+
+
+
+Goodbye
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)

@@ -1,0 +1,100 @@
+autocode_m20.c		      -  M-20 symbolic assembly coding system for M-20
+autocode_m20.help             -  M-20 symbolic assembly coding system for M-20 (help)
+autocode_m20_dos_cp866.tab    -  M-20 messages tables for M-20 autocode (russian, dos, CP866)
+autocode_m20_eng.tab          -  M-20 messages tables for M-20 autocode (english, ASCII)
+autocode_m20_rus_utf8.tab     -  M-20 messages tables for M-20 autocode (russian, Unix/Linux, UTF8)
+autocode_m20_unix_koi8r.tab   -  M-20 messages tables for M-20 autocode (russian, Unix/KOI8-R)
+autocode_m20_win_cp1251.tab   -  M-20 messages tables for M-20 autocode (russian, Windows, CP1251)
+build_mingw32.bat             -  M-20 compile all using MINGW make and gcc environment (32-bit)
+build_mingw64.bat             -  M-20 compile all using MINGW make and gcc environment (64-bit)
+build_win32.bat               -  M-20 compile all using Visual Studio make and VC environment (32-bit)
+build_win64.bat               -  M-20 compile all using Visual Studio make and VC environment (32-bit)
+clean_win32.bat               -  M-20 clean all work and temporary files
+clean_win64.bat               -  M-20 clean all work and temporary files
+code2pcard.c                  -  M-20 convert M-20 format file to punch card format file
+dump_drm.c                    -  M-20 Dump magnetic drum storage in text fromat
+dump_mt.c                     -  M-20 dump magnetic tape storage in text fromat
+getopt.c                      -  M-20 getopt for GNU (program)
+getopt.h                      -  M-20 getopt for GNU (definitions)
+files.txt                     -  this file containing short description of each project's file
+m20_cd.c                      -  M-20 simulator card reader (punch)
+m20_cpu.c                     -  M-20 CPU and memory simulator
+m20_defs.h                    -  M-20 simulator definitions
+m20_drm.c                     -  M-20 simulator magnetic drum
+m20_eng.c                     -  M-20 simulator interface (messages,English,ASCII)
+m20_lp.c                      -  M-20 simulator line printer
+m20_mt.c                      -  M-20 simulator magnetic tape
+m20_rus.c                     -  M-20 simulator interface (selector of russian encodings)
+m20_rus_dos_cp866.h           -  M-20 simulator messages text for DOS CP-866 (russian encoding)
+m20_rus_unix_koi8_r.h         -  M-20 simulator messages text for UNIX KOI8-R (russian encoding)
+m20_rus_utf8.h                -  M-20 simulator messages text for UTF-8 (russian encoding)
+m20_rus_win_cp1251.h          -  M-20 simulator messages text for Windows CP-1251 (russian encoding)
+m20_sys.c                     -  M-20 simulator interface to SIMH
+makefile.w32                  -  M-20 build project (VC 32-bit)
+makefile.w64                  -  M-20 build project (VC 64-bit)
+makefile.mgw32                -  M-20 build project (MingW32)
+makefile.mgw64                -  M-20 build project (MingW64)
+makefile.unx                  -  M-20 build project (Unix/Linux)
+scp.c                         -  SIMH simulator control program
+scp.h                         -  SIMH simulator control program headers
+scp_help.h                    -  SIMH hierarchical help definitions
+sim_BuildROMs.c               -  SIMH Boot ROM / Boot program load internal support
+sim_card.c                    -  SIMH Generic Card read/punch routines for simulators
+sim_card.h                    -  SIMH Generic Card read/punch routines for simulators headers
+sim_console.c                 -  SIMH simulator console I/O library
+sim_console.h                 -  SIMH simulator console I/O library headers
+sim_defs.h                    -  SIMH definitions
+sim_disk.c                    -  SIMH simulator disk support library
+sim_disk.h                    -  SIMH simulator disk support library definitions
+sim_disk_mingw32.c            -  SIMH simulator disk support library (!patched for MingW32 support!)
+sim_ether.c                   -  SIMH OS-dependent network routines
+sim_ether.h                   -  SIMH OS-dependent network information
+sim_fio.c                     -  SIMH simulator file I/O library
+sim_fio.h                     -  SIMH simulator file I/O library headers
+sim_frontpanel.c              -  SIMH simulator frontpanel API (!patched for Win32!)
+sim_frontpanel.h              -  SIMH simulator frontpanel API definitions
+sim_frontpanel.c.new          -  SIMH simulator frontpanel API (!patched for Win32!)
+sim_frontpanel.c.orig         -  SIMH simulator frontpanel API (original)
+sim_imd.c                     -  SIMH ImageDisk (IMD) Disk Image File access module
+sim_imd.h                     -  SIMH ImageDisk Disk Image File access module definitions
+sim_rev.h                     -  SIMH simulator revisions and current rev level
+sim_scsi.c                    -  SIMH SCSI bus simulation
+sim_scsi.h                    -  SIMH SCSI bus simulation headers
+sim_serial.c                  -  SIMH OS-dependent serial port routines
+sim_serial.h                  -  SIMH OS-dependent serial port routines headers
+sim_sock.c                    -  SIMH OS-dependent socket routines
+sim_sock.h                    -  SIMH OS-dependent socket routines headers
+sim_tape.c                    -  SIMH simulator tape support library
+sim_tape.h                    -  SIMH simulator tape support library definitions
+sim_timer.c                   -  SIMH simulator timer library
+sim_timer.h                   -  SIMH simulator timer library headers
+sim_tmxr.c                    -  SIMH Telnet terminal multiplexer library
+sim_tmxr.h                    -  SIMH terminal multiplexer definitions
+sim_video.c                   -  SIMH Bitmap video output
+sim_video.h                   -  SIMH Bitmap video output definitions
+
+           
+[include]                     
+pthread.h                     -  implementation of the threads API of POSIX 1003.1-2001.
+sched.h                       -  Provides an implementation of POSIX realtime extensions (POSIX.1b)
+semaphore.h                   -  Semaphores aren't actually part of the PThreads standard (POSIX.1b)
+
+[libs\mingw\x86]              - pthreads library for MingW32
+libpthread.a
+libpthread.dll.a
+libpthreadGC2.dll.a
+libpthreadGCE2.dll.a
+
+[libs\mingw\x64]              - pthreads library for MingW64
+libpthread.a
+pthreadVC2.exp
+pthreadVC2.lib
+
+[libs\vc\x64]                 - pthreads library for VC 20xx x64 (before VC2015)
+libpthread.a
+pthreadVC2.lib
+pthreadVC2.dll
+
+[libs\vc\x86]                 - pthreads library for VC 20xx x86 (before VC2015)      
+pthreadVC2.lib
+pthreadVC2.dll

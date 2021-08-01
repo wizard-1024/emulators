@@ -1,0 +1,85 @@
+*
+*
+* Load IS-2, checksum for IS-2 and call SP 05 with results printing (10 times)
+* (uses ready drum images from is2_build)
+* Language: M-20 autocode 
+* encoding: english
+*
+* Copyright (c) 2015 Stefankov
+*
+
+	.NAME    is2_sunus2.a20
+	.TITLE   Program of IS-2 call to print of SP 5 (y=sinx) results for digital computer M-20
+	.AUTHOR  Stefankov Dmitry
+*
+*
+IS2_START 		.ABS	7500
+IS2_END		  	.ABS	7767
+IS2_SAVE                .ABS    7610
+IS2_DRUM3_LA 		.ABS	7000
+DRUM3_READ      	.ABS	0013
+DECIMAL_PRINT            .ABS    2100
+COUNTER                 .ABS    012
+*
+*
+	.START  20
+; data
+ARG:  =0.1              ; x (=0.1)
+STEP: =.1               ; step (=0.1)
+RES:  =0 		; sin(x) NOT USED
+*
+*
+	.ADDRESS  30
+KS1:	5 33 7736 0762 5717     ; checksum for 7500-7767 addition (expected,but old)
+KS2:	0 00 0000 0000 0000     ; 
+*
+*
+	.ADDRESS  40
+WORK_LOC:
+*
+*
+	.ADDRESS  100
+@BEGIN:
+; Load IS-2
+	io_setup_ext_dev_050        DRUM3_READ, IS2_DRUM3_LA, IS2_END
+	io_operation_ext_dev_070    IS2_START
+
+; calculate checksum (control sum)
+	change_ra_reg_by_address    ,,     		; clear RA
+        transfer_m2m	            0, 0, KS2
+@CADD:
+        add_cyclic	            (IS2_START), KS2, KS2
+	goto_after_cycle_if_ra_less_a1 IS2_END-IS2_START, @CADD, (1)
+
+; prepare
+        transfer_m2m	            ARG, 0, WORK_LOC
+	change_ra_reg_by_address    ,,     		; clear RA
+
+; print argument õ
+@LOOP:
+        io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC
+        io_operation_ext_dev_070   WORK_LOC
+
+; call SP 5, y=sinx(x)
+	jump_with_return           *+1, IS2_START+1, IS2_SAVE
+	logical_addition  	   WORK_LOC, 5, WORK_LOC+1	 ; address x, SP number, address y
+
+; print result y
+        io_setup_ext_dev_050       DECIMAL_PRINT, 0, WORK_LOC+1
+        io_operation_ext_dev_070   WORK_LOC+1
+
+; increment by STEP and continue loop
+	addition_rn                WORK_LOC, STEP, WORK_LOC    
+	goto_after_cycle_if_ra_less_a1  COUNTER-1, @LOOP, (1)
+
+;
+; termination
+;
+	stop_077                              ;  stop DIGITAL COMPUTER
+        stop_077  (7777),(7777),(7777)        ; stop after final print
+*
+*
+	.FINISH 100
+
+* program end
+

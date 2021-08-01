@@ -1,0 +1,93 @@
+; Программа записи ИС-2 (1969 г.), ПТХ, ССП  на МБ 
+; ССП 05,13,42 и так далее
+; (2015 Стефанков)
+;
+! del is3a_build_debug.txt
+! del is3a_build.drum0
+! del is3a_build.lst
+;
+set console debug=is3a_build_debug.txt
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+de LPTWIDTH 1
+de DPTYPE 2
+;set lpt OCTHELPFMT
+att lpt is3a_build.lst
+;
+de DRUM_MAP_CHECK 1
+de LOG_DRUM_1_MAP 0
+de LOG_DRUM_0_MAP 1
+de DRUM_0_ACCESS_MODE 3
+;
+att drum0 is3a_build.drum0
+;att drum1 is3a_build.drum1
+;att drum2 is3a_build.drum2
+;
+;
+load is3a.m20
+load is3a_build.m20
+;
+ex 100-341
+echo
+ex -m 100-341
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+;
+echo СП 5 (sin x)
+ex -m 400-424
+echo
+echo СП 13 (тест печати)
+ex -m 440-471
+echo
+echo СП 42 (перевод массива в двоичную систему)
+ex -m 500-537
+echo
+echo СП 27 (печать с десятичным переводом и сохранением двоичной записи)
+ex -m 550-661
+echo
+echo СП 02 (перевод 10 -> 2)
+ex -m 700-726
+echo
+echo СП 10 (перевод 2 -> 10)
+ex -m 740-765
+echo
+echo СП 32 (умножение диагональной матрицы на вектор)
+ex -m 1000-1015
+echo
+echo СП 03 (e^x)
+ex -m 1030-1057
+echo
+echo СП 04 (ln x)
+ex -m 1070-1124
+echo
+echo СП 11 (tg x)
+ex -m 1140-1165
+echo
+echo СП 01 (x^y)
+ex -m 1200-1267
+echo
+echo СП 06 (arcsin x)
+ex -m 1310-1334
+echo
+echo СП 12 (arctg x)
+ex -m 1350-1401
+echo
+echo СП 30 (печать с десятичным переводом без сохранения двоичной записи)
+ex -m 1410-1527
+echo
+echo СП 43 (перевод материала в десятичную систему и вывод на печать без теста печати)
+ex -m 1540-1611
+echo
+echo СП 36 (умножение матриц)
+ex -m 1630-1673
+echo
+quit

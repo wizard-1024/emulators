@@ -1,0 +1,36 @@
+; Нахождение собственных чисел матрицы, [1965 Арлазаров, Гутер, Усков], стр.108-118,195-200
+;
+! del sample_0020_debug.txt
+;
+set console debug=sample_0020_debug.txt
+set cpu debug
+set lpt debug
+de LPTWIDTH 1
+de DPTYPE 3
+;de BCDPRINT 1
+;set lpt NEWEXTFMT
+;set lpt OCTHELPFMT
+;att lpt   sample_0019.lst
+;
+load sample_0020.m20
+;
+ex 0121-0126
+echo
+ex 101
+echo
+ex 1600-1610
+echo
+ex 1760
+echo
+ex 2000
+echo
+ex 1000-1307
+echo
+ex -m 1000-1307
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+quit

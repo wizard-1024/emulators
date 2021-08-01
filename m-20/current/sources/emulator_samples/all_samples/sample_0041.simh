@@ -1,0 +1,84 @@
+; Загрузка программы с ПК, загрузка ИС-2 c МБ,запуск рабочей программы [1974 Гавриленко, стр.412-414]
+; (использует готовые образы МБ из is3_build)
+; (2015 Стефанков)
+;
+! del sample_0041_debug.txt
+! del sample_0041.lst
+! del sample_0041.cdp
+;;! del sample_0041.drum0
+! del sample_0041.drum1
+! del sample_0041.drum2
+;
+set console debug=sample_0041_debug.txt
+de DISABLE_IS2_TRACE 1
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de DEBUG_DUMP_MODERM_MEM 1
+de ARITHMETIC_OP_DEBUG 1
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+set cdr extfmt
+att -r cdr sample_0041.cdr
+;
+attach cdp sample_0041.cdp
+;
+;de DPTYPE 2
+de LPTWIDTH 1
+de DPTYPE 4
+;set lpt OCTHELPFMT
+att lpt sample_0041.lst
+;
+de DRUM_MAP_CHECK 1
+de LOG_DRUM_1_MAP 0
+de LOG_DRUM_0_MAP 1
+de DRUM_0_ACCESS_MODE 1
+;
+att drum0 sample_0041.drum0
+att drum1 sample_0041.drum1
+att drum2 sample_0041.drum2
+;
+echo Boot
+boot cdr
+;
+;load sample_0041.m20
+;
+echo
+;
+ex 1-21
+echo
+ex -m 1-21
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 1-21
+echo
+ex -m 1-21
+echo
+;
+ex 0-3
+echo
+ex 50-77
+echo
+ex 100-141
+echo
+ex -m 100-141
+echo
+ex 62
+echo
+ex 3002
+echo
+ex 66
+echo
+ex 3006-3007
+echo
+ex 30-35
+echo
+quit

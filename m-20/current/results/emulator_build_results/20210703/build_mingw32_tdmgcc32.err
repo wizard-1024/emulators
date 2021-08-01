@@ -1,0 +1,200 @@
+m20_sys.c: In function 'sim_load':
+m20_sys.c:393:48: warning: passing argument 2 of 'm20_abs_mem_dump' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  393 |     if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+      |                                                ^~~~
+m20_sys.c:357:43: note: expected 'char *' but argument is of type 'const char *'
+  357 | t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+      |                                     ~~~~~~^~~~~
+m20_sys.c: In function 'm20_parse_offset':
+m20_sys.c:505:10: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  505 |     cptr = get_glyph (cptr, gbuf, 0); /* get address */
+      |          ^
+m20_sys.c:506:35: warning: passing argument 2 of 'strtotv' from incompatible pointer type [-Wincompatible-pointer-types]
+  506 |     *offset = (int)strtotv (gbuf, &tptr, 8);
+      |                                   ^~~~~
+      |                                   |
+      |                                   char **
+In file included from sim_defs.h:1088,
+                 from m20_defs.h:23,
+                 from m20_sys.c:36:
+scp.h:189:49: note: expected 'const char **' but argument is of type 'char **'
+  189 | t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+      |                                                 ^
+m20_sys.c: In function 'parse_instruction':
+m20_sys.c:552:10: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  552 |     cptr = get_glyph (cptr, gbuf, 0);  /* get opcode */
+      |          ^
+m20_sys.c: In function 'parse_sym':
+m20_sys.c:598:25: warning: passing argument 1 of 'skip_spaces' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  598 |     cptr = skip_spaces (cptr);   /* absorb spaces */
+      |                         ^~~~
+m20_sys.c:138:26: note: expected 'char *' but argument is of type 'const char *'
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+m20_sys.c:599:30: warning: passing argument 1 of 'parse_instruction' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  599 |     if (! parse_instruction (cptr, val, sw)) /* symbolic parse? */
+      |                              ^~~~
+m20_sys.c:547:33: note: expected 'char *' but argument is of type 'const char *'
+  547 | t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+      |                           ~~~~~~^~~~
+m20_sys.c:607:26: warning: passing argument 1 of 'skip_spaces' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  607 |  cptr = skip_spaces (cptr+1);  /* next char */
+      |                      ~~~~^~
+m20_sys.c:138:26: note: expected 'char *' but argument is of type 'const char *'
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+m20_drm.c:97:9: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+   97 |         &drum_attach, &drum_detach, NULL,
+      |         ^
+m20_drm.c:97:9: note: (near initialization for 'drum_dev.attach')
+m20_cd.c:119:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  119 |     { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:119:81: note: (near initialization for 'cdr_mod[0].valid')
+m20_cd.c:120:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  120 |     { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:120:81: note: (near initialization for 'cdr_mod[1].valid')
+m20_cd.c:128:16: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+  128 |     &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+      |                ^
+m20_cd.c:128:16: note: (near initialization for 'cdr_dev.attach')
+m20_cd.c:152:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  152 |     { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:152:81: note: (near initialization for 'cdp_mod[0].valid')
+m20_cd.c:153:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  153 |     { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:153:81: note: (near initialization for 'cdp_mod[1].valid')
+m20_cd.c:161:11: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+  161 |     NULL, &cdp_attach, &cdp_detach, NULL,
+      |           ^
+m20_cd.c:161:11: note: (near initialization for 'cdp_dev.attach')
+m20_mt.c:97:9: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+   97 |         &mt_attach, &mt_detach, NULL,
+      |         ^
+m20_mt.c:97:9: note: (near initialization for 'mt_dev.attach')
+m20_lp.c:103:11: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+  103 |     NULL, &lpt_attach, &lpt_detach, NULL,
+      |           ^
+m20_lp.c:103:11: note: (near initialization for 'lpt_dev.attach')
+m20_sys.c: In function 'sim_load':
+m20_sys.c:393:48: warning: passing argument 2 of 'm20_abs_mem_dump' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  393 |     if (dump_flag) err = m20_abs_mem_dump( fi, fnam );
+      |                                                ^~~~
+m20_sys.c:357:43: note: expected 'char *' but argument is of type 'const char *'
+  357 | t_stat m20_abs_mem_dump ( FILE *of, char *fname )
+      |                                     ~~~~~~^~~~~
+m20_sys.c: In function 'm20_parse_offset':
+m20_sys.c:505:10: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  505 |     cptr = get_glyph (cptr, gbuf, 0); /* get address */
+      |          ^
+m20_sys.c:506:35: warning: passing argument 2 of 'strtotv' from incompatible pointer type [-Wincompatible-pointer-types]
+  506 |     *offset = (int)strtotv (gbuf, &tptr, 8);
+      |                                   ^~~~~
+      |                                   |
+      |                                   char **
+In file included from sim_defs.h:1088,
+                 from m20_defs.h:23,
+                 from m20_sys.c:36:
+scp.h:189:49: note: expected 'const char **' but argument is of type 'char **'
+  189 | t_value strtotv (CONST char *cptr, CONST char **endptr, uint32 radix);
+      |                                                 ^
+m20_sys.c: In function 'parse_instruction':
+m20_sys.c:552:10: warning: assignment discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  552 |     cptr = get_glyph (cptr, gbuf, 0);  /* get opcode */
+      |          ^
+m20_sys.c: In function 'parse_sym':
+m20_sys.c:598:25: warning: passing argument 1 of 'skip_spaces' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  598 |     cptr = skip_spaces (cptr);   /* absorb spaces */
+      |                         ^~~~
+m20_sys.c:138:26: note: expected 'char *' but argument is of type 'const char *'
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+m20_sys.c:599:30: warning: passing argument 1 of 'parse_instruction' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  599 |     if (! parse_instruction (cptr, val, sw)) /* symbolic parse? */
+      |                              ^~~~
+m20_sys.c:547:33: note: expected 'char *' but argument is of type 'const char *'
+  547 | t_stat parse_instruction (char *cptr, t_value *val, int32 sw)
+      |                           ~~~~~~^~~~
+m20_sys.c:607:26: warning: passing argument 1 of 'skip_spaces' discards 'const' qualifier from pointer target type [-Wdiscarded-qualifiers]
+  607 |  cptr = skip_spaces (cptr+1);  /* next char */
+      |                      ~~~~^~
+m20_sys.c:138:26: note: expected 'char *' but argument is of type 'const char *'
+  138 | char *skip_spaces (char *p)
+      |                    ~~~~~~^
+m20_drm.c:97:9: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+   97 |         &drum_attach, &drum_detach, NULL,
+      |         ^
+m20_drm.c:97:9: note: (near initialization for 'drum_dev.attach')
+m20_cd.c:119:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  119 |     { UNIT_INEXTFMT,  0,              "no input extended format ",  "NOEXT",    &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:119:81: note: (near initialization for 'cdr_mod[0].valid')
+m20_cd.c:120:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  120 |     { UNIT_INEXTFMT,  UNIT_INEXTFMT,  "input extended format ",     "EXTFMT",   &cdr_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:120:81: note: (near initialization for 'cdr_mod[1].valid')
+m20_cd.c:128:16: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+  128 |     &cdr_boot, &cdr_attach, &cdr_detach, NULL,
+      |                ^
+m20_cd.c:128:16: note: (near initialization for 'cdr_dev.attach')
+m20_cd.c:152:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  152 |     { UNIT_OUTEXTFMT, 0,              "no output extended format ", "NOEXT",    &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:152:81: note: (near initialization for 'cdp_mod[0].valid')
+m20_cd.c:153:81: warning: initialization of 't_stat (*)(UNIT *, int32,  const char *, void *)' {aka 'int (*)(UNIT *, int,  const char *, void *)'} from incompatible pointer type 't_stat (*)(UNIT *, int32,  char *, void *)' {aka 'int (*)(UNIT *, int,  char *, void *)'} [-Wincompatible-pointer-types]
+  153 |     { UNIT_OUTEXTFMT, UNIT_OUTEXTFMT, "output extended format ",    "EXTFMT",   &cdp_set_mode, NULL },
+      |                                                                                 ^
+m20_cd.c:153:81: note: (near initialization for 'cdp_mod[1].valid')
+m20_cd.c:161:11: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+  161 |     NULL, &cdp_attach, &cdp_detach, NULL,
+      |           ^
+m20_cd.c:161:11: note: (near initialization for 'cdp_dev.attach')
+m20_mt.c:97:9: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+   97 |         &mt_attach, &mt_detach, NULL,
+      |         ^
+m20_mt.c:97:9: note: (near initialization for 'mt_dev.attach')
+m20_lp.c:103:11: warning: initialization of 't_stat (*)(UNIT *, const char *)' {aka 'int (*)(UNIT *, const char *)'} from incompatible pointer type 't_stat (*)(UNIT *, char *)' {aka 'int (*)(UNIT *, char *)'} [-Wincompatible-pointer-types]
+  103 |     NULL, &lpt_attach, &lpt_detach, NULL,
+      |           ^
+m20_lp.c:103:11: note: (near initialization for 'lpt_dev.attach')
+autocode_m20.c: In function 'process_tables_file':
+autocode_m20.c:567:20: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  567 |                    strncpy( p_sym_tables->sym_op_instr_table[ops_num].short_op_name, temp_buf, slen );
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:562:27: note: length computed here
+  562 |                    slen = strlen(temp_buf);
+      |                           ^~~~~~~~~~~~~~~~
+autocode_m20.c:568:20: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  568 |                    strncpy( p_sym_tables->sym_op_instr_table[ops_num].long_op_name, temp_buf_2, slen2 );
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:564:27: note: length computed here
+  564 |                    slen2 =strlen(temp_buf_2);
+      |                           ^~~~~~~~~~~~~~~~~~
+autocode_m20.c:530:16: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  530 |                strncpy( p_sym_tables->pseudo_op_table[ps_ops_num].pseudo_op_name, temp_buf, slen );
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:527:23: note: length computed here
+  527 |                slen = strlen(temp_buf);
+      |                       ^~~~~~~~~~~~~~~~
+autocode_m20.c:503:16: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+  503 |                strncpy( p_sym_tables->messages_table[messages_num].msg_text, temp_buf, slen );
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:500:23: note: length computed here
+  500 |                slen = strlen(temp_buf);
+      |                       ^~~~~~~~~~~~~~~~
+autocode_m20.c: In function 'parse_input_assembly_file':
+autocode_m20.c:1049:10: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+ 1049 |          strncpy( parsed_lines_array[i].cleaned_text_line, temp_buf, slen );
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:1048:17: note: length computed here
+ 1048 |          slen = strlen(temp_buf);
+      |                 ^~~~~~~~~~~~~~~~
+autocode_m20.c:1152:12: warning: 'strncpy' specified bound depends on the length of the source argument [-Wstringop-overflow=]
+ 1152 |            strncpy( parsed_lines_array[i].label_name, parsed_lines_array[i].lexical_word_array[k].lex_word_value, slen-1);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+autocode_m20.c:1147:16: note: length computed here
+ 1147 |         slen = strlen(parsed_lines_array[i].lexical_word_array[k].lex_word_value);
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

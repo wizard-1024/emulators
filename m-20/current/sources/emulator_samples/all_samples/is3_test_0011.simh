@@ -1,0 +1,74 @@
+; Загрузка ИС-2, к/с для ИС-2 и вызов СП 10 с печатью результатов (10 раз)
+; (использует готовые образы МБ из is3_build)
+; (2015 Стефанков)
+;
+! del is3_test_0011_debug.txt
+! del is3_test_0011.lst
+;
+set console debug=is3_test_0011_debug.txt
+;de DEBUG_DUMP_REGS 1
+;de DEBUG_DUMP_MEM  1
+;de ARITHMETIC_OP_DEBUG 0
+set cpu debug
+set drum debug
+set cdr  debug
+set lpt  debug
+set cdp  debug
+set mt   debug
+;
+;de DPTYPE 2
+de DPTYPE 4
+set lpt OCTHELPFMT
+att lpt   is3_test_0011.lst
+;
+de DRUM_MAP_CHECK 1
+de LOG_DRUM_1_MAP 0
+de LOG_DRUM_0_MAP 1
+de DRUM_0_ACCESS_MODE 1
+;
+att drum0 is3_test_0011.drum0
+;att drum1 is3_test_0011.drum1
+;att drum2 is3_test_0011.drum2
+;
+;de USE_NEW_ADD 0
+;de ROUND_ERROR_BITS_OFF 0
+;de ROUNDING_UP_ON 0
+;de USE_NEW_MULT 0
+;de USE_NEW_DIV 0
+;de USE_NEW_SQRT 0
+;
+load is3_test_0011.m20
+;
+ex 100-137
+echo
+ex -m 100-137
+echo
+ex 20-32
+echo
+ex 35-36
+echo
+ex 40-52
+echo
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 35-35
+echo
+ex 100-137
+echo
+ex -m 100-137
+echo
+ex 0-3
+echo
+ex 20-32
+echo
+ex 35-36
+echo
+ex 40-52
+echo
+;ex 7544-7544
+;echo
+;ex 7200-7230
+quit

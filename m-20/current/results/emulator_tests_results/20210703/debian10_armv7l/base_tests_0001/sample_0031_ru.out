@@ -1,0 +1,68 @@
+
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+/home/pi/work/emulators/20210703/base_tests_0001/sample_0031.simh-4> ! del sample_0031.lst
+Error 32512
+LPT     
+        not attached, no new output format , no octal help format 
+LPTWIDTH:	7
+LPTWIDTH:	1
+DPTYPE:	4
+DPTYPE:	2
+LPT     
+        not attached, no new output format , octal help format 
+/home/pi/work/emulators/20210703/base_tests_0001/sample_0031.simh-18> att lpt sample_0031.lst
+LPT: creating new file
+20:	3 06 7600 0000 0000
+21:	1 03 4000 0000 0000
+
+30:	0 00 0000 0000 0000
+31:	0 00 0000 0000 0000
+
+100:	0 00 0020 0000 0030
+101:	0 52 0000 0000 0000
+102:	0 50 2100 0000 0030
+103:	0 70 0030 0000 0000
+104:	0 05 0030 0030 0031
+105:	0 50 2100 0000 0031
+106:	0 70 0031 0000 0000
+107:	0 01 0030 0021 0030
+110:	1 12 0037 0102 0001
+111:	0 77 0000 0000 0000
+112:	0 77 0000 0000 0000
+
+100:	[op=00 mod=0] пересылка             0020, 0000, 0030
+101:	[op=52 mod=0] изм_ра_по_адр        0000, 0000, 0000
+102:	[op=50 mod=0] ввод_пред_050          2100, 0000, 0030
+103:	[op=70 mod=0] ввод_исп_070            0030, 0000, 0000
+104:	[op=05 mod=0] умнож_он                0030, 0030, 0031
+105:	[op=50 mod=0] ввод_пред_050          2100, 0000, 0031
+106:	[op=70 mod=0] ввод_исп_070            0031, 0000, 0000
+107:	[op=01 mod=0] слож_он                  0030, 0021, 0030
+110:	[op=12 mod=1] пер_если_ра_мнш_a1 0037, 0102, @+0001
+111:	[op=77 mod=0] останов_077             0000, 0000, 0000
+112:	[op=77 mod=0] останов_077             0000, 0000, 0000
+
+Start
+
+*** Command time profile stat ***
+opcode=00   count=1          times=24.00            avg_time=24.00             (пересылка)
+opcode=01   count=32         times=912.00           avg_time=28.50             (слож_он)
+opcode=05   count=32         times=2224.00          avg_time=69.50             (умнож_он)
+opcode=12   count=32         times=768.00           avg_time=24.00             (пер_если_ра_мнш_a1)
+opcode=50   count=64         times=1536.00          avg_time=24.00             (ввод_пред_050)
+opcode=52   count=1          times=28.50            avg_time=28.50             (изм_ра_по_адр)
+opcode=70   count=64         times=3201536.00       avg_time=50024.00          (ввод_исп_070)
+opcode=77   count=1          times=24.00            avg_time=24.00             (останов_077)
+Summary:  times=3207052.50  count=227  avg_time=14127.98
+**********
+
+
+Останов, KRA: 0111 ([op=77 mod=0] останов_077             0000, 0000, 0000)
+M-20 event queue empty, time = 6450075, executing 5,000,000 instructions/sec
+Time:	6450075
+20:	3 06 7600 0000 0000
+21:	1 03 4000 0000 0000
+
+30:	1 07 4100 0000 0006
+31:	1 14 7404 0000 0023
+Goodbye

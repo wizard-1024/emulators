@@ -1,0 +1,76 @@
+; Проверка оборудования. Стефанков Д.В.
+;
+echo 
+echo ---VERSION
+show version
+
+echo 
+echo ---DEFAULT
+show default
+
+echo 
+echo ---ASYNC
+show async
+
+echo 
+echo ---SERIAL
+show serial
+
+echo 
+echo ---ETHERNET
+show ethernet
+
+echo 
+echo ---REMOTE
+show remote
+
+echo 
+echo ---CLOCKS
+show clocks
+
+echo 
+echo ---CONFIGURATION
+show configuration
+
+echo 
+echo ---DEVICES
+show devices
+
+echo 
+echo ---FEATURES
+show features
+
+echo
+echo ---STATE
+ex STATE
+
+echo 
+echo ---MODIFIERS
+show modifiers
+
+echo 
+echo ---NAMES
+show names
+
+echo
+echo ---BREAK
+show break
+
+echo
+echo ---QUEUE
+show queue
+
+echo
+echo ---TIME
+show time
+
+echo
+echo ---TH
+show th
+
+echo
+echo ---THROTTLE
+show throttle
+
+echo
+quit

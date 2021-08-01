@@ -1,0 +1,808 @@
+/root/work/emulators/base_tests_0003/is2_build.simh-11> set console debug=is2_build_debug.txt
+Debug output to "is2_build_debug.txt"
+Debug output to "is2_build_debug.txt" at Sun Jul  4 04:17:57 2021
+M-20 simulator V4.0-0 Current        git commit id: 6728b3f4
+lpt: lpt_attach(..)
+/root/work/emulators/base_tests_0003/is2_build.simh-22> att lpt is2_build.lst
+LPT: creating new file
+/root/work/emulators/base_tests_0003/is2_build.simh-24> att drum0 is2_build.drum0
+DRUM0: creating new file
+drm: drum_attach(..), name='is2_build.drum0' res=0
+/root/work/emulators/base_tests_0003/is2_build.simh-25> att drum1 is2_build.drum1
+DRUM1: creating new file
+drm: drum_attach(..), name='is2_build.drum1' res=0
+/root/work/emulators/base_tests_0003/is2_build.simh-26> att drum2 is2_build.drum2
+DRUM2: creating new file
+drm: drum_attach(..), name='is2_build.drum2' res=0
+
+Start
+cpu: reset
+cdr: cdr_reset(..)
+cdp: cdp_reset(..)
+lpt: lpt_reset(..)
+drm: drum_reset(..)
+mt: mt_reset(..)
+cpu: 0100: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          2017, 0000, 7777
+cpu: 0101: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            0000, 0000, 0000
+cpu: ext_io_op=2017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,00000,0000,7777,..)
+drm: writing MD 00000 mem_region 0001-7777
+drm: write: no_mosu_access=0, disable_control=1
+drm: seek file_pos=0
+drm: nwords=7777
+drm: write_count=7777
+drm: write_count=0
+drm: chksum=317161661233303 (0x00000CF38EC536C3)
+drm: writing_done
+cpu: err=0, codes_num=7777 sum=317161661233303
+cpu: 0102: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 7000, 7767
+cpu: 0103: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            7500, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,07000,7500,7767,..)
+drm: writing MD 07000 mem_region 7500-7767
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=28672
+drm: nwords=0270
+drm: write_count=0270
+drm: write_count=0001
+drm: chksum=533773610545717 (0x000015BFDE22CBCF)
+drm: writing_done
+cpu: err=0, codes_num=0271 sum=533773610545717
+cpu: 0104: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 7600, 7277
+cpu: 0105: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            7200, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,07600,7200,7277,..)
+drm: writing MD 07600 mem_region 7200-7277
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=31744
+drm: nwords=0100
+drm: write_count=0100
+drm: write_count=0001
+drm: chksum=015045644302175 (0x000000D12E91847D)
+drm: writing_done
+cpu: err=0, codes_num=0101 sum=015045644302175
+cpu: 0106: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 0400, 0424
+cpu: 0107: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            0400, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,00400,0400,0424,..)
+drm: writing MD 00400 mem_region 0400-0424
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=2048
+drm: nwords=0025
+drm: write_count=0025
+drm: write_count=0001
+drm: chksum=270361571164755 (0x00000B878DE4E9ED)
+drm: writing_done
+cpu: err=0, codes_num=0026 sum=270361571164755
+cpu: 0110: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 0440, 0471
+cpu: 0111: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            0440, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,00440,0440,0471,..)
+drm: writing MD 00440 mem_region 0440-0471
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=2304
+drm: nwords=0032
+drm: write_count=0032
+drm: write_count=0001
+drm: chksum=561167160736442 (0x00001713B9C3BD22)
+drm: writing_done
+cpu: err=0, codes_num=0033 sum=561167160736442
+cpu: 0112: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 0500, 0535
+cpu: 0113: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            0500, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,00500,0500,0535,..)
+drm: writing MD 00500 mem_region 0500-0535
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=2560
+drm: nwords=0036
+drm: write_count=0036
+drm: write_count=0001
+drm: chksum=106315027015576 (0x00000466685C1B7E)
+drm: writing_done
+cpu: err=0, codes_num=0037 sum=106315027015576
+cpu: 0114: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 0550, 0661
+cpu: 0115: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            0550, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,00550,0550,0661,..)
+drm: writing MD 00550 mem_region 0550-0661
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=2880
+drm: nwords=0112
+drm: write_count=0112
+drm: write_count=0001
+drm: chksum=217715017163467 (0x000008FE683CE737)
+drm: writing_done
+cpu: err=0, codes_num=0113 sum=217715017163467
+cpu: 0116: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 0700, 0726
+cpu: 0117: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            0700, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,00700,0700,0726,..)
+drm: writing MD 00700 mem_region 0700-0726
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=3584
+drm: nwords=0027
+drm: write_count=0027
+drm: write_count=0001
+drm: chksum=471243500625657 (0x000013951D032BAF)
+drm: writing_done
+cpu: err=0, codes_num=0030 sum=471243500625657
+cpu: 0120: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 0740, 0765
+cpu: 0121: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            0740, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,00740,0740,0765,..)
+drm: writing MD 00740 mem_region 0740-0765
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=3840
+drm: nwords=0026
+drm: write_count=0026
+drm: write_count=0001
+drm: chksum=673032575506061 (0x00001BB0D5F68C31)
+drm: writing_done
+cpu: err=0, codes_num=0027 sum=673032575506061
+cpu: 0122: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1000, 1015
+cpu: 0123: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1000, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01000,1000,1015,..)
+drm: writing MD 01000 mem_region 1000-1015
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=4096
+drm: nwords=0016
+drm: write_count=0016
+drm: write_count=0001
+drm: chksum=443405624704326 (0x000012382E5388D6)
+drm: writing_done
+cpu: err=0, codes_num=0017 sum=443405624704326
+cpu: 0124: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1030, 1054
+cpu: 0125: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1030, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01030,1030,1054,..)
+drm: writing MD 01030 mem_region 1030-1054
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=4288
+drm: nwords=0025
+drm: write_count=0025
+drm: write_count=0001
+drm: chksum=747323613334723 (0x00001E769E2DB9D3)
+drm: writing_done
+cpu: err=0, codes_num=0026 sum=747323613334723
+cpu: 0126: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1070, 1122
+cpu: 0127: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1070, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01070,1070,1122,..)
+drm: writing MD 01070 mem_region 1070-1122
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=4544
+drm: nwords=0033
+drm: write_count=0033
+drm: write_count=0001
+drm: chksum=347536742161030 (0x00000E7AF788E218)
+drm: writing_done
+cpu: err=0, codes_num=0034 sum=347536742161030
+cpu: 0130: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1140, 1165
+cpu: 0131: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1140, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01140,1140,1165,..)
+drm: writing MD 01140 mem_region 1140-1165
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=4864
+drm: nwords=0026
+drm: write_count=0026
+drm: write_count=0001
+drm: chksum=126041336100535 (0x000005610B78815D)
+drm: writing_done
+cpu: err=0, codes_num=0027 sum=126041336100535
+cpu: 0132: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1200, 1263
+cpu: 0133: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1200, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01200,1200,1263,..)
+drm: writing MD 01200 mem_region 1200-1263
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=5120
+drm: nwords=0064
+drm: write_count=0064
+drm: write_count=0001
+drm: chksum=373476601665460 (0x00000FB9F6076B30)
+drm: writing_done
+cpu: err=0, codes_num=0065 sum=373476601665460
+cpu: 0134: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1310, 1334
+cpu: 0135: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1310, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01310,1310,1334,..)
+drm: writing MD 01310 mem_region 1310-1334
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=5696
+drm: nwords=0025
+drm: write_count=0025
+drm: write_count=0001
+drm: chksum=276737470370310 (0x00000BEEFCE1F0C8)
+drm: writing_done
+cpu: err=0, codes_num=0026 sum=276737470370310
+cpu: 0136: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1350, 1376
+cpu: 0137: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1350, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01350,1350,1376,..)
+drm: writing MD 01350 mem_region 1350-1376
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=5952
+drm: nwords=0027
+drm: write_count=0027
+drm: write_count=0001
+drm: chksum=512150210372662 (0x000014A34221F5B2)
+drm: writing_done
+cpu: err=0, codes_num=0030 sum=512150210372662
+cpu: 0140: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1410, 1527
+cpu: 0141: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1410, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01410,1410,1527,..)
+drm: writing MD 01410 mem_region 1410-1527
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=6208
+drm: nwords=0120
+drm: write_count=0120
+drm: write_count=0001
+drm: chksum=054774663405076 (0x000002CFE6CE0A3E)
+drm: writing_done
+cpu: err=0, codes_num=0121 sum=054774663405076
+cpu: 0142: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1540, 1611
+cpu: 0143: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1540, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01540,1540,1611,..)
+drm: writing MD 01540 mem_region 1540-1611
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=6912
+drm: nwords=0052
+drm: write_count=0052
+drm: write_count=0001
+drm: chksum=562202362354146 (0x0000172413C9D866)
+drm: writing_done
+cpu: err=0, codes_num=0053 sum=562202362354146
+cpu: 0144: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1630, 1673
+cpu: 0145: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1630, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01630,1630,1673,..)
+drm: writing MD 01630 mem_region 1630-1673
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=7360
+drm: nwords=0044
+drm: write_count=0044
+drm: write_count=0001
+drm: chksum=325615267506676 (0x00000D5C6ADE8DBE)
+drm: writing_done
+cpu: err=0, codes_num=0045 sum=325615267506676
+cpu: 0146: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1710, 1736
+cpu: 0147: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1710, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01710,1710,1736,..)
+drm: writing MD 01710 mem_region 1710-1736
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=7744
+drm: nwords=0027
+drm: write_count=0027
+drm: write_count=0001
+drm: chksum=150364026372424 (0x00000687A059F514)
+drm: writing_done
+cpu: err=0, codes_num=0030 sum=150364026372424
+cpu: 0150: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 1750, 1773
+cpu: 0151: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            1750, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,01750,1750,1773,..)
+drm: writing MD 01750 mem_region 1750-1773
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=8000
+drm: nwords=0024
+drm: write_count=0024
+drm: write_count=0001
+drm: chksum=431211025210400 (0x0000119448551100)
+drm: writing_done
+cpu: err=0, codes_num=0025 sum=431211025210400
+cpu: 0152: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2010, 2034
+cpu: 0153: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2010, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02010,2010,2034,..)
+drm: writing MD 02010 mem_region 2010-2034
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=8256
+drm: nwords=0025
+drm: write_count=0025
+drm: write_count=0001
+drm: chksum=525171406336373 (0x00001553CC19BCFB)
+drm: writing_done
+cpu: err=0, codes_num=0026 sum=525171406336373
+cpu: 0154: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2050, 2270
+cpu: 0155: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2050, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02050,2050,2270,..)
+drm: writing MD 02050 mem_region 2050-2270
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=8512
+drm: nwords=0221
+drm: write_count=0221
+drm: write_count=0001
+drm: chksum=333311656743667 (0x00000DB64EBBC7B7)
+drm: writing_done
+cpu: err=0, codes_num=0222 sum=333311656743667
+cpu: 0156: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2310, 2356
+cpu: 0157: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2310, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02310,2310,2356,..)
+drm: writing MD 02310 mem_region 2310-2356
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=9792
+drm: nwords=0047
+drm: write_count=0047
+drm: write_count=0001
+drm: chksum=760552523166746 (0x00001F0B554CEDE6)
+drm: writing_done
+cpu: err=0, codes_num=0050 sum=760552523166746
+cpu: 0160: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2370, 2454
+cpu: 0161: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2370, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02370,2370,2454,..)
+drm: writing MD 02370 mem_region 2370-2454
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=10176
+drm: nwords=0065
+drm: write_count=0065
+drm: write_count=0001
+drm: chksum=310504720437050 (0x00000C8A27423E28)
+drm: writing_done
+cpu: err=0, codes_num=0066 sum=310504720437050
+cpu: 0162: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2470, 2526
+cpu: 0163: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2470, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02470,2470,2526,..)
+drm: writing MD 02470 mem_region 2470-2526
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=10688
+drm: nwords=0037
+drm: write_count=0037
+drm: write_count=0001
+drm: chksum=275024050511267 (0x00000BD0A0A292B7)
+drm: writing_done
+cpu: err=0, codes_num=0040 sum=275024050511267
+cpu: 0164: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2540, 2657
+cpu: 0165: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2540, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02540,2540,2657,..)
+drm: writing MD 02540 mem_region 2540-2657
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=11008
+drm: nwords=0120
+drm: write_count=0120
+drm: write_count=0001
+drm: chksum=554621745136475 (0x000016CC8F94BD3D)
+drm: writing_done
+cpu: err=0, codes_num=0121 sum=554621745136475
+cpu: 0166: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2670, 2730
+cpu: 0167: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2670, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02670,2670,2730,..)
+drm: writing MD 02670 mem_region 2670-2730
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=11712
+drm: nwords=0041
+drm: write_count=0041
+drm: write_count=0001
+drm: chksum=556460364770677 (0x000016E983D3F1BF)
+drm: writing_done
+cpu: err=0, codes_num=0042 sum=556460364770677
+cpu: 0170: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 2740, 2775
+cpu: 0171: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            2740, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,02740,2740,2775,..)
+drm: writing MD 02740 mem_region 2740-2775
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=12032
+drm: nwords=0036
+drm: write_count=0036
+drm: write_count=0001
+drm: chksum=356510625771213 (0x00000EEA4657F28B)
+drm: writing_done
+cpu: err=0, codes_num=0037 sum=356510625771213
+cpu: 0172: [op=50 mod=0] РІРІРѕРґ_РїСЂРµРґ_050          0017, 3000, 3247
+cpu: 0173: [op=70 mod=0] РІРІРѕРґ_РёСЃРї_070            3000, 0000, 0000
+cpu: ext_io_op=0017
+drm: drum_io(..), user_drum_no=3
+drm: drum_io(..), log_drum_map_array[0]=0
+drm: drum_io(..), log_drum_map_array[1]=1
+drm: drum_io(..), log_drum_map_array[2]=2
+drm: drum_io(..), log_drum_map_array[3]=3
+drm: drum_io(..), drum_no=3 user_drum_no=3
+drm: drum_io(..), drum_no=2 user_drum_no=3
+drm: drum_io(..), drum_access_mode_array[0]=0
+drm: drum_io(..), drum_access_mode_array[1]=3
+drm: drum_io(..), drum_access_mode_array[2]=3
+drm: drum_io(..), drum_access_mode_array[3]=3
+drm: drum_write(2,03000,3000,3247,..)
+drm: writing MD 03000 mem_region 3000-3247
+drm: write: no_mosu_access=0, disable_control=0
+drm: seek file_pos=12288
+drm: nwords=0250
+drm: write_count=0250
+drm: write_count=0001
+drm: chksum=433576074022466 (0x000011BBF0F02536)
+drm: writing_done
+cpu: err=0, codes_num=0251 sum=433576074022466
+cpu: 0174: [op=77 mod=0] РѕСЃС‚Р°РЅРѕРІ_077             0000, 0000, 0000
+
+[op=77 mod=0] РѕСЃС‚Р°РЅРѕРІ_077             0000, 0000, 0000РћСЃС‚Р°РЅРѕРІ, KRA: 0174 ()
+M-20 event queue empty, time = 2019152, executing 4,999,956 instructions/sec
+Time:	2019152
+СП 5 (sin x)
+
+СП 13 (тест печати)
+
+СП 42 (перевод массива в двоичную систему)
+
+СП 27 (печать с десятичным переводом и сохранением двоичной записи)
+
+СП 02 (перевод 10 -> 2)
+
+СП 10 (перевод 2 -> 10)
+
+СП 32 (умножение диагональной матрицы на вектор)
+
+СП 03 (e^x)
+
+СП 04 (ln x)
+
+СП 11 (tg x)
+
+СП 01 (x^y)
+
+СП 06 (arcsin x)
+
+СП 12 (arctg x)
+
+СП 30 (печать с десятичным переводом без сохранения двоичной записи)
+
+СП 43 (перевод материала в десятичную систему и вывод на печать без теста печати)
+
+СП 36 (умножение матриц)
+
+СП 33 (умножение матрицы на вектор)
+
+СП 34 (умножение матрицы на диагональную матрицу)
+
+СП 35 (умножение диагональной матрицы на матрицу)
+
+СП 37 (обращение матрицы методом Жордана)
+
+СП 00 (программа обмена)
+
+СП 15 (печать более 510 кодов)
+
+СП 16 (перфорация более 510 кодов)
+
+СП 40 (перевод в десятичную систему и перфорация)
+
+СП 07 (выдача восьмеричных кодов на десятичную печать с возможностью изменения их нумерации)
+
+СП 47 (выдача восьмеричных кодов на десятичную печать)
+
+СП 50 (перестановка стандартных программ)
+
+Goodbye
+lpt: lpt_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)
+drm: drum_detach(..)

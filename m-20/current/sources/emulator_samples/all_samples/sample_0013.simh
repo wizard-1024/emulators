@@ -1,0 +1,23 @@
+; Программа контрольного суммирования в памяти [2014 Стефанков]
+;
+! del sample_0013_debug.txt
+;
+set console debug=sample_0013_debug.txt
+set cpu debug
+;
+load sample_0013.m20
+;
+ex 1-13
+echo
+ex -m 1-13
+echo
+ex 30-33
+;
+echo Start
+run
+show queue
+show time
+;show throttle
+ex 30-33
+echo
+quit

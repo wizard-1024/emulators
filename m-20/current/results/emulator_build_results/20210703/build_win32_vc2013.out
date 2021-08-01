@@ -1,0 +1,144 @@
+
+E:\projects\3rd_party\private\stefankov_dv\emulators\simh\v4.0\sources\m-20\sources\emulator>nmake -f makefile.w32  
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_cpu.obj m20_cpu.c
+m20_cpu.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_sys.obj m20_sys.c
+m20_sys.c
+m20_sys.c(393) : warning C4090: 'function' : different 'const' qualifiers
+m20_sys.c(505) : warning C4090: '=' : different 'const' qualifiers
+m20_sys.c(552) : warning C4090: '=' : different 'const' qualifiers
+m20_sys.c(598) : warning C4090: 'function' : different 'const' qualifiers
+m20_sys.c(599) : warning C4090: 'function' : different 'const' qualifiers
+m20_sys.c(607) : warning C4090: 'function' : different 'const' qualifiers
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_eng.obj m20_eng.c
+m20_eng.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_drm.obj m20_drm.c
+m20_drm.c
+m20_drm.c(99) : warning C4090: 'function' : different 'const' qualifiers
+m20_drm.c(99) : warning C4028: formal parameter 2 different from declaration
+m20_drm.c(265) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(331) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(335) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(336) : warning C4018: '<' : signed/unsigned mismatch
+m20_drm.c(344) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(345) : warning C4018: '<' : signed/unsigned mismatch
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_cd.obj m20_cd.c
+m20_cd.c
+m20_cd.c(122) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(122) : warning C4028: formal parameter 3 different from declaration
+m20_cd.c(130) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(130) : warning C4028: formal parameter 2 different from declaration
+m20_cd.c(155) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(155) : warning C4028: formal parameter 3 different from declaration
+m20_cd.c(163) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(163) : warning C4028: formal parameter 2 different from declaration
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_mt.obj m20_mt.c
+m20_mt.c
+m20_mt.c(99) : warning C4090: 'function' : different 'const' qualifiers
+m20_mt.c(99) : warning C4028: formal parameter 2 different from declaration
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fom20_lp.obj m20_lp.c
+m20_lp.c
+m20_lp.c(105) : warning C4090: 'function' : different 'const' qualifiers
+m20_lp.c(105) : warning C4028: formal parameter 2 different from declaration
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Foscp.obj scp.c
+scp.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_console.obj sim_console.c
+sim_console.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_tape.obj sim_tape.c
+sim_tape.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_timer.obj sim_timer.c
+sim_timer.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_tmxr.obj sim_tmxr.c
+sim_tmxr.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_sock.obj sim_sock.c
+sim_sock.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_serial.obj sim_serial.c
+sim_serial.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_disk.obj sim_disk.c
+sim_disk.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_fio.obj sim_fio.c
+sim_fio.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_ether.obj sim_ether.c
+sim_ether.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_imd.obj sim_imd.c
+sim_imd.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_video.obj sim_video.c
+sim_video.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_frontpanel.obj sim_frontpanel.c
+sim_frontpanel.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fosim_scsi.obj sim_scsi.c
+sim_scsi.c
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:m20.exe m20_cpu.obj m20_sys.obj m20_eng.obj m20_drm.obj m20_cd.obj m20_mt.obj  m20_lp.obj scp.obj sim_console.obj sim_tape.obj sim_timer.obj sim_tmxr.obj  sim_sock.obj sim_serial.obj sim_disk.obj sim_fio.obj sim_ether.obj  sim_imd.obj sim_video.obj sim_frontpanel.obj sim_scsi.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x86\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_cpu.obj m20_cpu.c
+m20_cpu.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_sys.obj m20_sys.c
+m20_sys.c
+m20_sys.c(393) : warning C4090: 'function' : different 'const' qualifiers
+m20_sys.c(505) : warning C4090: '=' : different 'const' qualifiers
+m20_sys.c(552) : warning C4090: '=' : different 'const' qualifiers
+m20_sys.c(598) : warning C4090: 'function' : different 'const' qualifiers
+m20_sys.c(599) : warning C4090: 'function' : different 'const' qualifiers
+m20_sys.c(607) : warning C4090: 'function' : different 'const' qualifiers
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20_rus.obj m20_rus.c
+m20_rus.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_drm.obj m20_drm.c
+m20_drm.c
+m20_drm.c(99) : warning C4090: 'function' : different 'const' qualifiers
+m20_drm.c(99) : warning C4028: formal parameter 2 different from declaration
+m20_drm.c(265) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(331) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(335) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(336) : warning C4018: '<' : signed/unsigned mismatch
+m20_drm.c(344) : warning C4018: '<=' : signed/unsigned mismatch
+m20_drm.c(345) : warning C4018: '<' : signed/unsigned mismatch
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_cd.obj m20_cd.c
+m20_cd.c
+m20_cd.c(122) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(122) : warning C4028: formal parameter 3 different from declaration
+m20_cd.c(130) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(130) : warning C4028: formal parameter 2 different from declaration
+m20_cd.c(155) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(155) : warning C4028: formal parameter 3 different from declaration
+m20_cd.c(163) : warning C4090: 'function' : different 'const' qualifiers
+m20_cd.c(163) : warning C4028: formal parameter 2 different from declaration
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_mt.obj m20_mt.c
+m20_mt.c
+m20_mt.c(99) : warning C4090: 'function' : different 'const' qualifiers
+m20_mt.c(99) : warning C4028: formal parameter 2 different from declaration
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -DRUSSIAN_LANGUAGE -DRUS_WIN_CP1251 -Fom20ru_lp.obj m20_lp.c
+m20_lp.c
+m20_lp.c(105) : warning C4090: 'function' : different 'const' qualifiers
+m20_lp.c(105) : warning C4028: formal parameter 2 different from declaration
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:m20ru.exe m20ru_cpu.obj m20ru_sys.obj m20_rus.obj m20ru_drm.obj m20ru_cd.obj  m20ru_mt.obj m20ru_lp.obj scp.obj sim_console.obj sim_tape.obj sim_timer.obj sim_tmxr.obj  sim_sock.obj sim_serial.obj sim_disk.obj sim_fio.obj sim_ether.obj  sim_imd.obj sim_video.obj sim_frontpanel.obj sim_scsi.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x86\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fogetopt.obj getopt.c
+getopt.c
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Focode2pcard.obj code2pcard.c
+code2pcard.c
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:code2pcard.exe code2pcard.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x86\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Foautocode_m20.obj autocode_m20.c
+autocode_m20.c
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:autocode_m20.exe autocode_m20.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x86\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fodump_drm.obj dump_drm.c
+dump_drm.c
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:dump_drm.exe dump_drm.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x86\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+	cl -c -Ox -W3  -MT -DUSE_INT64  -D_CRT_SECURE_NO_DEPRECATE=1 -D_CRT_NON_CONFORMING_SWPRINTFS=1  -D_CRT_NONSTDC_NO_DEPRECATE=1 -D_WIN32_WINNT=0x0501 -DCRT_NONSTDC_NO_WARNINGS -D_CRT_SECURE_NO_WARNINGS -D_WINSOCK_DEPRECATED_NO_WARNINGS -I.\include -Fodump_mt.obj dump_mt.c
+dump_mt.c
+	link /RELEASE /INCREMENTAL:NO /PDB:NONE  -out:dump_mt.exe dump_mt.obj getopt.obj advapi32.lib wsock32.lib Winmm.lib ws2_32.lib user32.lib .\LIBS\vc\x86\pthreadVC2.lib
+Microsoft (R) Incremental Linker Version 12.00.21005.1
+Copyright (C) Microsoft Corporation.  All rights reserved.
+

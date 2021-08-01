@@ -1,0 +1,68 @@
+*
+* Sample file for M-20 autocode 
+* encoding: english,ASCII-7
+*
+* Copyright (c) 2015 Stefankov
+*
+
+	.NAME    hello14.a20
+	.TITLE	 Hello Program for M-20
+	.AUTHOR  Stefankov Dmitry
+*
+*
+*
+
+TWO1 	.ABS	=2
+TWO2	.ABS	1 02 4000 0000 0000
+TWO3    .ABS    102400000000000
+
+	.START  20
+*
+NUM1:	=2
+num2:	1 02 4000 0000 0000
+numTWO:  TWO1
+
+NEWMEM:  .MEM  12
+ =10
+  1 02 4000 0000 0000
+
+*
+*
+	.ADDRESS  100
+START:
+	add_rn	NUM1,NUM2,NUM3		; 2+2=4?
+	sub_rn	NUM3,num1,NUM4		; 4-2=2?
+        chg_ra_by_adr  0,0,0
+        chg_ra_by_adr  0 0 0
+        chg_ra_by_adr  ,,
+	add_rn	(NUM1),NUM2,NUM3	; 2+2=4?
+	add_rn	(0020),(0021),(NUM3)	; 2+2=4?
+        cond_jump_w1  0,STOP_17,0
+	stop_77
+
+STOP_17:
+        0 52 0000 0000 0000
+        chg_ra_by_adr  0 * 0
+        chg_ra_by_adr  0 *+1 0
+        chg_ra_by_adr  0, num4-1, 0
+        chg_ra_by_adr  0, num4-newmem, 0
+	stop_17
+
+	.ADDRESS  200
+num3:	0 00 0000 0000 0000
+num4:  
+  =6.25
+*
+        .NOLIST
+*
+*
+*
+        .LIST
+*
+NEWMEM2: .MEM  100
+ =10
+ =11
+ =12
+
+
+	.FINISH 100
