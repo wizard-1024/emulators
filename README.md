@@ -1,2 +1,2 @@
 # emulators
- Sovjet digital computers repository of Dmitry Stefankov (2015-2022)
+ Sovjet digital computers repository of Dmitry Stefankov (2015-2024)
